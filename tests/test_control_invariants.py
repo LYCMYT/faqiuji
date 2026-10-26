@@ -32,3 +32,14 @@ class ContinuousInterlocks(unittest.TestCase):
             s={**baseline(),'guide_down':state in ['DROP','GATE_CLOSE'],'guide_up':state not in ['DROP','GATE_CLOSE'],'upper_held':True,'ball_present':True,'clamp_closed':state in ['CLEAR','AIM'],'clamp_open':state not in ['CLEAR','AIM'],'wheels_ready':True}
             s[field]=False;c=FeedCycle();c.state=state;o=c.step(s,.1)
             self.assertEqual(o['fault'],fault);self.assertIsNone(o['slide_target_mm']);self.assertIsNone(o['guide_target_mm']);self.assertFalse(o['enable_wheels'])
+    def test_release_entry_rejects_high_or_missing_capture_before_output(self):
+        path=[dict(start=True),dict(guide_up=False,guide_down=True),dict(upper_held=True),dict(ball_present=True,gate_open=True,gate_closed=False),dict(gate_closed=True,gate_open=False),dict(clamp_closed=True,clamp_open=False),dict(guide_up=True,guide_down=False),dict(slide_clear=True,slide_home=False)]
+        for missing in [False,True]:
+            c,s=self.advance(path)
+            self.assertEqual(c.state,'AIM')
+            s.update(aim_reached=True,wheels_ready=True,capture_detected=True)
+            if missing:del s['capture_detected']
+            o=c.step(s,.1)
+            self.assertEqual(o['fault'],'capture_detected_feedback_missing_or_invalid' if missing else 'capture_sensor_high_before_approach')
+            for key in ['slide_target_mm','guide_target_mm','clamp_target','gate_target','upper_target']:self.assertIsNone(o[key])
+            self.assertFalse(o['enable_motion']);self.assertFalse(o['enable_wheels'])

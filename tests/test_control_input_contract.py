@@ -43,3 +43,10 @@ class InputContract(unittest.TestCase):
             with self.assertRaises(ObservationError):validate_observation(payload,'IDLE')
             self.assertEqual(FeedCycle().step(payload,.1)['state'],'FAULT')
         self.assertEqual(validate_interval(.1),.1)
+    def test_unrepresentable_real_values_are_contract_failures(self):
+        from cad.assemblies.kinematics import validate_motion_state,motion_limits
+        c=FeedCycle();c.state='RETAIN'
+        o=c.step({**baseline(),'guide_up':False,'guide_down':True,'upper_held':True},10**1000)
+        self.assertEqual(o['fault'],'invalid_sample_interval');self.assertFalse(o['enable_motion'])
+        for key in ['slide_target_mm','guide_target_mm','clamp_target','gate_target','upper_target']:self.assertIsNone(o[key])
+        self.assertIn('data:slide_not_finite_real',validate_motion_state({'slide':10**1000},motion_limits()))

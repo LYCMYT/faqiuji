@@ -58,7 +58,17 @@ class FeedCycle:
             if self.exit_seen and self.last_exit and s['exit'] is False:self.state='RETREAT'
         elif self.state in transitions:
             target,condition=transitions[self.state]
-            if condition:self.state=target
+            if condition:
+                # RELEASE opens the clamp immediately: validate its entry sample
+                # before committing the transition or exposing its action targets.
+                if target=='RELEASE':
+                    try:
+                        validate_observation(s,target)
+                    except ObservationError as error:
+                        self.trip(str(error));return self.outputs()
+                    fault=check_invariants(target,s)
+                    if fault:self.trip(fault);return self.outputs()
+                self.state=target
         if old=='APPROACH' and self.state=='WAIT_EXIT':
             self.exit_seen=False
             if s.get('exit'):self.trip('exit_high_at_capture')

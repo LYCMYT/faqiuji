@@ -58,7 +58,11 @@ def validate_motion_state(state: dict, limits: dict) -> list[str]:
     errors=[]
     for axis in limits:
         value=s.get(axis)
-        if isinstance(value,bool) or not isinstance(value,Real) or not math.isfinite(value):errors.append('data:'+axis+'_not_finite_real')
+        try:
+            valid=not isinstance(value,bool) and isinstance(value,Real) and math.isfinite(value)
+        except (OverflowError,ValueError,TypeError):
+            valid=False
+        if not valid:errors.append('data:'+axis+'_not_finite_real')
     if type(s['loaded']) is not bool:errors.append('data:loaded_not_bool')
     if errors:return errors
     for axis,(lo,hi) in limits.items():

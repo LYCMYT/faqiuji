@@ -12,9 +12,13 @@ GATE_CLOSED={'GRIP','GUIDE_UP',*GUIDE_UP,'DONE'}
 KNOWN=set('start cover_closed estop_ok cassette_locked exit capture_detected head_home slide_home slide_clear aim_reached guide_up guide_down gate_closed gate_open clamp_closed clamp_open upper_held ball_present wheels_ready'.split())
 
 def validate_interval(dt: object) -> float:
-    if isinstance(dt,bool) or not isinstance(dt,Real) or not math.isfinite(dt) or dt<=0:
-        raise ObservationError('invalid_sample_interval')
-    return float(dt)
+    try:
+        if isinstance(dt,bool) or not isinstance(dt,Real):raise ValueError
+        value=float(dt)
+        if not math.isfinite(value) or value<=0:raise ValueError
+    except (OverflowError,ValueError,TypeError) as error:
+        raise ObservationError('invalid_sample_interval') from error
+    return value
 
 def validate_observation(payload: dict, state: str) -> dict:
     if not isinstance(payload,dict):raise ObservationError('observation_not_mapping')
