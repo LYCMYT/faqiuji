@@ -45,6 +45,7 @@ def main():
         try:stage('r4_geometry','tools/check_r4_geometry.py','reports/r4_geometry_validation.json')
         except RuntimeError:
             diagnostic=json.loads((R/'reports/r4_geometry_validation.json').read_text(encoding='utf-8'))
+            if diagnostic.get('digital_status')!='PASS' or diagnostic.get('digital_failures')!=[]:raise
             if not args.review_draft or diagnostic.get('status')!='BLOCKED' or diagnostic.get('clearances',{}).get('intersections')!=[] or diagnostic.get('all_native_single_solids') is not True or diagnostic.get('support_projection',{}).get('status')!='PASS_NOMINAL':raise
             blocked=True
             atomic_json(run_dir/'r4_geometry.json',ctx.for_stage('r4_geometry').report('BLOCKED',diagnostic.get('completed_checks',[]),{'reports/r4_geometry_validation.json':file_hash(R/'reports/r4_geometry_validation.json')},reason='Nominal full diagnostic retains unresolved mechanical/service requirements'))

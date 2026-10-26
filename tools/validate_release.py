@@ -210,6 +210,7 @@ def validate_review_bundle(root,ctx):
     for key in ('run_id','input_sha256','code_sha256','tool_versions'):
         if geo.get(key)!=getattr(ctx,key):raise RuntimeError('Review geometry source mismatch: '+key)
     if geo.get('scope')!='full' or geo.get('status')!='BLOCKED':raise RuntimeError('Review-only contract requires explicitly BLOCKED full diagnostic')
+    if geo.get('digital_status')!='PASS' or geo.get('digital_failures')!=[]:raise RuntimeError('Review bundle requires completed nominal digital checks')
     if geo.get('all_native_single_solids') is not True or geo.get('clearances',{}).get('intersections')!=[] or geo.get('support_projection',{}).get('status')!='PASS_NOMINAL':
         raise RuntimeError('Unresolved nominal solid/contact/collision defects; review bundle not eligible')
     if 'sampled_motion' not in geo.get('completed_checks',[]):raise RuntimeError('Motion diagnostic NOT_RUN')
