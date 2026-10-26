@@ -57,6 +57,23 @@ def main():
         if key in geo:
             story.append(para(key,heading));story.append(para(json.dumps(geo[key],ensure_ascii=False,indent=2),small))
     story.append(para('实际球头可能偏心、变形或回弹；名义支撑不代替真实球样的接球姿态和损伤试验。'))
+    # Detail views reuse the checked states, with explicitly independent ball references.
+    import cadquery as cq
+    from tools.render_cad_preview import render
+    from cad.assemblies.r4_fixture import model,posed
+    from cad.assemblies.kinematics import parameters
+    from cad.parts.recipe import build
+    rows,_,_,_=model();params=parameters()
+    refs=[(a['instance_id'],build(a['shape'],params)) for a in read('data/geometry.json')['instances'] if a.get('reference') and a['instance_id'] in ('PRT-REF-CORK','PRT-REF-SKIRT')]
+    sequence_images=[]
+    for n,state in enumerate(geo['ball_sequence']['stages']):
+        if n%2==0:story.append(PageBreak());title('接球与释放 · 名义状态详图')
+        shapes=[(a['instance_id'],shape) for a,shape in posed(rows,state['state']) if a['part_id'].startswith('PRT-07')]
+        if state['ball_present']:shapes += [(name,shape.translate(tuple(state['reference_translation_mm']))) for name,shape in refs]
+        target=O/'drawings'/('ball_state_'+state['name']);render(shapes,target,'R4 / receiving detail / '+state['name']);sequence_images.append(target.with_suffix('.png'))
+        # Keep two views per page; state checks used all fixture context, not this cropped detail.
+        story.append(Image(str(target.with_suffix('.png')),width=380,height=285));story.append(para(state['name']+' / '+state['ownership_rule'],small))
+    story.append(para('上述仅显示接球模块和独立名义球参考；完整碰撞检查保留全部台架实体。夹持、回弹与释放动力学未运行。',small))
     interfaces=read('data/r4_mechanical_interfaces.json')
     for axis in interfaces['axes']:
         story.append(PageBreak());title('五功能约束 · '+axis['axis_id'])
@@ -110,7 +127,7 @@ def main():
             draw.text((n%3*400+8,n//3*310+282),str(start+n+1),fill='black')
         contact.save(review/f'contact_{start//12+1:02d}.png')
     if overflow:raise RuntimeError('PDF text outside page: '+str(overflow))
-    artifacts=[output,*first_article_files]
+    artifacts=[output,*first_article_files,*sequence_images]
     atomic_json(R/'reports/r4_document_validation.json',ctx.report('PASS',['pdf_rendered','pdf_text_bounds'],{path.relative_to(R).as_posix():file_hash(path) for path in artifacts},pages=len(doc),individual_r4_pages=len(selected),first_article_sheets=len(first_articles),text_overflow=[],manual_signoff='NOT_RUN'))
     print('R4 PDF:',len(doc),'pages;',len(selected),'R4 part pages; automatic render/text check PASS')
 
