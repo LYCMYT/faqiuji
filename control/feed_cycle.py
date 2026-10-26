@@ -5,6 +5,8 @@ debounce, wiring categories, stopping time and watchdog integration are NOT cert
 """
 from pathlib import Path
 import json,math
+from uuid import uuid4
+from control.commands import Command,CommandLifecycle
 from control.contracts import ObservationError,validate_interval,validate_observation,check_invariants
 from cad.assemblies.kinematics import capture_stroke,parameters
 R=Path(__file__).resolve().parents[1]
@@ -13,9 +15,27 @@ class FeedCycle:
     def __init__(self):
         self.state='IDLE';self.elapsed=0.;self.last_exit=False;self.exit_seen=False;self.fault=None
         self.arrival_low_seen=False
+        self.cycle_id=uuid4().hex;self.command_counter=0;self.clock=0.;self.commands=CommandLifecycle();self.armed=False
         self.spec=json.loads((R/'data/r1_engineering.json').read_text(encoding='utf-8'))['controller']
-    def trip(self,reason):self.state='FAULT';self.fault=reason
-    def step(self,s,dt):
+    def trip(self,reason):
+        self.state='FAULT';self.fault=reason;self.armed=False;self.commands=CommandLifecycle()
+    def pause(self):
+        if self.state!='FAULT':self.state='PAUSED';self.armed=False;self.commands=CommandLifecycle()
+        return self.outputs()
+    def reset(self):
+        if self.state not in {'FAULT','PAUSED','DONE'}:raise ValueError('reset_requires_stopped_state')
+        self.state='IDLE';self.fault=None;self.elapsed=0.;self.armed=False;self.last_exit=False;self.exit_seen=False;self.commands=CommandLifecycle()
+        return self.outputs()
+    def restart(self):
+        if self.state!='IDLE':raise ValueError('restart_requires_idle_reset')
+        self.cycle_id=uuid4().hex;self.commands=CommandLifecycle();self.armed=True
+        return self.outputs()
+    def _issue(self):
+        targets={'CLEAR':('slide',parameters()['clear_stroke']),'AIM':('head',0.),'RETREAT':('slide',parameters()['clear_stroke']),'HOME':('head',0.),'LOAD':('slide',0.)}
+        if self.state in targets:
+            action,target=targets[self.state];self.command_counter+=1
+            self.commands.issue(Command(self.cycle_id+':'+str(self.command_counter),self.cycle_id,action,target,self.clock))
+    def step(self,s,dt,*,ack=None):
         if self.state=='FAULT':return self.outputs()
         try:
             dt=validate_interval(dt)
@@ -27,18 +47,19 @@ class FeedCycle:
         boundary=capture_stroke()
         if (boundary is None or not math.isfinite(boundary) or not 0<=boundary<=parameters()['carriage_total_stroke']) and (self.state!='IDLE' or s['start']):
             self.trip('geometry_cannot_capture');return self.outputs()
+        if self.state=='PAUSED':return self.outputs()
+        self.clock+=dt
         self.elapsed+=dt
         if self.elapsed>self.spec['simulation_state_timeout_s'] and self.state not in ['IDLE','DONE']:
             self.trip('state_timeout');return self.outputs()
         old=self.state
         arrival_fields={'CLEAR':'slide_clear','AIM':'aim_reached','RETREAT':'slide_clear','HOME':'head_home','LOAD':'slide_home'}
         field=arrival_fields.get(self.state)
-        if field:
-            if type(s.get(field)) is not bool:self.trip('arrival_feedback_missing_'+field);return self.outputs()
-            if s[field] is False:self.arrival_low_seen=True
-        arrived=bool(field and self.arrival_low_seen and s[field] is True)
+        if field and self.commands.command is None:self._issue()
+        completed=self.commands.observe(ack) if field else False
+        arrived=bool(field and s[field] is True and completed)
         transitions={
-            'IDLE':('GUIDE_DOWN',s.get('start') and s.get('head_home') and s.get('slide_home')),
+            'IDLE':('GUIDE_DOWN',self.armed and s.get('start') and s.get('head_home') and s.get('slide_home')),
             'GUIDE_DOWN':('RETAIN',s.get('guide_down')),
             'RETAIN':('DROP',s.get('upper_held') and s.get('gate_closed')),
             'DROP':('GATE_CLOSE',s.get('ball_present') and s.get('gate_open')),
@@ -74,16 +95,20 @@ class FeedCycle:
             if s.get('exit'):self.trip('exit_high_at_capture')
         if self.state!=old:
             self.elapsed=0
-            field=arrival_fields.get(self.state);self.arrival_low_seen=bool(field and s.get(field) is False)
+            self.commands=CommandLifecycle()
+            self._issue()
+            if self.state=='DONE':self.armed=False
         self.last_exit=bool(s.get('exit',False))
         return self.outputs()
     def outputs(self):
-        p=parameters();enabled=self.state not in ['IDLE','DONE','FAULT']
+        p=parameters();enabled=self.state not in ['IDLE','DONE','FAULT','PAUSED']
         targets={'CLEAR':p['clear_stroke'],'AIM':p['clear_stroke'],'RELEASE':p['clear_stroke'],
                  'APPROACH':capture_stroke(),'WAIT_EXIT':capture_stroke(),'RETREAT':p['clear_stroke'],'HOME':p['clear_stroke'],'LOAD':0}
         guide_down=self.state in ['GUIDE_DOWN','RETAIN','DROP','GATE_CLOSE','GRIP']
         clamp_closed=self.state in ['GRIP','GUIDE_UP','CLEAR','AIM']
-        return dict(state=self.state,fault=self.fault,enable_motion=enabled,
+        return dict(state=self.state,fault=self.fault,command=self.commands.output(),cycle_id=self.cycle_id,
+            safe_intent=({'upper':'hold_remaining_stack','gate':'controlled_close','guide':'hold_position','slide':'controlled_stop_then_hold','catch_clamp':'hold_current_state','future_wheels':'controlled_deceleration'} if not enabled else None),
+            safe_intent_status='BLOCKED_hardware_capability_unconfirmed',enable_motion=enabled,
             enable_wheels=enabled and self.state in ['AIM','RELEASE','APPROACH','WAIT_EXIT'],
             slide_target_mm=targets.get(self.state) if enabled else None,
             guide_target_mm=(0 if guide_down else p['guide_stroke']) if enabled else None,

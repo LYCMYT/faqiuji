@@ -4,9 +4,15 @@ from tests.test_control_input_contract import baseline
 
 class ContinuousInterlocks(unittest.TestCase):
     def advance(self,changes):
-        c=FeedCycle();s=baseline()
+        c=FeedCycle();c.restart();s=baseline()
         for change in changes:
-            s.update(change);o=c.step(s,.1)
+            s.update(change)
+            cmd=c.outputs()['command']
+            if cmd:
+                ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=cmd['target'],in_tolerance=True,sample_id=1)
+                c.step(s,.1,ack=ack)
+                o=c.step(s,.1,ack={**ack,'completed_id':cmd['command_id'],'sample_id':2})
+            else:o=c.step(s,.1)
             self.assertNotEqual(o['state'],'FAULT',o)
         return c,s
     def test_guide_down_lost_before_drop(self):
@@ -39,7 +45,10 @@ class ContinuousInterlocks(unittest.TestCase):
             self.assertEqual(c.state,'AIM')
             s.update(aim_reached=True,wheels_ready=True,capture_detected=True)
             if missing:del s['capture_detected']
-            o=c.step(s,.1)
+            cmd=c.outputs()['command']
+            ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=cmd['target'],in_tolerance=True,sample_id=1)
+            c.step(s,.1,ack=ack)
+            o=c.step(s,.1,ack={**ack,'completed_id':cmd['command_id'],'sample_id':2})
             self.assertEqual(o['fault'],'capture_detected_feedback_missing_or_invalid' if missing else 'capture_sensor_high_before_approach')
             for key in ['slide_target_mm','guide_target_mm','clamp_target','gate_target','upper_target']:self.assertIsNone(o[key])
             self.assertFalse(o['enable_motion']);self.assertFalse(o['enable_wheels'])

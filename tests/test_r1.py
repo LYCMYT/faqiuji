@@ -23,10 +23,12 @@ class RevisionContracts(unittest.TestCase):
         obs={**self.safe(),'slide_clear':True,'head_home':True}
         for _ in range(3):self.assertEqual(c.step(obs,.1)['state'],'RETREAT')
         c.step({**obs,'slide_clear':False},.1)
-        self.assertEqual(c.step(obs,.1)['state'],'HOME')
-        self.assertEqual(c.step(obs,.1)['state'],'HOME')
-        c.step({**obs,'head_home':False},.1)
-        self.assertEqual(c.step(obs,.1)['state'],'LOAD')
+        self.assertEqual(c.step(obs,.1)['state'],'RETREAT')
+        cmd=c.outputs()['command']
+        ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=cmd['target'],in_tolerance=True,sample_id=1)
+        c.step(obs,.1,ack=ack)
+        self.assertEqual(c.step(obs,.1,ack={**ack,'completed_id':cmd['command_id'],'sample_id':2})['state'],'HOME')
+        self.assertEqual(c.step(obs,.1,ack={**ack,'completed_id':cmd['command_id'],'sample_id':3})['state'],'HOME')
     def test_feedback_loss_stops_active_cycle(self):
         from control.feed_cycle import FeedCycle
         for state in ['APPROACH','WAIT_EXIT']:
