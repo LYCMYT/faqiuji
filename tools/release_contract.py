@@ -5,10 +5,11 @@ REQUIRED_STAGES={
     'unit_tests':['unit_tests'],
     'r4_geometry':['native_solids','support_projection','sampled_motion','connections','tool_channels'],
     'r4_exports':['expected_step_set','step_roundtrip'],
-    'r4_blender':['blend_reopened','glb_reopened','ids_preserved'],
+    'r4_blender':['blend_reopened','glb_reopened','ids_preserved','frames_rendered'],
     'r4_media':['video_fully_decoded'],
     'r4_documents':['pdf_rendered','pdf_text_bounds'],
     'r4_viewer':['loaded','isolation','restored'],
+    'r4_metadata':['scope_summary'],
 }
 REQUIRED_FILES=[
     'output/fixture_r4/parts_index.json',

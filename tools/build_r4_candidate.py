@@ -19,8 +19,10 @@ def main():
     environment=probe()
     for name in ('blender','ffmpeg','ffprobe','chrome'):
         if environment['tools'][name]['status']!='AVAILABLE':raise RuntimeError('Required tool unavailable: '+name)
+        os.environ['BM1_'+name.upper()+'_EXE']=environment['tools'][name]['path']
     if environment['chinese_font']['status']!='AVAILABLE':raise RuntimeError('Chinese font unavailable')
     before=snapshot_inputs(R);ctx=BuildContext.create(R,scope='full');run_dir=R/'reports/builds'/ctx.run_id
+    environment['packages']=ctx.tool_versions
     atomic_json(run_dir/'context.json',ctx.to_dict());atomic_json(run_dir/'environment.json',environment)
     atomic_json(R/'reports/release_proof.json',ctx.report('RUNNING'))
     (R/'reports/r4_readiness.md').write_text('# BM1 R4\n\nRUNNING — current build has not passed release gates.\n',encoding='utf-8')
@@ -78,6 +80,8 @@ def main():
         text+='\n'.join('- '+item['id']+' ['+item['status']+']：'+item['required'] for item in scope['open_inputs'])
         text+='\n\n整机 manufacturing_release=false；首件和自动运行尚未放行。具体顺序见 docs/test_protocol_r4.md；数字候选交付不关闭任何实物开放项。\n'
         (R/'reports/r4_readiness.md').write_text(text,encoding='utf-8')
+        summary_files=[O/'first_article_RFQ.csv',O/'physical_measurements_BLANK.csv',O/'index.html',R/'reports/r4_readiness.md']
+        atomic_json(run_dir/'r4_metadata.json',ctx.for_stage('r4_metadata').report('PASS',['scope_summary'],{path.relative_to(R).as_posix():file_hash(path) for path in summary_files},manufacturing_release=False))
         require_unchanged(R,before)
         proof=validate_review_bundle(R,ctx) if blocked else validate_release(R,ctx)
         atomic_json(run_dir/('review_bundle.json' if blocked else 'release.json'),proof)

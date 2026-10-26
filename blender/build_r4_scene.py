@@ -18,7 +18,7 @@ verify_content_context(R,export_report)
 if ctx['tool_versions']['blender']['sha256']!=hashlib.sha256(Path(bpy.app.binary_path).read_bytes()).hexdigest():raise RuntimeError('Blender executable differs from context')
 report_path=R/'reports/r4_blender_validation.json'
 report_path.write_text(json.dumps({**ctx,'stage':'r4_blender','status':'RUNNING'}),encoding='utf-8')
-bpy.ops.wm.read_factory_settings(use_empty=True);sc=bpy.context.scene;sc.name='R4装配与连接件分解';sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=1
+bpy.ops.wm.read_factory_settings(use_empty=True);sc=bpy.context.scene;sc.name='R4瑁呴厤涓庤繛鎺ヤ欢鍒嗚В';sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=1
 sc.render.engine='BLENDER_WORKBENCH';sc.render.resolution_x=P['resolution'][0];sc.render.resolution_y=P['resolution'][1];sc.render.resolution_percentage=100
 sc.display.shading.light='STUDIO';sc.display.shading.color_type='MATERIAL';sc.display.shading.show_shadows=True;sc.display.shading.show_cavity=True;sc.display.shading.cavity_type='BOTH';sc.display.shading.background_type='WORLD';sc.world=bpy.data.worlds.new('R4 world');sc.world.color=(.88,.92,.94)
 sc.render.fps=P['fps'];sc.frame_start=1;sc.frame_end=P['duration_frames'];mats={}
@@ -49,6 +49,9 @@ vertices=[o.matrix_world@Vector(v) for o in meshes for v in o.bound_box];bounds=
 expected=[min(a['bounds_mm'][k] for a in rows)/1000 for k in range(3)]+[max(a['bounds_mm'][k] for a in rows)/1000 for k in range(3,6)]
 assert all(abs(a-b)<1e-5 for a,b in zip(bounds,expected)),(bounds,expected)
 artifacts={p.relative_to(R).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in [O/'BM1_R4_fixture.blend',O/'BM1_R4_fixture.glb',O/'R4_assembly.png',O/'R4_exploded.png'] if p.is_file()}
-report={**ctx,'stage':'r4_blender','scope':'full','status':'PASS','completed_checks':['blend_reopened','glb_reopened','ids_preserved'],'artifact_hashes':artifacts,'blend_reopened':True,'glb_reopened':True,'ids_preserved':True,'meshes':len(meshes),'bounds_m':bounds,'expected_bounds_m':expected,'physical_testing_performed':False}
+rendered='--export-only' not in sys.argv
+frames=[O/'frames'/f'{n:04d}.png' for n in range(1,P['duration_frames']+1,P['render_sample_step'])] if rendered else []
+frame_hashes={path.relative_to(R).as_posix():hashlib.sha256(path.read_bytes()).hexdigest() for path in frames}
+report={**ctx,'stage':'r4_blender','scope':'full' if rendered else 'export_only','status':'PASS','completed_checks':['blend_reopened','glb_reopened','ids_preserved']+(['frames_rendered'] if rendered else []),'artifact_hashes':artifacts,'frame_hashes':frame_hashes,'frames_rendered':rendered,'rendered_frame_count':len(frames),'render_runtime':{'blender':bpy.app.version_string,'python':sys.version},'blend_reopened':True,'glb_reopened':True,'ids_preserved':True,'meshes':len(meshes),'bounds_m':bounds,'expected_bounds_m':expected,'physical_testing_performed':False}
 temp=report_path.with_suffix('.tmp');temp.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8');os.replace(temp,report_path)
 print('R4 BLEND/GLB REOPEN PASS',len(meshes))

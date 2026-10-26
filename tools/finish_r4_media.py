@@ -6,13 +6,23 @@ import subprocess
 import sys
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
 from tools.build_context import active_context,atomic_json,file_hash
+from tools.validate_release import require_report
 from PIL import Image,ImageDraw,ImageFont
+
+def require_rendered_frames(root,ctx,expected):
+    render_report=require_report(root/'reports/r4_blender_validation.json',ctx.for_stage('r4_blender'),['frames_rendered'],root)
+    frame_hashes=render_report.get('frame_hashes',{})
+    if render_report.get('frames_rendered') is not True or set(frame_hashes)!={path.relative_to(root).as_posix() for path in expected}:raise RuntimeError('Missing current rendered-frame provenance')
+    for path in expected:
+        if not path.is_file() or file_hash(path)!=frame_hashes[path.relative_to(root).as_posix()]:raise RuntimeError('Stale/changed frame: '+str(path))
+    return frame_hashes
 
 def main():
     ctx=active_context(R,'r4_media');O=R/'output/fixture_r4'
     atomic_json(R/'reports/r4_media_validation.json',ctx.report('RUNNING'))
     p=json.loads((R/'data/r4_presentation.json').read_text(encoding='utf-8'))
     expected=[O/'frames'/f'{n:04d}.png' for n in range(1,p['duration_frames']+1,p['render_sample_step'])]
+    frame_hashes=require_rendered_frames(R,ctx,expected)
     if any(not path.is_file() for path in expected):raise RuntimeError('Missing expected animation frames')
     w,h=p['resolution'];top,bottom=p['caption_bands_px'];height=h+top+bottom
     font=ImageFont.truetype(os.environ.get('BM1_CHINESE_FONT','C:/Windows/Fonts/msyh.ttc'),20)
@@ -34,6 +44,6 @@ def main():
         finally:
             if proc.poll() is None:proc.kill();proc.wait()
     subprocess.run([ffmpeg,'-v','error','-i',str(target),'-f','null','-'],check=True,capture_output=True)
-    atomic_json(R/'reports/r4_media_validation.json',ctx.report('PASS',['video_fully_decoded'],{target.relative_to(R).as_posix():file_hash(target)},frames=len(expected),video_size=[w,height],physical_motion_proof=False))
+    atomic_json(R/'reports/r4_media_validation.json',ctx.report('PASS',['video_fully_decoded'],{target.relative_to(R).as_posix():file_hash(target)},frames=len(expected),video_size=[w,height],video_fully_decoded=True,consumed_frame_hashes=frame_hashes,physical_motion_proof=False))
     print('R4 video encoded and fully decoded:',len(expected),'source frames')
 if __name__=='__main__':main()

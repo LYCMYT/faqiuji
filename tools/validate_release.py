@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import sys
+import math
 from tools.build_context import atomic_json, file_hash, BuildContext
 from tools.input_manifest import snapshot_inputs, require_unchanged
 
@@ -32,7 +33,7 @@ def require_report(report, ctx, required_checks=(), root=None):
     return report
 
 
-def validate_stage_result(name, report, ctx):
+def validate_stage_result(name, report, ctx, root=None):
     """Explicit adapters for legacy producers; no missing-field success defaults."""
     if name=='reports/service_validation.json':
         if not isinstance(report,list) or not report or any(not isinstance(x,dict) or x.get('geometric_path_passed') is not True or x.get('collisions')!=[] for x in report):
@@ -42,7 +43,44 @@ def validate_stage_result(name, report, ctx):
     if name.startswith('reports/r4_'):
         from tools.release_contract import REQUIRED_STAGES
         if ctx.stage not in REQUIRED_STAGES:raise RuntimeError('Unknown R4 report stage')
-        require_report(report,ctx,REQUIRED_STAGES[ctx.stage])
+        require_report(report,ctx,REQUIRED_STAGES[ctx.stage],root)
+        required_artifacts={
+            'r4_blender':['BM1_R4_fixture.blend','BM1_R4_fixture.glb','R4_assembly.png','R4_exploded.png'],
+            'r4_media':['BM1_R4_connections_explode.mp4'],
+            'r4_documents':['BM1_R4_review_book.pdf'],
+            'r4_exports':['parts_index.json','mesh.json','step/BM1_R4_fixture_assembly.step'],
+            'r4_viewer':['viewer.html','viewer_preview.png'],
+        }.get(ctx.stage,[])
+        hashes=report.get('artifact_hashes')
+        if not isinstance(hashes,dict) or any('output/fixture_r4/'+name not in hashes for name in required_artifacts):raise RuntimeError('Incomplete producer artifact set: '+ctx.stage)
+        if ctx.stage=='failure_modes':
+            results=report.get('results',{})
+            for name in ('blender_nonzero','collision_nonzero','boolean_error_nonzero','corrupt_step_nonzero'):
+                rc=results.get(name,{}).get('returncode')
+                if type(rc) is not int or rc==0:raise RuntimeError('Missing failure-injection exit evidence: '+name)
+        true_fields={
+            'r4_blender':['blend_reopened','glb_reopened','ids_preserved','frames_rendered'],
+            'r4_media':['video_fully_decoded'],
+            'r4_viewer':['loaded','part_isolation','restore_all','asm_prt_metadata'],
+            'r4_geometry':['all_native_single_solids'],
+        }.get(ctx.stage,[])
+        if any(report.get(key) is not True for key in true_fields):raise RuntimeError('Required R4 result missing/false: '+ctx.stage)
+        for key in {'r4_blender':['meshes'],'r4_media':['frames'],'r4_documents':['pages'],'r4_exports':['instances','families']}.get(ctx.stage,[]):
+            if type(report.get(key)) is not int or report[key]<=0:raise RuntimeError('Invalid R4 result count: '+key)
+        for key in {'r4_documents':['text_overflow'],'r4_viewer':['js_errors']}.get(ctx.stage,[]):
+            if report.get(key)!=[]:raise RuntimeError('R4 result defects/missing: '+key)
+        if ctx.stage=='r4_exports':
+            rows=report.get('step_reopened');expected=report.get('expected_step_set')
+            if not isinstance(rows,list) or not rows or not isinstance(expected,list) or len(rows)!=len(expected):raise RuntimeError('Incomplete expected STEP evidence')
+            if {x.get('file') for x in rows}!={'output/fixture_r4/'+x for x in expected}:raise RuntimeError('STEP result set mismatch')
+            for row in rows:
+                if row.get('valid') is not True or type(row.get('solids')) is not int or row['solids']<=0 or row.get('source_solids')!=row['solids']:raise RuntimeError('Invalid STEP result')
+                for key in ('volume_mm3','source_volume_mm3','volume_error_mm3'):
+                    value=row.get(key)
+                    if type(value) not in (int,float) or not math.isfinite(value):raise RuntimeError('Invalid STEP volume evidence')
+                if row['volume_mm3']<=0 or row['source_volume_mm3']<=0 or abs(row['volume_mm3']-row['source_volume_mm3'])>max(1e-5,abs(row['source_volume_mm3'])*1e-8):raise RuntimeError('STEP volume mismatch')
+                if row['file'] not in report.get('artifact_hashes',{}):raise RuntimeError('Unbound STEP result')
+        if ctx.stage=='r4_geometry' and (report.get('clearances',{}).get('intersections')!=[] or report.get('support_projection',{}).get('status')!='PASS_NOMINAL' or report.get('tool_intersections')!=[]):raise RuntimeError('Nominal geometry/tool failure')
         return
     if 'run_id' in report:
         for key in ('run_id','input_sha256','code_sha256','tool_versions'):
@@ -120,7 +158,11 @@ def run_stage(cmd, ctx, cwd, *, expected_reports=(), expected_files=(), complete
         # Stage-specific status checks are mandatory, not inferred from empty errors.
         for name in expected_reports:
             report=json.loads((root/name).read_text(encoding='utf-8'))
-            validate_stage_result(name,report,ctx)
+            validate_stage_result(name,report,ctx,root)
+            if isinstance(report,dict):
+                for artifact,digest in report.get('artifact_hashes',{}).items():
+                    if not (root/artifact).is_file() or file_hash(root/artifact)!=digest:raise RuntimeError('Changed producer artifact: '+artifact)
+                    artifacts[artifact]=digest
         value=ctx.report('PASS',completed_checks,artifacts,command=list(cmd),returncode=0,log=str(log.relative_to(root)))
         atomic_json(dest,value)
         return value
@@ -138,8 +180,10 @@ def validate_release(root, ctx, requirements=None, expected_files=None):
     requirements=REQUIRED_STAGES;expected_files=list(REQUIRED_FILES)
     if ctx.scope!='full': raise RuntimeError('Release requires full scope')
     ctx.assert_current(root)
+    bound={}
     for name, checks in requirements.items():
-        require_report(root/'reports/builds'/ctx.run_id/(name+'.json'),ctx.for_stage(name),checks,root)
+        report=require_report(root/'reports/builds'/ctx.run_id/(name+'.json'),ctx.for_stage(name),checks,root)
+        bound.update(report['artifact_hashes'])
     index_path=root/'output/fixture_r4/parts_index.json'
     if not index_path.is_file():raise RuntimeError('Missing expected parts index')
     index=json.loads(index_path.read_text(encoding='utf-8'))
@@ -148,6 +192,7 @@ def validate_release(root, ctx, requirements=None, expected_files=None):
     expected_files += ['output/fixture_r4/'+x['step'] for x in index]
     for name in expected_files:
         if not (root/name).is_file() or not (root/name).stat().st_size: raise RuntimeError('Missing expected artifact: '+name)
+        if not name.startswith(('data/','docs/')) and name not in bound:raise RuntimeError('Required artifact lacks validated producer: '+name)
     return ctx.for_stage('release').report('PASS',['release_gate'],{p:file_hash(root/p) for p in expected_files},contract_id=CONTRACT_ID,manufacturing_release=False)
 
 
@@ -156,9 +201,11 @@ def validate_review_bundle(root,ctx):
     from tools.release_contract import REQUIRED_STAGES,REQUIRED_FILES,CONTRACT_ID
     root=Path(root);ctx.assert_current(root)
     require_unreleased_physical_scope(root)
+    bound={}
     for name,checks in REQUIRED_STAGES.items():
         if name=='r4_geometry':continue
-        require_report(root/'reports/builds'/ctx.run_id/(name+'.json'),ctx.for_stage(name),checks,root)
+        result=require_report(root/'reports/builds'/ctx.run_id/(name+'.json'),ctx.for_stage(name),checks,root)
+        bound.update(result['artifact_hashes'])
     path=root/'reports/r4_geometry_validation.json';geo=json.loads(path.read_text(encoding='utf-8'))
     for key in ('run_id','input_sha256','code_sha256','tool_versions'):
         if geo.get(key)!=getattr(ctx,key):raise RuntimeError('Review geometry source mismatch: '+key)
@@ -167,11 +214,13 @@ def validate_review_bundle(root,ctx):
         raise RuntimeError('Unresolved nominal solid/contact/collision defects; review bundle not eligible')
     if 'sampled_motion' not in geo.get('completed_checks',[]):raise RuntimeError('Motion diagnostic NOT_RUN')
     files=list(REQUIRED_FILES)+['reports/r4_geometry_validation.json']
+    bound['reports/r4_geometry_validation.json']=file_hash(path)
     index=json.loads((root/'output/fixture_r4/parts_index.json').read_text(encoding='utf-8'))
     if not index:raise RuntimeError('Empty part manifest')
     files+=['output/fixture_r4/'+item['step'] for item in index]
     for name in files:
         if not (root/name).is_file() or not (root/name).stat().st_size:raise RuntimeError('Missing review artifact: '+name)
+        if not name.startswith(('data/','docs/')) and name not in bound:raise RuntimeError('Review artifact lacks validated producer: '+name)
     return ctx.for_stage('review_bundle','review').report('REVIEW_ONLY',['review_bundle_integrity'],
         {name:file_hash(root/name) for name in files},contract_id=CONTRACT_ID+'-blocked-review',
         full_release_allowed=False,manufacturing_release=False,geometry_status='BLOCKED')
