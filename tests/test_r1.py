@@ -89,7 +89,7 @@ class RevisionContracts(unittest.TestCase):
         from engineering.evaluate import evaluate
         supports=[dict(x_mm=x,y_mm=y,vertical_stiffness_N_mm=100) for x in [-400,400] for y in [-400,400]]
         self.assertEqual(evaluate([dict(instance_id='x',mass_kg=None)],supports)['status'],'BLOCKED_MISSING_EVIDENCE')
-        r=evaluate([dict(instance_id='x',mass_kg=40,com_world_mm=[0,0,1000],evidence_status='measured_or_supplier_verified')],supports)
+        r=evaluate([dict(instance_id='x',mass_kg=40,com_world_mm=[0,0,1000],evidence_status='measured_or_supplier_verified')],supports,allow_partial=True)
         for f in r['support_reactions_N']:self.assertAlmostEqual(f,98.0665)
     def test_loop_length_invariant(self):
         from cad.parts.cable import return_loop_points,return_loop_length
