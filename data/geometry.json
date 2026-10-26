@@ -1,0 +1,8246 @@
+{
+  "status": "concept",
+  "note": "新增概念细节；全部尺寸是当前data权威。采购孔型保持空，不是制造图。 R1:整套供球器抽出接口、弧面夹块与恒长滑台回线；全部新增结构均为待验证设计候选。",
+  "instances": [
+    {
+      "instance_id": "PRT-0501-A",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-A",
+      "assembly_id": "ASM-05",
+      "name": "前宽承载板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "cut",
+                    "children": [
+                      {
+                        "op": "cut",
+                        "children": [
+                          {
+                            "op": "cut",
+                            "children": [
+                              {
+                                "op": "cut",
+                                "children": [
+                                  {
+                                    "op": "cut",
+                                    "children": [
+                                      {
+                                        "op": "cut",
+                                        "children": [
+                                          {
+                                            "op": "cut",
+                                            "children": [
+                                              {
+                                                "op": "cut",
+                                                "children": [
+                                                  {
+                                                    "op": "cut",
+                                                    "children": [
+                                                      {
+                                                        "op": "cut",
+                                                        "children": [
+                                                          {
+                                                            "op": "cut",
+                                                            "children": [
+                                                              {
+                                                                "op": "cut",
+                                                                "children": [
+                                                                  {
+                                                                    "op": "cut",
+                                                                    "children": [
+                                                                      {
+                                                                        "op": "box",
+                                                                        "size": [
+                                                                          "head_wide_x_max-head_wide_x_min",
+                                                                          340,
+                                                                          12
+                                                                        ],
+                                                                        "at": [
+                                                                          "(head_wide_x_max+head_wide_x_min)/2",
+                                                                          0,
+                                                                          -175
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "op": "cylinder",
+                                                                        "radius": 3.5,
+                                                                        "height": 30,
+                                                                        "at": [
+                                                                          -36,
+                                                                          "wheel_center_y+(-24)",
+                                                                          -169
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "op": "cylinder",
+                                                                    "radius": 3.5,
+                                                                    "height": 30,
+                                                                    "at": [
+                                                                      -36,
+                                                                      "wheel_center_y+(24)",
+                                                                      -169
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "op": "cylinder",
+                                                                "radius": 3.5,
+                                                                "height": 30,
+                                                                "at": [
+                                                                  36,
+                                                                  "wheel_center_y+(-24)",
+                                                                  -169
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "op": "cylinder",
+                                                            "radius": 3.5,
+                                                            "height": 30,
+                                                            "at": [
+                                                              36,
+                                                              "wheel_center_y+(24)",
+                                                              -169
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "op": "cylinder",
+                                                        "radius": 3.5,
+                                                        "height": 30,
+                                                        "at": [
+                                                          -36,
+                                                          "-wheel_center_y+(-24)",
+                                                          -169
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "op": "cylinder",
+                                                    "radius": 3.5,
+                                                    "height": 30,
+                                                    "at": [
+                                                      -36,
+                                                      "-wheel_center_y+(24)",
+                                                      -169
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cylinder",
+                                                "radius": 3.5,
+                                                "height": 30,
+                                                "at": [
+                                                  36,
+                                                  "-wheel_center_y+(-24)",
+                                                  -169
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "cylinder",
+                                            "radius": 3.5,
+                                            "height": 30,
+                                            "at": [
+                                              36,
+                                              "-wheel_center_y+(24)",
+                                              -169
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cylinder",
+                                        "radius": 3.5,
+                                        "height": 30,
+                                        "at": [
+                                          -36,
+                                          "wheel_center_y+(-28)",
+                                          -169
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "cylinder",
+                                    "radius": 3.5,
+                                    "height": 30,
+                                    "at": [
+                                      -36,
+                                      "wheel_center_y+(28)",
+                                      -169
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "cylinder",
+                                "radius": 3.5,
+                                "height": 30,
+                                "at": [
+                                  36,
+                                  "wheel_center_y+(-28)",
+                                  -169
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "cylinder",
+                            "radius": 3.5,
+                            "height": 30,
+                            "at": [
+                              36,
+                              "wheel_center_y+(28)",
+                              -169
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "cylinder",
+                        "radius": 3.5,
+                        "height": 30,
+                        "at": [
+                          -36,
+                          "-wheel_center_y+(-28)",
+                          -169
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 3.5,
+                    "height": 30,
+                    "at": [
+                      -36,
+                      "-wheel_center_y+(28)",
+                      -169
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 3.5,
+                "height": 30,
+                "at": [
+                  36,
+                  "-wheel_center_y+(-28)",
+                  -169
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 3.5,
+            "height": 30,
+            "at": [
+              36,
+              "-wheel_center_y+(28)",
+              -169
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-B",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-B",
+      "assembly_id": "ASM-05",
+      "name": "后窄抬高尾板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          145,
+          "head_tail_y_half*2",
+          12
+        ],
+        "at": [
+          -162.5,
+          0,
+          "head_tail_support_z_H"
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-C__L",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-C",
+      "assembly_id": "ASM-05",
+      "name": "阶梯过渡筋",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  12,
+                  12,
+                  137
+                ],
+                "at": [
+                  -90,
+                  39,
+                  -112.5
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  "head_wide_x_max-head_wide_x_min",
+                  340,
+                  12
+                ],
+                "at": [
+                  "(head_wide_x_max+head_wide_x_min)/2",
+                  0,
+                  -175
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              145,
+              "head_tail_y_half*2",
+              12
+            ],
+            "at": [
+              -162.5,
+              0,
+              "head_tail_support_z_H"
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-D__L",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-D",
+      "assembly_id": "ASM-05",
+      "name": "侧立筋",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              12,
+              146
+            ],
+            "at": [
+              30,
+              164,
+              -96
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              60,
+              42,
+              12
+            ],
+            "at": [
+              0,
+              182,
+              -29
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-E__L",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-E",
+      "assembly_id": "ASM-05",
+      "name": "耳轴外伸连接板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              42,
+              12
+            ],
+            "at": [
+              0,
+              182,
+              -29
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  12,
+                  60
+                ],
+                "at": [
+                  0,
+                  200,
+                  -12
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 9.1,
+                "height": 16,
+                "at": [
+                  0,
+                  200,
+                  0
+                ],
+                "rotate": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  90
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-F__L",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-F",
+      "assembly_id": "ASM-05",
+      "name": "短耳轴承力耳板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              12,
+              60
+            ],
+            "at": [
+              0,
+              200,
+              -12
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 9.1,
+            "height": 16,
+            "at": [
+              0,
+              200,
+              0
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-C__R",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-C",
+      "assembly_id": "ASM-05",
+      "name": "阶梯过渡筋",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  12,
+                  12,
+                  137
+                ],
+                "at": [
+                  -90,
+                  -39,
+                  -112.5
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  "head_wide_x_max-head_wide_x_min",
+                  340,
+                  12
+                ],
+                "at": [
+                  "(head_wide_x_max+head_wide_x_min)/2",
+                  0,
+                  -175
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              145,
+              "head_tail_y_half*2",
+              12
+            ],
+            "at": [
+              -162.5,
+              0,
+              "head_tail_support_z_H"
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-D__R",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-D",
+      "assembly_id": "ASM-05",
+      "name": "侧立筋",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              12,
+              146
+            ],
+            "at": [
+              30,
+              -164,
+              -96
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              60,
+              42,
+              12
+            ],
+            "at": [
+              0,
+              -182,
+              -29
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-E__R",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-E",
+      "assembly_id": "ASM-05",
+      "name": "耳轴外伸连接板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              42,
+              12
+            ],
+            "at": [
+              0,
+              -182,
+              -29
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  12,
+                  60
+                ],
+                "at": [
+                  0,
+                  -200,
+                  -12
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 9.1,
+                "height": 16,
+                "at": [
+                  0,
+                  -200,
+                  0
+                ],
+                "rotate": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  90
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-F__R",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-F",
+      "assembly_id": "ASM-05",
+      "name": "短耳轴承力耳板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              12,
+              60
+            ],
+            "at": [
+              0,
+              -200,
+              -12
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 9.1,
+            "height": 16,
+            "at": [
+              0,
+              -200,
+              0
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-G__215",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-G",
+      "assembly_id": "ASM-05",
+      "name": "轨道垫座",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          20,
+          32,
+          4
+        ],
+        "at": [
+          -215,
+          0,
+          -42
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0501-G__115",
+      "part_id": "PRT-0501",
+      "derived_id": "PRT-0501-G",
+      "assembly_id": "ASM-05",
+      "name": "轨道垫座",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          20,
+          32,
+          4
+        ],
+        "at": [
+          -115,
+          0,
+          -42
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502__L",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502",
+      "assembly_id": "ASM-05",
+      "name": "可调轮距滑座",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              95,
+              75,
+              12
+            ],
+            "at": [
+              0,
+              "wheel_center_y",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              -36,
+              "wheel_center_y+(-24)",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              -36,
+              "wheel_center_y+(24)",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              36,
+              "wheel_center_y+(-24)",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              36,
+              "wheel_center_y+(24)",
+              -163
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-A__L-35",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-A",
+      "assembly_id": "ASM-05",
+      "name": "轴承托架立柱",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  60,
+                  102
+                ],
+                "at": [
+                  -45,
+                  "wheel_center_y",
+                  -106
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 6,
+                "height": 12,
+                "at": [
+                  -36,
+                  "wheel_center_y+(-28)",
+                  -153
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 12,
+            "at": [
+              -36,
+              "wheel_center_y+(28)",
+              -153
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-A__L35",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-A",
+      "assembly_id": "ASM-05",
+      "name": "轴承托架立柱",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  60,
+                  102
+                ],
+                "at": [
+                  45,
+                  "wheel_center_y",
+                  -106
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 6,
+                "height": 12,
+                "at": [
+                  36,
+                  "wheel_center_y+(-28)",
+                  -153
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 12,
+            "at": [
+              36,
+              "wheel_center_y+(28)",
+              -153
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-B__L",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-B",
+      "assembly_id": "ASM-05",
+      "name": "轴承托台",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              80,
+              60,
+              8
+            ],
+            "at": [
+              0,
+              "wheel_center_y",
+              -51
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 12,
+            "height": 12,
+            "at": [
+              0,
+              "wheel_center_y",
+              -51
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0503-A__L",
+      "part_id": "PRT-0503",
+      "derived_id": "PRT-0503-A",
+      "assembly_id": "ASM-05",
+      "name": "轴承固定座包络",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 22.5,
+        "height": 29,
+        "at": [
+          0,
+          "wheel_center_y",
+          -32.5
+        ],
+        "inner": 7
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0503-B__L",
+      "part_id": "PRT-0503",
+      "derived_id": "PRT-0503-B",
+      "assembly_id": "ASM-05",
+      "name": "主轴候选",
+      "parent": "WHEEL_LEFT",
+      "shape": {
+        "op": "cylinder",
+        "radius": 7,
+        "height": 55,
+        "at": [
+          0,
+          "wheel_center_y",
+          -27.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0504__L",
+      "part_id": "PRT-0504",
+      "derived_id": "PRT-0504",
+      "assembly_id": "ASM-05",
+      "name": "轮毂候选实体",
+      "parent": "WHEEL_LEFT",
+      "shape": {
+        "op": "ring",
+        "radius": "P0504_x/2",
+        "height": "wheel_width",
+        "at": [
+          0,
+          "wheel_center_y",
+          0
+        ],
+        "inner": 7
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0505__L",
+      "part_id": "PRT-0505",
+      "derived_id": "PRT-0505",
+      "assembly_id": "ASM-05",
+      "name": "弹性轮缘",
+      "parent": "WHEEL_LEFT",
+      "shape": {
+        "op": "ring",
+        "radius": "wheel_diameter/2",
+        "height": "wheel_width",
+        "at": [
+          0,
+          "wheel_center_y",
+          0
+        ],
+        "inner": "P0504_x/2"
+      },
+      "color": "#30353E",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0506-A__L",
+      "part_id": "PRT-0506",
+      "derived_id": "PRT-0506-A",
+      "assembly_id": "ASM-05",
+      "name": "电机定子候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cylinder",
+        "radius": "motor_diameter_visual/2",
+        "height": "motor_length_visual",
+        "at": [
+          0,
+          "wheel_center_y",
+          "(motor_z_min_H+motor_z_max_H)/2"
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0506-B__L",
+      "part_id": "PRT-0506",
+      "derived_id": "PRT-0506-B",
+      "assembly_id": "ASM-05",
+      "name": "电机可调压环",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 39,
+        "height": 8,
+        "at": [
+          0,
+          "wheel_center_y",
+          -151
+        ],
+        "inner": "motor_diameter_visual/2"
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0506-C__L",
+      "part_id": "PRT-0506",
+      "derived_id": "PRT-0506-C",
+      "assembly_id": "ASM-05",
+      "name": "接线出口候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              12,
+              12,
+              16
+            ],
+            "at": [
+              0,
+              "wheel_center_y+(40)",
+              -120
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": "motor_diameter_visual/2",
+            "height": "motor_length_visual",
+            "at": [
+              0,
+              "wheel_center_y",
+              "(motor_z_min_H+motor_z_max_H)/2"
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502__R",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502",
+      "assembly_id": "ASM-05",
+      "name": "可调轮距滑座",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              95,
+              75,
+              12
+            ],
+            "at": [
+              0,
+              "-wheel_center_y",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              -36,
+              "-wheel_center_y+(-24)",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              -36,
+              "-wheel_center_y+(24)",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              36,
+              "-wheel_center_y+(-24)",
+              -163
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              7,
+              16,
+              16
+            ],
+            "at": [
+              36,
+              "-wheel_center_y+(24)",
+              -163
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-A__R-35",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-A",
+      "assembly_id": "ASM-05",
+      "name": "轴承托架立柱",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  60,
+                  102
+                ],
+                "at": [
+                  -45,
+                  "-wheel_center_y",
+                  -106
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 6,
+                "height": 12,
+                "at": [
+                  -36,
+                  "-wheel_center_y+(-28)",
+                  -153
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 12,
+            "at": [
+              -36,
+              "-wheel_center_y+(28)",
+              -153
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-A__R35",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-A",
+      "assembly_id": "ASM-05",
+      "name": "轴承托架立柱",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  60,
+                  102
+                ],
+                "at": [
+                  45,
+                  "-wheel_center_y",
+                  -106
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 6,
+                "height": 12,
+                "at": [
+                  36,
+                  "-wheel_center_y+(-28)",
+                  -153
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 12,
+            "at": [
+              36,
+              "-wheel_center_y+(28)",
+              -153
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-B__R",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-B",
+      "assembly_id": "ASM-05",
+      "name": "轴承托台",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              80,
+              60,
+              8
+            ],
+            "at": [
+              0,
+              "-wheel_center_y",
+              -51
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 12,
+            "height": 12,
+            "at": [
+              0,
+              "-wheel_center_y",
+              -51
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0503-A__R",
+      "part_id": "PRT-0503",
+      "derived_id": "PRT-0503-A",
+      "assembly_id": "ASM-05",
+      "name": "轴承固定座包络",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 22.5,
+        "height": 29,
+        "at": [
+          0,
+          "-wheel_center_y",
+          -32.5
+        ],
+        "inner": 7
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0503-B__R",
+      "part_id": "PRT-0503",
+      "derived_id": "PRT-0503-B",
+      "assembly_id": "ASM-05",
+      "name": "主轴候选",
+      "parent": "WHEEL_RIGHT",
+      "shape": {
+        "op": "cylinder",
+        "radius": 7,
+        "height": 55,
+        "at": [
+          0,
+          "-wheel_center_y",
+          -27.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0504__R",
+      "part_id": "PRT-0504",
+      "derived_id": "PRT-0504",
+      "assembly_id": "ASM-05",
+      "name": "轮毂候选实体",
+      "parent": "WHEEL_RIGHT",
+      "shape": {
+        "op": "ring",
+        "radius": "P0504_x/2",
+        "height": "wheel_width",
+        "at": [
+          0,
+          "-wheel_center_y",
+          0
+        ],
+        "inner": 7
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0505__R",
+      "part_id": "PRT-0505",
+      "derived_id": "PRT-0505",
+      "assembly_id": "ASM-05",
+      "name": "弹性轮缘",
+      "parent": "WHEEL_RIGHT",
+      "shape": {
+        "op": "ring",
+        "radius": "wheel_diameter/2",
+        "height": "wheel_width",
+        "at": [
+          0,
+          "-wheel_center_y",
+          0
+        ],
+        "inner": "P0504_x/2"
+      },
+      "color": "#30353E",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0506-A__R",
+      "part_id": "PRT-0506",
+      "derived_id": "PRT-0506-A",
+      "assembly_id": "ASM-05",
+      "name": "电机定子候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cylinder",
+        "radius": "motor_diameter_visual/2",
+        "height": "motor_length_visual",
+        "at": [
+          0,
+          "-wheel_center_y",
+          "(motor_z_min_H+motor_z_max_H)/2"
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0506-B__R",
+      "part_id": "PRT-0506",
+      "derived_id": "PRT-0506-B",
+      "assembly_id": "ASM-05",
+      "name": "电机可调压环",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 39,
+        "height": 8,
+        "at": [
+          0,
+          "-wheel_center_y",
+          -151
+        ],
+        "inner": "motor_diameter_visual/2"
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0506-C__R",
+      "part_id": "PRT-0506",
+      "derived_id": "PRT-0506-C",
+      "assembly_id": "ASM-05",
+      "name": "接线出口候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              12,
+              12,
+              16
+            ],
+            "at": [
+              0,
+              "-wheel_center_y+(-40)",
+              -120
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": "motor_diameter_visual/2",
+            "height": "motor_length_visual",
+            "at": [
+              0,
+              "-wheel_center_y",
+              "(motor_z_min_H+motor_z_max_H)/2"
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0703-A",
+      "part_id": "PRT-0703",
+      "derived_id": "PRT-0703-A",
+      "assembly_id": "ASM-07",
+      "name": "固定轨",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0703_x",
+          "linear_rail_y_width_max",
+          12
+        ],
+        "at": [
+          -115,
+          0,
+          -34
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0703-B",
+      "part_id": "PRT-0703",
+      "derived_id": "PRT-0703-B",
+      "assembly_id": "ASM-07",
+      "name": "导向凸轨",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0703_x",
+          12,
+          8
+        ],
+        "at": [
+          -115,
+          0,
+          -24
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0703-C",
+      "part_id": "PRT-0703",
+      "derived_id": "PRT-0703-C",
+      "assembly_id": "ASM-07",
+      "name": "移动滑块",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              36,
+              8,
+              8
+            ],
+            "at": [
+              "load_x",
+              11,
+              -24
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              36,
+              8,
+              8
+            ],
+            "at": [
+              "load_x",
+              -11,
+              -24
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              36,
+              30,
+              2
+            ],
+            "at": [
+              "load_x",
+              0,
+              -19
+            ]
+          }
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0701-A",
+      "part_id": "PRT-0701",
+      "derived_id": "PRT-0701-A",
+      "assembly_id": "ASM-07",
+      "name": "低位托体",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              32,
+              5
+            ],
+            "at": [
+              "load_x-15",
+              0,
+              -15.5
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              35,
+              70,
+              8
+            ],
+            "at": [
+              "load_x-12",
+              0,
+              -12
+            ]
+          }
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0701-B",
+      "part_id": "PRT-0701",
+      "derived_id": "PRT-0701-B",
+      "assembly_id": "ASM-07",
+      "name": "窄推头",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "box",
+        "size": [
+          3,
+          10,
+          12
+        ],
+        "at": [
+          "load_x-15",
+          0,
+          -7
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0701-C",
+      "part_id": "PRT-0701",
+      "derived_id": "PRT-0701-C",
+      "assembly_id": "ASM-07",
+      "name": "释放机构侧悬臂",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              10,
+              70,
+              8
+            ],
+            "at": [
+              "load_x-40",
+              -30,
+              -16
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              60,
+              32,
+              7
+            ],
+            "at": [
+              "load_x-15",
+              0,
+              -16.5
+            ]
+          }
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0702__L",
+      "part_id": "PRT-0702",
+      "derived_id": "PRT-0702",
+      "assembly_id": "ASM-07",
+      "name": "低位夹指",
+      "parent": "CLAMP_L",
+      "shape": {
+        "op": "box",
+        "size": [
+          35,
+          10,
+          8
+        ],
+        "at": [
+          "load_x-12",
+          18.25,
+          -12
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0702-A__L",
+      "part_id": "PRT-0702",
+      "derived_id": "PRT-0702-A",
+      "assembly_id": "ASM-07",
+      "name": "夹指导向连杆",
+      "parent": "CLAMP_L",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  8,
+                  36.5,
+                  4
+                ],
+                "at": [
+                  "load_x-35",
+                  18.25,
+                  -10
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  8,
+                  4
+                ],
+                "at": [
+                  "load_x-30",
+                  18.25,
+                  -10
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              35,
+              10,
+              8
+            ],
+            "at": [
+              "load_x-12",
+              18.25,
+              -12
+            ]
+          }
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0702__R",
+      "part_id": "PRT-0702",
+      "derived_id": "PRT-0702",
+      "assembly_id": "ASM-07",
+      "name": "低位夹指",
+      "parent": "CLAMP_R",
+      "shape": {
+        "op": "box",
+        "size": [
+          35,
+          10,
+          8
+        ],
+        "at": [
+          "load_x-12",
+          -18.25,
+          -12
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0702-A__R",
+      "part_id": "PRT-0702",
+      "derived_id": "PRT-0702-A",
+      "assembly_id": "ASM-07",
+      "name": "夹指导向连杆",
+      "parent": "CLAMP_R",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  8,
+                  36.5,
+                  4
+                ],
+                "at": [
+                  "load_x-35",
+                  -18.25,
+                  -10
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  8,
+                  4
+                ],
+                "at": [
+                  "load_x-30",
+                  -18.25,
+                  -10
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              35,
+              10,
+              8
+            ],
+            "at": [
+              "load_x-12",
+              -18.25,
+              -12
+            ]
+          }
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0704",
+      "part_id": "PRT-0704",
+      "derived_id": "PRT-0704",
+      "assembly_id": "ASM-07",
+      "name": "释放执行器候选",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0704_x",
+          "P0704_y",
+          "P0704_z"
+        ],
+        "at": [
+          "load_x-55",
+          -65,
+          -35
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0704-A",
+      "part_id": "PRT-0704",
+      "derived_id": "PRT-0704-A",
+      "assembly_id": "ASM-07",
+      "name": "执行器连接支板",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              30,
+              16,
+              4
+            ],
+            "at": [
+              "load_x-55",
+              -65,
+              -18
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  70,
+                  8
+                ],
+                "at": [
+                  "load_x-40",
+                  -30,
+                  -16
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  32,
+                  7
+                ],
+                "at": [
+                  "load_x-15",
+                  0,
+                  -16.5
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#E28362",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0601",
+      "part_id": "PRT-0601",
+      "derived_id": "PRT-0601",
+      "assembly_id": "ASM-06",
+      "name": "带分球窗口储球筒",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "ring",
+            "radius": "tube_od/2",
+            "inner": "tube_id/2",
+            "height": "tube_length",
+            "at": [
+              "load_x",
+              0,
+              "tube_bottom_z_H+tube_length/2"
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              90,
+              66,
+              8
+            ],
+            "at": [
+              "load_x",
+              0,
+              284
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              20,
+              100,
+              14
+            ],
+            "at": [
+              "load_x",
+              0,
+              392
+            ]
+          }
+        ]
+      },
+      "color": "#A7C3D1",
+      "status": "concept",
+      "alpha": 0.32
+    },
+    {
+      "instance_id": "PRT-0601-A",
+      "part_id": "PRT-0601",
+      "derived_id": "PRT-0601-A",
+      "assembly_id": "ASM-06",
+      "name": "可拆筒帽",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 43,
+        "height": "tube_cap_allowance",
+        "at": [
+          "load_x",
+          0,
+          "tube_bottom_z_H+tube_length+tube_cap_allowance/2"
+        ],
+        "inner": 38
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-A__L",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-A",
+      "assembly_id": "ASM-06",
+      "name": "后侧固定立杆",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              20,
+              20,
+              950
+            ],
+            "at": [
+              -310,
+              85,
+              125
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              14,
+              14,
+              952
+            ],
+            "at": [
+              -310,
+              85,
+              125
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-B__L",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-B",
+      "assembly_id": "ASM-06",
+      "name": "底部悬臂连接梁",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  310,
+                  20,
+                  20
+                ],
+                "at": [
+                  -155,
+                  85,
+                  -352
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.5,
+            "height": 42,
+            "at": [
+              -20,
+              85,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-C__L410",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-C",
+      "assembly_id": "ASM-06",
+      "name": "筒架侧向托臂",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "union",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      130,
+                      20,
+                      12
+                    ],
+                    "at": [
+                      -255,
+                      60,
+                      410
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      35,
+                      12
+                    ],
+                    "at": [
+                      -300,
+                      72.5,
+                      410
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 55,
+                "height": 16,
+                "at": [
+                  "load_x",
+                  0,
+                  410
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              20,
+              20,
+              970
+            ],
+            "at": [
+              -310,
+              85,
+              125
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-C__L600",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-C",
+      "assembly_id": "ASM-06",
+      "name": "筒架侧向托臂",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "union",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      130,
+                      20,
+                      12
+                    ],
+                    "at": [
+                      -255,
+                      60,
+                      600
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      35,
+                      12
+                    ],
+                    "at": [
+                      -300,
+                      72.5,
+                      600
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 55,
+                "height": 16,
+                "at": [
+                  "load_x",
+                  0,
+                  600
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              20,
+              20,
+              970
+            ],
+            "at": [
+              -310,
+              85,
+              125
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-A__R",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-A",
+      "assembly_id": "ASM-06",
+      "name": "后侧固定立杆",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              20,
+              20,
+              950
+            ],
+            "at": [
+              -310,
+              -85,
+              125
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              14,
+              14,
+              952
+            ],
+            "at": [
+              -310,
+              -85,
+              125
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-B__R",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-B",
+      "assembly_id": "ASM-06",
+      "name": "底部悬臂连接梁",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  310,
+                  20,
+                  20
+                ],
+                "at": [
+                  -155,
+                  -85,
+                  -352
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.5,
+            "height": 42,
+            "at": [
+              -20,
+              -85,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-C__R410",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-C",
+      "assembly_id": "ASM-06",
+      "name": "筒架侧向托臂",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "union",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      130,
+                      20,
+                      12
+                    ],
+                    "at": [
+                      -255,
+                      -60,
+                      410
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      35,
+                      12
+                    ],
+                    "at": [
+                      -300,
+                      -72.5,
+                      410
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 55,
+                "height": 16,
+                "at": [
+                  "load_x",
+                  0,
+                  410
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              20,
+              20,
+              970
+            ],
+            "at": [
+              -310,
+              -85,
+              125
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-C__R600",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-C",
+      "assembly_id": "ASM-06",
+      "name": "筒架侧向托臂",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "union",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      130,
+                      20,
+                      12
+                    ],
+                    "at": [
+                      -255,
+                      -60,
+                      600
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      35,
+                      12
+                    ],
+                    "at": [
+                      -300,
+                      -72.5,
+                      600
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 55,
+                "height": 16,
+                "at": [
+                  "load_x",
+                  0,
+                  600
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              20,
+              20,
+              970
+            ],
+            "at": [
+              -310,
+              -85,
+              125
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-D__410",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-D",
+      "assembly_id": "ASM-06",
+      "name": "后开口快拆卡环",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "ring",
+            "radius": 55,
+            "inner": 40.5,
+            "height": 12,
+            "at": [
+              "load_x",
+              0,
+              410
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              110,
+              120,
+              16
+            ],
+            "at": [
+              "load_x-55",
+              0,
+              410
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-E__410",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-E",
+      "assembly_id": "ASM-06",
+      "name": "可拆后压带",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "ring",
+            "radius": 55,
+            "inner": 40.5,
+            "height": 12,
+            "at": [
+              "load_x",
+              0,
+              410
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              110,
+              120,
+              16
+            ],
+            "at": [
+              "load_x+55",
+              0,
+              410
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-D__600",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-D",
+      "assembly_id": "ASM-06",
+      "name": "后开口快拆卡环",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "ring",
+            "radius": 55,
+            "inner": 40.5,
+            "height": 12,
+            "at": [
+              "load_x",
+              0,
+              600
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              110,
+              120,
+              16
+            ],
+            "at": [
+              "load_x-55",
+              0,
+              600
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-E__600",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-E",
+      "assembly_id": "ASM-06",
+      "name": "可拆后压带",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "ring",
+            "radius": 55,
+            "inner": 40.5,
+            "height": 12,
+            "at": [
+              "load_x",
+              0,
+              600
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              110,
+              120,
+              16
+            ],
+            "at": [
+              "load_x+55",
+              0,
+              600
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-F__-1",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-F",
+      "assembly_id": "ASM-06",
+      "name": "分球盒侧壁",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              170,
+              6,
+              170
+            ],
+            "at": [
+              -225,
+              -72,
+              365
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              22,
+              12,
+              16
+            ],
+            "at": [
+              "load_x",
+              -72,
+              392
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              150,
+              14,
+              14
+            ],
+            "at": [
+              -250,
+              -72,
+              410
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-F__1",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-F",
+      "assembly_id": "ASM-06",
+      "name": "分球盒侧壁",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              170,
+              6,
+              170
+            ],
+            "at": [
+              -225,
+              72,
+              365
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              22,
+              12,
+              16
+            ],
+            "at": [
+              "load_x",
+              72,
+              392
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              150,
+              14,
+              14
+            ],
+            "at": [
+              -250,
+              72,
+              410
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0602-G",
+      "part_id": "PRT-0602",
+      "derived_id": "PRT-0602-G",
+      "assembly_id": "ASM-06",
+      "name": "分球机构背板",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              6,
+              150,
+              100
+            ],
+            "at": [
+              -313,
+              0,
+              330
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              12,
+              68,
+              10
+            ],
+            "at": [
+              -313,
+              0,
+              284
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0603__L",
+      "part_id": "PRT-0603",
+      "derived_id": "PRT-0603",
+      "assembly_id": "ASM-06",
+      "name": "可更换弧面留球试验夹块 R29",
+      "parent": "UPPER_L",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              18,
+              45,
+              12
+            ],
+            "at": [
+              "load_x",
+              35.5,
+              392
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 29,
+            "height": 16,
+            "at": [
+              "load_x",
+              0,
+              392
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0603__R",
+      "part_id": "PRT-0603",
+      "derived_id": "PRT-0603",
+      "assembly_id": "ASM-06",
+      "name": "可更换弧面留球试验夹块 R29",
+      "parent": "UPPER_R",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              18,
+              45,
+              12
+            ],
+            "at": [
+              "load_x",
+              -35.5,
+              392
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 29,
+            "height": 16,
+            "at": [
+              "load_x",
+              0,
+              392
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0604",
+      "part_id": "PRT-0604",
+      "derived_id": "PRT-0604",
+      "assembly_id": "ASM-06",
+      "name": "可抽出托球闸",
+      "parent": "LOWER_GATE",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0604_x",
+          "P0604_y",
+          "P0604_z"
+        ],
+        "at": [
+          "load_x",
+          0,
+          284
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0605__1",
+      "part_id": "PRT-0605",
+      "derived_id": "PRT-0605",
+      "assembly_id": "ASM-06",
+      "name": "分球执行器候选",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0605_x",
+          "P0605_y",
+          "P0605_z"
+        ],
+        "at": [
+          -270,
+          44,
+          303
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0605-A__1",
+      "part_id": "PRT-0605",
+      "derived_id": "PRT-0605-A",
+      "assembly_id": "ASM-06",
+      "name": "可调连杆",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              6,
+              6
+            ],
+            "at": [
+              -245,
+              46,
+              303
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              "P0605_x",
+              "P0605_y",
+              "P0605_z"
+            ],
+            "at": [
+              -270,
+              44,
+              303
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0605__2",
+      "part_id": "PRT-0605",
+      "derived_id": "PRT-0605",
+      "assembly_id": "ASM-06",
+      "name": "分球执行器候选",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0605_x",
+          "P0605_y",
+          "P0605_z"
+        ],
+        "at": [
+          -270,
+          44,
+          369.5
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0605-A__2",
+      "part_id": "PRT-0605",
+      "derived_id": "PRT-0605-A",
+      "assembly_id": "ASM-06",
+      "name": "可调连杆",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              60,
+              6,
+              6
+            ],
+            "at": [
+              -245,
+              46,
+              392
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              "P0605_x",
+              "P0605_y",
+              "P0605_z"
+            ],
+            "at": [
+              -270,
+              44,
+              369.5
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0606",
+      "part_id": "PRT-0606",
+      "derived_id": "PRT-0606",
+      "assembly_id": "ASM-06",
+      "name": "外导球套",
+      "parent": "GUIDE_SLEEVE",
+      "shape": {
+        "op": "ring",
+        "radius": "guide_od/2",
+        "height": "guide_length",
+        "at": [
+          "load_x",
+          0,
+          "guide_bottom_load_z_H+guide_length/2"
+        ],
+        "inner": "guide_id/2"
+      },
+      "color": "#B8D5DC",
+      "status": "concept",
+      "alpha": 0.45
+    },
+    {
+      "instance_id": "PRT-0606-A",
+      "part_id": "PRT-0606",
+      "derived_id": "PRT-0606-A",
+      "assembly_id": "ASM-06",
+      "name": "导套滑座连接叉",
+      "parent": "GUIDE_SLEEVE",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              58,
+              26,
+              10
+            ],
+            "at": [
+              -226,
+              0,
+              128
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 43,
+            "height": 14,
+            "at": [
+              "load_x",
+              0,
+              128
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              12,
+              25,
+              30
+            ],
+            "at": [
+              -249,
+              0,
+              128
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0607-A",
+      "part_id": "PRT-0607",
+      "derived_id": "PRT-0607-A",
+      "assembly_id": "ASM-06",
+      "name": "独立线性导套轨",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0607_x",
+          "P0607_y",
+          "P0607_z"
+        ],
+        "at": [
+          -275,
+          0,
+          170
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0607-B",
+      "part_id": "PRT-0607",
+      "derived_id": "PRT-0607-B",
+      "assembly_id": "ASM-06",
+      "name": "导套移动滑块",
+      "parent": "GUIDE_SLEEVE",
+      "shape": {
+        "op": "box",
+        "size": [
+          12,
+          25,
+          30
+        ],
+        "at": [
+          -249,
+          0,
+          128
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0607-C",
+      "part_id": "PRT-0607",
+      "derived_id": "PRT-0607-C",
+      "assembly_id": "ASM-06",
+      "name": "导轨顶部固定桥",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  110,
+                  8
+                ],
+                "at": [
+                  -280,
+                  0,
+                  275
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  110,
+                  8
+                ],
+                "at": [
+                  -285,
+                  0,
+                  310
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  8,
+                  8,
+                  27
+                ],
+                "at": [
+                  -305,
+                  45,
+                  292.5
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  8,
+                  8,
+                  27
+                ],
+                "at": [
+                  -305,
+                  -45,
+                  292.5
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              "P0607_x",
+              "P0607_y",
+              "P0607_z"
+            ],
+            "at": [
+              -275,
+              0,
+              170
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  6,
+                  150,
+                  100
+                ],
+                "at": [
+                  -313,
+                  0,
+                  330
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  12,
+                  68,
+                  10
+                ],
+                "at": [
+                  -313,
+                  0,
+                  284
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              "P0605_x",
+              "P0605_y",
+              "P0605_z"
+            ],
+            "at": [
+              -270,
+              44,
+              303
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              "P0605_x",
+              "P0605_y",
+              "P0605_z"
+            ],
+            "at": [
+              -270,
+              44,
+              369.5
+            ]
+          }
+        ]
+      },
+      "color": "#7DA99F",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0101-A__-1",
+      "part_id": "PRT-0101",
+      "derived_id": "PRT-0101-A",
+      "assembly_id": "ASM-01",
+      "name": "纵向底架梁",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  "base_x",
+                  40,
+                  80
+                ],
+                "at": [
+                  0,
+                  "-1*(base_y/2-20)",
+                  "base_top_z-40"
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  -300,
+                  -275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.2,
+            "height": 200,
+            "at": [
+              300,
+              -275,
+              80
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0101-B__-1",
+      "part_id": "PRT-0101",
+      "derived_id": "PRT-0101-B",
+      "assembly_id": "ASM-01",
+      "name": "横向底架梁",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  40,
+                  "base_y-80",
+                  80
+                ],
+                "at": [
+                  "-1*(base_x/2-20)",
+                  0,
+                  "base_top_z-40"
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  -300,
+                  -275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.2,
+            "height": 200,
+            "at": [
+              -300,
+              275,
+              80
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0101-A__1",
+      "part_id": "PRT-0101",
+      "derived_id": "PRT-0101-A",
+      "assembly_id": "ASM-01",
+      "name": "纵向底架梁",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  "base_x",
+                  40,
+                  80
+                ],
+                "at": [
+                  0,
+                  "1*(base_y/2-20)",
+                  "base_top_z-40"
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  -300,
+                  275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.2,
+            "height": 200,
+            "at": [
+              300,
+              275,
+              80
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0101-B__1",
+      "part_id": "PRT-0101",
+      "derived_id": "PRT-0101-B",
+      "assembly_id": "ASM-01",
+      "name": "横向底架梁",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  40,
+                  "base_y-80",
+                  80
+                ],
+                "at": [
+                  "1*(base_x/2-20)",
+                  0,
+                  "base_top_z-40"
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  300,
+                  -275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.2,
+            "height": 200,
+            "at": [
+              300,
+              275,
+              80
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0101-C",
+      "part_id": "PRT-0101",
+      "derived_id": "PRT-0101-C",
+      "assembly_id": "ASM-01",
+      "name": "立柱连接桥板",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          200,
+          "base_y-80",
+          8
+        ],
+        "at": [
+          0,
+          0,
+          "base_top_z-4"
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0101-D",
+      "part_id": "PRT-0101",
+      "derived_id": "PRT-0101-D",
+      "assembly_id": "ASM-01",
+      "name": "配重承托梁",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          420,
+          40,
+          8
+        ],
+        "at": [
+          0,
+          0,
+          100
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0102",
+      "part_id": "PRT-0102",
+      "derived_id": "PRT-0102",
+      "assembly_id": "ASM-01",
+      "name": "配重板",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0102_x",
+          "P0102_y",
+          "P0102_z"
+        ],
+        "at": [
+          0,
+          0,
+          110
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103__-1_-1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103",
+      "assembly_id": "ASM-01",
+      "name": "展开支腿",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      "P0103_x",
+                      "P0103_y",
+                      "P0103_z"
+                    ],
+                    "at": [
+                      -347.21825406947977,
+                      -322.21825406947977,
+                      60
+                    ],
+                    "rotate": [
+                      [
+                        0,
+                        0,
+                        1
+                      ],
+                      -135.0
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 6.5,
+                    "height": 44,
+                    "at": [
+                      -425,
+                      -400,
+                      100
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  -300,
+                  -275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6.5,
+            "height": 100,
+            "at": [
+              -425,
+              -400,
+              60
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103-A__-1_-1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103-A",
+      "assembly_id": "ASM-01",
+      "name": "概念支腿锁销",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cylinder",
+        "radius": 4,
+        "height": 48,
+        "at": [
+          -300,
+          -275,
+          80
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0104__-1_-1",
+      "part_id": "PRT-0104",
+      "derived_id": "PRT-0104",
+      "assembly_id": "ASM-01",
+      "name": "调平脚候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 25,
+            "height": 10,
+            "at": [
+              -425,
+              -400,
+              5
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 80,
+            "at": [
+              -425,
+              -400,
+              50
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103__-1_1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103",
+      "assembly_id": "ASM-01",
+      "name": "展开支腿",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      "P0103_x",
+                      "P0103_y",
+                      "P0103_z"
+                    ],
+                    "at": [
+                      -347.21825406947977,
+                      322.21825406947977,
+                      60
+                    ],
+                    "rotate": [
+                      [
+                        0,
+                        0,
+                        1
+                      ],
+                      135.0
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 6.5,
+                    "height": 44,
+                    "at": [
+                      -425,
+                      400,
+                      100
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  -300,
+                  275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6.5,
+            "height": 100,
+            "at": [
+              -425,
+              400,
+              60
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103-A__-1_1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103-A",
+      "assembly_id": "ASM-01",
+      "name": "概念支腿锁销",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cylinder",
+        "radius": 4,
+        "height": 48,
+        "at": [
+          -300,
+          275,
+          80
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0104__-1_1",
+      "part_id": "PRT-0104",
+      "derived_id": "PRT-0104",
+      "assembly_id": "ASM-01",
+      "name": "调平脚候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 25,
+            "height": 10,
+            "at": [
+              -425,
+              400,
+              5
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 80,
+            "at": [
+              -425,
+              400,
+              50
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103__1_-1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103",
+      "assembly_id": "ASM-01",
+      "name": "展开支腿",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      "P0103_x",
+                      "P0103_y",
+                      "P0103_z"
+                    ],
+                    "at": [
+                      347.21825406947977,
+                      -322.21825406947977,
+                      60
+                    ],
+                    "rotate": [
+                      [
+                        0,
+                        0,
+                        1
+                      ],
+                      -45.0
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 6.5,
+                    "height": 44,
+                    "at": [
+                      425,
+                      -400,
+                      100
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  300,
+                  -275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6.5,
+            "height": 100,
+            "at": [
+              425,
+              -400,
+              60
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103-A__1_-1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103-A",
+      "assembly_id": "ASM-01",
+      "name": "概念支腿锁销",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cylinder",
+        "radius": 4,
+        "height": 48,
+        "at": [
+          300,
+          -275,
+          80
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0104__1_-1",
+      "part_id": "PRT-0104",
+      "derived_id": "PRT-0104",
+      "assembly_id": "ASM-01",
+      "name": "调平脚候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 25,
+            "height": 10,
+            "at": [
+              425,
+              -400,
+              5
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 80,
+            "at": [
+              425,
+              -400,
+              50
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103__1_1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103",
+      "assembly_id": "ASM-01",
+      "name": "展开支腿",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      "P0103_x",
+                      "P0103_y",
+                      "P0103_z"
+                    ],
+                    "at": [
+                      347.21825406947977,
+                      322.21825406947977,
+                      60
+                    ],
+                    "rotate": [
+                      [
+                        0,
+                        0,
+                        1
+                      ],
+                      45.0
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 6.5,
+                    "height": 44,
+                    "at": [
+                      425,
+                      400,
+                      100
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  300,
+                  275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6.5,
+            "height": 100,
+            "at": [
+              425,
+              400,
+              60
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0103-A__1_1",
+      "part_id": "PRT-0103",
+      "derived_id": "PRT-0103-A",
+      "assembly_id": "ASM-01",
+      "name": "概念支腿锁销",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cylinder",
+        "radius": 4,
+        "height": 48,
+        "at": [
+          300,
+          275,
+          80
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0104__1_1",
+      "part_id": "PRT-0104",
+      "derived_id": "PRT-0104",
+      "assembly_id": "ASM-01",
+      "name": "调平脚候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 25,
+            "height": 10,
+            "at": [
+              425,
+              400,
+              5
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6,
+            "height": 80,
+            "at": [
+              425,
+              400,
+              50
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0105-A__-1",
+      "part_id": "PRT-0105",
+      "derived_id": "PRT-0105-A",
+      "assembly_id": "ASM-01",
+      "name": "搬运轮胎",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "ring",
+        "radius": 40,
+        "height": 28,
+        "at": [
+          -235,
+          -220,
+          46
+        ],
+        "rotate": [
+          [
+            1,
+            0,
+            0
+          ],
+          90
+        ],
+        "inner": 6
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0105-B__-1",
+      "part_id": "PRT-0105",
+      "derived_id": "PRT-0105-B",
+      "assembly_id": "ASM-01",
+      "name": "脚轮支架",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  50,
+                  40,
+                  6
+                ],
+                "at": [
+                  -235,
+                  -220,
+                  97
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  50,
+                  6,
+                  48
+                ],
+                "at": [
+                  -235,
+                  -203,
+                  70
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  50,
+                  6,
+                  48
+                ],
+                "at": [
+                  -235,
+                  -237,
+                  70
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6.2,
+            "height": 50,
+            "at": [
+              -235,
+              -220,
+              46
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0105-A__1",
+      "part_id": "PRT-0105",
+      "derived_id": "PRT-0105-A",
+      "assembly_id": "ASM-01",
+      "name": "搬运轮胎",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "ring",
+        "radius": 40,
+        "height": 28,
+        "at": [
+          -235,
+          220,
+          46
+        ],
+        "rotate": [
+          [
+            1,
+            0,
+            0
+          ],
+          90
+        ],
+        "inner": 6
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0105-B__1",
+      "part_id": "PRT-0105",
+      "derived_id": "PRT-0105-B",
+      "assembly_id": "ASM-01",
+      "name": "脚轮支架",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  50,
+                  40,
+                  6
+                ],
+                "at": [
+                  -235,
+                  220,
+                  97
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  50,
+                  6,
+                  48
+                ],
+                "at": [
+                  -235,
+                  237,
+                  70
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  50,
+                  6,
+                  48
+                ],
+                "at": [
+                  -235,
+                  203,
+                  70
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 6.2,
+            "height": 50,
+            "at": [
+              -235,
+              220,
+              46
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0201",
+      "part_id": "PRT-0201",
+      "derived_id": "PRT-0201",
+      "assembly_id": "ASM-02",
+      "name": "外立柱",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "cut",
+                    "children": [
+                      {
+                        "op": "box",
+                        "size": [
+                          90,
+                          90,
+                          880
+                        ],
+                        "at": [
+                          0,
+                          0,
+                          600
+                        ]
+                      },
+                      {
+                        "op": "box",
+                        "size": [
+                          82,
+                          82,
+                          882
+                        ],
+                        "at": [
+                          0,
+                          0,
+                          600
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 6.2,
+                    "height": 100,
+                    "at": [
+                      0,
+                      0,
+                      950
+                    ],
+                    "rotate": [
+                      [
+                        0,
+                        1,
+                        0
+                      ],
+                      90
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.5,
+                "height": 100,
+                "at": [
+                  0,
+                  20,
+                  400
+                ],
+                "rotate": [
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  90
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.5,
+            "height": 100,
+            "at": [
+              0,
+              20,
+              400
+            ],
+            "rotate": [
+              [
+                0,
+                1,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0202",
+      "part_id": "PRT-0202",
+      "derived_id": "PRT-0202",
+      "assembly_id": "ASM-02",
+      "name": "内滑柱",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "cut",
+                    "children": [
+                      {
+                        "op": "cut",
+                        "children": [
+                          {
+                            "op": "cut",
+                            "children": [
+                              {
+                                "op": "cut",
+                                "children": [
+                                  {
+                                    "op": "cut",
+                                    "children": [
+                                      {
+                                        "op": "box",
+                                        "size": [
+                                          80,
+                                          80,
+                                          650
+                                        ],
+                                        "at": [
+                                          0,
+                                          0,
+                                          -667
+                                        ]
+                                      },
+                                      {
+                                        "op": "box",
+                                        "size": [
+                                          72,
+                                          72,
+                                          652
+                                        ],
+                                        "at": [
+                                          0,
+                                          0,
+                                          -667
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "cylinder",
+                                    "radius": 6.2,
+                                    "height": 90,
+                                    "at": [
+                                      0,
+                                      0,
+                                      -850
+                                    ],
+                                    "rotate": [
+                                      [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      90
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "cylinder",
+                                "radius": 6.2,
+                                "height": 90,
+                                "at": [
+                                  0,
+                                  0,
+                                  -750
+                                ],
+                                "rotate": [
+                                  [
+                                    0,
+                                    1,
+                                    0
+                                  ],
+                                  90
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "cylinder",
+                            "radius": 6.2,
+                            "height": 90,
+                            "at": [
+                              0,
+                              0,
+                              -650
+                            ],
+                            "rotate": [
+                              [
+                                0,
+                                1,
+                                0
+                              ],
+                              90
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "cylinder",
+                        "radius": 6.2,
+                        "height": 90,
+                        "at": [
+                          0,
+                          0,
+                          -550
+                        ],
+                        "rotate": [
+                          [
+                            0,
+                            1,
+                            0
+                          ],
+                          90
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 6.2,
+                    "height": 90,
+                    "at": [
+                      0,
+                      0,
+                      -450
+                    ],
+                    "rotate": [
+                      [
+                        0,
+                        1,
+                        0
+                      ],
+                      90
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.5,
+                "height": 100,
+                "at": [
+                  0,
+                  20,
+                  -355
+                ],
+                "rotate": [
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  90
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.5,
+            "height": 100,
+            "at": [
+              0,
+              20,
+              -355
+            ],
+            "rotate": [
+              [
+                0,
+                1,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0203",
+      "part_id": "PRT-0203",
+      "derived_id": "PRT-0203",
+      "assembly_id": "ASM-02",
+      "name": "高度定位销候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cylinder",
+        "radius": 6,
+        "height": 100,
+        "at": [
+          0,
+          0,
+          950
+        ],
+        "rotate": [
+          [
+            0,
+            1,
+            0
+          ],
+          90
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0204__860",
+      "part_id": "PRT-0204",
+      "derived_id": "PRT-0204",
+      "assembly_id": "ASM-02",
+      "name": "分体导向夹紧座",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              130,
+              130,
+              35
+            ],
+            "at": [
+              0,
+              0,
+              860
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              90.2,
+              90.2,
+              40
+            ],
+            "at": [
+              0,
+              0,
+              860
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0204__1022.5",
+      "part_id": "PRT-0204",
+      "derived_id": "PRT-0204",
+      "assembly_id": "ASM-02",
+      "name": "分体导向夹紧座",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              130,
+              130,
+              35
+            ],
+            "at": [
+              0,
+              0,
+              1022.5
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              90.2,
+              90.2,
+              40
+            ],
+            "at": [
+              0,
+              0,
+              1022.5
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0301",
+      "part_id": "PRT-0301",
+      "derived_id": "PRT-0301",
+      "assembly_id": "ASM-03",
+      "name": "偏航固定基座",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              "P0301_x",
+              "P0301_y",
+              "P0301_z"
+            ],
+            "at": [
+              0,
+              0,
+              "inner_mast_top_z_H+P0301_z/2"
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 11,
+            "height": 20,
+            "at": [
+              0,
+              0,
+              -336
+            ]
+          }
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0302-A",
+      "part_id": "PRT-0302",
+      "derived_id": "PRT-0302-A",
+      "assembly_id": "ASM-03",
+      "name": "回转固定圈",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 80,
+        "height": 30,
+        "at": [
+          0,
+          0,
+          -315
+        ],
+        "inner": 64
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0302-B",
+      "part_id": "PRT-0302",
+      "derived_id": "PRT-0302-B",
+      "assembly_id": "ASM-03",
+      "name": "回转运动圈",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 63.5,
+        "height": 30,
+        "at": [
+          0,
+          0,
+          -315
+        ],
+        "inner": 45
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303",
+      "assembly_id": "ASM-03",
+      "name": "偏航闭环执行器候选",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0303_x",
+          "P0303_y",
+          "P0303_z"
+        ],
+        "at": [
+          -250,
+          0,
+          -350
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-A",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-A",
+      "assembly_id": "ASM-03",
+      "name": "偏航输出候选连接轴",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cylinder",
+        "radius": 10,
+        "height": 30,
+        "at": [
+          -250,
+          0,
+          -295
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-B",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-B",
+      "assembly_id": "ASM-03",
+      "name": "偏航传动概念连臂",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "cylinder",
+                "radius": 88,
+                "height": 8,
+                "at": [
+                  0,
+                  0,
+                  -284
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 88,
+                "height": 8,
+                "at": [
+                  -250,
+                  0,
+                  -284
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  250,
+                  176,
+                  8
+                ],
+                "at": [
+                  -125,
+                  0,
+                  -284
+                ]
+              }
+            ]
+          },
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "cylinder",
+                "radius": 86,
+                "height": 12,
+                "at": [
+                  0,
+                  0,
+                  -284
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 86,
+                "height": 12,
+                "at": [
+                  -250,
+                  0,
+                  -284
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  250,
+                  172,
+                  12
+                ],
+                "at": [
+                  -125,
+                  0,
+                  -284
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0401-A",
+      "part_id": "PRT-0401",
+      "derived_id": "PRT-0401-A",
+      "assembly_id": "ASM-04",
+      "name": "U架下横梁",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              220,
+              460,
+              10
+            ],
+            "at": [
+              0,
+              0,
+              -295
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 64,
+            "height": 14,
+            "at": [
+              0,
+              0,
+              -295
+            ]
+          }
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0401-B__-1",
+      "part_id": "PRT-0401",
+      "derived_id": "PRT-0401-B",
+      "assembly_id": "ASM-04",
+      "name": "U架侧板",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              100,
+              10,
+              300
+            ],
+            "at": [
+              0,
+              -225,
+              -140
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 9.2,
+            "height": 14,
+            "at": [
+              0,
+              -225,
+              0
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0402__-1",
+      "part_id": "PRT-0402",
+      "derived_id": "PRT-0402",
+      "assembly_id": "ASM-04",
+      "name": "独立短耳轴",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cylinder",
+        "radius": 9,
+        "height": 60,
+        "at": [
+          0,
+          -210,
+          0
+        ],
+        "rotate": [
+          [
+            1,
+            0,
+            0
+          ],
+          90
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0401-B__1",
+      "part_id": "PRT-0401",
+      "derived_id": "PRT-0401-B",
+      "assembly_id": "ASM-04",
+      "name": "U架侧板",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              100,
+              10,
+              300
+            ],
+            "at": [
+              0,
+              225,
+              -140
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 9.2,
+            "height": 14,
+            "at": [
+              0,
+              225,
+              0
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0402__1",
+      "part_id": "PRT-0402",
+      "derived_id": "PRT-0402",
+      "assembly_id": "ASM-04",
+      "name": "独立短耳轴",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cylinder",
+        "radius": 9,
+        "height": 60,
+        "at": [
+          0,
+          210,
+          0
+        ],
+        "rotate": [
+          [
+            1,
+            0,
+            0
+          ],
+          90
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0403",
+      "part_id": "PRT-0403",
+      "derived_id": "PRT-0403",
+      "assembly_id": "ASM-04",
+      "name": "俯仰执行器候选",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0403_x",
+          "P0403_y",
+          "P0403_z"
+        ],
+        "at": [
+          0,
+          -280,
+          -32.5
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0403-A",
+      "part_id": "PRT-0403",
+      "derived_id": "PRT-0403-A",
+      "assembly_id": "ASM-04",
+      "name": "俯仰联轴器候选",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "ring",
+            "radius": 16,
+            "height": 12,
+            "at": [
+              0,
+              -241,
+              0
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ],
+            "inner": 9
+          },
+          {
+            "op": "box",
+            "size": [
+              "P0403_x",
+              "P0403_y",
+              "P0403_z"
+            ],
+            "at": [
+              0,
+              -280,
+              -32.5
+            ]
+          }
+        ]
+      },
+      "color": "#12A497",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0801-A__L",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-A",
+      "assembly_id": "ASM-08",
+      "name": "轮组侧护板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              240,
+              3,
+              140
+            ],
+            "at": [
+              30,
+              183.5,
+              -102
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  42,
+                  12
+                ],
+                "at": [
+                  0,
+                  182,
+                  -29
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      60,
+                      12,
+                      60
+                    ],
+                    "at": [
+                      0,
+                      200,
+                      -12
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 9.1,
+                    "height": 16,
+                    "at": [
+                      0,
+                      200,
+                      0
+                    ],
+                    "rotate": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      90
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-B__L",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-B",
+      "assembly_id": "ASM-08",
+      "name": "轮组上护板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          240,
+          132,
+          3
+        ],
+        "at": [
+          30,
+          119,
+          92
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-C__L",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-C",
+      "assembly_id": "ASM-08",
+      "name": "后窄尾护板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          145,
+          3,
+          75
+        ],
+        "at": [
+          -162.5,
+          53.5,
+          -12.5
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-D__L",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-D",
+      "assembly_id": "ASM-08",
+      "name": "上罩连接柱",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          6,
+          6,
+          122
+        ],
+        "at": [
+          145,
+          180,
+          29
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-A__R",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-A",
+      "assembly_id": "ASM-08",
+      "name": "轮组侧护板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              240,
+              3,
+              140
+            ],
+            "at": [
+              30,
+              -183.5,
+              -102
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  42,
+                  12
+                ],
+                "at": [
+                  0,
+                  -182,
+                  -29
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      60,
+                      12,
+                      60
+                    ],
+                    "at": [
+                      0,
+                      -200,
+                      -12
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 9.1,
+                    "height": 16,
+                    "at": [
+                      0,
+                      -200,
+                      0
+                    ],
+                    "rotate": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      90
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-B__R",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-B",
+      "assembly_id": "ASM-08",
+      "name": "轮组上护板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          240,
+          132,
+          3
+        ],
+        "at": [
+          30,
+          -119,
+          92
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-C__R",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-C",
+      "assembly_id": "ASM-08",
+      "name": "后窄尾护板",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  154,
+                  3,
+                  75
+                ],
+                "at": [
+                  -167,
+                  -53.5,
+                  -12.5
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  280,
+                  12,
+                  14
+                ],
+                "at": [
+                  -115,
+                  -53.5,
+                  -16
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              6,
+              3,
+              75
+            ],
+            "at": [
+              -241,
+              -53.5,
+              -12.5
+            ]
+          }
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0801-D__R",
+      "part_id": "PRT-0801",
+      "derived_id": "PRT-0801-D",
+      "assembly_id": "ASM-08",
+      "name": "上罩连接柱",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          6,
+          6,
+          122
+        ],
+        "at": [
+          145,
+          -180,
+          29
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0802",
+      "part_id": "PRT-0802",
+      "derived_id": "PRT-0802",
+      "assembly_id": "ASM-08",
+      "name": "透明检查窗",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              "P0802_x",
+              "P0802_z",
+              "P0802_y"
+            ],
+            "at": [
+              25,
+              185,
+              32.5
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 12,
+            "height": 10,
+            "at": [
+              0,
+              185,
+              0
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true,
+      "alpha": 0.3
+    },
+    {
+      "instance_id": "PRT-0803-A",
+      "part_id": "PRT-0803",
+      "derived_id": "PRT-0803-A",
+      "assembly_id": "ASM-08",
+      "name": "带通风孔电气舱",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "cut",
+                    "children": [
+                      {
+                        "op": "cut",
+                        "children": [
+                          {
+                            "op": "cut",
+                            "children": [
+                              {
+                                "op": "cut",
+                                "children": [
+                                  {
+                                    "op": "cut",
+                                    "children": [
+                                      {
+                                        "op": "cut",
+                                        "children": [
+                                          {
+                                            "op": "cut",
+                                            "children": [
+                                              {
+                                                "op": "box",
+                                                "size": [
+                                                  "P0803_x",
+                                                  "P0803_y",
+                                                  "P0803_z"
+                                                ],
+                                                "at": [
+                                                  0,
+                                                  0,
+                                                  265
+                                                ]
+                                              },
+                                              {
+                                                "op": "box",
+                                                "size": [
+                                                  "P0803_x-6",
+                                                  "P0803_y-6",
+                                                  "P0803_z-6"
+                                                ],
+                                                "at": [
+                                                  0,
+                                                  0,
+                                                  265
+                                                ]
+                                              },
+                                              {
+                                                "op": "box",
+                                                "size": [
+                                                  98,
+                                                  98,
+                                                  220
+                                                ],
+                                                "at": [
+                                                  0,
+                                                  0,
+                                                  265
+                                                ]
+                                              },
+                                              {
+                                                "op": "box",
+                                                "size": [
+                                                  8,
+                                                  400,
+                                                  198
+                                                ],
+                                                "at": [
+                                                  -248,
+                                                  0,
+                                                  265
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "box",
+                                            "size": [
+                                              60,
+                                              14,
+                                              8
+                                            ],
+                                            "at": [
+                                              130,
+                                              -130,
+                                              369
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "box",
+                                        "size": [
+                                          60,
+                                          14,
+                                          8
+                                        ],
+                                        "at": [
+                                          130,
+                                          -100,
+                                          369
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "box",
+                                    "size": [
+                                      60,
+                                      14,
+                                      8
+                                    ],
+                                    "at": [
+                                      130,
+                                      -70,
+                                      369
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "box",
+                                "size": [
+                                  60,
+                                  14,
+                                  8
+                                ],
+                                "at": [
+                                  130,
+                                  70,
+                                  369
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "box",
+                            "size": [
+                              60,
+                              14,
+                              8
+                            ],
+                            "at": [
+                              130,
+                              100,
+                              369
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "box",
+                        "size": [
+                          60,
+                          14,
+                          8
+                        ],
+                        "at": [
+                          130,
+                          130,
+                          369
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 5,
+                    "height": 12,
+                    "at": [
+                      75,
+                      0,
+                      369
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  10,
+                  30,
+                  12
+                ],
+                "at": [
+                  75,
+                  10,
+                  369
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              10,
+              30,
+              12
+            ],
+            "at": [
+              75,
+              10,
+              369
+            ]
+          }
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0803-B",
+      "part_id": "PRT-0803",
+      "derived_id": "PRT-0803-B",
+      "assembly_id": "ASM-08",
+      "name": "可拆后舱门",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          3,
+          400,
+          198
+        ],
+        "at": [
+          -248.5,
+          0,
+          265
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept",
+      "cover": true
+    },
+    {
+      "instance_id": "PRT-0803-C",
+      "part_id": "PRT-0803",
+      "derived_id": "PRT-0803-C",
+      "assembly_id": "ASM-08",
+      "name": "分区电气托盘",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              480,
+              400,
+              3
+            ],
+            "at": [
+              0,
+              0,
+              211.5
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              98,
+              98,
+              6
+            ],
+            "at": [
+              0,
+              0,
+              211.5
+            ]
+          }
+        ]
+      },
+      "color": "#9EB6C3",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0507__1",
+      "part_id": "PRT-0507",
+      "derived_id": "PRT-0507",
+      "assembly_id": "ASM-05",
+      "name": "双轮驱动器候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0507_x",
+          "P0507_y",
+          "P0507_z"
+        ],
+        "at": [
+          -110,
+          -125,
+          322.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0507__2",
+      "part_id": "PRT-0507",
+      "derived_id": "PRT-0507",
+      "assembly_id": "ASM-05",
+      "name": "双轮驱动器候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0507_x",
+          "P0507_y",
+          "P0507_z"
+        ],
+        "at": [
+          110,
+          -125,
+          322.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0901",
+      "part_id": "PRT-0901",
+      "derived_id": "PRT-0901",
+      "assembly_id": "ASM-09",
+      "name": "本地控制板候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0901_x",
+          "P0901_y",
+          "P0901_z"
+        ],
+        "at": [
+          150,
+          110,
+          225.5
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0902",
+      "part_id": "PRT-0902",
+      "derived_id": "PRT-0902",
+      "assembly_id": "ASM-09",
+      "name": "电源模块候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0902_x",
+          "P0902_y",
+          "P0902_z"
+        ],
+        "at": [
+          85,
+          -120,
+          238
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0903",
+      "part_id": "PRT-0903",
+      "derived_id": "PRT-0903",
+      "assembly_id": "ASM-09",
+      "name": "配电联锁功能模块候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0903_x",
+          "P0903_y",
+          "P0903_z"
+        ],
+        "at": [
+          -140,
+          100,
+          248
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0904",
+      "part_id": "PRT-0904",
+      "derived_id": "PRT-0904",
+      "assembly_id": "ASM-09",
+      "name": "自锁急停候选",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 20,
+            "height": 14,
+            "at": [
+              -100,
+              -85,
+              940
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 10,
+            "height": 46,
+            "at": [
+              -100,
+              -55,
+              940
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#CE3938",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0904-A",
+      "part_id": "PRT-0904",
+      "derived_id": "PRT-0904-A",
+      "assembly_id": "ASM-09",
+      "name": "急停固定安装面板",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              100,
+              4,
+              90
+            ],
+            "at": [
+              -100,
+              -75,
+              940
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 10.5,
+            "height": 8,
+            "at": [
+              -100,
+              -75,
+              940
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0904-B",
+      "part_id": "PRT-0904",
+      "derived_id": "PRT-0904-B",
+      "assembly_id": "ASM-09",
+      "name": "面板立柱连接臂",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          80,
+          30,
+          6
+        ],
+        "at": [
+          -85,
+          -30,
+          900
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-1001",
+      "part_id": "PRT-1001",
+      "derived_id": "PRT-1001",
+      "assembly_id": "ASM-10",
+      "name": "终端候选包络",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          12,
+          85,
+          170
+        ],
+        "at": [
+          -120,
+          0,
+          780
+        ]
+      },
+      "color": "#556A91",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-1002",
+      "part_id": "PRT-1002",
+      "derived_id": "PRT-1002",
+      "assembly_id": "ASM-10",
+      "name": "有线停发手柄",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "box",
+        "size": [
+          30,
+          50,
+          100
+        ],
+        "at": [
+          -130,
+          95,
+          770
+        ]
+      },
+      "color": "#556A91",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-1003",
+      "part_id": "PRT-1003",
+      "derived_id": "PRT-1003",
+      "assembly_id": "ASM-10",
+      "name": "终端夹持架",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "union",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  6,
+                  90,
+                  110
+                ],
+                "at": [
+                  -110,
+                  0,
+                  780
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  60,
+                  90,
+                  6
+                ],
+                "at": [
+                  -83,
+                  0,
+                  728
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  30,
+                  6,
+                  110
+                ],
+                "at": [
+                  -122,
+                  42,
+                  780
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  30,
+                  6,
+                  110
+                ],
+                "at": [
+                  -122,
+                  -42,
+                  780
+                ]
+              }
+            ]
+          },
+          {
+            "op": "box",
+            "size": [
+              13,
+              86,
+              172
+            ],
+            "at": [
+              -120,
+              0,
+              780
+            ]
+          }
+        ]
+      },
+      "color": "#556A91",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-01",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "导套上位功能占位",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          -275,
+          29,
+          250
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-01"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-02",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "导套下位功能占位",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          -275,
+          29,
+          80
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-02"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-03",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "滑台回零功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          30,
+          20,
+          20
+        ],
+        "at": [
+          -245,
+          -35,
+          -88
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-03"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-04",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "夹持/释放反馈功能占位",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "box",
+        "size": [
+          30,
+          20,
+          20
+        ],
+        "at": [
+          "load_x-100",
+          -65,
+          -35
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-04"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-05",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "托架有球功能占位",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "box",
+        "size": [
+          30,
+          20,
+          20
+        ],
+        "at": [
+          -195,
+          0,
+          -88
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-05"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-06",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "出球通过功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          120,
+          50,
+          30
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-06"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-07",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "偏航回零功能占位",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          30,
+          20,
+          20
+        ],
+        "at": [
+          90,
+          45,
+          -360
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-07"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-08",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "偏航左限位功能占位",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          65,
+          100,
+          -278
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-08"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-09",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "俯仰回零功能占位",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          0,
+          245,
+          -60
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-09"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-10",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "俯仰上限位功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          0,
+          200,
+          -60
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-10"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-11",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "发射罩开合功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          125,
+          164,
+          50
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-11"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-12",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "下闸反馈功能占位",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          -265,
+          -45,
+          350
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-12"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-13",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "左轮转速功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          35,
+          125,
+          -90
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-13"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-14",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "右轮转速功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          35,
+          -125,
+          -90
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-14"
+    },
+    {
+      "instance_id": "PRT-REF-CORK",
+      "part_id": "PRT-REF-CORK",
+      "derived_id": "PRT-REF-CORK",
+      "assembly_id": "REFERENCE",
+      "name": "校核球头",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "cylinder",
+        "radius": "cork_diameter_visual/2",
+        "height": "cork_z_max-cork_z_min",
+        "at": [
+          "load_x",
+          0,
+          "(cork_z_max+cork_z_min)/2"
+        ]
+      },
+      "color": "#D7B482",
+      "status": "concept",
+      "reference": true
+    },
+    {
+      "instance_id": "PRT-REF-SKIRT",
+      "part_id": "PRT-REF-SKIRT",
+      "derived_id": "PRT-REF-SKIRT",
+      "assembly_id": "REFERENCE",
+      "name": "完整羽毛裙包络",
+      "parent": "CARRIAGE",
+      "shape": {
+        "op": "cone",
+        "radius": "cork_diameter_visual/2",
+        "radius2": "skirt_diameter_max/2",
+        "height": "feather_z_max-feather_z_min",
+        "at": [
+          "load_x",
+          0,
+          "(feather_z_max+feather_z_min)/2"
+        ]
+      },
+      "color": "#F0ECE1",
+      "status": "concept",
+      "alpha": 0.5,
+      "reference": true
+    },
+    {
+      "instance_id": "PRT-0105-C__-1",
+      "part_id": "PRT-0105",
+      "derived_id": "PRT-0105-C__-1",
+      "assembly_id": "ASM-01",
+      "name": "脚轮安装桥",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              50,
+              65,
+              6
+            ],
+            "at": [
+              -235,
+              -250,
+              97
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      "base_x",
+                      40,
+                      80
+                    ],
+                    "at": [
+                      0,
+                      "-1*(base_y/2-20)",
+                      "base_top_z-40"
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 4.2,
+                    "height": 200,
+                    "at": [
+                      -300,
+                      -275,
+                      80
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  300,
+                  -275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "union",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      50,
+                      40,
+                      6
+                    ],
+                    "at": [
+                      -235,
+                      -220,
+                      97
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      50,
+                      6,
+                      48
+                    ],
+                    "at": [
+                      -235,
+                      -203,
+                      70
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      50,
+                      6,
+                      48
+                    ],
+                    "at": [
+                      -235,
+                      -237,
+                      70
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 6.2,
+                "height": 50,
+                "at": [
+                  -235,
+                  -220,
+                  46
+                ],
+                "rotate": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  90
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0105-C__1",
+      "part_id": "PRT-0105",
+      "derived_id": "PRT-0105-C__1",
+      "assembly_id": "ASM-01",
+      "name": "脚轮安装桥",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              50,
+              65,
+              6
+            ],
+            "at": [
+              -235,
+              250,
+              97
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      "base_x",
+                      40,
+                      80
+                    ],
+                    "at": [
+                      0,
+                      "1*(base_y/2-20)",
+                      "base_top_z-40"
+                    ]
+                  },
+                  {
+                    "op": "cylinder",
+                    "radius": 4.2,
+                    "height": 200,
+                    "at": [
+                      -300,
+                      275,
+                      80
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 4.2,
+                "height": 200,
+                "at": [
+                  300,
+                  275,
+                  80
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "union",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      50,
+                      40,
+                      6
+                    ],
+                    "at": [
+                      -235,
+                      220,
+                      97
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      50,
+                      6,
+                      48
+                    ],
+                    "at": [
+                      -235,
+                      237,
+                      70
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      50,
+                      6,
+                      48
+                    ],
+                    "at": [
+                      -235,
+                      203,
+                      70
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "cylinder",
+                "radius": 6.2,
+                "height": 50,
+                "at": [
+                  -235,
+                  220,
+                  46
+                ],
+                "rotate": [
+                  [
+                    1,
+                    0,
+                    0
+                  ],
+                  90
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#66798A",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-C",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-C",
+      "assembly_id": "ASM-03",
+      "name": "偏航输出轴候选",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 63.5,
+        "inner": 45,
+        "height": 12,
+        "at": [
+          0,
+          0,
+          -294
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-D",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-D",
+      "assembly_id": "ASM-03",
+      "name": "偏航输出连接臂",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 86,
+        "inner": 64,
+        "height": 2,
+        "at": [
+          0,
+          0,
+          -289
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-E",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-E",
+      "assembly_id": "ASM-03",
+      "name": "偏航带轮候选",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 86,
+        "inner": 10,
+        "height": 8,
+        "at": [
+          -250,
+          0,
+          -284
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-F",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-F",
+      "assembly_id": "ASM-03",
+      "name": "偏航带轮候选",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "ring",
+        "radius": 86,
+        "inner": 45,
+        "height": 8,
+        "at": [
+          0,
+          0,
+          -284
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-G",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-G",
+      "assembly_id": "ASM-03",
+      "name": "偏航电机支座",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          100,
+          170,
+          8
+        ],
+        "at": [
+          -250,
+          0,
+          -394
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-H__-1",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-H",
+      "assembly_id": "ASM-03",
+      "name": "电机支座侧连接",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              100,
+              8,
+              34
+            ],
+            "at": [
+              -250,
+              -81,
+              -373
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  310,
+                  20,
+                  20
+                ],
+                "at": [
+                  -155,
+                  -85,
+                  -352
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      -85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0303-H__1",
+      "part_id": "PRT-0303",
+      "derived_id": "PRT-0303-H",
+      "assembly_id": "ASM-03",
+      "name": "电机支座侧连接",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "box",
+            "size": [
+              100,
+              8,
+              34
+            ],
+            "at": [
+              -250,
+              81,
+              -373
+            ]
+          },
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  310,
+                  20,
+                  20
+                ],
+                "at": [
+                  -155,
+                  85,
+                  -352
+                ]
+              },
+              {
+                "op": "cut",
+                "children": [
+                  {
+                    "op": "box",
+                    "size": [
+                      20,
+                      20,
+                      950
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  },
+                  {
+                    "op": "box",
+                    "size": [
+                      14,
+                      14,
+                      952
+                    ],
+                    "at": [
+                      -310,
+                      85,
+                      125
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "color": "#0C867B",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_-36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              -36,
+              "wheel_center_y+(-28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              -36,
+              "wheel_center_y+(-28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_-36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          -36,
+          "wheel_center_y+(-28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_-36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              -36,
+              "wheel_center_y+(28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              -36,
+              "wheel_center_y+(28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_-36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          -36,
+          "wheel_center_y+(28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              36,
+              "wheel_center_y+(-28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              36,
+              "wheel_center_y+(-28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          36,
+          "wheel_center_y+(-28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              36,
+              "wheel_center_y+(28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              36,
+              "wheel_center_y+(28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          36,
+          "wheel_center_y+(28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_-36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              -36,
+              "-wheel_center_y+(-28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              -36,
+              "-wheel_center_y+(-28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_-36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          -36,
+          "-wheel_center_y+(-28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_-36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              -36,
+              "-wheel_center_y+(28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              -36,
+              "-wheel_center_y+(28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_-36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          -36,
+          "-wheel_center_y+(28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              36,
+              "-wheel_center_y+(-28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              36,
+              "-wheel_center_y+(-28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_36_-24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          36,
+          "-wheel_center_y+(-28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-FAST",
+      "assembly_id": "ASM-05",
+      "name": "轮距滑座紧固候选M6",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 3,
+            "height": 28,
+            "at": [
+              36,
+              "-wheel_center_y+(28)",
+              -169
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 5,
+            "height": 4,
+            "at": [
+              36,
+              "-wheel_center_y+(28)",
+              -155
+            ]
+          }
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_36_24",
+      "part_id": "PRT-0502",
+      "derived_id": "PRT-0502-NUT",
+      "assembly_id": "ASM-05",
+      "name": "滑座螺母候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "ring",
+        "radius": 5,
+        "inner": 3,
+        "height": 5,
+        "at": [
+          36,
+          "-wheel_center_y+(28)",
+          -183.5
+        ]
+      },
+      "color": "#E9A845",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0903-WIRE_A",
+      "part_id": "PRT-0903",
+      "derived_id": "PRT-0903-WIRE_A",
+      "assembly_id": "ASM-09",
+      "name": "固定立柱线束概念路径",
+      "parent": "WORLD_STATIC",
+      "shape": {
+        "op": "wire",
+        "radius": 3,
+        "points": [
+          [
+            75,
+            0,
+            300
+          ],
+          [
+            75,
+            20,
+            400
+          ],
+          [
+            0,
+            20,
+            400
+          ],
+          [
+            0,
+            20,
+            "head_axis_height-355"
+          ],
+          [
+            80,
+            20,
+            "head_axis_height-355"
+          ]
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "dynamic_height": true,
+      "dynamic_path": [
+        [
+          75,
+          0,
+          300
+        ],
+        [
+          75,
+          20,
+          400
+        ],
+        [
+          0,
+          20,
+          400
+        ],
+        [
+          0,
+          20,
+          "head_axis_height-355"
+        ],
+        [
+          80,
+          20,
+          "head_axis_height-355"
+        ]
+      ]
+    },
+    {
+      "instance_id": "PRT-0704-WIRE_A",
+      "part_id": "PRT-0704",
+      "derived_id": "PRT-0704-WIRE_A",
+      "assembly_id": "ASM-07",
+      "name": "恒长回环及圆弧出线候选",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "return_loop",
+        "fixed_x": -235,
+        "moving_x": "load_x-55+slide",
+        "lower_z": -95,
+        "upper_z": -52,
+        "y": -130,
+        "length": 280,
+        "radius": 2,
+        "direction": 1,
+        "exit_y": -65
+      },
+      "color": "#E28362",
+      "status": "concept",
+      "dynamic_slide": true,
+      "dynamic_loop": {
+        "op": "return_loop",
+        "fixed_x": -235,
+        "moving_x": "load_x-55+slide",
+        "lower_z": -95,
+        "upper_z": -52,
+        "y": -130,
+        "length": 280,
+        "radius": 2,
+        "direction": 1,
+        "exit_y": -65
+      }
+    },
+    {
+      "instance_id": "PRT-0905__SEN-08_R",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "偏航右限位功能占位",
+      "parent": "YAW_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          -65,
+          100,
+          -260
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-08"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-10_DOWN",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "俯仰下限位功能占位",
+      "parent": "MOVING_HEAD",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          -45,
+          200,
+          -75
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-10"
+    },
+    {
+      "instance_id": "PRT-0905__SEN-12_HOLD",
+      "part_id": "PRT-0905",
+      "derived_id": "PRT-0905",
+      "assembly_id": "ASM-09",
+      "name": "留球夹反馈功能占位",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "box",
+        "size": [
+          "P0905_x",
+          "P0905_y",
+          "P0905_z"
+        ],
+        "at": [
+          -270,
+          -45,
+          450
+        ]
+      },
+      "color": "#7688A8",
+      "status": "concept",
+      "sensor_function": "SEN-12"
+    },
+    {
+      "instance_id": "PRT-0202-R1_RECEIVER__L",
+      "part_id": "PRT-0202",
+      "derived_id": "PRT-0202-R1_RECEIVER",
+      "assembly_id": "ASM-02",
+      "name": "供球抽出组件固定承接槽",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  40,
+                  30,
+                  25
+                ],
+                "at": [
+                  -20,
+                  85,
+                  -354.5
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  42,
+                  22,
+                  23
+                ],
+                "at": [
+                  -20,
+                  85,
+                  -352.5
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.5,
+            "height": 60,
+            "at": [
+              -20,
+              85,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0202-R1_PIN__L",
+      "part_id": "PRT-0202",
+      "derived_id": "PRT-0202-R1_PIN",
+      "assembly_id": "ASM-02",
+      "name": "供球抽出组件横向解锁销候选",
+      "parent": "CASSETTE_PIN_L",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 4,
+            "height": 50,
+            "at": [
+              -20,
+              85,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 7,
+            "height": 5,
+            "at": [
+              -20,
+              112.5,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0202-R1_RECEIVER__R",
+      "part_id": "PRT-0202",
+      "derived_id": "PRT-0202-R1_RECEIVER",
+      "assembly_id": "ASM-02",
+      "name": "供球抽出组件固定承接槽",
+      "parent": "FIXED_HEAD_CARRIER",
+      "shape": {
+        "op": "cut",
+        "children": [
+          {
+            "op": "cut",
+            "children": [
+              {
+                "op": "box",
+                "size": [
+                  40,
+                  30,
+                  25
+                ],
+                "at": [
+                  -20,
+                  -85,
+                  -354.5
+                ]
+              },
+              {
+                "op": "box",
+                "size": [
+                  42,
+                  22,
+                  23
+                ],
+                "at": [
+                  -20,
+                  -85,
+                  -352.5
+                ]
+              }
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 4.5,
+            "height": 60,
+            "at": [
+              -20,
+              -85,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    },
+    {
+      "instance_id": "PRT-0202-R1_PIN__R",
+      "part_id": "PRT-0202",
+      "derived_id": "PRT-0202-R1_PIN",
+      "assembly_id": "ASM-02",
+      "name": "供球抽出组件横向解锁销候选",
+      "parent": "CASSETTE_PIN_R",
+      "shape": {
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "radius": 4,
+            "height": 50,
+            "at": [
+              -20,
+              -85,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          },
+          {
+            "op": "cylinder",
+            "radius": 7,
+            "height": 5,
+            "at": [
+              -20,
+              -112.5,
+              -352
+            ],
+            "rotate": [
+              [
+                1,
+                0,
+                0
+              ],
+              90
+            ]
+          }
+        ]
+      },
+      "color": "#526677",
+      "status": "concept"
+    }
+  ]
+}

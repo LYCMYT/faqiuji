@@ -1,0 +1,10 @@
+# Preserve delivery-manifest hashes across Windows/Linux checkouts.
+* -text
+*.blend binary
+*.glb binary
+*.mp4 binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.step -diff
+*.stl -diff

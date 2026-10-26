@@ -1,0 +1,26 @@
+{
+  "main_items": 44,
+  "source_parameter_differences": {},
+  "external_task_matches_packaged": true,
+  "data_files_read": [
+    "assemblies.json",
+    "assembly_tree.json",
+    "bom.csv",
+    "deliverable_manifest.json",
+    "derived_constraints.json",
+    "design.json",
+    "document_validation.json",
+    "expected_contacts.json",
+    "exploded.json",
+    "interfaces.json",
+    "joints.json",
+    "measured_calibration.json",
+    "page_index.json",
+    "parts.json",
+    "sensor_schedule.json",
+    "sources.json",
+    "standard_hardware.csv",
+    "unresolved.json",
+    "viewshots.json"
+  ]
+}

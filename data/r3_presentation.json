@@ -1,0 +1,6 @@
+{
+  "resolution":[960,720],"caption_bands_px":[54,74],"fps":24,"duration_frames":121,"render_sample_step":4,
+  "camera_target_m":[-0.16,0,0.13],"camera_offset_m":[1.7,-2.3,1.8],"ortho_scale_m":2.0,
+  "explode_mm":{"context":[0,0,150],"hardware":[0,0,90],"custom":[0,80,0],"foot":[0,0,-60],"jaw":[0,100,30]},
+  "notice":"连接件分解/复原展示；非真实拆卸轨迹或供球性能试验。R3实际驱动适配与导向仍待冻结。"
+}

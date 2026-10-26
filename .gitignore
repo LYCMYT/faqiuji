@@ -1,0 +1,23 @@
+# Local runtimes and rebuild caches
+.venv/
+__pycache__/
+*.py[cod]
+tools/blender/
+tmp/
+output/mesh/
+output/animation/feed/
+output/animation/explode/
+output/animation/service/
+output/fixture_r3/frames/
+*.blend1
+*.brep
+
+# Local configuration and temporary credentials
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Complete download bundles are attached to GitHub Releases
+BM1_*_Delivery.zip

@@ -1,0 +1,79 @@
+....F..FFFE.FF
+======================================================================
+ERROR: test_service_dynamic_wire_uses_requested_height (test_r1.RevisionContracts.test_service_dynamic_wire_uses_requested_height)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 54, in test_service_dynamic_wire_uses_requested_height
+    from cad.assemblies.posing import pose_shape
+ModuleNotFoundError: No module named 'cad.assemblies.posing'
+
+======================================================================
+FAIL: test_feedback_loss_stops_active_cycle (test_r1.RevisionContracts.test_feedback_loss_stops_active_cycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 35, in test_feedback_loss_stops_active_cycle
+    self.assertEqual(c.step({**self.safe(),'wheels_ready':value},.1)['state'],'FAULT')
+AssertionError: 'APPROACH' != 'FAULT'
+- APPROACH
++ FAULT
+
+
+======================================================================
+FAIL: test_missing_exit_is_not_a_falling_edge (test_r1.RevisionContracts.test_missing_exit_is_not_a_falling_edge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 19, in test_missing_exit_is_not_a_falling_edge
+    self.assertEqual(c.step(obs,.1)['state'],'FAULT')
+AssertionError: 'RETREAT' != 'FAULT'
+- RETREAT
++ FAULT
+
+
+======================================================================
+FAIL: test_nonphysical_supports_rejected (test_r1.RevisionContracts.test_nonphysical_supports_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 43, in test_nonphysical_supports_rejected
+    with self.assertRaises(ValueError):evaluate(rows,supports)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_old_position_feedback_cannot_skip_return (test_r1.RevisionContracts.test_old_position_feedback_cannot_skip_return)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 24, in test_old_position_feedback_cannot_skip_return
+    for _ in range(3):self.assertEqual(c.step(obs,.1)['state'],'RETREAT')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HOME' != 'RETREAT'
+- HOME
++ RETREAT
+
+
+======================================================================
+FAIL: test_uncapturable_geometry_is_explicit (test_r1.RevisionContracts.test_uncapturable_geometry_is_explicit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 48, in test_uncapturable_geometry_is_explicit
+    c=FeedCycle();self.assertEqual(c.step({**self.safe(),'start':True,'head_home':True,'slide_home':True},.1)['state'],'FAULT')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'GUIDE_DOWN' != 'FAULT'
+- GUIDE_DOWN
++ FAULT
+
+
+======================================================================
+FAIL: test_upper_retained_until_gate_closed (test_r1.RevisionContracts.test_upper_retained_until_gate_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\86173\Documents\BM1_V02_Engineering\tests\test_r1.py", line 12, in test_upper_retained_until_gate_closed
+    self.assertEqual(r['upper_target'],'hold')
+AssertionError: 'open' != 'hold'
+- open
++ hold
+
+
+----------------------------------------------------------------------
+Ran 14 tests in 12.264s
+
+FAILED (failures=6, errors=1)

@@ -1,0 +1,398 @@
+[
+  {
+    "part_id": "PRT-0101",
+    "candidate": "铝型材与连接板，或焊接金属框架",
+    "color": "#66798A",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0102",
+    "candidate": "钢板；厚度与数量由质心验算决定",
+    "color": "#66798A",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0103",
+    "candidate": "金属方管、锁销与连接耳板",
+    "color": "#66798A",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0104",
+    "candidate": "带防滑垫的调节脚；承载和螺纹未选型",
+    "color": "#66798A",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0105",
+    "candidate": "非留痕脚轮与金属支架",
+    "color": "#66798A",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0201",
+    "candidate": "金属方管或专用升降型材",
+    "color": "#526677",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0202",
+    "candidate": "金属方管；配可更换低摩擦导向块",
+    "color": "#526677",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0203",
+    "candidate": "带防脱结构的金属锁销",
+    "color": "#526677",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0204",
+    "candidate": "铝合金夹座与低摩擦衬块",
+    "color": "#526677",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0301",
+    "candidate": "铝合金或钢板",
+    "color": "#0C867B",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0302",
+    "candidate": "带轴向和倾覆力矩承载能力的回转支承",
+    "color": "#0C867B",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0303",
+    "candidate": "闭环减速电机或同等执行器",
+    "color": "#0C867B",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0401",
+    "candidate": "折弯板与加强筋，或金属型材拼装",
+    "color": "#12A497",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0402",
+    "candidate": "金属短轴及匹配轴承/轴套",
+    "color": "#12A497",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0403",
+    "candidate": "带位置反馈的减速执行器",
+    "color": "#12A497",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0501",
+    "candidate": "铝合金/钢板与两侧加强耳板",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0502",
+    "candidate": "铝合金加工件或金属安装板",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0503",
+    "candidate": "独立轴承座和匹配主轴",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0504",
+    "candidate": "有转速能力依据的金属轮毂",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0505",
+    "candidate": "耐磨弹性材料，硬度与摩擦特性待试验",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0506",
+    "candidate": "电机及编码/测速系统，型号未定",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0507",
+    "candidate": "与最终电机匹配的独立驱动器",
+    "color": "#E9A845",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0601",
+    "candidate": "光滑透明管或低摩擦管",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0602",
+    "candidate": "金属支架与可拆低速打印试验盒",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0603",
+    "candidate": "低速尼龙/POM夹体与软接触垫",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0604",
+    "candidate": "POM/尼龙或薄金属骨架配软垫",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0605",
+    "candidate": "有位置反馈的低速执行器",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0606",
+    "candidate": "轻质光滑管及导向滑块",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0607",
+    "candidate": "小型线性驱动及导向轨",
+    "color": "#7DA99F",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0701",
+    "candidate": "金属/工程塑料骨架与可换软接触面",
+    "color": "#E28362",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0702",
+    "candidate": "柔顺夹片或带软垫夹指",
+    "color": "#E28362",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0703",
+    "candidate": "带位置反馈或可靠回零的直线模组",
+    "color": "#E28362",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0704",
+    "candidate": "小型反馈执行器或等效释放机构",
+    "color": "#E28362",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0801",
+    "candidate": "金属内护件与耐冲击外罩候选",
+    "color": "#9EB6C3",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0802",
+    "candidate": "耐冲击透明板候选；不默认使用脆性亚克力",
+    "color": "#9EB6C3",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0803",
+    "candidate": "钣金或阻燃材料外罩，试装件可低速打印",
+    "color": "#9EB6C3",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0901",
+    "candidate": "ESP32/STM32 类控制板与 IO 模块",
+    "color": "#7688A8",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0902",
+    "candidate": "认证成品电源候选，电压/功率未冻结",
+    "color": "#7688A8",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0903",
+    "candidate": "接触/切断器件、保险与端子等组合",
+    "color": "#7688A8",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0904",
+    "candidate": "合适规格的急停按钮与触点组件",
+    "color": "#7688A8",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-0905",
+    "candidate": "光电、限位、编码反馈与开盖检测的器件族",
+    "color": "#7688A8",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-1001",
+    "candidate": "已有 Android 手机优先；可配近讲耳麦",
+    "color": "#556A91",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-1002",
+    "candidate": "低压手持控制器及耐用电缆",
+    "color": "#556A91",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  },
+  {
+    "part_id": "PRT-1003",
+    "candidate": "低速打印或铝合金夹架与软垫",
+    "color": "#556A91",
+    "density_kg_m3": null,
+    "status": "concept",
+    "supplier_model": null,
+    "finish": null
+  }
+]

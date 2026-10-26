@@ -1,0 +1,88 @@
+{
+  "revision": "V0.2-R2-prototype-preparation",
+  "decision_date": "2026-10-26",
+  "status": "selected_for_RFQ_and_low_speed_fit_trials",
+  "physical_measurements": [],
+  "supplier_confirmations": [],
+  "orders": [],
+  "prototype_results": [],
+  "manufacturing_release": false,
+  "selection_basis": "以现有国内常见采购类别、可更换试件、常规三轴铣削和车削能力准备小批样机；具体供货、价格和加工能力由报价确认。",
+  "environment": {
+    "temperature_target_C": [22,28],
+    "actual_temperature_C": null,
+    "actual_relative_humidity_percent": null,
+    "actual_altitude_m": null,
+    "note": "首轮室内试验目标条件，不是现场测量。每轮记录温湿度；后续飞行标定须结合实际海拔和球速试打。"
+  },
+  "samples": [
+    {"group":"AS30","model":"YONEX AEROSENSA 30 / AS-30","type":"天然羽毛球","role":"主验证球","tubes":3,"published_per_tube":12,"planned_count":36,"planned_lot_count":2,"speed_choice":"温度等级3，适用22-28°C；订单须核对当地包装标识，不自行换算76/77/78","holdout_count":12,"wear_remeasure_count":12,"source":"S1"},
+    {"group":"AS10","model":"YONEX AEROSENSA 10 / AS-10","type":"天然羽毛球","role":"第二型号差异对照，不能代替跨品牌覆盖","tubes":2,"published_per_tube":12,"planned_count":24,"planned_lot_count":2,"speed_choice":"温度等级3；实际包装与批号待收货记录","holdout_count":0,"wear_remeasure_count":0,"source":"S2"},
+    {"group":"M350","model":"YONEX MAVIS 350 / M350S 白色","type":"尼龙裙球","role":"探索兼容性；独立统计，不纳入天然羽毛球合格结论","tubes":2,"published_per_tube":6,"planned_count":12,"planned_lot_count":1,"speed_choice":"绿色盖 Slow，官方22-33°C","holdout_count":0,"wear_remeasure_count":0,"source":"S3"}
+  ],
+  "sampling_rules": [
+    "样本编号为计划占位，未代表已收货。采购渠道优先品牌授权经销渠道，保留发票、整筒标签与批号照片。",
+    "AS30 前24只作筛选，后12只封存作复核；前12只在有记录的使用后复测，不另算新增样本。",
+    "争取两批AS30及两批AS10；如果只能取得一批，记录实际一批，不把不同筒号伪称不同生产批次。",
+    "不得为适配机构修剪羽裙。严重破损球隔离并记录；可用磨损球作为有标签的边界样本。",
+    "一次一型号、一批次装筒，先验证单球，再逐步增加。尼龙球先检查能否自然套叠，不能强压套叠。",
+    "官方包装只数不等于发球机容量；当前实际容量、堆叠节距和球头压缩量仍未知。"
+  ],
+  "measurement": {
+    "repeats":3,
+    "caliper_resolution_mm":0.01,
+    "balance_resolution_g":0.01,
+    "caliper_range_mm":[0,150],
+    "height_range_mm":[0,600],
+    "force_gauge_range_N":[0,50],
+    "instrument_status":"采购性能目标；分辨率不是准确度；量程须经预试调整，实际型号/校准证书待填",
+    "procedure":[
+      "记录型号、批号、包装速度标识、温湿度、仪器和操作者，拍正面与侧面带标尺照片。",
+      "球头按两个正交方向测外径；羽裙在不施压状态拍照测最大包络；各量重复3次，保留原始值和测法。",
+      "记录全长、球头轴向高度及质量。量具不得把羽裙压缩后的读数冒充自然外径。",
+      "逐只加球测堆高h(n)，节距由h(n)-h(n-1)计算，保留顺序、旋转角度和每只样本ID。不能用总高除以只数替代增量。",
+      "保持同一装夹与加载方向，记录取球/分球力曲线和羽裙损伤。测力仪量程是候选，预试超量程时先更换仪器。"
+    ]
+  },
+  "trial_plan": {
+    "feather_groups":["AS30","AS10"],
+    "stack_counts":[1,3,6],
+    "screening_cycles_per_cell":10,
+    "nylon_cycles_per_cell":5,
+    "holdout_cycles":300,
+    "selected_radius_mm":null,
+    "actual_capacity":null,
+    "actual_release_force_N":null,
+    "actual_reliability":null,
+    "gates":[
+      "先确认夹块固定、台架锚固、防夹措施及操作空间；R1无孔夹具和采购件包络不能直接接电运行。",
+      "低速台不安装高速轮组。先人工受控动作，逐项确认上夹保持、下闸闭合、导套回缩、前移脱筒及夹持释放。",
+      "只有实物尺寸、装夹和空动作检查完成后，执行四半径筛选。每次出现双球、卡球、脱落、损伤或异常力即停，记录并修改后重开版本。",
+      "筛选后根据无损分离、保持能力、力曲线及公差余量选择半径；无可行候选时改机构，不强行选R29。",
+      "所选半径确定后才启用封存12只AS30进行300次复核；循环重复使用同一小样本，不能据此宣称量产可靠性或普适球型兼容。",
+      "尼龙球仅在自然套叠与接触试配通过后开展单独探索。高速牵引、停机、飞行与落点验证另行完成。"
+    ]
+  },
+  "manufacturing": {
+    "preferred_shop":"可完成三轴铣削、普通车削、钻铰、薄板切割折弯且可提供材料批次和首件尺寸报告的小批机加工厂；先询价与DFM，不指定未经核实的厂商。",
+    "aluminum":"6061-T651 板料/块料用于机加工基板与支架；型材另按供货材质记录，不把T651写成挤压型材状态。",
+    "polymer":"未填充本色 POM-C，用于四种可换弧面试配块和滑动接触试件；真实摩擦、夹持和磨损待测。",
+    "clear_parts":"固定球筒与导套优先询价透明PC管/机加工管，按现有OD/ID询价；同心度、椭圆度、摩擦与可供规格待确认。不得当作已验证防爆罩。",
+    "covers":"观察窗优先PC，非承载外罩优先薄板切割折弯；厚度及连接仍需载荷/防护试验冻结。",
+    "printed_parts":"FDM/PETG仅用于非承载安装检查、线夹及外观试配；不用于轮毂、轮缘、承重轴或高速防护承诺。",
+    "finish":"首轮铝件去毛刺、清洁、保留编号，配合面不喷厚涂层；POM接球面去毛刺并抛去刀痕。",
+    "coupon_profile_tolerance_mm":0.2,
+    "coupon_thickness_tolerance_mm":0.1,
+    "tolerance_status":"项目提出的试配毛件询价/检验要求，未经加工厂确认；不是原包既定公差或测量结果。",
+    "coupon_quantity_each":1,
+    "coupon_interface_status":"无安装孔的独立试配毛件；固定方式未冻结，不可直接装机。保留源模型曲面与左右标识。",
+    "required_supplier_returns":["含税单价与交期","材料牌号、状态及批次","可加工尺寸/薄壁能力与变形建议","首件关键尺寸与测量方法","孔位/配合图与版本","采购件质量、载荷、曲线和允许转速等原厂资料","提出的结构变更及对接口影响"]
+  },
+  "sources": [
+    {"id":"S1","url":"https://www.yonex.com/badminton/aerosensa-3","checked":"2026-10-26","fact":"AS-30每筒12只；温度等级3对应22-28°C；海拔影响选球。","use":"型号与包装信息，不提供机构尺寸或容量"},
+    {"id":"S2","url":"https://www.yonex.com/aerosensa-10","checked":"2026-10-26","fact":"AS-10每筒12只；温度等级3对应22-28°C。","use":"第二天然羽毛球型号；尺寸待测"},
+    {"id":"S3","url":"https://www.yonex.com/m-350","checked":"2026-10-26","fact":"MAVIS350每筒6只；绿色盖Slow对应22-33°C；白色Slow代码M350S。","use":"尼龙兼容性探索；不假定套叠相同"},
+    {"id":"S4","url":"https://www.protolabs.com/materials/aluminum/","checked":"2026-10-26","fact":"官方加工材料清单含6061-T651铣削和车削。","use":"支持工艺类别可行性，不作为本地报价或本机强度证明"},
+    {"id":"S5","url":"https://www.ensingerplastics.com/en-us/shapes/acetal-tecaform-ah-natural","checked":"2026-10-26","fact":"TECAFORM AH natural为未填充POM-C材料。","use":"材料类别参考；未选定实际棒料供应商或证明夹持性能"}
+  ]
+}

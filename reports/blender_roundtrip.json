@@ -1,0 +1,22 @@
+{
+  "blend_reopened": true,
+  "blend_scenes": 3,
+  "blend_main_items": 44,
+  "blend_meshes": 188,
+  "reference_shuttle_independent": true,
+  "materials": 189,
+  "actions": 238,
+  "glb_reopened": true,
+  "glb_meshes": 187,
+  "world_bounds_m": [
+    -0.45000001788139343,
+    -0.42500001192092896,
+    0.0,
+    0.45000001788139343,
+    0.42500001192092896,
+    2.1700000762939453
+  ],
+  "H_m": 1.5,
+  "cap_top_m": 2.1700000762939453,
+  "glb_ids_preserved": true
+}

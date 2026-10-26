@@ -1,0 +1,27 @@
+{
+  "status": "concept",
+  "geometry_authority": "geometry.json; arithmetic references design.json and parts.json",
+  "demo": {
+    "release_begin_x": -45,
+    "release_complete_x": -25,
+    "clamp_open_mm": 14,
+    "upper_open_mm": 24,
+    "gate_open_mm": 85,
+    "fps": 24,
+    "duration_seconds": 22,
+    "rotation_rpm": 18,
+    "notice": "仅顺序演示；时间、转速、释放位置和出球轨迹未验证"
+  },
+  "validation": {
+    "linear_step_mm": 2,
+    "angular_step_deg": 5,
+    "geometry_tolerance_mm": 0.001,
+    "intersection_volume_threshold_mm3": 0.01
+  },
+  "coordinate_adapter": "CAD mm Z-up -> mesh JSON mm Z-up -> Blender divide by 1000 only -> Blender GLB exporter Y-up; no other rotation",
+  "material_density_kg_m3": {
+    "aluminium_candidate": 2700,
+    "steel_candidate": 7850,
+    "polymer_candidate": 1200
+  }
+}

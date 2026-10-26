@@ -1,0 +1,42 @@
+[
+  {
+    "pair": [
+      "PRT-0505-L",
+      "TEST_SHUTTLE.cork"
+    ],
+    "type": "elastic_friction",
+    "status": "requires_test"
+  },
+  {
+    "pair": [
+      "PRT-0505-R",
+      "TEST_SHUTTLE.cork"
+    ],
+    "type": "elastic_friction",
+    "status": "requires_test"
+  },
+  {
+    "pair": [
+      "PRT-0702",
+      "TEST_SHUTTLE.cork_lower"
+    ],
+    "type": "controlled_clamping",
+    "condition": "closed states only"
+  },
+  {
+    "pair": [
+      "PRT-0503.shaft",
+      "PRT-0504.bore"
+    ],
+    "type": "shaft_hub_fit",
+    "status": "supplier_and_fit_pending"
+  },
+  {
+    "pair": [
+      "PRT-0202",
+      "PRT-0204.guide_inserts"
+    ],
+    "type": "sliding_guide",
+    "status": "fit_pending"
+  }
+]

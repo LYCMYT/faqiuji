@@ -1,0 +1,24 @@
+{
+  "variants": [
+    {
+      "parameter": "wheel_gap_visual",
+      "from_value": 25,
+      "to_value": 30,
+      "all_instances_rebuilt": 189,
+      "step_reopened_solids": 187,
+      "passed": true,
+      "source_data": "output\\verification_variants\\wheel_gap_visual\\data"
+    },
+    {
+      "parameter": "tube_cap_allowance",
+      "from_value": 20,
+      "to_value": 24,
+      "all_instances_rebuilt": 189,
+      "step_reopened_solids": 187,
+      "passed": true,
+      "source_data": "output\\verification_variants\\tube_cap_allowance\\data"
+    }
+  ],
+  "baseline_regenerated_and_identical": true,
+  "baseline_data_untouched": true
+}

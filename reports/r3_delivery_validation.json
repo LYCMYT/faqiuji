@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "instances": 155,
+  "pdf_pages": 43,
+  "pdf_text_overflow": [],
+  "step_reopened": 71,
+  "dxf_profiles": [
+    {
+      "family": "PRT-0602-R3-BASE",
+      "closed_profile": true,
+      "area_difference_mm2": 1.1641532182693481e-10
+    },
+    {
+      "family": "PRT-0602-R3-PED",
+      "closed_profile": true,
+      "area_difference_mm2": 4.547473508864641e-13
+    },
+    {
+      "family": "PRT-0602-R3-STRAP",
+      "closed_profile": true,
+      "area_difference_mm2": 4.547473508864641e-13
+    },
+    {
+      "family": "PRT-0703-R3-TUBE",
+      "closed_profile": true,
+      "area_difference_mm2": 2.2737367544323206e-13
+    },
+    {
+      "family": "PRT-0703-R3-CAP-0",
+      "closed_profile": true,
+      "area_difference_mm2": 0.0
+    },
+    {
+      "family": "PRT-0703-R3-SHOE-0",
+      "closed_profile": true,
+      "area_difference_mm2": 5.229594535194337e-12
+    },
+    {
+      "family": "PRT-0703-R3-SHOE-1",
+      "closed_profile": true,
+      "area_difference_mm2": 1.0345502232667059e-11
+    },
+    {
+      "family": "PRT-0703-R3-CAP-1",
+      "closed_profile": true,
+      "area_difference_mm2": 0.0
+    },
+    {
+      "family": "PRT-0602-R3-FOOT",
+      "closed_profile": true,
+      "area_difference_mm2": 4.547473508864641e-13
+    },
+    {
+      "family": "PRT-0602-R3-WALL--1",
+      "closed_profile": true,
+      "area_difference_mm2": 1.1368683772161603e-13
+    },
+    {
+      "family": "PRT-0602-R3-WALL-1",
+      "closed_profile": true,
+      "area_difference_mm2": 1.1368683772161603e-13
+    },
+    {
+      "family": "PRT-0603-R3-CARRIER-L",
+      "closed_profile": true,
+      "area_difference_mm2": 1.1368683772161603e-13
+    },
+    {
+      "family": "PRT-0603-R3-CARRIER-R",
+      "closed_profile": true,
+      "area_difference_mm2": 1.8189894035458565e-12
+    },
+    {
+      "family": "PRT-0603-R3-R29-L",
+      "closed_profile": true,
+      "area_difference_mm2": 6.991740519879386e-12
+    },
+    {
+      "family": "PRT-0603-R3-R29-R",
+      "closed_profile": true,
+      "area_difference_mm2": 6.139089236967266e-12
+    },
+    {
+      "family": "PRT-0603-R3-R23-L",
+      "closed_profile": true,
+      "area_difference_mm2": 2.3419488570652902e-11
+    },
+    {
+      "family": "PRT-0603-R3-R23-R",
+      "closed_profile": true,
+      "area_difference_mm2": 4.206412995699793e-12
+    },
+    {
+      "family": "PRT-0603-R3-R26-L",
+      "closed_profile": true,
+      "area_difference_mm2": 3.183231456205249e-12
+    },
+    {
+      "family": "PRT-0603-R3-R26-R",
+      "closed_profile": true,
+      "area_difference_mm2": 9.094947017729282e-13
+    },
+    {
+      "family": "PRT-0603-R3-R32-L",
+      "closed_profile": true,
+      "area_difference_mm2": 8.469669410260394e-12
+    },
+    {
+      "family": "PRT-0603-R3-R32-R",
+      "closed_profile": true,
+      "area_difference_mm2": 2.1600499167107046e-12
+    }
+  ],
+  "video_fully_decoded": true,
+  "video_size": [
+    960,
+    848
+  ],
+  "blend_glb_reopened": true,
+  "physical_evidence_empty": true,
+  "manufacturing_release": false
+}

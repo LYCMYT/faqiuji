@@ -1,0 +1,68 @@
+{
+  "step_reopened": [
+    {
+      "file": "BM1_R1_separator_bench.step",
+      "solids": 49,
+      "valid": true
+    },
+    {
+      "file": "PRT-0602-TEST_BASE.step",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "file": "PRT-0602-TEST_FRONT_L.step",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "file": "PRT-0602-TEST_FRONT_R.step",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "file": "PRT-0602-TEST_REAR_L.step",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "file": "PRT-0602-TEST_REAR_R.step",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "file": "PRT-0603_FIT_R23.step",
+      "solids": 2,
+      "valid": true
+    },
+    {
+      "file": "PRT-0603_FIT_R26.step",
+      "solids": 2,
+      "valid": true
+    },
+    {
+      "file": "PRT-0603_FIT_R29.step",
+      "solids": 2,
+      "valid": true
+    },
+    {
+      "file": "PRT-0603_FIT_R32.step",
+      "solids": 2,
+      "valid": true
+    },
+    {
+      "file": "PRT-0703-TEST_POST_A.step",
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "file": "PRT-0703-TEST_POST_B.step",
+      "solids": 1,
+      "valid": true
+    }
+  ],
+  "static_intersections": [],
+  "low_speed_fixture_only": true,
+  "structural_strength_verified": false,
+  "physical_testing_performed": false
+}

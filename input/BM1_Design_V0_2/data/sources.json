@@ -1,0 +1,56 @@
+[
+  {
+    "id": "S01",
+    "title": "双轮发射机构研究，支持原理可行性，不支持本方案尺寸/性能",
+    "url": "https://www.jstage.jst.go.jp/article/transjsme/81/821/81_14-00441/_article/-char/en",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S02",
+    "title": "BadmintonAce 原作者 CAD 与代码仓库，按实际文件许可使用",
+    "url": "https://github.com/TheSinc/BadmintonAce",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S03",
+    "title": "ThongPaDisp 机械资料与分离器参考，CERN-OHL-S v2",
+    "url": "https://zenodo.org/records/18899461",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S04",
+    "title": "ThongPaDisp 1.04b，独立分球试验不等于整机训练验证",
+    "url": "https://zenodo.org/records/20354541",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S05",
+    "title": "CadQuery 官方导入/导出及参数源格式说明",
+    "url": "https://cadquery.readthedocs.io/en/latest/importexport.html",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S06",
+    "title": "Khronos glTF 坐标、单位与文件规范",
+    "url": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S07",
+    "title": "CadQuery 官方装配导出器源码",
+    "url": "https://cadquery.readthedocs.io/en/stable/_modules/cadquery/occ_impl/exporters/assembly.html",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S08",
+    "title": "Blender 官方 glTF 导入器源码",
+    "url": "https://github.com/blender/blender/blob/main/scripts/addons_core/io_scene_gltf2/blender/imp/blender_gltf.py",
+    "accessed": "2026-10-26"
+  },
+  {
+    "id": "S09",
+    "title": "BWF 羽球与场地尺寸资料，所引版本 2025",
+    "url": "https://www.badminton.no/contentassets/c0b5fd676d9a4a10bd7a14c673a7bad0/section-4.1---laws-of-badminton---26-april-2025-v5.0-1--1.pdf",
+    "accessed": "2026-10-26"
+  }
+]

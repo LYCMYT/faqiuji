@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<rect width="100%" height="100%" fill="#f5f8f8"/>
+<polygon points="212.44,614.16 516.27,432.99 516.27,77.76 212.44,258.93" fill="#3e4b64" stroke="#3e4b64" stroke-width="0.5"/>
+<polygon points="159.48,241.17 212.44,258.93 516.27,77.76 463.31,60.00" fill="#51658a" stroke="#51658a" stroke-width="0.5"/>
+<polygon points="482.51,508.92 628.13,557.77 717.49,504.48 571.87,455.64" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="628.13,699.86 717.49,646.58 717.49,504.48 628.13,557.77" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="482.51,651.02 628.13,699.86 628.13,557.77 482.51,508.92" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="224.02,478.28 690.02,634.59 975.98,464.08 509.98,307.77" fill="#51658a" stroke="#51658a" stroke-width="0.5"/>
+<polygon points="159.48,596.40 212.44,614.16 212.44,258.93 159.48,241.17" fill="#485877" stroke="#485877" stroke-width="0.5"/>
+<polygon points="690.02,670.11 975.98,499.60 975.98,464.08 690.02,634.59" fill="#3e4b64" stroke="#3e4b64" stroke-width="0.5"/>
+<polygon points="224.02,513.81 690.02,670.11 690.02,634.59 224.02,478.28" fill="#485877" stroke="#485877" stroke-width="0.5"/>
+<polygon points="736.69,790.00 1040.52,608.83 1040.52,253.60 736.69,434.77" fill="#3e4b64" stroke="#3e4b64" stroke-width="0.5"/>
+<polygon points="683.73,417.01 736.69,434.77 1040.52,253.60 987.56,235.84" fill="#51658a" stroke="#51658a" stroke-width="0.5"/>
+<polygon points="683.73,772.24 736.69,790.00 736.69,434.77 683.73,417.01" fill="#485877" stroke="#485877" stroke-width="0.5"/>
+<text x="40" y="868" font-family="sans-serif" font-size="20" fill="#243847">PRT-1003 concept envelope 110 × 90 × 60 mm</text>
+<text x="40" y="890" font-family="sans-serif" font-size="13" fill="#657887">Concept geometry; not a manufacturing drawing</text></svg>

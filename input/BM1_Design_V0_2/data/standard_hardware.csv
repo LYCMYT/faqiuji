@@ -1,0 +1,8 @@
+﻿family,use,quantity,size_status,gate_before_manufacture
+FAST-M3,控制板与低速附件,TBD,候选族,按板卡孔型、柱高和咬合长度确认
+FAST-M4,传感器/小型机构,TBD,候选族,按实际安装接口确认
+FAST-M5M6,机头、罩壳、支架,TBD,候选族,校核载荷、防松与工具可达
+FAST-M8,底盘/立柱候选,TBD,候选族,载荷和连接板确定后选择，不直接下单
+BEARING,轮轴、俯仰和偏航,TBD,未选型,校核载荷、速度和配合
+CONNECTOR,动力/传感/外部停发,TBD,未选型,电流等级、锁紧、插拔与应力释放
+WIRE,动力与信号线束,TBD,未选型,电流、线径、弯曲半径和保护路径

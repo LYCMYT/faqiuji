@@ -1,0 +1,304 @@
+{
+  "status": "FAIL",
+  "instances": 155,
+  "jaw_variants": 8,
+  "states": 214,
+  "exact_pair_intersections": 401,
+  "static_intersections": [
+    {
+      "state": "STATIC",
+      "pair": [
+        "PRT-0703-R3-POSTFAST-0-0-ROD",
+        "PRT-0703-R3-TUBE-0"
+      ],
+      "volume_mm3": 1003.5841939562256
+    },
+    {
+      "state": "STATIC",
+      "pair": [
+        "PRT-0703-R3-POSTFAST-0-1-ROD",
+        "PRT-0703-R3-TUBE-0"
+      ],
+      "volume_mm3": 1003.5841939562259
+    },
+    {
+      "state": "STATIC",
+      "pair": [
+        "PRT-0703-R3-POSTFAST-1-0-ROD",
+        "PRT-0703-R3-TUBE-1"
+      ],
+      "volume_mm3": 1003.5841939562197
+    },
+    {
+      "state": "STATIC",
+      "pair": [
+        "PRT-0703-R3-POSTFAST-1-1-ROD",
+        "PRT-0703-R3-TUBE-1"
+      ],
+      "volume_mm3": 1003.5841939562196
+    }
+  ],
+  "motion_intersections": [],
+  "all_native_single_solids": true,
+  "rod_nut_checks": [
+    {
+      "nut": "PRT-0602-R3-ARMFAST-000-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-000-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-001-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-001-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-010-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-010-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-011-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-011-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-100-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-100-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-101-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-101-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-110-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-110-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-111-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        81.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-ARMFAST-111-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        73.60000000000002,
+        11.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-0-0-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        391.6
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-0-0-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        384.6,
+        10.199999999999996
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-0-1-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        391.6
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-0-1-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        384.6,
+        10.199999999999996
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-1-0-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        391.6
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-1-0-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        384.6,
+        10.199999999999996
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-1-1-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        3.199999999999932,
+        391.6
+      ]
+    },
+    {
+      "nut": "PRT-0703-R3-POSTFAST-1-1-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        384.6,
+        10.199999999999996
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-00-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        11.199999999999932,
+        33.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-00-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        41.60000000000002,
+        3.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-01-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        11.199999999999932,
+        33.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-01-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        41.60000000000002,
+        3.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-10-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        11.199999999999932,
+        33.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-10-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        41.60000000000002,
+        3.199999999999932
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-11-NUT-LOW",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        11.199999999999932,
+        33.60000000000002
+      ]
+    },
+    {
+      "nut": "PRT-0602-R3-FOOTFAST-11-NUT-UP",
+      "full_axial_overlap": true,
+      "rod_end_margins_mm": [
+        41.60000000000002,
+        3.199999999999932
+      ]
+    }
+  ],
+  "thread_tooth_modelled": false,
+  "structural_strength_verified": false,
+  "physical_testing_performed": false
+}

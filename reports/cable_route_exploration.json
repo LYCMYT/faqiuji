@@ -1,0 +1,130 @@
+[
+  {
+    "direction": 1,
+    "length": 280,
+    "y": -130,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 280,
+    "y": -145,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 280,
+    "y": -165,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 280,
+    "y": -190,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 300,
+    "y": -130,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 300,
+    "y": -145,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 300,
+    "y": -165,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": 1,
+    "length": 300,
+    "y": -190,
+    "first_hit": [],
+    "coarse_clear": true
+  },
+  {
+    "direction": -1,
+    "length": 280,
+    "y": -130,
+    "first_hit": [
+      "PRT-0401-A"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 280,
+    "y": -145,
+    "first_hit": [
+      "PRT-0602-A__L"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 280,
+    "y": -165,
+    "first_hit": [
+      "PRT-0602-A__L"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 280,
+    "y": -190,
+    "first_hit": [
+      "PRT-0401-A"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 300,
+    "y": -130,
+    "first_hit": [
+      "PRT-0401-A"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 300,
+    "y": -145,
+    "first_hit": [
+      "PRT-0602-A__L"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 300,
+    "y": -165,
+    "first_hit": [
+      "PRT-0602-A__L"
+    ],
+    "coarse_clear": false
+  },
+  {
+    "direction": -1,
+    "length": 300,
+    "y": -190,
+    "first_hit": [
+      "PRT-0401-A"
+    ],
+    "coarse_clear": false
+  }
+]

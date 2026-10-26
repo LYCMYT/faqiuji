@@ -1,0 +1,84 @@
+[
+  {
+    "id": "VIEW-01",
+    "name": "整体外观",
+    "yaw": 0,
+    "pitch": 0,
+    "H": 1500,
+    "cover": true,
+    "output": "render/overall.png",
+    "pose_note": "装载零位展示；倾转需先脱筒"
+  },
+  {
+    "id": "VIEW-02",
+    "name": "去罩总装",
+    "yaw": 0,
+    "pitch": 0,
+    "H": 1500,
+    "cover": false,
+    "output": "render/cutaway.png"
+  },
+  {
+    "id": "VIEW-03",
+    "name": "正投影",
+    "views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top"
+    ],
+    "projection": "orthographic"
+  },
+  {
+    "id": "VIEW-04",
+    "name": "总装与10总成爆炸",
+    "explosion": "display_copy_only"
+  },
+  {
+    "id": "VIEW-05",
+    "name": "每主项与派生件单页",
+    "layout": "isometric+necessary_orthographic+dimensions+interfaces"
+  },
+  {
+    "id": "VIEW-06",
+    "name": "供球剖视序列",
+    "states": "S00-S08"
+  },
+  {
+    "id": "VIEW-07",
+    "name": "极限与检修",
+    "yaw": [
+      -45,
+      0,
+      45
+    ],
+    "pitch": [
+      -10,
+      0,
+      35,
+      60
+    ],
+    "H": [
+      1400,
+      1800
+    ]
+  },
+  {
+    "id": "VIEW-08",
+    "name": "真实CAD剖切",
+    "plane": "WORLD Y=0",
+    "keep": "Y<=0",
+    "source": "output/step/BM1_Y0_section.step"
+  },
+  {
+    "id": "VIEW-09",
+    "name": "维修路径",
+    "data": "service_spaces.json"
+  },
+  {
+    "id": "VIEW-10",
+    "name": "高度链与三位置",
+    "parameter_source": "design.json"
+  }
+]

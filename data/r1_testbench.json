@@ -1,0 +1,15 @@
+{
+  "status": "concept_low_speed_fixture_only",
+  "include_parts": ["PRT-0601", "PRT-0602", "PRT-0603", "PRT-0604", "PRT-0605", "PRT-0606", "PRT-0607", "PRT-0701", "PRT-0702", "PRT-0703", "PRT-0704"],
+  "state": {"height": 0, "guide": 0, "slide": 0, "clamp": 14},
+  "fixture_instances": [
+    {"instance_id": "PRT-0602-TEST_BASE", "shape": {"op": "box", "size": [700,320,12], "at": [-160,0,-390]}},
+    {"instance_id": "PRT-0602-TEST_REAR_L", "shape": {"op": "box", "size": [30,30,22], "at": [-270,85,-373]}},
+    {"instance_id": "PRT-0602-TEST_REAR_R", "shape": {"op": "box", "size": [30,30,22], "at": [-270,-85,-373]}},
+    {"instance_id": "PRT-0602-TEST_FRONT_L", "shape": {"op": "box", "size": [30,30,22], "at": [-70,85,-373]}},
+    {"instance_id": "PRT-0602-TEST_FRONT_R", "shape": {"op": "box", "size": [30,30,22], "at": [-70,-85,-373]}},
+    {"instance_id": "PRT-0703-TEST_POST_A", "shape": {"op": "box", "size": [24,24,344], "at": [-230,0,-212]}},
+    {"instance_id": "PRT-0703-TEST_POST_B", "shape": {"op": "box", "size": [24,24,344], "at": [-20,0,-212]}}
+  ],
+  "notice": "独立低速验证台。夹具孔位、紧固方式、刚度、锚固和操作者防护尚需工程确认；不含高速发射轮。"
+}

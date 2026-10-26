@@ -1,0 +1,42 @@
+{
+  "cassette_parts": [
+    "PRT-0601",
+    "PRT-0602",
+    "PRT-0603",
+    "PRT-0604",
+    "PRT-0605",
+    "PRT-0606",
+    "PRT-0607"
+  ],
+  "cassette_instances": [
+    "PRT-0905__SEN-01",
+    "PRT-0905__SEN-02",
+    "PRT-0905__SEN-12",
+    "PRT-0905__SEN-12_HOLD"
+  ],
+  "pin_instances": [
+    "PRT-0202-R1_PIN__L",
+    "PRT-0202-R1_PIN__R"
+  ],
+  "service_state": {
+    "guide": 115,
+    "slide": 0,
+    "clamp": 14,
+    "yaw": 0,
+    "pitch": 0,
+    "height": 1400
+  },
+  "pin_withdraw_mm": 55,
+  "extract_mm": 350,
+  "step_mm": 2,
+  "prerequisites": [
+    "电源隔离且轮组确认停转",
+    "轴高降至1400并锁定",
+    "供球器为空；落球与导套收妥",
+    "供球组件由独立托车承重",
+    "插接线束断开",
+    "两只横销沿外侧退出55mm",
+    "整套供球器沿-X抽出350mm"
+  ],
+  "verified_load_rating": null
+}

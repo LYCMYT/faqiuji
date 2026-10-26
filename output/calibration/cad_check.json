@@ -1,0 +1,9 @@
+{
+  "step_solids": 4,
+  "block_mm": [
+    100,
+    100,
+    100
+  ],
+  "cq_glb_note": "CadQuery exports mm-scale coordinates with Y-up transform; Blender adapter checks and converts exactly once."
+}

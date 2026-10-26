@@ -1,0 +1,187 @@
+[
+  {
+    "instance_id": "SEN-01",
+    "function": "导套上位",
+    "parent": "FIXED_FEEDER",
+    "requirement": "允许滑台前移的必要输入",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-01",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-01"
+    ]
+  },
+  {
+    "instance_id": "SEN-02",
+    "function": "导套下位",
+    "parent": "FIXED_FEEDER",
+    "requirement": "落球前确认导向位置",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-02",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-02"
+    ]
+  },
+  {
+    "instance_id": "SEN-03",
+    "function": "滑台回零",
+    "parent": "MOVING_HEAD",
+    "requirement": "定义装载位基准；连续位置由模组编码反馈提供",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-03",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-03"
+    ]
+  },
+  {
+    "instance_id": "SEN-04",
+    "function": "夹持/释放反馈",
+    "parent": "SLIDER",
+    "requirement": "不能仅用固定延时假设已松夹",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-04",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-04"
+    ]
+  },
+  {
+    "instance_id": "SEN-05",
+    "function": "托架有球",
+    "parent": "SLIDER",
+    "requirement": "不能单独证明恰好一球",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-05",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-05"
+    ]
+  },
+  {
+    "instance_id": "SEN-06",
+    "function": "出球通过",
+    "parent": "MOVING_HEAD",
+    "requirement": "结合计数和喂入状态判定一次出球",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-06",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-06"
+    ]
+  },
+  {
+    "instance_id": "SEN-07",
+    "function": "偏航回零",
+    "parent": "LIFT_CARRIAGE",
+    "requirement": "定义ψ=0装载方向",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-07",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-07"
+    ]
+  },
+  {
+    "instance_id": "SEN-08",
+    "function": "偏航左/右限位族",
+    "parent": "YAW_FRAME",
+    "requirement": "需左右独立保护信号或等效已验证实现",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-08",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-08",
+      "PRT-0905__SEN-08_R"
+    ]
+  },
+  {
+    "instance_id": "SEN-09",
+    "function": "俯仰回零",
+    "parent": "YAW_FRAME",
+    "requirement": "定义θ=0装载姿态",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-09",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-09"
+    ]
+  },
+  {
+    "instance_id": "SEN-10",
+    "function": "俯仰上/下限位族",
+    "parent": "MOVING_HEAD",
+    "requirement": "需上下限位或等效已验证实现",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-10",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-10",
+      "PRT-0905__SEN-10_DOWN"
+    ]
+  },
+  {
+    "instance_id": "SEN-11",
+    "function": "发射罩开合",
+    "parent": "MOVING_HEAD",
+    "requirement": "打开保护罩停危险驱动/禁止供球",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-11",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-11"
+    ]
+  },
+  {
+    "instance_id": "SEN-12",
+    "function": "分球留球/闸门反馈",
+    "parent": "FIXED_FEEDER",
+    "requirement": "每个关键分球动作应有状态证据",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-12",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-12",
+      "PRT-0905__SEN-12_HOLD"
+    ]
+  },
+  {
+    "instance_id": "SEN-13",
+    "function": "左轮转速",
+    "parent": "MOVING_HEAD",
+    "requirement": "若电机内置反馈已满足，则不重复采购",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-13",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-13"
+    ]
+  },
+  {
+    "instance_id": "SEN-14",
+    "function": "右轮转速",
+    "parent": "MOVING_HEAD",
+    "requirement": "独立于左轮反馈",
+    "selected_model": null,
+    "quantity_exact": null,
+    "model_instance": "PRT-0905__SEN-14",
+    "geometry_status": "功能位置占位，非器件数量定稿",
+    "model_instances": [
+      "PRT-0905__SEN-14"
+    ]
+  }
+]

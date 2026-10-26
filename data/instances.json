@@ -1,0 +1,5558 @@
+[
+  {
+    "instance_id": "PRT-0501-A",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-A",
+    "assembly_id": "ASM-05",
+    "name": "前宽承载板",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 972971.9374096463,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -90.0,
+      -170.0,
+      1319.0,
+      150.0,
+      170.0,
+      1331.0
+    ],
+    "local_bounds_mm": [
+      -90.0,
+      -170.0,
+      -181.0,
+      150.0,
+      170.0,
+      -169.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-B",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-B",
+    "assembly_id": "ASM-05",
+    "name": "后窄抬高尾板",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 156600.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -235.0,
+      -45.0,
+      1444.0,
+      -90.0,
+      45.0,
+      1456.0
+    ],
+    "local_bounds_mm": [
+      -235.0,
+      -45.0,
+      -56.0,
+      -90.0,
+      45.0,
+      -44.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-C__L",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-C",
+    "assembly_id": "ASM-05",
+    "name": "阶梯过渡筋",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 17999.999999999996,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -96.0,
+      33.0,
+      1319.0,
+      -84.0,
+      45.0,
+      1456.0
+    ],
+    "local_bounds_mm": [
+      -96.0,
+      33.0,
+      -181.0,
+      -84.0,
+      45.0,
+      -44.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-D__L",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-D",
+    "assembly_id": "ASM-05",
+    "name": "侧立筋",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 101880.00000000001,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      0.0,
+      158.0,
+      1331.0,
+      60.0,
+      170.0,
+      1477.0
+    ],
+    "local_bounds_mm": [
+      0.0,
+      158.0,
+      -169.0,
+      60.0,
+      170.0,
+      -23.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-E__L",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-E",
+    "assembly_id": "ASM-05",
+    "name": "耳轴外伸连接板",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 23760.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -30.0,
+      161.0,
+      1465.0,
+      30.0,
+      194.0,
+      1477.0
+    ],
+    "local_bounds_mm": [
+      -30.0,
+      161.0,
+      -35.0,
+      30.0,
+      194.0,
+      -23.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-F__L",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-F",
+    "assembly_id": "ASM-05",
+    "name": "短耳轴承力耳板",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 40078.13654827475,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -30.0,
+      194.0,
+      1458.0,
+      30.0,
+      206.0,
+      1518.0
+    ],
+    "local_bounds_mm": [
+      -30.0,
+      194.0,
+      -42.0,
+      30.0,
+      206.0,
+      18.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-C__R",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-C",
+    "assembly_id": "ASM-05",
+    "name": "阶梯过渡筋",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 17999.999999999996,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -96.0,
+      -45.0,
+      1319.0,
+      -84.0,
+      -33.0,
+      1456.0
+    ],
+    "local_bounds_mm": [
+      -96.0,
+      -45.0,
+      -181.0,
+      -84.0,
+      -33.0,
+      -44.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-D__R",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-D",
+    "assembly_id": "ASM-05",
+    "name": "侧立筋",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 101880.00000000001,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      0.0,
+      -170.0,
+      1331.0,
+      60.0,
+      -158.0,
+      1477.0
+    ],
+    "local_bounds_mm": [
+      0.0,
+      -170.0,
+      -169.0,
+      60.0,
+      -158.0,
+      -23.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-E__R",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-E",
+    "assembly_id": "ASM-05",
+    "name": "耳轴外伸连接板",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 23760.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -30.0,
+      -194.0,
+      1465.0,
+      30.0,
+      -161.0,
+      1477.0
+    ],
+    "local_bounds_mm": [
+      -30.0,
+      -194.0,
+      -35.0,
+      30.0,
+      -161.0,
+      -23.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-F__R",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-F",
+    "assembly_id": "ASM-05",
+    "name": "短耳轴承力耳板",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 40078.13654827475,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -30.0,
+      -206.0,
+      1458.0,
+      30.0,
+      -194.0,
+      1518.0
+    ],
+    "local_bounds_mm": [
+      -30.0,
+      -206.0,
+      -42.0,
+      30.0,
+      -194.0,
+      18.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-G__215",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-G",
+    "assembly_id": "ASM-05",
+    "name": "轨道垫座",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 2559.9999999999995,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -225.0,
+      -16.0,
+      1456.0,
+      -205.0,
+      16.0,
+      1460.0
+    ],
+    "local_bounds_mm": [
+      -225.0,
+      -16.0,
+      -44.0,
+      -205.0,
+      16.0,
+      -40.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0501-G__115",
+    "part_id": "PRT-0501",
+    "derived_id": "PRT-0501-G",
+    "assembly_id": "ASM-05",
+    "name": "轨道垫座",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 2559.9999999999995,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -125.0,
+      -16.0,
+      1456.0,
+      -105.0,
+      16.0,
+      1460.0
+    ],
+    "local_bounds_mm": [
+      -125.0,
+      -16.0,
+      -44.0,
+      -105.0,
+      16.0,
+      -40.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502__L",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502",
+    "assembly_id": "ASM-05",
+    "name": "可调轮距滑座",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 80124.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -47.5,
+      45.0,
+      1331.0,
+      47.5,
+      120.0,
+      1343.0
+    ],
+    "local_bounds_mm": [
+      -47.5,
+      45.0,
+      -169.0,
+      47.5,
+      120.0,
+      -157.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-A__L-35",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-A",
+    "assembly_id": "ASM-05",
+    "name": "轴承托架立柱",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 61000.62234440219,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      52.5,
+      1343.0,
+      -40.0,
+      112.5,
+      1445.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      52.5,
+      -157.0,
+      -40.0,
+      112.5,
+      -55.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-A__L35",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-A",
+    "assembly_id": "ASM-05",
+    "name": "轴承托架立柱",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 61000.62234440219,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      40.0,
+      52.5,
+      1343.0,
+      50.0,
+      112.5,
+      1445.0
+    ],
+    "local_bounds_mm": [
+      40.0,
+      52.5,
+      -157.0,
+      50.0,
+      112.5,
+      -55.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-B__L",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-B",
+    "assembly_id": "ASM-05",
+    "name": "轴承托台",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 34780.885263064556,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -40.0,
+      52.5,
+      1445.0,
+      40.0,
+      112.5,
+      1453.0
+    ],
+    "local_bounds_mm": [
+      -40.0,
+      52.5,
+      -55.0,
+      40.0,
+      112.5,
+      -47.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0503-A__L",
+    "part_id": "PRT-0503",
+    "derived_id": "PRT-0503-A",
+    "assembly_id": "ASM-05",
+    "name": "轴承固定座包络",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 41658.303984764054,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -22.5,
+      60.0,
+      1453.0,
+      22.5,
+      105.0,
+      1482.0
+    ],
+    "local_bounds_mm": [
+      -22.5,
+      60.0,
+      -47.0,
+      22.5,
+      105.0,
+      -18.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0503-B__L",
+    "part_id": "PRT-0503",
+    "derived_id": "PRT-0503-B",
+    "assembly_id": "ASM-05",
+    "name": "主轴候选",
+    "parent": "WHEEL_LEFT",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 8466.592201424492,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -7.0,
+      75.5,
+      1445.0,
+      7.0,
+      89.5,
+      1500.0
+    ],
+    "local_bounds_mm": [
+      -7.0,
+      75.5,
+      -55.0,
+      7.0,
+      89.5,
+      0.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0504__L",
+    "part_id": "PRT-0504",
+    "derived_id": "PRT-0504",
+    "assembly_id": "ASM-05",
+    "name": "轮毂候选实体",
+    "parent": "WHEEL_LEFT",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 123200.69750317732,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      32.5,
+      1492.0,
+      50.0,
+      132.5,
+      1508.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      32.5,
+      -8.0,
+      50.0,
+      132.5,
+      8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0505__L",
+    "part_id": "PRT-0505",
+    "derived_id": "PRT-0505",
+    "assembly_id": "ASM-05",
+    "name": "弹性轮缘",
+    "parent": "WHEEL_LEFT",
+    "color": "#30353E",
+    "status": "concept",
+    "volume_mm3": 120637.15789784807,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -70.0,
+      12.5,
+      1492.0,
+      70.0,
+      152.5,
+      1508.0
+    ],
+    "local_bounds_mm": [
+      -70.0,
+      12.5,
+      -8.0,
+      70.0,
+      152.5,
+      8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0506-A__L",
+    "part_id": "PRT-0506",
+    "derived_id": "PRT-0506-A",
+    "assembly_id": "ASM-05",
+    "name": "电机定子候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 384845.1000647497,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -35.0,
+      47.5,
+      1345.0,
+      35.0,
+      117.5,
+      1445.0
+    ],
+    "local_bounds_mm": [
+      -35.0,
+      47.5,
+      -155.0,
+      35.0,
+      117.5,
+      -55.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0506-B__L",
+    "part_id": "PRT-0506",
+    "derived_id": "PRT-0506-B",
+    "assembly_id": "ASM-05",
+    "name": "电机可调压环",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 7439.291403700627,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -39.0,
+      43.5,
+      1345.0,
+      39.0,
+      121.5,
+      1353.0
+    ],
+    "local_bounds_mm": [
+      -39.0,
+      43.5,
+      -155.0,
+      39.0,
+      121.5,
+      -147.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0506-C__L",
+    "part_id": "PRT-0506",
+    "derived_id": "PRT-0506-C",
+    "assembly_id": "ASM-05",
+    "name": "接线出口候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 2145.06092221398,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -6.000000000000001,
+      116.98187929913334,
+      1372.0,
+      6.0,
+      128.5,
+      1388.0
+    ],
+    "local_bounds_mm": [
+      -6.000000000000001,
+      116.98187929913334,
+      -128.0,
+      6.0,
+      128.5,
+      -112.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502__R",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502",
+    "assembly_id": "ASM-05",
+    "name": "可调轮距滑座",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 80124.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -47.5,
+      -120.0,
+      1331.0,
+      47.5,
+      -45.0,
+      1343.0
+    ],
+    "local_bounds_mm": [
+      -47.5,
+      -120.0,
+      -169.0,
+      47.5,
+      -45.0,
+      -157.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-A__R-35",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-A",
+    "assembly_id": "ASM-05",
+    "name": "轴承托架立柱",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 61000.62234440219,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      -112.5,
+      1343.0,
+      -40.0,
+      -52.5,
+      1445.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      -112.5,
+      -157.0,
+      -40.0,
+      -52.5,
+      -55.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-A__R35",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-A",
+    "assembly_id": "ASM-05",
+    "name": "轴承托架立柱",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 61000.62234440219,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      40.0,
+      -112.5,
+      1343.0,
+      50.0,
+      -52.5,
+      1445.0
+    ],
+    "local_bounds_mm": [
+      40.0,
+      -112.5,
+      -157.0,
+      50.0,
+      -52.5,
+      -55.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-B__R",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-B",
+    "assembly_id": "ASM-05",
+    "name": "轴承托台",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 34780.885263064556,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -40.0,
+      -112.5,
+      1445.0,
+      40.0,
+      -52.5,
+      1453.0
+    ],
+    "local_bounds_mm": [
+      -40.0,
+      -112.5,
+      -55.0,
+      40.0,
+      -52.5,
+      -47.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0503-A__R",
+    "part_id": "PRT-0503",
+    "derived_id": "PRT-0503-A",
+    "assembly_id": "ASM-05",
+    "name": "轴承固定座包络",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 41658.30398476405,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -22.5,
+      -105.0,
+      1453.0,
+      22.5,
+      -60.0,
+      1482.0
+    ],
+    "local_bounds_mm": [
+      -22.5,
+      -105.0,
+      -47.0,
+      22.5,
+      -60.0,
+      -18.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0503-B__R",
+    "part_id": "PRT-0503",
+    "derived_id": "PRT-0503-B",
+    "assembly_id": "ASM-05",
+    "name": "主轴候选",
+    "parent": "WHEEL_RIGHT",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 8466.592201424492,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -7.0,
+      -89.5,
+      1445.0,
+      7.0,
+      -75.5,
+      1500.0
+    ],
+    "local_bounds_mm": [
+      -7.0,
+      -89.5,
+      -55.0,
+      7.0,
+      -75.5,
+      0.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0504__R",
+    "part_id": "PRT-0504",
+    "derived_id": "PRT-0504",
+    "assembly_id": "ASM-05",
+    "name": "轮毂候选实体",
+    "parent": "WHEEL_RIGHT",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 123200.69750317732,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      -132.5,
+      1492.0,
+      50.0,
+      -32.5,
+      1508.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      -132.5,
+      -8.0,
+      50.0,
+      -32.5,
+      8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0505__R",
+    "part_id": "PRT-0505",
+    "derived_id": "PRT-0505",
+    "assembly_id": "ASM-05",
+    "name": "弹性轮缘",
+    "parent": "WHEEL_RIGHT",
+    "color": "#30353E",
+    "status": "concept",
+    "volume_mm3": 120637.15789784801,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -70.0,
+      -152.5,
+      1492.0,
+      70.0,
+      -12.5,
+      1508.0
+    ],
+    "local_bounds_mm": [
+      -70.0,
+      -152.5,
+      -8.0,
+      70.0,
+      -12.5,
+      8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0506-A__R",
+    "part_id": "PRT-0506",
+    "derived_id": "PRT-0506-A",
+    "assembly_id": "ASM-05",
+    "name": "电机定子候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 384845.1000647497,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -35.0,
+      -117.5,
+      1345.0,
+      35.0,
+      -47.5,
+      1445.0
+    ],
+    "local_bounds_mm": [
+      -35.0,
+      -117.5,
+      -155.0,
+      35.0,
+      -47.5,
+      -55.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0506-B__R",
+    "part_id": "PRT-0506",
+    "derived_id": "PRT-0506-B",
+    "assembly_id": "ASM-05",
+    "name": "电机可调压环",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 7439.291403700627,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -39.0,
+      -121.5,
+      1345.0,
+      39.0,
+      -43.5,
+      1353.0
+    ],
+    "local_bounds_mm": [
+      -39.0,
+      -121.5,
+      -155.0,
+      39.0,
+      -43.5,
+      -147.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0506-C__R",
+    "part_id": "PRT-0506",
+    "derived_id": "PRT-0506-C",
+    "assembly_id": "ASM-05",
+    "name": "接线出口候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 2145.06092221398,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -6.00000000000004,
+      -128.5,
+      1372.0,
+      6.0,
+      -116.98187929913333,
+      1388.0
+    ],
+    "local_bounds_mm": [
+      -6.00000000000004,
+      -128.5,
+      -128.0,
+      6.0,
+      -116.98187929913333,
+      -112.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0703-A",
+    "part_id": "PRT-0703",
+    "derived_id": "PRT-0703-A",
+    "assembly_id": "ASM-07",
+    "name": "固定轨",
+    "parent": "MOVING_HEAD",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 124800.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -245.0,
+      -20.0,
+      1460.0,
+      15.0,
+      20.0,
+      1472.0
+    ],
+    "local_bounds_mm": [
+      -245.0,
+      -20.0,
+      -40.0,
+      15.0,
+      20.0,
+      -28.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0703-B",
+    "part_id": "PRT-0703",
+    "derived_id": "PRT-0703-B",
+    "assembly_id": "ASM-07",
+    "name": "导向凸轨",
+    "parent": "MOVING_HEAD",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 24960.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -245.0,
+      -6.0,
+      1472.0,
+      15.0,
+      6.0,
+      1480.0
+    ],
+    "local_bounds_mm": [
+      -245.0,
+      -6.0,
+      -28.0,
+      15.0,
+      6.0,
+      -20.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0703-C",
+    "part_id": "PRT-0703",
+    "derived_id": "PRT-0703-C",
+    "assembly_id": "ASM-07",
+    "name": "移动滑块",
+    "parent": "CARRIAGE",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 6768.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -208.0,
+      -15.0,
+      1472.0,
+      -172.0,
+      15.0,
+      1482.0
+    ],
+    "local_bounds_mm": [
+      -208.0,
+      -15.0,
+      -28.0,
+      -172.0,
+      15.0,
+      -18.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0701-A",
+    "part_id": "PRT-0701",
+    "derived_id": "PRT-0701-A",
+    "assembly_id": "ASM-07",
+    "name": "低位托体",
+    "parent": "CARRIAGE",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 6240.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -235.0,
+      -16.0,
+      1482.0,
+      -175.0,
+      16.0,
+      1487.0
+    ],
+    "local_bounds_mm": [
+      -235.0,
+      -16.0,
+      -18.0,
+      -175.0,
+      16.0,
+      -13.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0701-B",
+    "part_id": "PRT-0701",
+    "derived_id": "PRT-0701-B",
+    "assembly_id": "ASM-07",
+    "name": "窄推头",
+    "parent": "CARRIAGE",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 360.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -206.5,
+      -5.0,
+      1487.0,
+      -203.5,
+      5.0,
+      1499.0
+    ],
+    "local_bounds_mm": [
+      -206.5,
+      -5.0,
+      -13.0,
+      -203.5,
+      5.0,
+      -1.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0701-C",
+    "part_id": "PRT-0701",
+    "derived_id": "PRT-0701-C",
+    "assembly_id": "ASM-07",
+    "name": "释放机构侧悬臂",
+    "parent": "CARRIAGE",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 4130.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -235.0,
+      -65.0,
+      1480.0,
+      -225.0,
+      5.0,
+      1488.0
+    ],
+    "local_bounds_mm": [
+      -235.0,
+      -65.0,
+      -20.0,
+      -225.0,
+      5.0,
+      -12.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0702__L",
+    "part_id": "PRT-0702",
+    "derived_id": "PRT-0702",
+    "assembly_id": "ASM-07",
+    "name": "低位夹指",
+    "parent": "CLAMP_L",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 2799.9999999999995,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -219.5,
+      13.25,
+      1484.0,
+      -184.5,
+      23.25,
+      1492.0
+    ],
+    "local_bounds_mm": [
+      -219.5,
+      13.25,
+      -16.0,
+      -184.5,
+      23.25,
+      -8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0702-A__L",
+    "part_id": "PRT-0702",
+    "derived_id": "PRT-0702-A",
+    "assembly_id": "ASM-07",
+    "name": "夹指导向连杆",
+    "parent": "CLAMP_L",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 1215.9999999999998,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -229.0,
+      0.0,
+      1488.0,
+      -219.5,
+      36.5,
+      1492.0
+    ],
+    "local_bounds_mm": [
+      -229.0,
+      0.0,
+      -12.0,
+      -219.5,
+      36.5,
+      -8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0702__R",
+    "part_id": "PRT-0702",
+    "derived_id": "PRT-0702",
+    "assembly_id": "ASM-07",
+    "name": "低位夹指",
+    "parent": "CLAMP_R",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 2799.9999999999995,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -219.5,
+      -23.25,
+      1484.0,
+      -184.5,
+      -13.25,
+      1492.0
+    ],
+    "local_bounds_mm": [
+      -219.5,
+      -23.25,
+      -16.0,
+      -184.5,
+      -13.25,
+      -8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0702-A__R",
+    "part_id": "PRT-0702",
+    "derived_id": "PRT-0702-A",
+    "assembly_id": "ASM-07",
+    "name": "夹指导向连杆",
+    "parent": "CLAMP_R",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 1215.9999999999998,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -229.0,
+      -36.5,
+      1488.0,
+      -219.5,
+      0.0,
+      1492.0
+    ],
+    "local_bounds_mm": [
+      -229.0,
+      -36.5,
+      -12.0,
+      -219.5,
+      0.0,
+      -8.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0704",
+    "part_id": "PRT-0704",
+    "derived_id": "PRT-0704",
+    "assembly_id": "ASM-07",
+    "name": "释放执行器候选",
+    "parent": "CARRIAGE",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 13500.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      -72.5,
+      1450.0,
+      -230.0,
+      -57.5,
+      1480.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      -72.5,
+      -50.0,
+      -230.0,
+      -57.5,
+      -20.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0704-A",
+    "part_id": "PRT-0704",
+    "derived_id": "PRT-0704-A",
+    "assembly_id": "ASM-07",
+    "name": "执行器连接支板",
+    "parent": "CARRIAGE",
+    "color": "#E28362",
+    "status": "concept",
+    "volume_mm3": 1760.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      -73.0,
+      1480.0,
+      -230.0,
+      -57.0,
+      1484.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      -73.0,
+      -20.0,
+      -230.0,
+      -57.0,
+      -16.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0601",
+    "part_id": "PRT-0601",
+    "derived_id": "PRT-0601",
+    "assembly_id": "ASM-06",
+    "name": "带分球窗口储球筒",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#A7C3D1",
+    "status": "concept",
+    "alpha": 0.32,
+    "volume_mm3": 260996.22230803408,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -230.0,
+      -40.0,
+      1610.0,
+      -150.0,
+      40.0,
+      2150.0
+    ],
+    "local_bounds_mm": [
+      -230.0,
+      -40.0,
+      110.0,
+      -150.0,
+      40.0,
+      650.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0601-A",
+    "part_id": "PRT-0601",
+    "derived_id": "PRT-0601-A",
+    "assembly_id": "ASM-06",
+    "name": "可拆筒帽",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 25446.900494077337,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -233.0,
+      -43.0,
+      2150.0,
+      -147.0,
+      43.0,
+      2170.0
+    ],
+    "local_bounds_mm": [
+      -233.0,
+      -43.0,
+      650.0,
+      -147.0,
+      43.0,
+      670.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-A__L",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-A",
+    "assembly_id": "ASM-06",
+    "name": "后侧固定立杆",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 193800.00000000003,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -320.0,
+      75.0,
+      1150.0,
+      -300.0,
+      95.0,
+      2100.0
+    ],
+    "local_bounds_mm": [
+      -320.0,
+      75.0,
+      -350.0,
+      -300.0,
+      95.0,
+      600.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-B__L",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-B",
+    "assembly_id": "ASM-06",
+    "name": "底部悬臂连接梁",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 121911.65497529614,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -310.0,
+      75.0,
+      1138.0,
+      0.0,
+      95.0,
+      1158.0
+    ],
+    "local_bounds_mm": [
+      -310.0,
+      75.0,
+      -362.0,
+      0.0,
+      95.0,
+      -342.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-C__L410",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-C",
+    "assembly_id": "ASM-06",
+    "name": "筒架侧向托臂",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 33274.81460178541,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -320.0,
+      50.0,
+      1904.0,
+      -190.0,
+      90.0,
+      1916.0
+    ],
+    "local_bounds_mm": [
+      -320.0,
+      50.0,
+      404.0,
+      -190.0,
+      90.0,
+      416.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-C__L600",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-C",
+    "assembly_id": "ASM-06",
+    "name": "筒架侧向托臂",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 33274.814601785416,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -320.0,
+      50.0,
+      2094.0,
+      -190.0,
+      90.0,
+      2106.0
+    ],
+    "local_bounds_mm": [
+      -320.0,
+      50.0,
+      594.0,
+      -190.0,
+      90.0,
+      606.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-A__R",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-A",
+    "assembly_id": "ASM-06",
+    "name": "后侧固定立杆",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 193800.00000000003,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -320.0,
+      -95.0,
+      1150.0,
+      -300.0,
+      -75.0,
+      2100.0
+    ],
+    "local_bounds_mm": [
+      -320.0,
+      -95.0,
+      -350.0,
+      -300.0,
+      -75.0,
+      600.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-B__R",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-B",
+    "assembly_id": "ASM-06",
+    "name": "底部悬臂连接梁",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 121911.65497529614,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -310.0,
+      -95.0,
+      1138.0,
+      0.0,
+      -75.0,
+      1158.0
+    ],
+    "local_bounds_mm": [
+      -310.0,
+      -95.0,
+      -362.0,
+      0.0,
+      -75.0,
+      -342.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-C__R410",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-C",
+    "assembly_id": "ASM-06",
+    "name": "筒架侧向托臂",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 33274.814601785416,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -320.0,
+      -90.0,
+      1904.0,
+      -190.0,
+      -49.999999999999986,
+      1916.0
+    ],
+    "local_bounds_mm": [
+      -320.0,
+      -90.0,
+      404.0,
+      -190.0,
+      -49.999999999999986,
+      416.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-C__R600",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-C",
+    "assembly_id": "ASM-06",
+    "name": "筒架侧向托臂",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 33274.81460178541,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -320.0,
+      -90.0,
+      2094.0,
+      -190.0,
+      -49.999999999999986,
+      2106.0
+    ],
+    "local_bounds_mm": [
+      -320.0,
+      -90.0,
+      594.0,
+      -190.0,
+      -49.999999999999986,
+      606.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-D__410",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-D",
+    "assembly_id": "ASM-06",
+    "name": "后开口快拆卡环",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 26101.922562350803,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -190.0,
+      -55.0,
+      1904.0,
+      -135.0,
+      55.0,
+      1916.0
+    ],
+    "local_bounds_mm": [
+      -190.0,
+      -55.0,
+      404.0,
+      -135.0,
+      55.0,
+      416.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-E__410",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-E",
+    "assembly_id": "ASM-06",
+    "name": "可拆后压带",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 26101.922562350803,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -245.0,
+      -55.0,
+      1904.0,
+      -190.0,
+      55.0,
+      1916.0
+    ],
+    "local_bounds_mm": [
+      -245.0,
+      -55.0,
+      404.0,
+      -190.0,
+      55.0,
+      416.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-D__600",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-D",
+    "assembly_id": "ASM-06",
+    "name": "后开口快拆卡环",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 26101.922562350803,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -190.0,
+      -55.0,
+      2094.0,
+      -135.0,
+      55.0,
+      2106.0
+    ],
+    "local_bounds_mm": [
+      -190.0,
+      -55.0,
+      594.0,
+      -135.0,
+      55.0,
+      606.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-E__600",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-E",
+    "assembly_id": "ASM-06",
+    "name": "可拆后压带",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 26101.922562350803,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -245.0,
+      -55.0,
+      2094.0,
+      -190.0,
+      55.0,
+      2106.0
+    ],
+    "local_bounds_mm": [
+      -245.0,
+      -55.0,
+      594.0,
+      -190.0,
+      55.0,
+      606.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-F__-1",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-F",
+    "assembly_id": "ASM-06",
+    "name": "分球盒侧壁",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 159948.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -310.0,
+      -75.0,
+      1780.0,
+      -140.0,
+      -69.0,
+      1950.0
+    ],
+    "local_bounds_mm": [
+      -310.0,
+      -75.0,
+      280.0,
+      -140.0,
+      -69.0,
+      450.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-F__1",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-F",
+    "assembly_id": "ASM-06",
+    "name": "分球盒侧壁",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 159948.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -310.0,
+      69.0,
+      1780.0,
+      -140.0,
+      75.0,
+      1950.0
+    ],
+    "local_bounds_mm": [
+      -310.0,
+      69.0,
+      280.0,
+      -140.0,
+      75.0,
+      450.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0602-G",
+    "part_id": "PRT-0602",
+    "derived_id": "PRT-0602-G",
+    "assembly_id": "ASM-06",
+    "name": "分球机构背板",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 86328.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -316.0,
+      -75.0,
+      1780.0,
+      -310.0,
+      75.0,
+      1880.0
+    ],
+    "local_bounds_mm": [
+      -316.0,
+      -75.0,
+      280.0,
+      -310.0,
+      75.0,
+      380.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0603__L",
+    "part_id": "PRT-0603",
+    "derived_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "name": "可更换弧面留球试验夹块 R29",
+    "parent": "UPPER_L",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 6366.056849647864,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -199.0,
+      27.568097504180443,
+      1886.0,
+      -181.0,
+      58.0,
+      1898.0
+    ],
+    "local_bounds_mm": [
+      -199.0,
+      27.568097504180443,
+      386.0,
+      -181.0,
+      58.0,
+      398.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0603__R",
+    "part_id": "PRT-0603",
+    "derived_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "name": "可更换弧面留球试验夹块 R29",
+    "parent": "UPPER_R",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 6366.056849647865,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -199.00000000000003,
+      -58.0,
+      1886.0,
+      -181.0,
+      -27.568097504180432,
+      1898.0
+    ],
+    "local_bounds_mm": [
+      -199.00000000000003,
+      -58.0,
+      386.0,
+      -181.0,
+      -27.568097504180432,
+      398.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0604",
+    "part_id": "PRT-0604",
+    "derived_id": "PRT-0604",
+    "assembly_id": "ASM-06",
+    "name": "可抽出托球闸",
+    "parent": "LOWER_GATE",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 33150.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -232.5,
+      -32.5,
+      1781.0,
+      -147.5,
+      32.5,
+      1787.0
+    ],
+    "local_bounds_mm": [
+      -232.5,
+      -32.5,
+      281.0,
+      -147.5,
+      32.5,
+      287.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0605__1",
+    "part_id": "PRT-0605",
+    "derived_id": "PRT-0605",
+    "assembly_id": "ASM-06",
+    "name": "分球执行器候选",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 41580.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -291.0,
+      33.0,
+      1780.5,
+      -249.0,
+      55.0,
+      1825.5
+    ],
+    "local_bounds_mm": [
+      -291.0,
+      33.0,
+      280.5,
+      -249.0,
+      55.0,
+      325.5
+    ]
+  },
+  {
+    "instance_id": "PRT-0605-A__1",
+    "part_id": "PRT-0605",
+    "derived_id": "PRT-0605-A",
+    "assembly_id": "ASM-06",
+    "name": "可调连杆",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 1224.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -249.0,
+      43.0,
+      1800.0,
+      -215.0,
+      49.0,
+      1806.0
+    ],
+    "local_bounds_mm": [
+      -249.0,
+      43.0,
+      300.0,
+      -215.0,
+      49.0,
+      306.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0605__2",
+    "part_id": "PRT-0605",
+    "derived_id": "PRT-0605",
+    "assembly_id": "ASM-06",
+    "name": "分球执行器候选",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 41580.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -291.0,
+      33.0,
+      1847.0,
+      -249.0,
+      55.0,
+      1892.0
+    ],
+    "local_bounds_mm": [
+      -291.0,
+      33.0,
+      347.0,
+      -249.0,
+      55.0,
+      392.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0605-A__2",
+    "part_id": "PRT-0605",
+    "derived_id": "PRT-0605-A",
+    "assembly_id": "ASM-06",
+    "name": "可调连杆",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 1692.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -275.0,
+      43.0,
+      1889.0,
+      -215.0,
+      49.0,
+      1895.0
+    ],
+    "local_bounds_mm": [
+      -275.0,
+      43.0,
+      389.0,
+      -215.0,
+      49.0,
+      395.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0606",
+    "part_id": "PRT-0606",
+    "derived_id": "PRT-0606",
+    "assembly_id": "ASM-06",
+    "name": "外导球套",
+    "parent": "GUIDE_SLEEVE",
+    "color": "#B8D5DC",
+    "status": "concept",
+    "alpha": 0.45,
+    "volume_mm3": 79168.1348704627,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -233.0,
+      -43.0,
+      1610.0,
+      -147.0,
+      43.0,
+      1760.0
+    ],
+    "local_bounds_mm": [
+      -233.0,
+      -43.0,
+      -5.0,
+      -147.0,
+      43.0,
+      145.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0606-A",
+    "part_id": "PRT-0606",
+    "derived_id": "PRT-0606-A",
+    "assembly_id": "ASM-06",
+    "name": "导套滑座连接叉",
+    "parent": "GUIDE_SLEEVE",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 2892.7248435695437,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -255.0,
+      -13.0,
+      1738.0,
+      -230.98780306383838,
+      13.000000000000002,
+      1748.0
+    ],
+    "local_bounds_mm": [
+      -255.0,
+      -13.0,
+      123.0,
+      -230.98780306383838,
+      13.000000000000002,
+      133.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0607-A",
+    "part_id": "PRT-0607",
+    "derived_id": "PRT-0607-A",
+    "assembly_id": "ASM-06",
+    "name": "独立线性导套轨",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 308000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -295.0,
+      -17.5,
+      1560.0,
+      -255.0,
+      17.5,
+      1780.0
+    ],
+    "local_bounds_mm": [
+      -295.0,
+      -17.5,
+      60.0,
+      -255.0,
+      17.5,
+      280.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0607-B",
+    "part_id": "PRT-0607",
+    "derived_id": "PRT-0607-B",
+    "assembly_id": "ASM-06",
+    "name": "导套移动滑块",
+    "parent": "GUIDE_SLEEVE",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 9000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -255.0,
+      -12.5,
+      1728.0,
+      -243.0,
+      12.5,
+      1758.0
+    ],
+    "local_bounds_mm": [
+      -255.0,
+      -12.5,
+      113.0,
+      -243.0,
+      12.5,
+      143.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0607-C",
+    "part_id": "PRT-0607",
+    "derived_id": "PRT-0607-C",
+    "assembly_id": "ASM-06",
+    "name": "导轨顶部固定桥",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7DA99F",
+    "status": "concept",
+    "volume_mm3": 87120.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -310.0,
+      -55.0,
+      1771.0,
+      -250.0,
+      55.0,
+      1814.0
+    ],
+    "local_bounds_mm": [
+      -310.0,
+      -55.0,
+      271.0,
+      -250.0,
+      55.0,
+      314.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0101-A__-1",
+    "part_id": "PRT-0101",
+    "derived_id": "PRT-0101-A",
+    "assembly_id": "ASM-01",
+    "name": "纵向底架梁",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 2071133.1688945089,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -325.0,
+      -300.0,
+      80.0,
+      325.0,
+      -260.0,
+      160.0
+    ],
+    "local_bounds_mm": [
+      -325.0,
+      -300.0,
+      80.0,
+      325.0,
+      -260.0,
+      160.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0101-B__-1",
+    "part_id": "PRT-0101",
+    "derived_id": "PRT-0101-B",
+    "assembly_id": "ASM-01",
+    "name": "横向底架梁",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 1664000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -325.0,
+      -260.0,
+      80.0,
+      -285.0,
+      260.0,
+      160.0
+    ],
+    "local_bounds_mm": [
+      -325.0,
+      -260.0,
+      80.0,
+      -285.0,
+      260.0,
+      160.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0101-A__1",
+    "part_id": "PRT-0101",
+    "derived_id": "PRT-0101-A",
+    "assembly_id": "ASM-01",
+    "name": "纵向底架梁",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 2071133.1688945084,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -325.0,
+      260.0,
+      80.0,
+      325.0,
+      300.0,
+      160.0
+    ],
+    "local_bounds_mm": [
+      -325.0,
+      260.0,
+      80.0,
+      325.0,
+      300.0,
+      160.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0101-B__1",
+    "part_id": "PRT-0101",
+    "derived_id": "PRT-0101-B",
+    "assembly_id": "ASM-01",
+    "name": "横向底架梁",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 1664000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      285.0,
+      -260.0,
+      80.0,
+      325.0,
+      260.0,
+      160.0
+    ],
+    "local_bounds_mm": [
+      285.0,
+      -260.0,
+      80.0,
+      325.0,
+      260.0,
+      160.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0101-C",
+    "part_id": "PRT-0101",
+    "derived_id": "PRT-0101-C",
+    "assembly_id": "ASM-01",
+    "name": "立柱连接桥板",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 831999.9999999999,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -100.0,
+      -260.0,
+      152.0,
+      100.0,
+      260.0,
+      160.0
+    ],
+    "local_bounds_mm": [
+      -100.0,
+      -260.0,
+      152.0,
+      100.0,
+      260.0,
+      160.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0101-D",
+    "part_id": "PRT-0101",
+    "derived_id": "PRT-0101-D",
+    "assembly_id": "ASM-01",
+    "name": "配重承托梁",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 134400.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -210.0,
+      -20.0,
+      96.0,
+      210.0,
+      20.0,
+      104.0
+    ],
+    "local_bounds_mm": [
+      -210.0,
+      -20.0,
+      96.0,
+      210.0,
+      20.0,
+      104.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0102",
+    "part_id": "PRT-0102",
+    "derived_id": "PRT-0102",
+    "assembly_id": "ASM-01",
+    "name": "配重板",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 1536000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -200.0,
+      -160.0,
+      104.0,
+      200.0,
+      160.0,
+      116.0
+    ],
+    "local_bounds_mm": [
+      -200.0,
+      -160.0,
+      104.0,
+      200.0,
+      160.0,
+      116.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103__-1_-1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103",
+    "assembly_id": "ASM-01",
+    "name": "展开支腿",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 347128.64643134375,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -439.14213562373095,
+      -414.14213562373095,
+      40.0,
+      -255.2943725152286,
+      -230.2943725152286,
+      80.0
+    ],
+    "local_bounds_mm": [
+      -439.14213562373095,
+      -414.14213562373095,
+      40.0,
+      -255.2943725152286,
+      -230.2943725152286,
+      80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103-A__-1_-1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103-A",
+    "assembly_id": "ASM-01",
+    "name": "概念支腿锁销",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 2412.7431579569625,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -304.0,
+      -279.0,
+      56.0,
+      -296.0,
+      -271.0,
+      104.0
+    ],
+    "local_bounds_mm": [
+      -304.0,
+      -279.0,
+      56.0,
+      -296.0,
+      -271.0,
+      104.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0104__-1_-1",
+    "part_id": "PRT-0104",
+    "derived_id": "PRT-0104",
+    "assembly_id": "ASM-01",
+    "name": "调平脚候选",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 28682.740927274812,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -450.0,
+      -425.0,
+      0.0,
+      -400.0,
+      -375.0,
+      90.0
+    ],
+    "local_bounds_mm": [
+      -450.0,
+      -425.0,
+      0.0,
+      -400.0,
+      -375.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103__-1_1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103",
+    "assembly_id": "ASM-01",
+    "name": "展开支腿",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 347128.64643134375,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -439.14213562373095,
+      230.2943725152286,
+      40.0,
+      -255.2943725152286,
+      414.14213562373095,
+      80.0
+    ],
+    "local_bounds_mm": [
+      -439.14213562373095,
+      230.2943725152286,
+      40.0,
+      -255.2943725152286,
+      414.14213562373095,
+      80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103-A__-1_1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103-A",
+    "assembly_id": "ASM-01",
+    "name": "概念支腿锁销",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 2412.7431579569625,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -304.0,
+      271.0,
+      56.0,
+      -296.0,
+      279.0,
+      104.0
+    ],
+    "local_bounds_mm": [
+      -304.0,
+      271.0,
+      56.0,
+      -296.0,
+      279.0,
+      104.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0104__-1_1",
+    "part_id": "PRT-0104",
+    "derived_id": "PRT-0104",
+    "assembly_id": "ASM-01",
+    "name": "调平脚候选",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 28682.740927274812,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -450.0,
+      375.0,
+      0.0,
+      -400.0,
+      425.0,
+      90.0
+    ],
+    "local_bounds_mm": [
+      -450.0,
+      375.0,
+      0.0,
+      -400.0,
+      425.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103__1_-1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103",
+    "assembly_id": "ASM-01",
+    "name": "展开支腿",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 347128.64643134404,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      255.2943725152286,
+      -414.14213562373095,
+      40.0,
+      439.14213562373095,
+      -230.2943725152286,
+      80.0
+    ],
+    "local_bounds_mm": [
+      255.2943725152286,
+      -414.14213562373095,
+      40.0,
+      439.14213562373095,
+      -230.2943725152286,
+      80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103-A__1_-1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103-A",
+    "assembly_id": "ASM-01",
+    "name": "概念支腿锁销",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 2412.7431579569625,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      296.0,
+      -279.0,
+      56.0,
+      304.0,
+      -271.0,
+      104.0
+    ],
+    "local_bounds_mm": [
+      296.0,
+      -279.0,
+      56.0,
+      304.0,
+      -271.0,
+      104.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0104__1_-1",
+    "part_id": "PRT-0104",
+    "derived_id": "PRT-0104",
+    "assembly_id": "ASM-01",
+    "name": "调平脚候选",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 28682.740927274812,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      400.0,
+      -425.0,
+      0.0,
+      450.0,
+      -375.0,
+      90.0
+    ],
+    "local_bounds_mm": [
+      400.0,
+      -425.0,
+      0.0,
+      450.0,
+      -375.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103__1_1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103",
+    "assembly_id": "ASM-01",
+    "name": "展开支腿",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 347128.646431344,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      255.2943725152286,
+      230.2943725152286,
+      40.0,
+      439.14213562373095,
+      414.14213562373095,
+      80.0
+    ],
+    "local_bounds_mm": [
+      255.2943725152286,
+      230.2943725152286,
+      40.0,
+      439.14213562373095,
+      414.14213562373095,
+      80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0103-A__1_1",
+    "part_id": "PRT-0103",
+    "derived_id": "PRT-0103-A",
+    "assembly_id": "ASM-01",
+    "name": "概念支腿锁销",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 2412.7431579569625,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      296.0,
+      271.0,
+      56.0,
+      304.0,
+      279.0,
+      104.0
+    ],
+    "local_bounds_mm": [
+      296.0,
+      271.0,
+      56.0,
+      304.0,
+      279.0,
+      104.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0104__1_1",
+    "part_id": "PRT-0104",
+    "derived_id": "PRT-0104",
+    "assembly_id": "ASM-01",
+    "name": "调平脚候选",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 28682.740927274812,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      400.0,
+      375.0,
+      0.0,
+      450.0,
+      425.0,
+      90.0
+    ],
+    "local_bounds_mm": [
+      400.0,
+      375.0,
+      0.0,
+      450.0,
+      425.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0105-A__-1",
+    "part_id": "PRT-0105",
+    "derived_id": "PRT-0105-A",
+    "assembly_id": "ASM-01",
+    "name": "搬运轮胎",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 137576.6254860042,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -275.0,
+      -234.0,
+      6.0,
+      -195.0,
+      -206.0,
+      86.0
+    ],
+    "local_bounds_mm": [
+      -275.0,
+      -234.0,
+      6.0,
+      -195.0,
+      -206.0,
+      86.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0105-B__-1",
+    "part_id": "PRT-0105",
+    "derived_id": "PRT-0105-B",
+    "assembly_id": "ASM-01",
+    "name": "脚轮支架",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 40075.42307037604,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      -240.0,
+      45.99999999999999,
+      -210.0,
+      -200.0,
+      100.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      -240.0,
+      45.99999999999999,
+      -210.0,
+      -200.0,
+      100.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0105-A__1",
+    "part_id": "PRT-0105",
+    "derived_id": "PRT-0105-A",
+    "assembly_id": "ASM-01",
+    "name": "搬运轮胎",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 137576.6254860042,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -275.0,
+      206.0,
+      6.0,
+      -195.0,
+      234.0,
+      86.0
+    ],
+    "local_bounds_mm": [
+      -275.0,
+      206.0,
+      6.0,
+      -195.0,
+      234.0,
+      86.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0105-B__1",
+    "part_id": "PRT-0105",
+    "derived_id": "PRT-0105-B",
+    "assembly_id": "ASM-01",
+    "name": "脚轮支架",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 40075.42307037604,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      200.0,
+      45.99999999999999,
+      -210.0,
+      240.0,
+      100.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      200.0,
+      45.99999999999999,
+      -210.0,
+      240.0,
+      100.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0201",
+    "part_id": "PRT-0201",
+    "derived_id": "PRT-0201",
+    "assembly_id": "ASM-02",
+    "name": "外立柱",
+    "parent": "WORLD_STATIC",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 1209404.9594172873,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -45.0,
+      -45.0,
+      160.0,
+      45.0,
+      45.0,
+      1040.0
+    ],
+    "local_bounds_mm": [
+      -45.0,
+      -45.0,
+      160.0,
+      45.0,
+      45.0,
+      1040.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0202",
+    "part_id": "PRT-0202",
+    "derived_id": "PRT-0202",
+    "assembly_id": "ASM-02",
+    "name": "内滑柱",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 785060.5491259588,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -40.0,
+      -40.0,
+      508.0,
+      40.0,
+      40.0,
+      1158.0
+    ],
+    "local_bounds_mm": [
+      -40.0,
+      -40.0,
+      -992.0,
+      40.0,
+      40.0,
+      -342.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0203",
+    "part_id": "PRT-0203",
+    "derived_id": "PRT-0203",
+    "assembly_id": "ASM-02",
+    "name": "高度定位销候选",
+    "parent": "WORLD_STATIC",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 11309.733552923246,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      -6.0,
+      944.0,
+      50.0,
+      6.0,
+      956.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      -6.0,
+      944.0,
+      50.0,
+      6.0,
+      956.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0204__860",
+    "part_id": "PRT-0204",
+    "derived_id": "PRT-0204",
+    "assembly_id": "ASM-02",
+    "name": "分体导向夹紧座",
+    "parent": "WORLD_STATIC",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 306738.5999999999,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -65.0,
+      -65.0,
+      842.5,
+      65.0,
+      65.0,
+      877.5
+    ],
+    "local_bounds_mm": [
+      -65.0,
+      -65.0,
+      842.5,
+      65.0,
+      65.0,
+      877.5
+    ]
+  },
+  {
+    "instance_id": "PRT-0204__1022.5",
+    "part_id": "PRT-0204",
+    "derived_id": "PRT-0204",
+    "assembly_id": "ASM-02",
+    "name": "分体导向夹紧座",
+    "parent": "WORLD_STATIC",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 306738.5999999999,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -65.0,
+      -65.0,
+      1005.0,
+      65.0,
+      65.0,
+      1040.0
+    ],
+    "local_bounds_mm": [
+      -65.0,
+      -65.0,
+      1005.0,
+      65.0,
+      65.0,
+      1040.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0301",
+    "part_id": "PRT-0301",
+    "derived_id": "PRT-0301",
+    "assembly_id": "ASM-03",
+    "name": "偏航固定基座",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 524638.4074669876,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -105.0,
+      -105.0,
+      1158.0,
+      105.0,
+      105.0,
+      1170.0
+    ],
+    "local_bounds_mm": [
+      -105.0,
+      -105.0,
+      -342.0,
+      105.0,
+      105.0,
+      -330.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0302-A",
+    "part_id": "PRT-0302",
+    "derived_id": "PRT-0302-A",
+    "assembly_id": "ASM-03",
+    "name": "回转固定圈",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 217146.8842161265,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -80.0,
+      -80.0,
+      1170.0,
+      80.0,
+      80.0,
+      1200.0
+    ],
+    "local_bounds_mm": [
+      -80.0,
+      -80.0,
+      -330.0,
+      80.0,
+      80.0,
+      -300.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0302-B",
+    "part_id": "PRT-0302",
+    "derived_id": "PRT-0302-B",
+    "assembly_id": "ASM-03",
+    "name": "回转运动圈",
+    "parent": "YAW_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 189178.85561754333,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -63.5,
+      -63.5,
+      1170.0,
+      63.5,
+      63.5,
+      1200.0
+    ],
+    "local_bounds_mm": [
+      -63.5,
+      -63.5,
+      -330.0,
+      63.5,
+      63.5,
+      -300.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303",
+    "assembly_id": "ASM-03",
+    "name": "偏航闭环执行器候选",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 540000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -295.0,
+      -37.5,
+      1110.0,
+      -205.0,
+      37.5,
+      1190.0
+    ],
+    "local_bounds_mm": [
+      -295.0,
+      -37.5,
+      -390.0,
+      -205.0,
+      37.5,
+      -310.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-A",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-A",
+    "assembly_id": "ASM-03",
+    "name": "偏航输出候选连接轴",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 9424.777960769377,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      -10.0,
+      1190.0,
+      -240.0,
+      10.0,
+      1220.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      -10.0,
+      -310.0,
+      -240.0,
+      10.0,
+      -280.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-B",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-B",
+    "assembly_id": "ASM-03",
+    "name": "偏航传动概念连臂",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 16746.193947594,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -338.0,
+      -88.0,
+      1212.0,
+      88.0,
+      88.0,
+      1220.0
+    ],
+    "local_bounds_mm": [
+      -338.0,
+      -88.0,
+      -288.0,
+      88.0,
+      88.0,
+      -280.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0401-A",
+    "part_id": "PRT-0401",
+    "derived_id": "PRT-0401-A",
+    "assembly_id": "ASM-04",
+    "name": "U架下横梁",
+    "parent": "YAW_CARRIER",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 883320.3649089619,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -110.0,
+      -230.0,
+      1200.0,
+      110.0,
+      230.0,
+      1210.0
+    ],
+    "local_bounds_mm": [
+      -110.0,
+      -230.0,
+      -300.0,
+      110.0,
+      230.0,
+      -290.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0401-B__-1",
+    "part_id": "PRT-0401",
+    "derived_id": "PRT-0401-B",
+    "assembly_id": "ASM-04",
+    "name": "U架侧板",
+    "parent": "YAW_CARRIER",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 297340.95597800164,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      -230.0,
+      1210.0,
+      50.0,
+      -220.0,
+      1510.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      -230.0,
+      -290.0,
+      50.0,
+      -220.0,
+      10.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0402__-1",
+    "part_id": "PRT-0402",
+    "derived_id": "PRT-0402",
+    "assembly_id": "ASM-04",
+    "name": "独立短耳轴",
+    "parent": "MOVING_HEAD",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 15268.140296446394,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -9.0,
+      -240.0,
+      1491.0,
+      9.0,
+      -180.0,
+      1509.0
+    ],
+    "local_bounds_mm": [
+      -9.0,
+      -240.0,
+      -9.000000000000004,
+      9.0,
+      -180.0,
+      9.000000000000004
+    ]
+  },
+  {
+    "instance_id": "PRT-0401-B__1",
+    "part_id": "PRT-0401",
+    "derived_id": "PRT-0401-B",
+    "assembly_id": "ASM-04",
+    "name": "U架侧板",
+    "parent": "YAW_CARRIER",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 297340.95597800164,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      220.0,
+      1210.0,
+      50.0,
+      230.0,
+      1510.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      220.0,
+      -290.0,
+      50.0,
+      230.0,
+      10.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0402__1",
+    "part_id": "PRT-0402",
+    "derived_id": "PRT-0402",
+    "assembly_id": "ASM-04",
+    "name": "独立短耳轴",
+    "parent": "MOVING_HEAD",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 15268.140296446394,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -9.0,
+      180.0,
+      1491.0,
+      9.0,
+      240.0,
+      1509.0
+    ],
+    "local_bounds_mm": [
+      -9.0,
+      180.0,
+      -9.000000000000004,
+      9.0,
+      240.0,
+      9.000000000000004
+    ]
+  },
+  {
+    "instance_id": "PRT-0403",
+    "part_id": "PRT-0403",
+    "derived_id": "PRT-0403",
+    "assembly_id": "ASM-04",
+    "name": "俯仰执行器候选",
+    "parent": "YAW_CARRIER",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 701250.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -55.0,
+      -317.5,
+      1425.0,
+      55.0,
+      -242.5,
+      1510.0
+    ],
+    "local_bounds_mm": [
+      -55.0,
+      -317.5,
+      -75.0,
+      55.0,
+      -242.5,
+      10.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0403-A",
+    "part_id": "PRT-0403",
+    "derived_id": "PRT-0403-A",
+    "assembly_id": "ASM-04",
+    "name": "俯仰联轴器候选",
+    "parent": "YAW_CARRIER",
+    "color": "#12A497",
+    "status": "concept",
+    "volume_mm3": 4593.096380505009,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -16.0,
+      -247.0,
+      1484.0,
+      16.0,
+      -235.0,
+      1516.0
+    ],
+    "local_bounds_mm": [
+      -16.0,
+      -247.0,
+      -16.0,
+      16.0,
+      -235.0,
+      16.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-A__L",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-A",
+    "assembly_id": "ASM-08",
+    "name": "轮组侧护板",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 100260.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -90.0,
+      182.0,
+      1328.0,
+      150.0,
+      185.0,
+      1468.0
+    ],
+    "local_bounds_mm": [
+      -90.0,
+      182.0,
+      -172.0,
+      150.0,
+      185.0,
+      -32.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-B__L",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-B",
+    "assembly_id": "ASM-08",
+    "name": "轮组上护板",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 95040.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -90.0,
+      53.0,
+      1590.5,
+      150.0,
+      185.0,
+      1593.5
+    ],
+    "local_bounds_mm": [
+      -90.0,
+      53.0,
+      90.5,
+      150.0,
+      185.0,
+      93.5
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-C__L",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-C",
+    "assembly_id": "ASM-08",
+    "name": "后窄尾护板",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 32625.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -235.0,
+      52.0,
+      1450.0,
+      -90.0,
+      55.0,
+      1525.0
+    ],
+    "local_bounds_mm": [
+      -235.0,
+      52.0,
+      -50.0,
+      -90.0,
+      55.0,
+      25.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-D__L",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-D",
+    "assembly_id": "ASM-08",
+    "name": "上罩连接柱",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 4392.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      142.0,
+      177.0,
+      1468.0,
+      148.0,
+      183.0,
+      1590.0
+    ],
+    "local_bounds_mm": [
+      142.0,
+      177.0,
+      -32.0,
+      148.0,
+      183.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-A__R",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-A",
+    "assembly_id": "ASM-08",
+    "name": "轮组侧护板",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 100260.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -90.0,
+      -185.0,
+      1328.0,
+      150.0,
+      -182.0,
+      1468.0
+    ],
+    "local_bounds_mm": [
+      -90.0,
+      -185.0,
+      -172.0,
+      150.0,
+      -182.0,
+      -32.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-B__R",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-B",
+    "assembly_id": "ASM-08",
+    "name": "轮组上护板",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 95040.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -90.0,
+      -185.0,
+      1590.5,
+      150.0,
+      -53.0,
+      1593.5
+    ],
+    "local_bounds_mm": [
+      -90.0,
+      -185.0,
+      90.5,
+      150.0,
+      -53.0,
+      93.5
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-C__R",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-C",
+    "assembly_id": "ASM-08",
+    "name": "后窄尾护板",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 28434.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -244.0,
+      -55.0,
+      1450.0,
+      -90.0,
+      -52.0,
+      1525.0
+    ],
+    "local_bounds_mm": [
+      -244.0,
+      -55.0,
+      -50.0,
+      -90.0,
+      -52.0,
+      25.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0801-D__R",
+    "part_id": "PRT-0801",
+    "derived_id": "PRT-0801-D",
+    "assembly_id": "ASM-08",
+    "name": "上罩连接柱",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 4392.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      142.0,
+      -183.0,
+      1468.0,
+      148.0,
+      -177.0,
+      1590.0
+    ],
+    "local_bounds_mm": [
+      142.0,
+      -183.0,
+      -32.0,
+      148.0,
+      -177.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0802",
+    "part_id": "PRT-0802",
+    "derived_id": "PRT-0802",
+    "assembly_id": "ASM-08",
+    "name": "透明检查窗",
+    "parent": "MOVING_HEAD",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "alpha": 0.3,
+    "volume_mm3": 41392.83197364921,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -50.0,
+      183.5,
+      1485.0,
+      100.0,
+      186.5,
+      1580.0
+    ],
+    "local_bounds_mm": [
+      -50.0,
+      183.5,
+      -15.0,
+      100.0,
+      186.5,
+      80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0803-A",
+    "part_id": "PRT-0803",
+    "derived_id": "PRT-0803-A",
+    "assembly_id": "ASM-08",
+    "name": "带通风孔电气舱",
+    "parent": "WORLD_STATIC",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 2067492.0000000019,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -250.0,
+      -210.0,
+      160.0,
+      250.0,
+      210.0,
+      370.0
+    ],
+    "local_bounds_mm": [
+      -250.0,
+      -210.0,
+      160.0,
+      250.0,
+      210.0,
+      370.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0803-B",
+    "part_id": "PRT-0803",
+    "derived_id": "PRT-0803-B",
+    "assembly_id": "ASM-08",
+    "name": "可拆后舱门",
+    "parent": "WORLD_STATIC",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "cover": true,
+    "volume_mm3": 237600.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -250.0,
+      -200.0,
+      166.0,
+      -247.0,
+      200.0,
+      364.0
+    ],
+    "local_bounds_mm": [
+      -250.0,
+      -200.0,
+      166.0,
+      -247.0,
+      200.0,
+      364.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0803-C",
+    "part_id": "PRT-0803",
+    "derived_id": "PRT-0803-C",
+    "assembly_id": "ASM-08",
+    "name": "分区电气托盘",
+    "parent": "WORLD_STATIC",
+    "color": "#9EB6C3",
+    "status": "concept",
+    "volume_mm3": 547188.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -240.0,
+      -200.0,
+      210.0,
+      240.0,
+      200.0,
+      213.0
+    ],
+    "local_bounds_mm": [
+      -240.0,
+      -200.0,
+      210.0,
+      240.0,
+      200.0,
+      213.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0507__1",
+    "part_id": "PRT-0507",
+    "derived_id": "PRT-0507",
+    "assembly_id": "ASM-05",
+    "name": "双轮驱动器候选",
+    "parent": "WORLD_STATIC",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 192500.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -165.0,
+      -160.0,
+      310.0,
+      -55.0,
+      -90.0,
+      335.0
+    ],
+    "local_bounds_mm": [
+      -165.0,
+      -160.0,
+      310.0,
+      -55.0,
+      -90.0,
+      335.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0507__2",
+    "part_id": "PRT-0507",
+    "derived_id": "PRT-0507",
+    "assembly_id": "ASM-05",
+    "name": "双轮驱动器候选",
+    "parent": "WORLD_STATIC",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 192500.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      55.0,
+      -160.0,
+      310.0,
+      165.0,
+      -90.0,
+      335.0
+    ],
+    "local_bounds_mm": [
+      55.0,
+      -160.0,
+      310.0,
+      165.0,
+      -90.0,
+      335.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0901",
+    "part_id": "PRT-0901",
+    "derived_id": "PRT-0901",
+    "assembly_id": "ASM-09",
+    "name": "本地控制板候选",
+    "parent": "WORLD_STATIC",
+    "color": "#7688A8",
+    "status": "concept",
+    "volume_mm3": 174999.99999999997,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      100.0,
+      75.0,
+      213.0,
+      200.0,
+      145.0,
+      238.0
+    ],
+    "local_bounds_mm": [
+      100.0,
+      75.0,
+      213.0,
+      200.0,
+      145.0,
+      238.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0902",
+    "part_id": "PRT-0902",
+    "derived_id": "PRT-0902",
+    "assembly_id": "ASM-09",
+    "name": "电源模块候选",
+    "parent": "WORLD_STATIC",
+    "color": "#7688A8",
+    "status": "concept",
+    "volume_mm3": 1155000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -20.0,
+      -175.0,
+      213.0,
+      190.0,
+      -65.0,
+      263.0
+    ],
+    "local_bounds_mm": [
+      -20.0,
+      -175.0,
+      213.0,
+      190.0,
+      -65.0,
+      263.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0903",
+    "part_id": "PRT-0903",
+    "derived_id": "PRT-0903",
+    "assembly_id": "ASM-09",
+    "name": "配电联锁功能模块候选",
+    "parent": "WORLD_STATIC",
+    "color": "#7688A8",
+    "status": "concept",
+    "volume_mm3": 1512000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -230.0,
+      40.0,
+      213.0,
+      -50.0,
+      160.0,
+      283.0
+    ],
+    "local_bounds_mm": [
+      -230.0,
+      40.0,
+      213.0,
+      -50.0,
+      160.0,
+      283.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0904",
+    "part_id": "PRT-0904",
+    "derived_id": "PRT-0904",
+    "assembly_id": "ASM-09",
+    "name": "自锁急停候选",
+    "parent": "WORLD_STATIC",
+    "color": "#CE3938",
+    "status": "concept",
+    "volume_mm3": 32044.245066615884,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -120.0,
+      -92.0,
+      920.0,
+      -80.0,
+      -32.0,
+      960.0
+    ],
+    "local_bounds_mm": [
+      -120.0,
+      -92.0,
+      920.0,
+      -80.0,
+      -32.0,
+      960.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0904-A",
+    "part_id": "PRT-0904",
+    "derived_id": "PRT-0904-A",
+    "assembly_id": "ASM-09",
+    "name": "急停固定安装面板",
+    "parent": "WORLD_STATIC",
+    "color": "#7688A8",
+    "status": "concept",
+    "volume_mm3": 34614.5576397669,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -150.0,
+      -77.0,
+      895.0,
+      -50.0,
+      -73.0,
+      985.0
+    ],
+    "local_bounds_mm": [
+      -150.0,
+      -77.0,
+      895.0,
+      -50.0,
+      -73.0,
+      985.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0904-B",
+    "part_id": "PRT-0904",
+    "derived_id": "PRT-0904-B",
+    "assembly_id": "ASM-09",
+    "name": "面板立柱连接臂",
+    "parent": "WORLD_STATIC",
+    "color": "#7688A8",
+    "status": "concept",
+    "volume_mm3": 14400.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -125.0,
+      -45.0,
+      897.0,
+      -45.0,
+      -15.0,
+      903.0
+    ],
+    "local_bounds_mm": [
+      -125.0,
+      -45.0,
+      897.0,
+      -45.0,
+      -15.0,
+      903.0
+    ]
+  },
+  {
+    "instance_id": "PRT-1001",
+    "part_id": "PRT-1001",
+    "derived_id": "PRT-1001",
+    "assembly_id": "ASM-10",
+    "name": "终端候选包络",
+    "parent": "WORLD_STATIC",
+    "color": "#556A91",
+    "status": "concept",
+    "volume_mm3": 173400.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -126.0,
+      -42.5,
+      695.0,
+      -114.0,
+      42.5,
+      865.0
+    ],
+    "local_bounds_mm": [
+      -126.0,
+      -42.5,
+      695.0,
+      -114.0,
+      42.5,
+      865.0
+    ]
+  },
+  {
+    "instance_id": "PRT-1002",
+    "part_id": "PRT-1002",
+    "derived_id": "PRT-1002",
+    "assembly_id": "ASM-10",
+    "name": "有线停发手柄",
+    "parent": "WORLD_STATIC",
+    "color": "#556A91",
+    "status": "concept",
+    "volume_mm3": 150000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -145.0,
+      70.0,
+      720.0,
+      -115.0,
+      120.0,
+      820.0
+    ],
+    "local_bounds_mm": [
+      -145.0,
+      70.0,
+      720.0,
+      -115.0,
+      120.0,
+      820.0
+    ]
+  },
+  {
+    "instance_id": "PRT-1003",
+    "part_id": "PRT-1003",
+    "derived_id": "PRT-1003",
+    "assembly_id": "ASM-10",
+    "name": "终端夹持架",
+    "parent": "WORLD_STATIC",
+    "color": "#556A91",
+    "status": "concept",
+    "volume_mm3": 108800.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -137.0,
+      -45.0,
+      725.0,
+      -53.0,
+      45.0,
+      835.0
+    ],
+    "local_bounds_mm": [
+      -137.0,
+      -45.0,
+      725.0,
+      -53.0,
+      45.0,
+      835.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-01",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "导套上位功能占位",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-01",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -290.0,
+      19.0,
+      1740.0,
+      -260.0,
+      39.0,
+      1760.0
+    ],
+    "local_bounds_mm": [
+      -290.0,
+      19.0,
+      240.0,
+      -260.0,
+      39.0,
+      260.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-02",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "导套下位功能占位",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-02",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -290.0,
+      19.0,
+      1570.0,
+      -260.0,
+      39.0,
+      1590.0
+    ],
+    "local_bounds_mm": [
+      -290.0,
+      19.0,
+      70.0,
+      -260.0,
+      39.0,
+      90.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-03",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "滑台回零功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-03",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      -45.0,
+      1402.0,
+      -230.0,
+      -25.0,
+      1422.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      -45.0,
+      -98.0,
+      -230.0,
+      -25.0,
+      -78.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-04",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "夹持/释放反馈功能占位",
+    "parent": "CARRIAGE",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-04",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -305.0,
+      -75.0,
+      1455.0,
+      -275.0,
+      -55.0,
+      1475.0
+    ],
+    "local_bounds_mm": [
+      -305.0,
+      -75.0,
+      -45.0,
+      -275.0,
+      -55.0,
+      -25.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-05",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "托架有球功能占位",
+    "parent": "CARRIAGE",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-05",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -210.0,
+      -10.0,
+      1402.0,
+      -180.0,
+      10.0,
+      1422.0
+    ],
+    "local_bounds_mm": [
+      -210.0,
+      -10.0,
+      -98.0,
+      -180.0,
+      10.0,
+      -78.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-06",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "出球通过功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-06",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      105.0,
+      40.0,
+      1520.0,
+      135.0,
+      60.0,
+      1540.0
+    ],
+    "local_bounds_mm": [
+      105.0,
+      40.0,
+      20.0,
+      135.0,
+      60.0,
+      40.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-07",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "偏航回零功能占位",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-07",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      75.0,
+      35.0,
+      1130.0,
+      105.0,
+      55.0,
+      1150.0
+    ],
+    "local_bounds_mm": [
+      75.0,
+      35.0,
+      -370.0,
+      105.0,
+      55.0,
+      -350.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-08",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "偏航左限位功能占位",
+    "parent": "YAW_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-08",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      50.0,
+      90.0,
+      1212.0,
+      80.0,
+      110.0,
+      1232.0
+    ],
+    "local_bounds_mm": [
+      50.0,
+      90.0,
+      -288.0,
+      80.0,
+      110.0,
+      -268.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-09",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "俯仰回零功能占位",
+    "parent": "YAW_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-09",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -15.0,
+      235.0,
+      1430.0,
+      15.0,
+      255.0,
+      1450.0
+    ],
+    "local_bounds_mm": [
+      -15.0,
+      235.0,
+      -70.0,
+      15.0,
+      255.0,
+      -50.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-10",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "俯仰上限位功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-10",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -15.0,
+      190.0,
+      1430.0,
+      15.0,
+      210.0,
+      1450.0
+    ],
+    "local_bounds_mm": [
+      -15.0,
+      190.0,
+      -70.0,
+      15.0,
+      210.0,
+      -50.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-11",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "发射罩开合功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-11",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      110.0,
+      154.0,
+      1540.0,
+      140.0,
+      174.0,
+      1560.0
+    ],
+    "local_bounds_mm": [
+      110.0,
+      154.0,
+      40.0,
+      140.0,
+      174.0,
+      60.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-12",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "下闸反馈功能占位",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-12",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -280.0,
+      -55.0,
+      1840.0,
+      -250.0,
+      -35.0,
+      1860.0
+    ],
+    "local_bounds_mm": [
+      -280.0,
+      -55.0,
+      340.0,
+      -250.0,
+      -35.0,
+      360.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-13",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "左轮转速功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-13",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      20.0,
+      115.0,
+      1400.0,
+      50.0,
+      135.0,
+      1420.0
+    ],
+    "local_bounds_mm": [
+      20.0,
+      115.0,
+      -100.0,
+      50.0,
+      135.0,
+      -80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-14",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "右轮转速功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-14",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      20.0,
+      -135.0,
+      1400.0,
+      50.0,
+      -115.0,
+      1420.0
+    ],
+    "local_bounds_mm": [
+      20.0,
+      -135.0,
+      -100.0,
+      50.0,
+      -115.0,
+      -80.0
+    ]
+  },
+  {
+    "instance_id": "PRT-REF-CORK",
+    "part_id": "PRT-REF-CORK",
+    "derived_id": "PRT-REF-CORK",
+    "assembly_id": "REFERENCE",
+    "name": "校核球头",
+    "parent": "CARRIAGE",
+    "color": "#D7B482",
+    "status": "concept",
+    "reference": true,
+    "volume_mm3": 14340.192366392312,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -203.25,
+      -13.25,
+      1487.0,
+      -176.75,
+      13.25,
+      1513.0
+    ],
+    "local_bounds_mm": [
+      -203.25,
+      -13.25,
+      -13.0,
+      -176.75,
+      13.25,
+      13.0
+    ]
+  },
+  {
+    "instance_id": "PRT-REF-SKIRT",
+    "part_id": "PRT-REF-SKIRT",
+    "derived_id": "PRT-REF-SKIRT",
+    "assembly_id": "REFERENCE",
+    "name": "完整羽毛裙包络",
+    "parent": "CARRIAGE",
+    "color": "#F0ECE1",
+    "status": "concept",
+    "alpha": 0.5,
+    "reference": true,
+    "volume_mm3": 130632.00402555015,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -224.0,
+      -34.00000000000001,
+      1513.0,
+      -156.0,
+      34.00000000000001,
+      1583.0
+    ],
+    "local_bounds_mm": [
+      -224.0,
+      -34.00000000000001,
+      13.0,
+      -156.0,
+      34.00000000000001,
+      83.00000000000001
+    ]
+  },
+  {
+    "instance_id": "PRT-0105-C__-1",
+    "part_id": "PRT-0105",
+    "derived_id": "PRT-0105-C__-1",
+    "assembly_id": "ASM-01",
+    "name": "脚轮安装桥",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 6000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      -260.0,
+      94.0,
+      -210.0,
+      -240.0,
+      100.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      -260.0,
+      94.0,
+      -210.0,
+      -240.0,
+      100.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0105-C__1",
+    "part_id": "PRT-0105",
+    "derived_id": "PRT-0105-C__1",
+    "assembly_id": "ASM-01",
+    "name": "脚轮安装桥",
+    "parent": "WORLD_STATIC",
+    "color": "#66798A",
+    "status": "concept",
+    "volume_mm3": 6000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -260.0,
+      240.0,
+      94.0,
+      -210.0,
+      260.0,
+      100.0
+    ],
+    "local_bounds_mm": [
+      -260.0,
+      240.0,
+      94.0,
+      -210.0,
+      260.0,
+      100.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-C",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-C",
+    "assembly_id": "ASM-03",
+    "name": "偏航输出轴候选",
+    "parent": "YAW_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 75671.54224701735,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -63.5,
+      -63.5,
+      1200.0,
+      63.5,
+      63.5,
+      1212.0
+    ],
+    "local_bounds_mm": [
+      -63.5,
+      -63.5,
+      -300.0,
+      63.5,
+      63.5,
+      -288.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-D",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-D",
+    "assembly_id": "ASM-03",
+    "name": "偏航输出连接臂",
+    "parent": "YAW_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 20734.511513692632,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -86.0,
+      -86.0,
+      1210.0,
+      86.0,
+      86.0,
+      1212.0
+    ],
+    "local_bounds_mm": [
+      -86.0,
+      -86.0,
+      -290.0,
+      86.0,
+      86.0,
+      -288.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-E",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-E",
+    "assembly_id": "ASM-03",
+    "name": "偏航带轮候选",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 183368.48000472903,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -336.0,
+      -86.0,
+      1212.0,
+      -164.0,
+      86.0,
+      1220.0
+    ],
+    "local_bounds_mm": [
+      -336.0,
+      -86.0,
+      -288.0,
+      -164.0,
+      86.0,
+      -280.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-F",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-F",
+    "assembly_id": "ASM-03",
+    "name": "偏航带轮候选",
+    "parent": "YAW_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 134987.9531394462,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -86.0,
+      -86.0,
+      1212.0,
+      86.0,
+      86.0,
+      1220.0
+    ],
+    "local_bounds_mm": [
+      -86.0,
+      -86.0,
+      -288.0,
+      86.0,
+      86.0,
+      -280.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-G",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-G",
+    "assembly_id": "ASM-03",
+    "name": "偏航电机支座",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 135999.99999999997,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -300.0,
+      -85.0,
+      1102.0,
+      -200.0,
+      85.0,
+      1110.0
+    ],
+    "local_bounds_mm": [
+      -300.0,
+      -85.0,
+      -398.0,
+      -200.0,
+      85.0,
+      -390.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-H__-1",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-H",
+    "assembly_id": "ASM-03",
+    "name": "电机支座侧连接",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 22400.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -300.0,
+      -85.0,
+      1110.0,
+      -200.0,
+      -77.0,
+      1138.0
+    ],
+    "local_bounds_mm": [
+      -300.0,
+      -85.0,
+      -390.0,
+      -200.0,
+      -77.0,
+      -362.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0303-H__1",
+    "part_id": "PRT-0303",
+    "derived_id": "PRT-0303-H",
+    "assembly_id": "ASM-03",
+    "name": "电机支座侧连接",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#0C867B",
+    "status": "concept",
+    "volume_mm3": 22400.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -300.0,
+      77.0,
+      1110.0,
+      -200.0,
+      85.0,
+      1138.0
+    ],
+    "local_bounds_mm": [
+      -300.0,
+      77.0,
+      -390.0,
+      -200.0,
+      85.0,
+      -362.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__L_-36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989908,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      49.5,
+      1317.0,
+      -31.0,
+      59.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      49.5,
+      -183.0,
+      -31.0,
+      59.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__L_-36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.3274122871835,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      49.5,
+      1314.0,
+      -31.0,
+      59.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      49.5,
+      -186.0,
+      -31.0,
+      59.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__L_-36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989912,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      105.5,
+      1317.0,
+      -31.0,
+      115.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      105.5,
+      -183.0,
+      -31.0,
+      115.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__L_-36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.32741228718345,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      105.5,
+      1314.0,
+      -31.0,
+      115.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      105.5,
+      -186.0,
+      -31.0,
+      115.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__L_36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989908,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      49.5,
+      1317.0,
+      41.0,
+      59.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      49.5,
+      -183.0,
+      41.0,
+      59.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__L_36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.3274122871835,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      49.5,
+      1314.0,
+      41.0,
+      59.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      49.5,
+      -186.0,
+      41.0,
+      59.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__L_36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989912,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      105.5,
+      1317.0,
+      41.0,
+      115.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      105.5,
+      -183.0,
+      41.0,
+      115.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__L_36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.32741228718345,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      105.5,
+      1314.0,
+      41.0,
+      115.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      105.5,
+      -186.0,
+      41.0,
+      115.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__R_-36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989912,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      -115.5,
+      1317.0,
+      -31.0,
+      -105.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      -115.5,
+      -183.0,
+      -31.0,
+      -105.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__R_-36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.32741228718345,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      -115.5,
+      1314.0,
+      -31.0,
+      -105.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      -115.5,
+      -186.0,
+      -31.0,
+      -105.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__R_-36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989908,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      -59.5,
+      1317.0,
+      -31.0,
+      -49.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      -59.5,
+      -183.0,
+      -31.0,
+      -49.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__R_-36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.3274122871835,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -41.0,
+      -59.5,
+      1314.0,
+      -31.0,
+      -49.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      -41.0,
+      -59.5,
+      -186.0,
+      -31.0,
+      -49.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__R_36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989912,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      -115.5,
+      1317.0,
+      41.0,
+      -105.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      -115.5,
+      -183.0,
+      41.0,
+      -105.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__R_36_-24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.32741228718345,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      -115.5,
+      1314.0,
+      41.0,
+      -105.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      -115.5,
+      -186.0,
+      41.0,
+      -105.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-FAST__R_36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-FAST",
+    "assembly_id": "ASM-05",
+    "name": "轮距滑座紧固候选M6",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 1049.2919462989908,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      -59.5,
+      1317.0,
+      41.0,
+      -49.5,
+      1347.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      -59.5,
+      -183.0,
+      41.0,
+      -49.5,
+      -153.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0502-NUT__R_36_24",
+    "part_id": "PRT-0502",
+    "derived_id": "PRT-0502-NUT",
+    "assembly_id": "ASM-05",
+    "name": "滑座螺母候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E9A845",
+    "status": "concept",
+    "volume_mm3": 251.3274122871835,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      31.0,
+      -59.5,
+      1314.0,
+      41.0,
+      -49.5,
+      1319.0
+    ],
+    "local_bounds_mm": [
+      31.0,
+      -59.5,
+      -186.0,
+      41.0,
+      -49.5,
+      -181.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0903-WIRE_A",
+    "part_id": "PRT-0903",
+    "derived_id": "PRT-0903-WIRE_A",
+    "assembly_id": "ASM-09",
+    "name": "固定立柱线束概念路径",
+    "parent": "WORLD_STATIC",
+    "color": "#7688A8",
+    "status": "concept",
+    "dynamic_height": true,
+    "dynamic_path": [
+      [
+        75,
+        0,
+        300
+      ],
+      [
+        75,
+        20,
+        400
+      ],
+      [
+        0,
+        20,
+        400
+      ],
+      [
+        0,
+        20,
+        "head_axis_height-355"
+      ],
+      [
+        80,
+        20,
+        "head_axis_height-355"
+      ]
+    ],
+    "volume_mm3": 28277.10020592208,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -3.0,
+      -2.9417420270727606,
+      299.41165159458546,
+      80.0,
+      23.0,
+      1148.0
+    ],
+    "local_bounds_mm": [
+      -3.0,
+      -2.9417420270727606,
+      299.41165159458546,
+      80.0,
+      23.0,
+      1148.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0704-WIRE_A",
+    "part_id": "PRT-0704",
+    "derived_id": "PRT-0704-WIRE_A",
+    "assembly_id": "ASM-07",
+    "name": "恒长回环及圆弧出线候选",
+    "parent": "MOVING_HEAD",
+    "color": "#E28362",
+    "status": "concept",
+    "dynamic_slide": true,
+    "dynamic_loop": {
+      "op": "return_loop",
+      "fixed_x": -235,
+      "moving_x": "load_x-55+slide",
+      "lower_z": -95,
+      "upper_z": -52,
+      "y": -130,
+      "length": 280,
+      "radius": 2,
+      "direction": 1,
+      "exit_y": -65
+    },
+    "volume_mm3": 4489.613882992032,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -247.0000001,
+      -132.0000001,
+      1402.9999999,
+      -99.52212092609028,
+      -65.0,
+      1450.0000001
+    ],
+    "local_bounds_mm": [
+      -247.0000001,
+      -132.0000001,
+      -97.0000001,
+      -99.52212092609028,
+      -65.0,
+      -49.9999999
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-08_R",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "偏航右限位功能占位",
+    "parent": "YAW_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-08",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -80.0,
+      90.0,
+      1230.0,
+      -50.0,
+      110.0,
+      1250.0
+    ],
+    "local_bounds_mm": [
+      -80.0,
+      90.0,
+      -270.0,
+      -50.0,
+      110.0,
+      -250.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-10_DOWN",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "俯仰下限位功能占位",
+    "parent": "MOVING_HEAD",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-10",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -60.0,
+      190.0,
+      1415.0,
+      -30.0,
+      210.0,
+      1435.0
+    ],
+    "local_bounds_mm": [
+      -60.0,
+      190.0,
+      -85.0,
+      -30.0,
+      210.0,
+      -65.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0905__SEN-12_HOLD",
+    "part_id": "PRT-0905",
+    "derived_id": "PRT-0905",
+    "assembly_id": "ASM-09",
+    "name": "留球夹反馈功能占位",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#7688A8",
+    "status": "concept",
+    "sensor_function": "SEN-12",
+    "volume_mm3": 12000.0,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -285.0,
+      -55.0,
+      1940.0,
+      -255.0,
+      -35.0,
+      1960.0
+    ],
+    "local_bounds_mm": [
+      -285.0,
+      -55.0,
+      440.0,
+      -255.0,
+      -35.0,
+      460.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0202-R1_RECEIVER__L",
+    "part_id": "PRT-0202",
+    "derived_id": "PRT-0202-R1_RECEIVER",
+    "assembly_id": "ASM-02",
+    "name": "供球抽出组件固定承接槽",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 10131.061990118456,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -40.0,
+      70.0,
+      1133.0,
+      0.0,
+      100.0,
+      1158.0
+    ],
+    "local_bounds_mm": [
+      -40.0,
+      70.0,
+      -367.0,
+      0.0,
+      100.0,
+      -342.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0202-R1_PIN__L",
+    "part_id": "PRT-0202",
+    "derived_id": "PRT-0202-R1_PIN",
+    "assembly_id": "ASM-02",
+    "name": "供球抽出组件横向解锁销候选",
+    "parent": "CASSETTE_PIN_L",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 3282.964323001332,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -27.0,
+      60.0,
+      1141.0,
+      -13.0,
+      115.0,
+      1155.0
+    ],
+    "local_bounds_mm": [
+      -27.0,
+      60.0,
+      -359.0,
+      -13.0,
+      115.0,
+      -345.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0202-R1_RECEIVER__R",
+    "part_id": "PRT-0202",
+    "derived_id": "PRT-0202-R1_RECEIVER",
+    "assembly_id": "ASM-02",
+    "name": "供球抽出组件固定承接槽",
+    "parent": "FIXED_HEAD_CARRIER",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 10131.061990118456,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -40.0,
+      -100.0,
+      1133.0,
+      0.0,
+      -70.0,
+      1158.0
+    ],
+    "local_bounds_mm": [
+      -40.0,
+      -100.0,
+      -367.0,
+      0.0,
+      -70.0,
+      -342.0
+    ]
+  },
+  {
+    "instance_id": "PRT-0202-R1_PIN__R",
+    "part_id": "PRT-0202",
+    "derived_id": "PRT-0202-R1_PIN",
+    "assembly_id": "ASM-02",
+    "name": "供球抽出组件横向解锁销候选",
+    "parent": "CASSETTE_PIN_R",
+    "color": "#526677",
+    "status": "concept",
+    "volume_mm3": 3282.964323001332,
+    "solid_count": 1,
+    "valid": true,
+    "bounds_mm": [
+      -27.0,
+      -115.0,
+      1141.0,
+      -13.0,
+      -60.0,
+      1155.0
+    ],
+    "local_bounds_mm": [
+      -27.0,
+      -115.0,
+      -359.0,
+      -13.0,
+      -60.0,
+      -345.0
+    ]
+  }
+]

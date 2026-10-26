@@ -1,0 +1,115 @@
+{
+  "status": "SYNTHETIC_ENVELOPE_ONLY",
+  "actual_stack_pitch_mm": null,
+  "feather_compression_verified": false,
+  "cases": [
+    {
+      "synthetic_pitch_mm": 30,
+      "pad_radius_mm": 23,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 29.553571428571427,
+      "nominal_radial_overlap_mm": 6.553571428571427,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 30,
+      "pad_radius_mm": 26,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 29.553571428571427,
+      "nominal_radial_overlap_mm": 3.553571428571427,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 30,
+      "pad_radius_mm": 29,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 29.553571428571427,
+      "nominal_radial_overlap_mm": 0.553571428571427,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 30,
+      "pad_radius_mm": 32,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 29.553571428571427,
+      "nominal_radial_overlap_mm": -2.446428571428573,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 40,
+      "pad_radius_mm": 23,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 26.589285714285715,
+      "nominal_radial_overlap_mm": 3.5892857142857153,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 40,
+      "pad_radius_mm": 26,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 26.589285714285715,
+      "nominal_radial_overlap_mm": 0.5892857142857153,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 40,
+      "pad_radius_mm": 29,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 26.589285714285715,
+      "nominal_radial_overlap_mm": -2.4107142857142847,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 40,
+      "pad_radius_mm": 32,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 26.589285714285715,
+      "nominal_radial_overlap_mm": -5.410714285714285,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 50,
+      "pad_radius_mm": 23,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 23.625,
+      "nominal_radial_overlap_mm": 0.625,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 50,
+      "pad_radius_mm": 26,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 23.625,
+      "nominal_radial_overlap_mm": -2.375,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 50,
+      "pad_radius_mm": 29,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 23.625,
+      "nominal_radial_overlap_mm": -5.375,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    },
+    {
+      "synthetic_pitch_mm": 50,
+      "pad_radius_mm": 32,
+      "lower_ball_to_pad_axial_gap_mm": 3,
+      "ideal_second_skirt_radius_at_pad_top_mm": 23.625,
+      "nominal_radial_overlap_mm": -8.375,
+      "interpretation": "正值仅表示理想包络接触，负值表示间隙；不是实际夹持力或可靠性",
+      "physical_measurement": false
+    }
+  ]
+}

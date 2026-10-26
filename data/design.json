@@ -1,0 +1,277 @@
+{
+  "project_id": "BM1",
+  "revision": "V0.2-R1",
+  "date": "2026-10-26",
+  "title": "羽毛球发球机三维建模设计方案",
+  "phase": "native_parametric_concept_engineering",
+  "notice": "本次已生成原生参数实体与模型图册；仍为concept，非加工冻结、非采购确认、非样机验证。",
+  "units": {
+    "length": "mm",
+    "angle": "deg"
+  },
+  "axes": {
+    "x": "发射前方",
+    "y": "面向发射方向时左侧",
+    "z": "向上",
+    "handedness": "right"
+  },
+  "parameters": {
+    "base_x": {
+      "value": 650,
+      "status": "concept"
+    },
+    "base_y": {
+      "value": 600,
+      "status": "concept"
+    },
+    "base_top_z": {
+      "value": 160,
+      "status": "concept"
+    },
+    "support_x": {
+      "value": 850,
+      "status": "concept"
+    },
+    "support_y": {
+      "value": 800,
+      "status": "concept"
+    },
+    "head_axis_height": {
+      "value": 1500,
+      "status": "concept"
+    },
+    "head_height_min": {
+      "value": 1400,
+      "status": "concept"
+    },
+    "head_height_max": {
+      "value": 1800,
+      "status": "concept"
+    },
+    "wheel_diameter": {
+      "value": 140,
+      "status": "concept"
+    },
+    "wheel_width": {
+      "value": 16,
+      "status": "concept"
+    },
+    "wheel_gap_visual": {
+      "value": 25,
+      "status": "concept"
+    },
+    "wheel_gap_min": {
+      "value": 22,
+      "status": "concept"
+    },
+    "wheel_gap_max": {
+      "value": 30,
+      "status": "concept"
+    },
+    "wheel_center_y": {
+      "value": 82.5,
+      "status": "concept"
+    },
+    "cork_diameter_visual": {
+      "value": 26.5,
+      "status": "concept"
+    },
+    "cork_z_min": {
+      "value": -13,
+      "status": "concept"
+    },
+    "cork_z_max": {
+      "value": 13,
+      "status": "concept"
+    },
+    "feather_z_min": {
+      "value": 13,
+      "status": "concept"
+    },
+    "feather_z_max": {
+      "value": 83,
+      "status": "concept"
+    },
+    "skirt_diameter_max": {
+      "value": 68,
+      "status": "concept"
+    },
+    "static_shuttle_margin": {
+      "value": 3,
+      "status": "concept"
+    },
+    "load_x": {
+      "value": -190,
+      "status": "concept"
+    },
+    "clear_x": {
+      "value": -85,
+      "status": "concept"
+    },
+    "feed_x": {
+      "value": -5,
+      "status": "concept"
+    },
+    "carriage_total_stroke": {
+      "value": 185,
+      "status": "concept"
+    },
+    "clear_stroke": {
+      "value": 105,
+      "status": "concept"
+    },
+    "pitch_min_work": {
+      "value": 0,
+      "status": "concept"
+    },
+    "pitch_max_work": {
+      "value": 55,
+      "status": "concept"
+    },
+    "pitch_min_check": {
+      "value": -10,
+      "status": "concept"
+    },
+    "pitch_max_check": {
+      "value": 60,
+      "status": "concept"
+    },
+    "yaw_min_work": {
+      "value": -35,
+      "status": "concept"
+    },
+    "yaw_max_work": {
+      "value": 35,
+      "status": "concept"
+    },
+    "yaw_min_check": {
+      "value": -45,
+      "status": "concept"
+    },
+    "yaw_max_check": {
+      "value": 45,
+      "status": "concept"
+    },
+    "tube_id": {
+      "value": 76,
+      "status": "concept"
+    },
+    "tube_od": {
+      "value": 80,
+      "status": "concept"
+    },
+    "tube_bottom_z_H": {
+      "value": 110,
+      "status": "concept"
+    },
+    "tube_length": {
+      "value": 540,
+      "status": "concept"
+    },
+    "guide_id": {
+      "value": 82,
+      "status": "concept"
+    },
+    "guide_od": {
+      "value": 86,
+      "status": "concept"
+    },
+    "guide_length": {
+      "value": 150,
+      "status": "concept"
+    },
+    "guide_bottom_load_z_H": {
+      "value": -5,
+      "status": "concept"
+    },
+    "guide_bottom_clear_z_H": {
+      "value": 110,
+      "status": "concept"
+    },
+    "guide_stroke": {
+      "value": 115,
+      "status": "concept"
+    },
+    "separator_motion_z_min_H": {
+      "value": 280,
+      "status": "concept"
+    },
+    "tube_bracket_attachment_z_min_H": {
+      "value": 280,
+      "status": "concept"
+    },
+    "tube_cap_allowance": {
+      "value": 20,
+      "status": "concept"
+    },
+    "pitch_trunnion_y": {
+      "value": 210,
+      "status": "concept"
+    },
+    "yaw_platform_z_H": {
+      "value": -300,
+      "status": "concept"
+    },
+    "inner_mast_top_z_H": {
+      "value": -342,
+      "status": "concept"
+    },
+    "outer_mast_length": {
+      "value": 880,
+      "status": "concept"
+    },
+    "head_wide_x_min": {
+      "value": -90,
+      "status": "concept"
+    },
+    "head_wide_x_max": {
+      "value": 150,
+      "status": "concept"
+    },
+    "head_tail_y_half": {
+      "value": 45,
+      "status": "concept"
+    },
+    "head_tail_support_z_H": {
+      "value": -50,
+      "status": "concept"
+    },
+    "motor_diameter_visual": {
+      "value": 70,
+      "status": "concept"
+    },
+    "motor_length_visual": {
+      "value": 100,
+      "status": "concept"
+    },
+    "motor_z_min_H": {
+      "value": -155,
+      "status": "concept"
+    },
+    "motor_z_max_H": {
+      "value": -55,
+      "status": "concept"
+    },
+    "linear_rail_y_width_max": {
+      "value": 40,
+      "status": "concept"
+    },
+    "cradle_structure_z_max_H": {
+      "value": -12,
+      "status": "concept"
+    },
+    "pusher_y_width_max": {
+      "value": 12,
+      "status": "concept"
+    }
+  },
+  "experimental": {
+    "rpm_limits": null,
+    "motor_electrical_ratings": null,
+    "wheel_gap_effective": null,
+    "landing_calibration": [],
+    "feather_clearance_dynamic": null,
+    "capacity_verified": null
+  },
+  "nonmanufacturing": true
+}

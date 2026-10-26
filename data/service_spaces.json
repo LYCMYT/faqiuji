@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SERVICE_TUBE",
+    "part_id": "PRT-0601",
+    "direction_mm": [
+      -240,
+      0,
+      0
+    ],
+    "status": "后压带拆除后再后移；路径须检测"
+  },
+  {
+    "id": "SERVICE_WHEEL",
+    "part_id": "PRT-0505",
+    "direction_mm": [
+      0,
+      0,
+      130
+    ],
+    "status": "先拆上罩"
+  },
+  {
+    "id": "SERVICE_ELECTRICAL",
+    "part_id": "PRT-0902",
+    "direction_mm": [
+      -500,
+      0,
+      0
+    ],
+    "status": "先拆后门并解除接线"
+  },
+  {
+    "id": "SERVICE_JAM",
+    "part_id": "PRT-0701",
+    "direction_mm": [
+      -150,
+      0,
+      0
+    ],
+    "status": "停转、拆后罩；需工具可达验证"
+  }
+]

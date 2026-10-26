@@ -1,0 +1,1 @@
+﻿run_id,test_id,hardware_revision,ball_sample_id,wheel_gap_mm,rpm_left_measured,rpm_right_measured,guide_up_confirmed,release_x_measured_mm,capture_x_measured_mm,one_ball,jam,damage,exit_pulse,stop_time_s,landing_x_m,landing_y_m,video_path,operator,date,result

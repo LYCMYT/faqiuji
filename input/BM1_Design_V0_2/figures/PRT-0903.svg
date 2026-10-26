@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<rect width="100%" height="100%" fill="#f5f8f8"/>
+<polygon points="150.16,490.57 423.48,327.60 423.48,208.76 150.16,371.74" fill="#959b9e" stroke="#959b9e" stroke-width="0.5"/>
+<polygon points="93.22,352.64 150.16,371.74 423.48,208.76 366.54,189.66" fill="#d2dbdf" stroke="#d2dbdf" stroke-width="0.5"/>
+<polygon points="93.22,471.47 150.16,490.57 150.16,371.74 93.22,352.64" fill="#b3bbbe" stroke="#b3bbbe" stroke-width="0.5"/>
+<polygon points="459.07,134.27 937.38,294.70 945.92,289.61 467.61,129.18" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="459.07,136.82 937.38,297.25 937.38,294.70 459.07,134.27" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="424.90,154.65 903.21,315.08 911.76,309.98 433.45,149.55" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="424.90,157.19 903.21,317.62 903.21,315.08 424.90,154.65" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="390.74,175.02 869.05,335.45 877.59,330.35 399.28,169.92" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="390.74,177.56 869.05,337.99 869.05,335.45 390.74,175.02" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="87.52,263.72 770.83,492.91 1112.48,289.19 429.17,60.00" fill="#7081a0" stroke="#7081a0" stroke-width="0.5"/>
+<polygon points="356.57,195.39 834.88,355.82 843.43,350.73 365.12,190.30" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="356.57,197.94 834.88,358.37 834.88,355.82 356.57,195.39" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="937.38,297.25 945.92,292.16 945.92,289.61 937.38,294.70" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="322.41,215.76 800.72,376.19 809.26,371.10 330.95,210.67" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="322.41,218.31 800.72,378.74 800.72,376.19 322.41,215.76" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="903.21,317.62 911.76,312.53 911.76,309.98 903.21,315.08" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="288.24,236.13 766.55,396.56 775.10,391.47 296.79,231.04" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="288.24,238.68 766.55,399.11 766.55,396.56 288.24,236.13" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="869.05,337.99 877.59,332.90 877.59,330.35 869.05,335.45" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="254.08,256.51 732.39,416.94 740.93,411.84 262.62,251.41" fill="#3e4f5c" stroke="#3e4f5c" stroke-width="0.5"/>
+<polygon points="254.08,259.05 732.39,419.48 732.39,416.94 254.08,256.51" fill="#374650" stroke="#374650" stroke-width="0.5"/>
+<polygon points="87.52,560.81 770.83,790.00 770.83,492.91 87.52,263.72" fill="#627089" stroke="#627089" stroke-width="0.5"/>
+<polygon points="770.83,790.00 1112.48,586.28 1112.48,289.19 770.83,492.91" fill="#535e73" stroke="#535e73" stroke-width="0.5"/>
+<polygon points="834.88,358.37 843.43,353.27 843.43,350.73 834.88,355.82" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="800.72,378.74 809.26,373.65 809.26,371.10 800.72,376.19" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="766.55,399.11 775.10,394.02 775.10,391.47 766.55,396.56" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<polygon points="732.39,419.48 740.93,414.39 740.93,411.84 732.39,416.94" fill="#303c45" stroke="#303c45" stroke-width="0.5"/>
+<text x="40" y="868" font-family="sans-serif" font-size="20" fill="#243847">PRT-0903 concept envelope 180 × 120 × 70 mm</text>
+<text x="40" y="890" font-family="sans-serif" font-size="13" fill="#657887">Concept geometry; not a manufacturing drawing</text></svg>

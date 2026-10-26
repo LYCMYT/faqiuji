@@ -1,0 +1,145 @@
+{
+  "note": "仅为Codex展示分解方向建议。位移可为排版调整，不改变真实装配。",
+  "modules": [
+    {
+      "assembly_id": "ASM-01",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        0,
+        0,
+        -80
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-02",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        0,
+        0,
+        50
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-03",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        360,
+        0,
+        100
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-04",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        0,
+        0,
+        450
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-05",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        450,
+        0,
+        700
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-06",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        -650,
+        0,
+        430
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-07",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        700,
+        -200,
+        300
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-08",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        600,
+        300,
+        450
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-09",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        650,
+        -300,
+        30
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "assembly_id": "ASM-10",
+      "reference_frame": "WORLD",
+      "translation_mm": [
+        -500,
+        -200,
+        250
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

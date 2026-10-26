@@ -1,0 +1,1341 @@
+{
+  "pose": {
+    "height": 1800,
+    "yaw": 45,
+    "pitch": 60
+  },
+  "components": [
+    {
+      "instance_id": "PRT-0501-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-C__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-D__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-E__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-F__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-C__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-D__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-E__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-F__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-G__215",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0501-G__115",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-A__L-35",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-A__L35",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-B__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0503-A__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0503-B__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0504__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0505__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0506-A__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0506-B__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0506-C__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-A__R-35",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-A__R35",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-B__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0503-A__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0503-B__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0504__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0505__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0506-A__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0506-B__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0506-C__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0703-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0703-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0703-C",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0701-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0701-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0701-C",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0702__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0702-A__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0702__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0702-A__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0704",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0704-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0601",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0601-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-A__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-B__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-C__L410",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-C__L600",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-A__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-B__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-C__R410",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-C__R600",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-D__410",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-E__410",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-D__600",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-E__600",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-F__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-F__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0602-G",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0603__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0603__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0604",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0605__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0605-A__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0605__2",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0605-A__2",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0606",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0606-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0607-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0607-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0607-C",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0101-A__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0101-B__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0101-A__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0101-B__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0101-C",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0101-D",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0102",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103__-1_-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103-A__-1_-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0104__-1_-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103__-1_1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103-A__-1_1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0104__-1_1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103__1_-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103-A__1_-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0104__1_-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103__1_1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0103-A__1_1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0104__1_1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0105-A__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0105-B__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0105-A__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0105-B__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0201",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0202",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0203",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0204__860",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0204__1022.5",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0301",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0302-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0302-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0401-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0401-B__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0402__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0401-B__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0402__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0403",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0403-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-A__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-B__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-C__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-D__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-A__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-B__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-C__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0801-D__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0802",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0803-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0803-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0803-C",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0507__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0507__2",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0901",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0902",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0903",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0904",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0904-A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0904-B",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-1001",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-1002",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-1003",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-01",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-02",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-03",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-04",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-05",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-06",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-07",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-08",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-09",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-10",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-11",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-12",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-13",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-14",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0105-C__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0105-C__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-C",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-D",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-E",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-F",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-G",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-H__-1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0303-H__1",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_-36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_-36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_-36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_-36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__L_36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__L_36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_-36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_-36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_-36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_-36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_36_-24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-FAST__R_36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0502-NUT__R_36_24",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0903-WIRE_A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0704-WIRE_A",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-08_R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-10_DOWN",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0905__SEN-12_HOLD",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0202-R1_RECEIVER__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0202-R1_PIN__L",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0202-R1_RECEIVER__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    },
+    {
+      "instance_id": "PRT-0202-R1_PIN__R",
+      "mass_kg": null,
+      "com_world_mm": null,
+      "evidence_status": "not_measured",
+      "source": null
+    }
+  ],
+  "supports": [
+    {
+      "x_mm": -425.0,
+      "y_mm": -400.0,
+      "vertical_stiffness_N_mm": null
+    },
+    {
+      "x_mm": -425.0,
+      "y_mm": 400.0,
+      "vertical_stiffness_N_mm": null
+    },
+    {
+      "x_mm": 425.0,
+      "y_mm": -400.0,
+      "vertical_stiffness_N_mm": null
+    },
+    {
+      "x_mm": 425.0,
+      "y_mm": 400.0,
+      "vertical_stiffness_N_mm": null
+    }
+  ],
+  "notes": "必须按指定姿态填写世界坐标质心。此表不把采购件包络体积当真实质量。"
+}

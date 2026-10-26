@@ -1,0 +1,90 @@
+{
+  "revision": "V0.2-R1",
+  "geometry_sha256": "3d64eeeb7a9afcd39bd8dd5efa93ff9217380aff15bec40f2b8bafffe95c0390",
+  "required_artifacts_present": true,
+  "pdfs": [
+    {
+      "file": "output/BM1_V0_design_book.pdf",
+      "pages": 152,
+      "sha256": "82b71084bce6f43ce23e7b4d785d7491b68a1cf6ab7fca8ad0fecb7f1aca9e29",
+      "out_of_page_text": []
+    },
+    {
+      "file": "output/engineering/BM1_R1_engineering_manual.pdf",
+      "pages": 18,
+      "sha256": "0f7a106f3f630230f502a550b3e3053c2b573c719f6c60de8247ae3275e77419",
+      "out_of_page_text": []
+    }
+  ],
+  "media": [
+    {
+      "file": "BM1_explode_restore.mp4",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      "all_frames_decoded": true
+    },
+    {
+      "file": "BM1_feed_sequence.mp4",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "nb_frames": "464"
+          }
+        ],
+        "format": {
+          "duration": "19.333333"
+        }
+      },
+      "all_frames_decoded": true
+    },
+    {
+      "file": "BM1_R1_cassette_service.mp4",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      "all_frames_decoded": true
+    }
+  ],
+  "viewer": {
+    "loaded": true,
+    "meshes": 187,
+    "wheel_isolation": 2,
+    "cover_toggle": true,
+    "explode_slider": true,
+    "part_information": true,
+    "js_errors": []
+  },
+  "all_native_geometry_and_roundtrips_passed": true,
+  "physical_acceptance": false,
+  "scope": "File integrity and listed discrete digital checks only; physical inputs remain missing."
+}

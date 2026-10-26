@@ -1,0 +1,10 @@
+{
+  "main_items": 44,
+  "physical_instances": 187,
+  "reference_instances": 2,
+  "pdf_pages": 152,
+  "cad_status": "native_parametric_concept_generated",
+  "manufacturing_approved": false,
+  "physical_test_status": "not_performed",
+  "validation": "reports/validation.json"
+}

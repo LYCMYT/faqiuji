@@ -1,0 +1,87 @@
+{
+  "WORLD": {
+    "BASE_FIXED": [
+      "ASM-01",
+      "PRT-0201",
+      "PRT-0204",
+      "PRT-0803",
+      "PRT-0507",
+      "PRT-0901",
+      "PRT-0902",
+      "PRT-0903",
+      "PRT-0904",
+      "PRT-1003"
+    ],
+    "LIFT_CARRIAGE": {
+      "reference": "J01 manual height",
+      "fixed": [
+        "PRT-0202",
+        "PRT-0301",
+        "PRT-0303"
+      ],
+      "FIXED_FEEDER": {
+        "fixed": [
+          "PRT-0601",
+          "PRT-0602",
+          "PRT-0605",
+          "PRT-0607"
+        ],
+        "GATES": [
+          "PRT-0603",
+          "PRT-0604"
+        ],
+        "GUIDE_Z": [
+          "PRT-0606"
+        ]
+      },
+      "YAW_FRAME": {
+        "reference": "J02 +Z",
+        "fixed": [
+          "PRT-0401",
+          "PRT-0403"
+        ],
+        "MOVING_HEAD": {
+          "reference": "J03 -Y",
+          "fixed": [
+            "PRT-0501",
+            "PRT-0502",
+            "PRT-0503",
+            "PRT-0506",
+            "PRT-0703",
+            "PRT-0801",
+            "PRT-0802"
+          ],
+          "WHEEL_LEFT": [
+            "PRT-0504-L",
+            "PRT-0505-L"
+          ],
+          "WHEEL_RIGHT": [
+            "PRT-0504-R",
+            "PRT-0505-R"
+          ],
+          "SLIDER": {
+            "reference": "J05 +X",
+            "fixed": [
+              "PRT-0701",
+              "PRT-0704"
+            ],
+            "CLAMP": [
+              "PRT-0702-L",
+              "PRT-0702-R"
+            ]
+          }
+        }
+      }
+    },
+    "EXTERNAL": [
+      "PRT-1001",
+      "PRT-1002"
+    ]
+  },
+  "notes": [
+    "功能总成编号与运动父节点是两套信息；0507驱动属于发射功能但实际固定在底舱。",
+    "0302回转支承需拆分固定圈与转动圈；0403执行器需区分壳体与输出。",
+    "0203高度销、0402耳轴及0905传感器实例由具体安装接口归属，不能省略。",
+    "校核羽球是TEST_SHUTTLE对象；轮捕获后解除SLIDER绑定，不属于真实BOM。"
+  ]
+}

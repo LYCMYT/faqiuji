@@ -1,0 +1,814 @@
+[
+  {
+    "interface_id": "IF01",
+    "name": "底盘与外立柱",
+    "reference_frame": "WORLD",
+    "origin_mm": [
+      0,
+      0,
+      160
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0101",
+      "PRT-0201"
+    ],
+    "geometry_rule": "外柱底部安装面；连接板和加强筋纳入0101派生件",
+    "unresolved": "安装板及螺栓规格需载荷校核",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0101-A__-1",
+      "PRT-0101-B__-1",
+      "PRT-0101-A__1",
+      "PRT-0101-B__1",
+      "PRT-0101-C",
+      "PRT-0101-D",
+      "PRT-0201"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF02",
+    "name": "内柱与偏航固定板",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      0,
+      -342
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0202",
+      "PRT-0301"
+    ],
+    "geometry_rule": "内柱顶/基座板底面",
+    "unresolved": "固定板厚12；连接法兰派生件随实际管材定义",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0202",
+      "PRT-0301",
+      "PRT-0202-R1_RECEIVER__L",
+      "PRT-0202-R1_PIN__L",
+      "PRT-0202-R1_RECEIVER__R",
+      "PRT-0202-R1_PIN__R"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF03",
+    "name": "固定板与回转支承",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      0,
+      -330
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0301",
+      "PRT-0302"
+    ],
+    "geometry_rule": "基座上面/轴承底面",
+    "unresolved": "供应商固定圈孔位待核对",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0301",
+      "PRT-0302-A",
+      "PRT-0302-B"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF04",
+    "name": "回转支承与U架",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      0,
+      -300
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0302",
+      "PRT-0401"
+    ],
+    "geometry_rule": "支承顶面/U架底面",
+    "unresolved": "供应商转动圈孔位待核对",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0302-A",
+      "PRT-0302-B",
+      "PRT-0401-A",
+      "PRT-0401-B__-1",
+      "PRT-0401-B__1"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF05",
+    "name": "左俯仰耳轴",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      210,
+      0
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parts": [
+      "PRT-0401",
+      "PRT-0402",
+      "PRT-0501"
+    ],
+    "geometry_rule": "左短轴中心；禁止贯通至球道",
+    "unresolved": "孔轴配合与轴承尺寸待校核",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0501-A",
+      "PRT-0501-B",
+      "PRT-0501-C__L",
+      "PRT-0501-D__L",
+      "PRT-0501-E__L",
+      "PRT-0501-F__L",
+      "PRT-0501-C__R",
+      "PRT-0501-D__R",
+      "PRT-0501-E__R",
+      "PRT-0501-F__R",
+      "PRT-0501-G__215",
+      "PRT-0501-G__115",
+      "PRT-0401-A",
+      "PRT-0401-B__-1",
+      "PRT-0402__-1",
+      "PRT-0401-B__1",
+      "PRT-0402__1"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF06",
+    "name": "右俯仰耳轴",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      -210,
+      0
+    ],
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "parts": [
+      "PRT-0401",
+      "PRT-0402",
+      "PRT-0501"
+    ],
+    "geometry_rule": "右短轴中心；与左侧同轴",
+    "unresolved": "与俯仰传动连接待选型",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0501-A",
+      "PRT-0501-B",
+      "PRT-0501-C__L",
+      "PRT-0501-D__L",
+      "PRT-0501-E__L",
+      "PRT-0501-F__L",
+      "PRT-0501-C__R",
+      "PRT-0501-D__R",
+      "PRT-0501-E__R",
+      "PRT-0501-F__R",
+      "PRT-0501-G__215",
+      "PRT-0501-G__115",
+      "PRT-0401-A",
+      "PRT-0401-B__-1",
+      "PRT-0402__-1",
+      "PRT-0401-B__1",
+      "PRT-0402__1"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF07",
+    "name": "左轮轴",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      82.5,
+      0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0503",
+      "PRT-0504",
+      "PRT-0505",
+      "PRT-0506"
+    ],
+    "geometry_rule": "轮中面与主轴中心",
+    "unresolved": "轴承座实体保持轮面下方，上部仅轴伸；传动联接待选型",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0503-A__L",
+      "PRT-0503-B__L",
+      "PRT-0504__L",
+      "PRT-0505__L",
+      "PRT-0506-A__L",
+      "PRT-0506-B__L",
+      "PRT-0506-C__L",
+      "PRT-0503-A__R",
+      "PRT-0503-B__R",
+      "PRT-0504__R",
+      "PRT-0505__R",
+      "PRT-0506-A__R",
+      "PRT-0506-B__R",
+      "PRT-0506-C__R"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF08",
+    "name": "右轮轴",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      -82.5,
+      0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0503",
+      "PRT-0504",
+      "PRT-0505",
+      "PRT-0506"
+    ],
+    "geometry_rule": "轮中面与主轴中心",
+    "unresolved": "中心距须由轮D与概念轮缝计算，不写成第二套独立常数",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0503-A__L",
+      "PRT-0503-B__L",
+      "PRT-0504__L",
+      "PRT-0505__L",
+      "PRT-0506-A__L",
+      "PRT-0506-B__L",
+      "PRT-0506-C__L",
+      "PRT-0503-A__R",
+      "PRT-0503-B__R",
+      "PRT-0504__R",
+      "PRT-0505__R",
+      "PRT-0506-A__R",
+      "PRT-0506-B__R",
+      "PRT-0506-C__R"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF09",
+    "name": "储球管轴线",
+    "reference_frame": "H",
+    "origin_mm": [
+      -190,
+      0,
+      110
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0601",
+      "PRT-0602"
+    ],
+    "geometry_rule": "固定管下缘中心；与零位托球中心同轴",
+    "unresolved": "球筒跟随手动升降但不跟yaw/pitch",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0601",
+      "PRT-0601-A",
+      "PRT-0602-A__L",
+      "PRT-0602-B__L",
+      "PRT-0602-C__L410",
+      "PRT-0602-C__L600",
+      "PRT-0602-A__R",
+      "PRT-0602-B__R",
+      "PRT-0602-C__R410",
+      "PRT-0602-C__R600",
+      "PRT-0602-D__410",
+      "PRT-0602-E__410",
+      "PRT-0602-D__600",
+      "PRT-0602-E__600",
+      "PRT-0602-F__-1",
+      "PRT-0602-F__1",
+      "PRT-0602-G"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF10",
+    "name": "分球作用区",
+    "reference_frame": "H",
+    "origin_mm": [
+      -190,
+      0,
+      300
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0602",
+      "PRT-0603",
+      "PRT-0604",
+      "PRT-0605"
+    ],
+    "geometry_rule": "运动件最低Z必须≥280",
+    "unresolved": "留球/闸门几何尚未验证；真实夹爪窗口按球堆试验确定",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0602-A__L",
+      "PRT-0602-B__L",
+      "PRT-0602-C__L410",
+      "PRT-0602-C__L600",
+      "PRT-0602-A__R",
+      "PRT-0602-B__R",
+      "PRT-0602-C__R410",
+      "PRT-0602-C__R600",
+      "PRT-0602-D__410",
+      "PRT-0602-E__410",
+      "PRT-0602-D__600",
+      "PRT-0602-E__600",
+      "PRT-0602-F__-1",
+      "PRT-0602-F__1",
+      "PRT-0602-G",
+      "PRT-0603__L",
+      "PRT-0603__R",
+      "PRT-0604",
+      "PRT-0605__1",
+      "PRT-0605-A__1",
+      "PRT-0605__2",
+      "PRT-0605-A__2"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF11",
+    "name": "导套上位",
+    "reference_frame": "H",
+    "origin_mm": [
+      -190,
+      0,
+      110
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0601",
+      "PRT-0606",
+      "PRT-0607"
+    ],
+    "geometry_rule": "套下缘110、套上缘260",
+    "unresolved": "套在管外：ID82>OD80；外导轨负责定位",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0601",
+      "PRT-0601-A",
+      "PRT-0606",
+      "PRT-0606-A",
+      "PRT-0607-A",
+      "PRT-0607-B",
+      "PRT-0607-C"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF12",
+    "name": "导套装载位",
+    "reference_frame": "H",
+    "origin_mm": [
+      -190,
+      0,
+      -5
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0606",
+      "PRT-0701",
+      "PRT-0702"
+    ],
+    "geometry_rule": "套下缘-5、套上缘145",
+    "unresolved": "低位夹爪与套口逐件检查，不允许用固定漏斗挡住转头路径",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0701-A",
+      "PRT-0701-B",
+      "PRT-0701-C",
+      "PRT-0702__L",
+      "PRT-0702-A__L",
+      "PRT-0702__R",
+      "PRT-0702-A__R",
+      "PRT-0606",
+      "PRT-0606-A"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF13",
+    "name": "托球装载位",
+    "reference_frame": "H",
+    "origin_mm": [
+      -190,
+      0,
+      0
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "parts": [
+      "PRT-0701",
+      "PRT-0703"
+    ],
+    "geometry_rule": "球头中心基准；滑台行程0",
+    "unresolved": "θ=0，ψ=0；夹持形面按真实球头形状修正",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0703-A",
+      "PRT-0703-B",
+      "PRT-0703-C",
+      "PRT-0701-A",
+      "PRT-0701-B",
+      "PRT-0701-C"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF14",
+    "name": "托球避让位",
+    "reference_frame": "H",
+    "origin_mm": [
+      -85,
+      0,
+      0
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "parts": [
+      "PRT-0701",
+      "PRT-0703"
+    ],
+    "geometry_rule": "滑台行程105；转向前等待位",
+    "unresolved": "完整球裙已脱离固定导套后才允许yaw/pitch",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0703-A",
+      "PRT-0703-B",
+      "PRT-0703-C",
+      "PRT-0701-A",
+      "PRT-0701-B",
+      "PRT-0701-C"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF15",
+    "name": "喂入示意终点",
+    "reference_frame": "H",
+    "origin_mm": [
+      -5,
+      0,
+      0
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "parts": [
+      "PRT-0701",
+      "PRT-0702",
+      "PRT-0505"
+    ],
+    "geometry_rule": "滑台示意行程185，不代表球实际仍随台运动",
+    "unresolved": "真实捕获可能在约-11.15即开始；仅刚性截面估算，必须试验",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0505__L",
+      "PRT-0505__R",
+      "PRT-0701-A",
+      "PRT-0701-B",
+      "PRT-0701-C",
+      "PRT-0702__L",
+      "PRT-0702-A__L",
+      "PRT-0702__R",
+      "PRT-0702-A__R"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF16",
+    "name": "轮下中央滑轨",
+    "reference_frame": "H",
+    "origin_mm": [
+      -115,
+      0,
+      -30
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "parts": [
+      "PRT-0501",
+      "PRT-0703"
+    ],
+    "geometry_rule": "导轨总体宽≤40、Z=-40…-20",
+    "unresolved": "避开轮轴座、传动及线缆；托架结构顶≤-12",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0501-A",
+      "PRT-0501-B",
+      "PRT-0501-C__L",
+      "PRT-0501-D__L",
+      "PRT-0501-E__L",
+      "PRT-0501-F__L",
+      "PRT-0501-C__R",
+      "PRT-0501-D__R",
+      "PRT-0501-E__R",
+      "PRT-0501-F__R",
+      "PRT-0501-G__215",
+      "PRT-0501-G__115",
+      "PRT-0703-A",
+      "PRT-0703-B",
+      "PRT-0703-C"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF17",
+    "name": "固定球筒支架",
+    "reference_frame": "H",
+    "origin_mm": [
+      -310,
+      0,
+      0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0202",
+      "PRT-0301",
+      "PRT-0602"
+    ],
+    "geometry_rule": "与固定侧升降载架连接；后柱参考X=-310",
+    "unresolved": "横支撑与分球件最低Z≥280；后窄尾全yaw/pitch扫掠检查",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0602-A__L",
+      "PRT-0602-B__L",
+      "PRT-0602-C__L410",
+      "PRT-0602-C__L600",
+      "PRT-0602-A__R",
+      "PRT-0602-B__R",
+      "PRT-0602-C__R410",
+      "PRT-0602-C__R600",
+      "PRT-0602-D__410",
+      "PRT-0602-E__410",
+      "PRT-0602-D__600",
+      "PRT-0602-E__600",
+      "PRT-0602-F__-1",
+      "PRT-0602-F__1",
+      "PRT-0602-G",
+      "PRT-0202",
+      "PRT-0301",
+      "PRT-0202-R1_RECEIVER__L",
+      "PRT-0202-R1_PIN__L",
+      "PRT-0202-R1_RECEIVER__R",
+      "PRT-0202-R1_PIN__R"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF18",
+    "name": "发射护罩",
+    "reference_frame": "H",
+    "origin_mm": [
+      0,
+      0,
+      0
+    ],
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "parts": [
+      "PRT-0501",
+      "PRT-0801",
+      "PRT-0802"
+    ],
+    "geometry_rule": "前罩宽、后尾窄；中央全羽球路径留空",
+    "unresolved": "轮上翻转空间与防护强度待验证",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0501-A",
+      "PRT-0501-B",
+      "PRT-0501-C__L",
+      "PRT-0501-D__L",
+      "PRT-0501-E__L",
+      "PRT-0501-F__L",
+      "PRT-0501-C__R",
+      "PRT-0501-D__R",
+      "PRT-0501-E__R",
+      "PRT-0501-F__R",
+      "PRT-0501-G__215",
+      "PRT-0501-G__115",
+      "PRT-0801-A__L",
+      "PRT-0801-B__L",
+      "PRT-0801-C__L",
+      "PRT-0801-D__L",
+      "PRT-0801-A__R",
+      "PRT-0801-B__R",
+      "PRT-0801-C__R",
+      "PRT-0801-D__R",
+      "PRT-0802"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF19",
+    "name": "底舱电气托盘",
+    "reference_frame": "WORLD",
+    "origin_mm": [
+      0,
+      0,
+      210
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0101",
+      "PRT-0803",
+      "PRT-0901",
+      "PRT-0902",
+      "PRT-0903",
+      "PRT-0507"
+    ],
+    "geometry_rule": "功率与控制模块布置面",
+    "unresolved": "线束插拔、散热、保险/切断及应力释放必须留实空间",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0101-A__-1",
+      "PRT-0101-B__-1",
+      "PRT-0101-A__1",
+      "PRT-0101-B__1",
+      "PRT-0101-C",
+      "PRT-0101-D",
+      "PRT-0803-A",
+      "PRT-0803-B",
+      "PRT-0803-C",
+      "PRT-0507__1",
+      "PRT-0507__2",
+      "PRT-0901",
+      "PRT-0902",
+      "PRT-0903",
+      "PRT-0903-WIRE_A"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  },
+  {
+    "interface_id": "IF20",
+    "name": "手动升降基准链",
+    "reference_frame": "WORLD",
+    "origin_mm": [
+      0,
+      0,
+      0
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "parts": [
+      "PRT-0201",
+      "PRT-0202",
+      "PRT-0203",
+      "PRT-0602"
+    ],
+    "geometry_rule": "所有H坐标在升降时共同移动",
+    "unresolved": "外柱顶1040，内柱顶H-342，内柱650；H1800时重叠232",
+    "hole_pattern": null,
+    "fasteners": null,
+    "status": "concept",
+    "instance_ids": [
+      "PRT-0602-A__L",
+      "PRT-0602-B__L",
+      "PRT-0602-C__L410",
+      "PRT-0602-C__L600",
+      "PRT-0602-A__R",
+      "PRT-0602-B__R",
+      "PRT-0602-C__R410",
+      "PRT-0602-C__R600",
+      "PRT-0602-D__410",
+      "PRT-0602-E__410",
+      "PRT-0602-D__600",
+      "PRT-0602-E__600",
+      "PRT-0602-F__-1",
+      "PRT-0602-F__1",
+      "PRT-0602-G",
+      "PRT-0201",
+      "PRT-0202",
+      "PRT-0203",
+      "PRT-0202-R1_RECEIVER__L",
+      "PRT-0202-R1_PIN__L",
+      "PRT-0202-R1_RECEIVER__R",
+      "PRT-0202-R1_PIN__R"
+    ],
+    "manufacturing_status": "concept; supplier hole patterns remain null"
+  }
+]

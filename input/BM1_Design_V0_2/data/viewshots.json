@@ -1,0 +1,66 @@
+[
+  {
+    "id": "VIEW-01",
+    "name": "整体外观",
+    "yaw": -12,
+    "pitch": 18,
+    "H": 1500,
+    "cover": true,
+    "output": "render/overall.png"
+  },
+  {
+    "id": "VIEW-02",
+    "name": "去罩总装",
+    "yaw": 0,
+    "pitch": 0,
+    "H": 1500,
+    "cover": false,
+    "output": "render/cutaway.png"
+  },
+  {
+    "id": "VIEW-03",
+    "name": "正投影",
+    "views": [
+      "front",
+      "rear",
+      "left",
+      "right",
+      "top"
+    ],
+    "projection": "orthographic"
+  },
+  {
+    "id": "VIEW-04",
+    "name": "总装与10总成爆炸",
+    "explosion": "display_copy_only"
+  },
+  {
+    "id": "VIEW-05",
+    "name": "每主项与派生件单页",
+    "layout": "isometric+necessary_orthographic+dimensions+interfaces"
+  },
+  {
+    "id": "VIEW-06",
+    "name": "供球剖视序列",
+    "states": "S00-S08"
+  },
+  {
+    "id": "VIEW-07",
+    "name": "极限与检修",
+    "yaw": [
+      -45,
+      0,
+      45
+    ],
+    "pitch": [
+      -10,
+      0,
+      35,
+      60
+    ],
+    "H": [
+      1400,
+      1800
+    ]
+  }
+]

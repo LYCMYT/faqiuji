@@ -1,0 +1,1059 @@
+{
+  "step_files_reopened": 128,
+  "step_files": [
+    {
+      "path": "output\\step\\assemblies\\ASM-01.step",
+      "valid": true,
+      "solids": 25,
+      "volume_mm3": 11852866.9569673
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-02.step",
+      "valid": true,
+      "solids": 9,
+      "volume_mm3": 2646080.4947224027
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-03.step",
+      "valid": true,
+      "solids": 13,
+      "volume_mm3": 2092697.6061139507
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-04.step",
+      "valid": true,
+      "solids": 7,
+      "volume_mm3": 2214381.653838353
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-05.step",
+      "valid": true,
+      "solids": 52,
+      "volume_mm3": 3748129.8332344647
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-06.step",
+      "valid": true,
+      "solids": 29,
+      "volume_mm3": 2179736.354822448
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-07.step",
+      "valid": true,
+      "solids": 13,
+      "volume_mm3": 195039.6138829952
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-08.step",
+      "valid": true,
+      "solids": 12,
+      "volume_mm3": 3354115.831973641
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-09.step",
+      "valid": true,
+      "solids": 24,
+      "volume_mm3": 3155335.902912637
+    },
+    {
+      "path": "output\\step\\assemblies\\ASM-10.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 432200.0000000002
+    },
+    {
+      "path": "output\\step\\BM1_V0_assembly.step",
+      "valid": true,
+      "solids": 187,
+      "volume_mm3": 31870584.248468246
+    },
+    {
+      "path": "output\\step\\BM1_Y0_section.step",
+      "valid": true,
+      "solids": 82,
+      "volume_mm3": 5485919.984273926
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0101-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 4142266.337789016
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0101-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 3328000.000000001
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0101-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 831999.9999999999
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0101-D.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 134400.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0101.step",
+      "valid": true,
+      "solids": 6,
+      "volume_mm3": 8436666.337789016
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0102.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1536000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0103-A.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 9650.972631827846
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0103.step",
+      "valid": true,
+      "solids": 8,
+      "volume_mm3": 1398165.5583565736
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0104.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 114730.96370909802
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0105-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 275153.2509720148
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0105-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 80150.8461407521
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0105-C__-1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0105-C__1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0105.step",
+      "valid": true,
+      "solids": 6,
+      "volume_mm3": 367304.0971127721
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0201.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1209404.9594172877
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0202-R1_PIN.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 6565.928646002607
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0202-R1_RECEIVER.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 20262.123980236884
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0202.step",
+      "valid": true,
+      "solids": 5,
+      "volume_mm3": 811888.601752193
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0203.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11309.733552923257
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0204.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 613477.2
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0301.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 524638.4074669875
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0302-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 217146.88421613124
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0302-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 189178.85561754752
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0302.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 406325.7398336787
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9424.77796076938
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16746.193947593478
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 75671.54224701901
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-D.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 20734.51151369309
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-E.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 183368.48000473314
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-F.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 134987.95313944918
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-G.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 135999.99999999997
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303-H.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 44799.99999999998
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0303.step",
+      "valid": true,
+      "solids": 10,
+      "volume_mm3": 1161733.458813268
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0401-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 883320.3649089574
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0401-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 594681.9119560027
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0401.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 1478002.2768649596
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0402.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 30536.28059289278
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0403-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4593.096380505285
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0403.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 705843.0963805063
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 972971.9374096501
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 156600.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-C.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 36000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-D.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 203759.99999999974
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-E.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 47520.00000000003
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-F.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 80156.27309654938
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501-G.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 5120.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0501.step",
+      "valid": true,
+      "solids": 12,
+      "volume_mm3": 1502128.2105061961
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0502-A.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 244002.4893776094
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0502-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 69561.77052612885
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0502-FAST.step",
+      "valid": true,
+      "solids": 8,
+      "volume_mm3": 8394.335570391866
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0502-NUT.step",
+      "valid": true,
+      "solids": 8,
+      "volume_mm3": 2010.6192982975126
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0502.step",
+      "valid": true,
+      "solids": 24,
+      "volume_mm3": 484217.2147724278
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0503-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 83316.60796952993
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0503-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 16933.184402848983
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0503.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 100249.79237237872
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0504.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 246401.39500636002
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0505.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 241274.31579570143
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0506-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 769690.2001294994
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0506-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 14878.582807401584
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0506-C.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 4290.121844434457
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0506.step",
+      "valid": true,
+      "solids": 6,
+      "volume_mm3": 788858.9047813546
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0507.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 384999.99999999994
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0601-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 25446.900494077883
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0601.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 286443.1228021046
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 387600.00000000006
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 243823.3099505872
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-C.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 133099.2584070224
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-D.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 52203.84512469289
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-E.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 52203.845124703905
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-F.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 319895.99999999994
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602-G.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 86328.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0602.step",
+      "valid": true,
+      "solids": 15,
+      "volume_mm3": 1275154.258607006
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0603.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 12732.11369929733
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0604.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33150.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0605-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 2915.9999999999995
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0605.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 86076.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0606-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2892.7248435754645
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0606.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 82060.85971404168
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0607-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 308000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0607-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0607-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 87120.00000000001
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0607.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 404120.0000000001
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0701-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6240.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0701-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 360.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0701-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4130.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0701.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 10730.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0702-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 2431.9999999999995
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0702.step",
+      "valid": true,
+      "solids": 4,
+      "volume_mm3": 8031.999999999998
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0703-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 124800.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0703-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24960.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0703-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6768.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0703.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 156528.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0704-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1760.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0704-WIRE_A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4489.613882995706
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0704.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 19749.613882995403
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0801-A.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 200520.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0801-B.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 190080.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0801-C.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 61059.00000000009
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0801-D.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 8784.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0801.step",
+      "valid": true,
+      "solids": 8,
+      "volume_mm3": 460442.99999999977
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0802.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 41392.83197364926
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0803-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2067492.0000000019
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0803-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 237600.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0803-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 547188.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0803.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 2852279.999999997
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0901.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 174999.99999999997
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0902.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1155000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0903-WIRE_A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28277.100205912364
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0903.step",
+      "valid": true,
+      "solids": 2,
+      "volume_mm3": 1540277.1002057204
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0904-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 34614.55763976685
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0904-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14400.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0904.step",
+      "valid": true,
+      "solids": 3,
+      "volume_mm3": 81058.80270638327
+    },
+    {
+      "path": "output\\step\\parts\\PRT-0905.step",
+      "valid": true,
+      "solids": 17,
+      "volume_mm3": 204000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-1001.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 173400.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-1002.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 150000.0
+    },
+    {
+      "path": "output\\step\\parts\\PRT-1003.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 108800.0
+    }
+  ],
+  "failures": [],
+  "all_step_valid": true,
+  "parameter_rebuild_tests": [
+    {
+      "parameter": "wheel_gap_visual",
+      "old": 25,
+      "new": 30,
+      "observed_left_center_shift_mm": 2.500000000000014,
+      "passed": true
+    },
+    {
+      "parameter": "tube_cap_allowance",
+      "old": 20,
+      "new": 24,
+      "observed_top_shift_mm": 4.0,
+      "passed": true
+    }
+  ],
+  "baseline_restored": true,
+  "seconds": 16.10444188117981,
+  "main_item_completeness": [
+    {
+      "part_id": "PRT-0101",
+      "expected": 6,
+      "actual": 6,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0102",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0103",
+      "expected": 8,
+      "actual": 8,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0104",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0105",
+      "expected": 6,
+      "actual": 6,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0201",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0202",
+      "expected": 5,
+      "actual": 5,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0203",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0204",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0301",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0302",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0303",
+      "expected": 10,
+      "actual": 10,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0401",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0402",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0403",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0501",
+      "expected": 12,
+      "actual": 12,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0502",
+      "expected": 24,
+      "actual": 24,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0503",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0504",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0505",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0506",
+      "expected": 6,
+      "actual": 6,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0507",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0601",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0602",
+      "expected": 15,
+      "actual": 15,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0603",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0604",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0605",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0606",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0607",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0701",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0702",
+      "expected": 4,
+      "actual": 4,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0703",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0704",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0801",
+      "expected": 8,
+      "actual": 8,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0802",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0803",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0901",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0902",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0903",
+      "expected": 2,
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0904",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-0905",
+      "expected": 17,
+      "actual": 17,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-1001",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-1002",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    },
+    {
+      "part_id": "PRT-1003",
+      "expected": 1,
+      "actual": 1,
+      "passed": true
+    }
+  ]
+}

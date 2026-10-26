@@ -1,0 +1,61 @@
+[
+  {
+    "id": "C01",
+    "expression": "wheel_center_y=(wheel_diameter+wheel_gap_visual)/2",
+    "expected_mm": 82.5
+  },
+  {
+    "id": "C02",
+    "expression": "tube_top_z_H=tube_bottom_z_H+tube_length",
+    "expected_mm": 650
+  },
+  {
+    "id": "C03",
+    "expression": "overall_height=head_axis_height+tube_top_z_H+tube_cap_allowance",
+    "expected_default_mm": 2170,
+    "range_mm": [
+      2070,
+      2470
+    ]
+  },
+  {
+    "id": "C04",
+    "expression": "guide_top_clear_z_H=guide_bottom_clear_z_H+guide_length",
+    "expected_mm": 260
+  },
+  {
+    "id": "C05",
+    "expression": "separator_motion_z_min_H-guide_top_clear_z_H>=20",
+    "expected_min_mm": 20
+  },
+  {
+    "id": "C06",
+    "expression": "carriage_total_stroke=feed_x-load_x",
+    "expected_mm": 185
+  },
+  {
+    "id": "C07",
+    "expression": "clear_stroke=clear_x-load_x",
+    "expected_mm": 105
+  },
+  {
+    "id": "C08",
+    "expression": "base_plate_bottom_H=-342;base_plate_thickness=12;bearing_height=30;U_frame_bottom_H=-300"
+  },
+  {
+    "id": "C09",
+    "expression": "outer_mast_top=160+880=1040;inner_bottom=H-342-650;overlap_at_H1800=232",
+    "status": "geometric_only_not_strength_proof"
+  },
+  {
+    "id": "C10",
+    "expression": "pitch_rotation=R_y(-theta);yaw_rotation=R_z(psi)",
+    "note": "抬头为正θ，左转为正ψ"
+  },
+  {
+    "id": "C11",
+    "expression": "first_contact_x=-sqrt((Rwheel+Rcork)^2-center_y^2)",
+    "display_value_mm": -11.14955,
+    "note": "仅刚性圆截面估算，不作为释放位置定稿"
+  }
+]

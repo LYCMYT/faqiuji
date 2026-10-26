@@ -1,0 +1,151 @@
+[
+  {
+    "id": "J01",
+    "type": "prismatic_manual",
+    "parent": "ASM-01",
+    "child": "FIXED_HEAD_CARRIER",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range": [
+      1400,
+      1800
+    ],
+    "home": 1500,
+    "unit": "mm",
+    "condition": "停机、机头支撑、销锁定后使用"
+  },
+  {
+    "id": "J02",
+    "type": "revolute",
+    "parent": "FIXED_HEAD_CARRIER",
+    "child": "ASM-04",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "origin_H": [
+      0,
+      0,
+      -300
+    ],
+    "range": [
+      -45,
+      45
+    ],
+    "work_range": [
+      -35,
+      35
+    ],
+    "home": 0,
+    "unit": "deg",
+    "condition": "单球已脱筒且夹持确认"
+  },
+  {
+    "id": "J03",
+    "type": "revolute",
+    "parent": "ASM-04",
+    "child": "MOVING_HEAD",
+    "axis": [
+      0,
+      -1,
+      0
+    ],
+    "origin_H": [
+      0,
+      0,
+      0
+    ],
+    "range": [
+      -10,
+      60
+    ],
+    "work_range": [
+      0,
+      55
+    ],
+    "home": 0,
+    "unit": "deg",
+    "condition": "单球已脱筒且夹持确认"
+  },
+  {
+    "id": "J04",
+    "type": "prismatic",
+    "parent": "FIXED_HEAD_CARRIER",
+    "child": "PRT-0606",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "range": [
+      0,
+      115
+    ],
+    "home": 115,
+    "unit": "mm",
+    "condition": "机头装载零位；夹持/导套传感按状态执行"
+  },
+  {
+    "id": "J05",
+    "type": "prismatic",
+    "parent": "MOVING_HEAD",
+    "child": "PRT-0701",
+    "axis": [
+      1,
+      0,
+      0
+    ],
+    "range": [
+      0,
+      185
+    ],
+    "positions": {
+      "load": 0,
+      "clear": 105,
+      "feed_visual": 185
+    },
+    "home": 0,
+    "unit": "mm",
+    "condition": "前移前确认导套上位；喂入前验证夹持释放时序"
+  },
+  {
+    "id": "J06",
+    "type": "revolute_continuous",
+    "parent": "MOVING_HEAD",
+    "child": "WHEEL_LEFT",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "origin_H": [
+      0,
+      82.5,
+      0
+    ],
+    "rpm_limit": null,
+    "condition": "转速上限待转子/驱动/防护试验；左轮+Z正向"
+  },
+  {
+    "id": "J07",
+    "type": "revolute_continuous",
+    "parent": "MOVING_HEAD",
+    "child": "WHEEL_RIGHT",
+    "axis": [
+      0,
+      0,
+      -1
+    ],
+    "origin_H": [
+      0,
+      -82.5,
+      0
+    ],
+    "rpm_limit": null,
+    "condition": "右轮-Z正向，使内侧切向速度同向+X"
+  }
+]

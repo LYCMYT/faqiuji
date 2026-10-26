@@ -1,0 +1,62 @@
+{
+  "decode_all_frames_passed": true,
+  "files": [
+    {
+      "file": "BM1_explode_restore.mp4",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      "all_frames_decoded": true
+    },
+    {
+      "file": "BM1_feed_sequence.mp4",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "nb_frames": "464"
+          }
+        ],
+        "format": {
+          "duration": "19.333333"
+        }
+      },
+      "all_frames_decoded": true
+    },
+    {
+      "file": "BM1_R1_cassette_service.mp4",
+      "metadata": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720,
+            "nb_frames": "120"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      "all_frames_decoded": true
+    }
+  ]
+}

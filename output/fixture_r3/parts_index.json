@@ -1,0 +1,1967 @@
+[
+  {
+    "family": "PRT-0602-R3-BASE",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      700.0,
+      320.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-BASE"
+    ],
+    "local_origin_H_mm": [
+      -510.0,
+      -160.0,
+      -396.0
+    ],
+    "holes": [
+      {
+        "x": -270,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -270,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -270,
+        "y": 60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -270,
+        "y": 110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": 60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": 110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -247,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -247,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -3,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -3,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -465,
+        "y": -125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": -465,
+        "y": 125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": 145,
+        "y": -125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": 145,
+        "y": 125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": -480,
+        "y": -60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      },
+      {
+        "x": -480,
+        "y": 60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      },
+      {
+        "x": 160,
+        "y": -60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      },
+      {
+        "x": 160,
+        "y": 60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      }
+    ],
+    "step": "step/parts/PRT-0602-R3-BASE.step"
+  },
+  {
+    "family": "PRT-0602-R3-PED",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      30.0,
+      80.0,
+      22.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-PED-00",
+      "PRT-0602-R3-PED-01",
+      "PRT-0602-R3-PED-10",
+      "PRT-0602-R3-PED-11"
+    ],
+    "local_origin_H_mm": [
+      -285.0,
+      -125.0,
+      -384.0
+    ],
+    "holes": [
+      {
+        "x": -270,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      },
+      {
+        "x": -270,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      }
+    ],
+    "step": "step/parts/PRT-0602-R3-PED.step"
+  },
+  {
+    "family": "PRT-0602-R3-STRAP",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      30.0,
+      80.0,
+      8.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-STRAP-00",
+      "PRT-0602-R3-STRAP-01",
+      "PRT-0602-R3-STRAP-10",
+      "PRT-0602-R3-STRAP-11"
+    ],
+    "local_origin_H_mm": [
+      -285.0,
+      -125.0,
+      -342.0
+    ],
+    "holes": [
+      {
+        "x": -270,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      },
+      {
+        "x": -270,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      }
+    ],
+    "step": "step/parts/PRT-0602-R3-STRAP.step"
+  },
+  {
+    "family": "PRT-0602-R3-ROD-M6-L90",
+    "quantity_in_assembly": 8,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M6全螺纹杆，等级待定",
+    "dimensions_mm": [
+      6.0,
+      6.0,
+      90.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-ARMFAST-000-ROD",
+      "PRT-0602-R3-ARMFAST-001-ROD",
+      "PRT-0602-R3-ARMFAST-010-ROD",
+      "PRT-0602-R3-ARMFAST-011-ROD",
+      "PRT-0602-R3-ARMFAST-100-ROD",
+      "PRT-0602-R3-ARMFAST-101-ROD",
+      "PRT-0602-R3-ARMFAST-110-ROD",
+      "PRT-0602-R3-ARMFAST-111-ROD"
+    ],
+    "local_origin_H_mm": [
+      -273.0,
+      -113.0,
+      -406.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-R3-ROD-M6-L90.step"
+  },
+  {
+    "family": "PRT-0602-R3-WASHER-M6",
+    "quantity_in_assembly": 24,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "金属垫圈，实际材质待定",
+    "dimensions_mm": [
+      12.0,
+      12.0,
+      1.6000000000000227
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-ARMFAST-000-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-000-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-001-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-001-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-010-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-010-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-011-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-011-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-100-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-100-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-101-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-101-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-110-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-110-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-111-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-111-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-00-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-00-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-01-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-01-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-10-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-10-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-11-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-11-WASHER-UP"
+    ],
+    "local_origin_H_mm": [
+      -276.0,
+      -116.0,
+      -397.6
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-R3-WASHER-M6.step"
+  },
+  {
+    "family": "PRT-0602-R3-NUT-M6",
+    "quantity_in_assembly": 24,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M6螺母，等级/防松待定",
+    "dimensions_mm": [
+      11.547005383792566,
+      10.0,
+      5.199999999999989
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-ARMFAST-000-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-000-NUT-UP",
+      "PRT-0602-R3-ARMFAST-001-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-001-NUT-UP",
+      "PRT-0602-R3-ARMFAST-010-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-010-NUT-UP",
+      "PRT-0602-R3-ARMFAST-011-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-011-NUT-UP",
+      "PRT-0602-R3-ARMFAST-100-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-100-NUT-UP",
+      "PRT-0602-R3-ARMFAST-101-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-101-NUT-UP",
+      "PRT-0602-R3-ARMFAST-110-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-110-NUT-UP",
+      "PRT-0602-R3-ARMFAST-111-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-111-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-00-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-00-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-01-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-01-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-10-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-10-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-11-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-11-NUT-UP"
+    ],
+    "local_origin_H_mm": [
+      -275.7735026918963,
+      -115.0,
+      -402.80000000000007
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-R3-NUT-M6.step"
+  },
+  {
+    "family": "PRT-0703-R3-TUBE",
+    "quantity_in_assembly": 2,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "矩形金属管/自制空心柱，材料批次待确认",
+    "dimensions_mm": [
+      50.0,
+      100.0,
+      324.0
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-TUBE-0",
+      "PRT-0703-R3-TUBE-1"
+    ],
+    "local_origin_H_mm": [
+      -255.0,
+      -50.0,
+      -374.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-R3-TUBE.step"
+  },
+  {
+    "family": "PRT-0703-R3-CAP-0",
+    "quantity_in_assembly": 2,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      50.0,
+      100.0,
+      10.0
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-CAP-0-LOW",
+      "PRT-0703-R3-CAP-0-UP"
+    ],
+    "local_origin_H_mm": [
+      -255.0,
+      -50.0,
+      -384.0
+    ],
+    "holes": [
+      {
+        "x": -247,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      },
+      {
+        "x": -247,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      }
+    ],
+    "step": "step/parts/PRT-0703-R3-CAP-0.step"
+  },
+  {
+    "family": "PRT-0703-R3-SHOE-0",
+    "quantity_in_assembly": 2,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      24.0,
+      34.50000000000036,
+      17.0
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-SHOE-0-0",
+      "PRT-0703-R3-SHOE-1-0"
+    ],
+    "local_origin_H_mm": [
+      -259.0,
+      -50.00000000000036,
+      -40.0
+    ],
+    "holes": [
+      {
+        "x": -247,
+        "y": -42,
+        "diameter": 6.6,
+        "counterbore_diameter": 20,
+        "counterbore_depth": 3,
+        "purpose": "侧压爪通孔；上方开边圆形螺母/工具凹台"
+      }
+    ],
+    "step": "step/parts/PRT-0703-R3-SHOE-0.step"
+  },
+  {
+    "family": "PRT-0703-R3-ROD-M6-L400",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M6全螺纹杆，等级待定",
+    "dimensions_mm": [
+      6.0,
+      6.0,
+      400.0
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-POSTFAST-0-0-ROD",
+      "PRT-0703-R3-POSTFAST-0-1-ROD",
+      "PRT-0703-R3-POSTFAST-1-0-ROD",
+      "PRT-0703-R3-POSTFAST-1-1-ROD"
+    ],
+    "local_origin_H_mm": [
+      -250.0,
+      -45.0,
+      -406.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-R3-ROD-M6-L400.step"
+  },
+  {
+    "family": "PRT-0703-R3-WASHER-M6",
+    "quantity_in_assembly": 8,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "金属垫圈，实际材质待定",
+    "dimensions_mm": [
+      12.0,
+      12.0,
+      1.6000000000000227
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-POSTFAST-0-0-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-0-0-WASHER-UP",
+      "PRT-0703-R3-POSTFAST-0-1-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-0-1-WASHER-UP",
+      "PRT-0703-R3-POSTFAST-1-0-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-1-0-WASHER-UP",
+      "PRT-0703-R3-POSTFAST-1-1-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-1-1-WASHER-UP"
+    ],
+    "local_origin_H_mm": [
+      -253.0,
+      -48.0,
+      -397.6
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-R3-WASHER-M6.step"
+  },
+  {
+    "family": "PRT-0703-R3-NUT-M6",
+    "quantity_in_assembly": 8,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M6螺母，等级/防松待定",
+    "dimensions_mm": [
+      11.547005383792538,
+      10.0,
+      5.199999999999989
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-POSTFAST-0-0-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-0-0-NUT-UP",
+      "PRT-0703-R3-POSTFAST-0-1-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-0-1-NUT-UP",
+      "PRT-0703-R3-POSTFAST-1-0-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-1-0-NUT-UP",
+      "PRT-0703-R3-POSTFAST-1-1-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-1-1-NUT-UP"
+    ],
+    "local_origin_H_mm": [
+      -252.77350269189628,
+      -47.0,
+      -402.80000000000007
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-R3-NUT-M6.step"
+  },
+  {
+    "family": "PRT-0703-R3-SHOE-1",
+    "quantity_in_assembly": 2,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      24.0,
+      34.50000000000037,
+      17.0
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-SHOE-0-1",
+      "PRT-0703-R3-SHOE-1-1"
+    ],
+    "local_origin_H_mm": [
+      -259.0,
+      15.5,
+      -40.0
+    ],
+    "holes": [
+      {
+        "x": -247,
+        "y": 42,
+        "diameter": 6.6,
+        "counterbore_diameter": 20,
+        "counterbore_depth": 3,
+        "purpose": "侧压爪通孔；上方开边圆形螺母/工具凹台"
+      }
+    ],
+    "step": "step/parts/PRT-0703-R3-SHOE-1.step"
+  },
+  {
+    "family": "PRT-0703-R3-CAP-1",
+    "quantity_in_assembly": 2,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      50.0,
+      100.0,
+      10.0
+    ],
+    "instance_ids": [
+      "PRT-0703-R3-CAP-1-LOW",
+      "PRT-0703-R3-CAP-1-UP"
+    ],
+    "local_origin_H_mm": [
+      -45.0,
+      -50.0,
+      -384.0
+    ],
+    "holes": [
+      {
+        "x": -3,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      },
+      {
+        "x": -3,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      }
+    ],
+    "step": "step/parts/PRT-0703-R3-CAP-1.step"
+  },
+  {
+    "family": "PRT-0602-R3-FOOT",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      50.0,
+      50.0,
+      30.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-FOOT-00",
+      "PRT-0602-R3-FOOT-01",
+      "PRT-0602-R3-FOOT-10",
+      "PRT-0602-R3-FOOT-11"
+    ],
+    "local_origin_H_mm": [
+      -490.0,
+      -150.0,
+      -426.0
+    ],
+    "holes": [
+      {
+        "x": -465,
+        "y": -125,
+        "diameter": 6.6,
+        "purpose": "M6穿杆；侧窗放入螺母及垫圈"
+      }
+    ],
+    "step": "step/parts/PRT-0602-R3-FOOT.step"
+  },
+  {
+    "family": "PRT-0602-R3-ROD-M6-L50",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M6全螺纹杆，等级待定",
+    "dimensions_mm": [
+      6.0,
+      6.0,
+      50.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-FOOTFAST-00-ROD",
+      "PRT-0602-R3-FOOTFAST-01-ROD",
+      "PRT-0602-R3-FOOTFAST-10-ROD",
+      "PRT-0602-R3-FOOTFAST-11-ROD"
+    ],
+    "local_origin_H_mm": [
+      -468.0,
+      -128.0,
+      -424.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-R3-ROD-M6-L50.step"
+  },
+  {
+    "family": "PRT-0703-A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      260.0,
+      40.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0703-A"
+    ],
+    "local_origin_H_mm": [
+      -245.0,
+      -20.0,
+      -40.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-A.step"
+  },
+  {
+    "family": "PRT-0703-B",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      260.0,
+      12.0,
+      8.0
+    ],
+    "instance_ids": [
+      "PRT-0703-B"
+    ],
+    "local_origin_H_mm": [
+      -245.0,
+      -6.0,
+      -28.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-B.step"
+  },
+  {
+    "family": "PRT-0703-C",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      36.0,
+      30.0,
+      10.0
+    ],
+    "instance_ids": [
+      "PRT-0703-C"
+    ],
+    "local_origin_H_mm": [
+      -208.0,
+      -15.0,
+      -28.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0703-C.step"
+  },
+  {
+    "family": "PRT-0701-A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      60.0,
+      32.0,
+      5.0
+    ],
+    "instance_ids": [
+      "PRT-0701-A"
+    ],
+    "local_origin_H_mm": [
+      -235.0,
+      -16.0,
+      -18.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0701-A.step"
+  },
+  {
+    "family": "PRT-0701-B",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      3.0,
+      10.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0701-B"
+    ],
+    "local_origin_H_mm": [
+      -206.5,
+      -5.0,
+      -13.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0701-B.step"
+  },
+  {
+    "family": "PRT-0701-C",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      10.0,
+      70.0,
+      8.0
+    ],
+    "instance_ids": [
+      "PRT-0701-C"
+    ],
+    "local_origin_H_mm": [
+      -235.0,
+      -65.0,
+      -20.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0701-C.step"
+  },
+  {
+    "family": "PRT-0702__L",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      35.0,
+      10.0,
+      8.0
+    ],
+    "instance_ids": [
+      "PRT-0702__L"
+    ],
+    "local_origin_H_mm": [
+      -219.5,
+      13.25,
+      -16.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0702__L.step"
+  },
+  {
+    "family": "PRT-0702-A__L",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      9.5,
+      36.5,
+      4.0
+    ],
+    "instance_ids": [
+      "PRT-0702-A__L"
+    ],
+    "local_origin_H_mm": [
+      -229.0,
+      0.0,
+      -12.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0702-A__L.step"
+  },
+  {
+    "family": "PRT-0702__R",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      35.0,
+      10.0,
+      8.0
+    ],
+    "instance_ids": [
+      "PRT-0702__R"
+    ],
+    "local_origin_H_mm": [
+      -219.5,
+      -23.25,
+      -16.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0702__R.step"
+  },
+  {
+    "family": "PRT-0702-A__R",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      9.5,
+      36.5,
+      4.0
+    ],
+    "instance_ids": [
+      "PRT-0702-A__R"
+    ],
+    "local_origin_H_mm": [
+      -229.0,
+      -36.5,
+      -12.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0702-A__R.step"
+  },
+  {
+    "family": "PRT-0704",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      30.0,
+      15.0,
+      30.0
+    ],
+    "instance_ids": [
+      "PRT-0704"
+    ],
+    "local_origin_H_mm": [
+      -260.0,
+      -72.5,
+      -50.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0704.step"
+  },
+  {
+    "family": "PRT-0704-A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      30.0,
+      16.0,
+      4.0
+    ],
+    "instance_ids": [
+      "PRT-0704-A"
+    ],
+    "local_origin_H_mm": [
+      -260.0,
+      -73.0,
+      -20.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0704-A.step"
+  },
+  {
+    "family": "PRT-0601",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      80.0,
+      80.0,
+      540.0
+    ],
+    "instance_ids": [
+      "PRT-0601"
+    ],
+    "local_origin_H_mm": [
+      -230.0,
+      -40.0,
+      110.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0601.step"
+  },
+  {
+    "family": "PRT-0601-A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      86.0,
+      86.0,
+      20.0
+    ],
+    "instance_ids": [
+      "PRT-0601-A"
+    ],
+    "local_origin_H_mm": [
+      -233.0,
+      -43.0,
+      650.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0601-A.step"
+  },
+  {
+    "family": "PRT-0602-A__L",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      950.0
+    ],
+    "instance_ids": [
+      "PRT-0602-A__L"
+    ],
+    "local_origin_H_mm": [
+      -320.0,
+      75.0,
+      -350.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-A__L.step"
+  },
+  {
+    "family": "PRT-0602-B__L",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      310.0,
+      20.0,
+      20.0
+    ],
+    "instance_ids": [
+      "PRT-0602-B__L"
+    ],
+    "local_origin_H_mm": [
+      -310.0,
+      75.0,
+      -362.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-B__L.step"
+  },
+  {
+    "family": "PRT-0602-C__L410",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      130.0,
+      40.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-C__L410"
+    ],
+    "local_origin_H_mm": [
+      -320.0,
+      50.0,
+      404.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-C__L410.step"
+  },
+  {
+    "family": "PRT-0602-C__L600",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      130.0,
+      40.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-C__L600"
+    ],
+    "local_origin_H_mm": [
+      -320.0,
+      50.0,
+      594.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-C__L600.step"
+  },
+  {
+    "family": "PRT-0602-A__R",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      950.0
+    ],
+    "instance_ids": [
+      "PRT-0602-A__R"
+    ],
+    "local_origin_H_mm": [
+      -320.0,
+      -95.0,
+      -350.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-A__R.step"
+  },
+  {
+    "family": "PRT-0602-B__R",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      310.0,
+      20.0,
+      20.0
+    ],
+    "instance_ids": [
+      "PRT-0602-B__R"
+    ],
+    "local_origin_H_mm": [
+      -310.0,
+      -95.0,
+      -362.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-B__R.step"
+  },
+  {
+    "family": "PRT-0602-C__R410",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      130.0,
+      40.000000000000014,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-C__R410"
+    ],
+    "local_origin_H_mm": [
+      -320.0,
+      -90.0,
+      404.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-C__R410.step"
+  },
+  {
+    "family": "PRT-0602-C__R600",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      130.0,
+      40.000000000000014,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-C__R600"
+    ],
+    "local_origin_H_mm": [
+      -320.0,
+      -90.0,
+      594.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-C__R600.step"
+  },
+  {
+    "family": "PRT-0602-D__410",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-D__410"
+    ],
+    "local_origin_H_mm": [
+      -190.0,
+      -55.0,
+      404.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-D__410.step"
+  },
+  {
+    "family": "PRT-0602-E__410",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-E__410"
+    ],
+    "local_origin_H_mm": [
+      -245.0,
+      -55.0,
+      404.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-E__410.step"
+  },
+  {
+    "family": "PRT-0602-D__600",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-D__600"
+    ],
+    "local_origin_H_mm": [
+      -190.0,
+      -55.0,
+      594.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-D__600.step"
+  },
+  {
+    "family": "PRT-0602-E__600",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0602-E__600"
+    ],
+    "local_origin_H_mm": [
+      -245.0,
+      -55.0,
+      594.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-E__600.step"
+  },
+  {
+    "family": "PRT-0602-R3-WALL--1",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "revised_context",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      170.0,
+      6.0,
+      170.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-WALL--1"
+    ],
+    "local_origin_H_mm": [
+      -310.0,
+      -75.0,
+      280.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-R3-WALL--1.step"
+  },
+  {
+    "family": "PRT-0602-R3-WALL-1",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "revised_context",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      170.0,
+      6.0,
+      170.0
+    ],
+    "instance_ids": [
+      "PRT-0602-R3-WALL-1"
+    ],
+    "local_origin_H_mm": [
+      -310.0,
+      69.0,
+      280.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-R3-WALL-1.step"
+  },
+  {
+    "family": "PRT-0602-G",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      6.0,
+      150.0,
+      100.0
+    ],
+    "instance_ids": [
+      "PRT-0602-G"
+    ],
+    "local_origin_H_mm": [
+      -316.0,
+      -75.0,
+      280.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0602-G.step"
+  },
+  {
+    "family": "PRT-0604",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      85.0,
+      65.0,
+      6.0
+    ],
+    "instance_ids": [
+      "PRT-0604"
+    ],
+    "local_origin_H_mm": [
+      -232.5,
+      -32.5,
+      281.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0604.step"
+  },
+  {
+    "family": "PRT-0605__1",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      42.0,
+      22.0,
+      45.0
+    ],
+    "instance_ids": [
+      "PRT-0605__1"
+    ],
+    "local_origin_H_mm": [
+      -291.0,
+      33.0,
+      280.5
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0605__1.step"
+  },
+  {
+    "family": "PRT-0605-A__1",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      34.0,
+      6.0,
+      6.0
+    ],
+    "instance_ids": [
+      "PRT-0605-A__1"
+    ],
+    "local_origin_H_mm": [
+      -249.0,
+      43.0,
+      300.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0605-A__1.step"
+  },
+  {
+    "family": "PRT-0605__2",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      42.0,
+      22.0,
+      45.0
+    ],
+    "instance_ids": [
+      "PRT-0605__2"
+    ],
+    "local_origin_H_mm": [
+      -291.0,
+      33.0,
+      347.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0605__2.step"
+  },
+  {
+    "family": "PRT-0605-A__2",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      60.0,
+      6.0,
+      6.0
+    ],
+    "instance_ids": [
+      "PRT-0605-A__2"
+    ],
+    "local_origin_H_mm": [
+      -275.0,
+      43.0,
+      389.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0605-A__2.step"
+  },
+  {
+    "family": "PRT-0606",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      86.0,
+      86.0,
+      150.0
+    ],
+    "instance_ids": [
+      "PRT-0606"
+    ],
+    "local_origin_H_mm": [
+      -233.0,
+      -43.0,
+      -5.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0606.step"
+  },
+  {
+    "family": "PRT-0606-A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      24.012196936161615,
+      26.0,
+      10.0
+    ],
+    "instance_ids": [
+      "PRT-0606-A"
+    ],
+    "local_origin_H_mm": [
+      -255.0,
+      -13.0,
+      123.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0606-A.step"
+  },
+  {
+    "family": "PRT-0607-A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      40.0,
+      35.0,
+      220.0
+    ],
+    "instance_ids": [
+      "PRT-0607-A"
+    ],
+    "local_origin_H_mm": [
+      -295.0,
+      -17.5,
+      60.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0607-A.step"
+  },
+  {
+    "family": "PRT-0607-B",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      12.0,
+      25.0,
+      30.0
+    ],
+    "instance_ids": [
+      "PRT-0607-B"
+    ],
+    "local_origin_H_mm": [
+      -255.0,
+      -12.5,
+      113.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0607-B.step"
+  },
+  {
+    "family": "PRT-0607-C",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      60.0,
+      110.0,
+      43.0
+    ],
+    "instance_ids": [
+      "PRT-0607-C"
+    ],
+    "local_origin_H_mm": [
+      -310.0,
+      -55.0,
+      271.0
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0607-C.step"
+  },
+  {
+    "family": "PRT-0704-WIRE_A",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "context",
+    "material": "沿用R1候选",
+    "dimensions_mm": [
+      147.4778791739097,
+      67.0000001,
+      47.000000199999995
+    ],
+    "instance_ids": [
+      "PRT-0704-WIRE_A"
+    ],
+    "local_origin_H_mm": [
+      -247.0000001,
+      -132.0000001,
+      -97.0000001
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0704-WIRE_A.step"
+  },
+  {
+    "family": "PRT-0603-R3-CARRIER-L",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      18.0,
+      50.0,
+      6.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-CARRIER-L"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      40.0,
+      380.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": 82,
+        "z": 383,
+        "diameter": 3.2,
+        "axis": "X",
+        "purpose": "自定义执行连接销孔；适配件待冻结"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-CARRIER-L.step"
+  },
+  {
+    "family": "PRT-0603-R3-SCREW-M4x25",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M4x25钢制内六角螺钉，实际等级待确认",
+    "dimensions_mm": [
+      7.220000000000027,
+      7.219999999999999,
+      29.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-SCREW-L0",
+      "PRT-0603-R3-SCREW-L1",
+      "PRT-0603-R3-SCREW-R0",
+      "PRT-0603-R3-SCREW-R1"
+    ],
+    "local_origin_H_mm": [
+      -193.61,
+      41.39,
+      368.5
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0603-R3-SCREW-M4x25.step"
+  },
+  {
+    "family": "PRT-0603-R3-NUT-M4",
+    "quantity_in_assembly": 4,
+    "quantity_for_optional_pair": 0,
+    "kind": "hardware",
+    "material": "M4金属螺母，防松方式待验证",
+    "dimensions_mm": [
+      8.082903768654774,
+      7.0,
+      3.1999999999999886
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-NUT-L0",
+      "PRT-0603-R3-NUT-L1",
+      "PRT-0603-R3-NUT-R0",
+      "PRT-0603-R3-NUT-R1"
+    ],
+    "local_origin_H_mm": [
+      -194.0414518843274,
+      41.5,
+      376.79999999999995
+    ],
+    "holes": [],
+    "step": "step/parts/PRT-0603-R3-NUT-M4.step"
+  },
+  {
+    "family": "PRT-0603-R3-CARRIER-R",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "6061-T651",
+    "dimensions_mm": [
+      18.00000000000003,
+      50.00000000000001,
+      6.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-CARRIER-R"
+    ],
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -90.0,
+      380.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": -82,
+        "z": 383,
+        "diameter": 3.2,
+        "axis": "X",
+        "purpose": "自定义执行连接销孔；适配件待冻结"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-CARRIER-R.step"
+  },
+  {
+    "family": "PRT-0603-R3-R29-L",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.0,
+      34.43190249581956,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R29-L"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      27.568097504180443,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R29-L.step"
+  },
+  {
+    "family": "PRT-0603-R3-R29-R",
+    "quantity_in_assembly": 1,
+    "quantity_for_optional_pair": 0,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.00000000000003,
+      34.43190249581957,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R29-R"
+    ],
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R29-R.step"
+  },
+  {
+    "family": "PRT-0603-R3-R23-L",
+    "quantity_in_assembly": 0,
+    "quantity_for_optional_pair": 1,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.0,
+      40.833989511483274,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R23-L"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      21.166010488516726,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R23-L.step"
+  },
+  {
+    "family": "PRT-0603-R3-R23-R",
+    "quantity_in_assembly": 0,
+    "quantity_for_optional_pair": 1,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.0,
+      40.833989511483274,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R23-R"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R23-R.step"
+  },
+  {
+    "family": "PRT-0603-R3-R26-L",
+    "quantity_in_assembly": 0,
+    "quantity_for_optional_pair": 1,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.0,
+      37.607378164699064,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R26-L"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      24.392621835300936,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R26-L.step"
+  },
+  {
+    "family": "PRT-0603-R3-R26-R",
+    "quantity_in_assembly": 0,
+    "quantity_for_optional_pair": 1,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.0,
+      37.60737816469907,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R26-R"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R26-R.step"
+  },
+  {
+    "family": "PRT-0603-R3-R32-L",
+    "quantity_in_assembly": 0,
+    "quantity_for_optional_pair": 1,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.0,
+      31.291694934431828,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R32-L"
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      30.708305065568172,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R32-L.step"
+  },
+  {
+    "family": "PRT-0603-R3-R32-R",
+    "quantity_in_assembly": 0,
+    "quantity_for_optional_pair": 1,
+    "kind": "custom",
+    "material": "未填充本色POM-C",
+    "dimensions_mm": [
+      18.00000000000003,
+      31.29169493443184,
+      12.0
+    ],
+    "instance_ids": [
+      "PRT-0603-R3-R32-R"
+    ],
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "step": "step/parts/PRT-0603-R3-R32-R.step"
+  }
+]

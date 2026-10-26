@@ -1,0 +1,432 @@
+{
+  "instances": 155,
+  "step_files": 71,
+  "step_reopened": [
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-BASE.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2678377.6786931716
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-PED.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 51294.674464105876
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-STRAP.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 18652.608896038495
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-ROD-M6-L90.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2544.6900494077327
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-WASHER-M6.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 129.48388281035977
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-NUT-M6.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 293.34154188271276
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-TUBE.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 368064.00000000023
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-CAP-0.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 49315.76112004822
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-SHOE-0.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11407.605320594654
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-ROD-M6-L400.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11309.733552923257
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-WASHER-M6.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 129.48388281035977
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-NUT-M6.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 293.3415418827121
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-SHOE-1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11407.605320594635
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-R3-CAP-1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 49315.76112004802
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-FOOT.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 57518.396952040915
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-ROD-M6-L50.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1413.716694115407
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 124800.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 24960.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0703-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6768.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0701-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6240.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0701-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 360.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0701-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4130.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0702__L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2799.9999999999995
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0702-A__L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1215.9999999999998
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0702__R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2799.9999999999995
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0702-A__R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1215.9999999999998
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0704.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13500.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0704-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1759.9999999999998
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0601.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 260996.2223080271
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0601-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 25446.900494077898
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-A__L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 193800.00000000003
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-B__L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 121911.65497529354
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-C__L410.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33274.81460178203
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-C__L600.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33274.81460178204
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-A__R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 193800.00000000003
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-B__R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 121911.65497529354
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-C__R410.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33274.814601789025
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-C__R600.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33274.81460178902
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-D__410.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 26101.922562346408
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-E__410.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 26101.92256235195
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-D__600.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 26101.922562346408
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-E__600.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 26101.92256235195
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-WALL--1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 157044.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-R3-WALL-1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 157044.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0602-G.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 86328.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0604.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33150.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0605__1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 41580.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0605-A__1.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1224.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0605__2.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 41580.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0605-A__2.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1692.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0606.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 79168.13487046456
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0606-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2892.7248435704164
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0607-A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 308000.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0607-B.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9000.0
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0607-C.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 87120.00000000001
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0704-WIRE_A.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4489.613882993446
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-CARRIER-L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4992.206191297872
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-SCREW-M4x25.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 462.337006574266
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-NUT-M4.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 91.45862778593356
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-CARRIER-R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4992.206191296173
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R29-L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6561.439539164677
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R29-R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6561.439539166518
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R23-L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7885.249468651534
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R23-R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7885.24946865216
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R26-L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7221.643979389237
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R26-R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7221.6439793892505
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R32-L.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5903.62068461131
+    },
+    {
+      "file": "output/fixture_r3/step/parts/PRT-0603-R3-R32-R.step",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5903.620684610092
+    },
+    {
+      "file": "output/fixture_r3/step/BM1_R3_fixture_assembly.step",
+      "valid": true,
+      "solids": 155
+    },
+    {
+      "file": "output/fixture_r3/step/sections/SECTION_POST_Y.step",
+      "valid": true,
+      "solids": 79
+    },
+    {
+      "file": "output/fixture_r3/step/sections/SECTION_JAW_X.step",
+      "valid": true,
+      "solids": 81
+    }
+  ],
+  "custom_drawing_pages": 21,
+  "hole_table_rows": 53,
+  "manufacturing_release": false
+}

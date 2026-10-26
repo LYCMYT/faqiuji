@@ -1,0 +1,386 @@
+[
+  {
+    "part_id": "PRT-0603-R2-R23-L",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__L",
+    "radius_mm": 23,
+    "side": "L",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.0,
+    "bbox_y_mm": 36.833989511483274,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.0,
+      21.166010488516726,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 23,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R23-R",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__R",
+    "radius_mm": 23,
+    "side": "R",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.0,
+    "bbox_y_mm": 36.833989511483274,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.0,
+      -58.0,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            -35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 23,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R26-L",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__L",
+    "radius_mm": 26,
+    "side": "L",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.0,
+    "bbox_y_mm": 33.607378164699064,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.0,
+      24.392621835300936,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 26,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R26-R",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__R",
+    "radius_mm": 26,
+    "side": "R",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.000000000000007,
+    "bbox_y_mm": 33.60737816469907,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.0,
+      -58.0,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            -35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 26,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R29-L",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__L",
+    "radius_mm": 29,
+    "side": "L",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.000000000000004,
+    "bbox_y_mm": 30.431902495819557,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.0,
+      27.568097504180443,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 29,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R29-R",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__R",
+    "radius_mm": 29,
+    "side": "R",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.000000000000036,
+    "bbox_y_mm": 30.431902495819568,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.00000000000003,
+      -58.0,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            -35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 29,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R32-L",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__L",
+    "radius_mm": 32,
+    "side": "L",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.000000000000004,
+    "bbox_y_mm": 27.291694934431828,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.0,
+      30.708305065568172,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 32,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  },
+  {
+    "part_id": "PRT-0603-R2-R32-R",
+    "parent_id": "PRT-0603",
+    "assembly_id": "ASM-06",
+    "source_instance": "PRT-0603__R",
+    "radius_mm": 32,
+    "side": "R",
+    "quantity": 1,
+    "material": "POM-C 未填充本色",
+    "bbox_x_mm": 18.000000000000043,
+    "bbox_y_mm": 27.29169493443184,
+    "bbox_z_mm": 12.0,
+    "local_origin_in_source_mm": [
+      -199.00000000000003,
+      -58.0,
+      386.0
+    ],
+    "shape_recipe": {
+      "op": "cut",
+      "children": [
+        {
+          "op": "box",
+          "size": [
+            18,
+            45,
+            12
+          ],
+          "at": [
+            "load_x",
+            -35.5,
+            392
+          ]
+        },
+        {
+          "op": "cylinder",
+          "radius": 32,
+          "height": 16,
+          "at": [
+            "load_x",
+            0,
+            392
+          ]
+        }
+      ]
+    },
+    "source_parameters": "data/design.json",
+    "status": "FIT_BLANK_NO_MOUNTING_INTERFACE"
+  }
+]

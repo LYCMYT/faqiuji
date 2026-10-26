@@ -1,0 +1,82 @@
+[
+  {
+    "pair": [
+      "PRT-0505__L",
+      "PRT-REF-CORK"
+    ],
+    "type": "elastic_contact",
+    "states": [
+      "ST08",
+      "ST09"
+    ],
+    "source": "expected_contacts.json",
+    "condition": "仅球头侧面；捕获阈值需实测"
+  },
+  {
+    "pair": [
+      "PRT-0702__L",
+      "PRT-REF-CORK"
+    ],
+    "type": "controlled_clamping",
+    "states": [
+      "ST04",
+      "ST05",
+      "ST06",
+      "ST07"
+    ],
+    "source": "expected_contacts.json",
+    "condition": "仅闭夹；鼻端形面待球型测量"
+  },
+  {
+    "pair": [
+      "PRT-0503-B__L",
+      "PRT-0504__L"
+    ],
+    "type": "shaft_fit",
+    "states": [
+      "all"
+    ],
+    "source": "expected_contacts.json",
+    "condition": "孔轴候选尺寸，不是配合公差"
+  },
+  {
+    "pair": [
+      "PRT-0505__R",
+      "PRT-REF-CORK"
+    ],
+    "type": "elastic_contact",
+    "states": [
+      "ST08",
+      "ST09"
+    ],
+    "source": "expected_contacts.json",
+    "condition": "仅球头侧面；捕获阈值需实测"
+  },
+  {
+    "pair": [
+      "PRT-0702__R",
+      "PRT-REF-CORK"
+    ],
+    "type": "controlled_clamping",
+    "states": [
+      "ST04",
+      "ST05",
+      "ST06",
+      "ST07"
+    ],
+    "source": "expected_contacts.json",
+    "condition": "仅闭夹；鼻端形面待球型测量"
+  },
+  {
+    "pair": [
+      "PRT-0503-B__R",
+      "PRT-0504__R"
+    ],
+    "type": "shaft_fit",
+    "states": [
+      "all"
+    ],
+    "source": "expected_contacts.json",
+    "condition": "孔轴候选尺寸，不是配合公差"
+  }
+]
