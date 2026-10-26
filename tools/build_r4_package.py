@@ -7,6 +7,7 @@ from cad.assemblies.r4_fixture import model,posed
 from cad.export_all import exact_bbox
 from tools.build_context import active_context,atomic_json,file_hash
 from tools.render_cad_preview import render
+from tools.r4_rfq import native_source_revision
 
 def run():
     ctx=active_context(R,'r4_exports','full');out=R/'output/fixture_r4'
@@ -37,7 +38,7 @@ def run():
         sh=a['shape'];bb=exact_bbox(sh);origin=[bb.xmin,bb.ymin,bb.zmin];local=sh.translate(tuple(-v for v in origin));file=f'step/parts/{family}.step';cq.exporters.export(local,str(out/file))
         metrics[file]={'volume':local.Volume(),'solids':len(local.Solids())}
         instances=[q['instance_id'] for q in rows if q['family']==family]
-        index.append(dict(family=family,part_id=a['part_id'],source_revision=a.get('r4_revision',a.get('source_revision','R3 retained')),quantity_in_assembly=len(instances),instance_ids=instances,material=a['material'],kind=a['kind'],step=file,local_origin_H_mm=origin,holes=a.get('holes',[]),dimensions_mm=[bb.xlen,bb.ylen,bb.zlen],manufacturing_release=False))
+        index.append(dict(family=family,part_id=a['part_id'],source_revision=native_source_revision(a),quantity_in_assembly=len(instances),instance_ids=instances,material=a['material'],kind=a['kind'],step=file,local_origin_H_mm=origin,holes=a.get('holes',[]),dimensions_mm=[bb.xlen,bb.ylen,bb.zlen],manufacturing_release=False))
     atomic_json(out/'parts_index.json',index)
     compound=cq.Compound.makeCompound([sh for _,sh in placed]);bb=exact_bbox(compound)
     for section in s['sections']:

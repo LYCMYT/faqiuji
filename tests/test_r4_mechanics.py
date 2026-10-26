@@ -87,6 +87,13 @@ class R4MechanicsTests(unittest.TestCase):
         self.assertEqual(result['status'],'PASS',result)
         released=False
         for stage in result['stages']:
-            if stage['name']=='RELEASE':released=True;continue
+            if stage['name']=='CAPTURE_BOUNDARY':released=True;continue
             if released:self.assertFalse(stage['ball_present']);self.assertIsNone(stage['reference_translation_mm'])
+    def test_ball_release_matches_control_and_ignores_historical_animation_release(self):
+        from control.feed_cycle import FeedCycle
+        originals=json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances'];refs=[(a['instance_id'],build(a['shape'],self.p)) for a in originals if a['instance_id'] in ['PRT-REF-CORK','PRT-REF-SKIRT']];demo=json.loads((R/'data/implementation.json').read_text(encoding='utf-8'))['demo'];first=ball_sequence_checks(self.rows,refs,self.s,self.p,demo['clamp_open_mm'],demo);changed=copy.deepcopy(demo);changed['release_complete_x']=-20;second=ball_sequence_checks(self.rows,refs,self.s,self.p,demo['clamp_open_mm'],changed)
+        self.assertEqual(first,second);by={v['name']:v for v in first['stages']};controller=FeedCycle();controller.state='RELEASE';target=controller.outputs();self.assertEqual(by['RELEASE']['state']['slide'],target['slide_target_mm']);self.assertEqual(by['RELEASE']['state']['clamp'],demo['clamp_open_mm']);self.assertEqual(target['clamp_target'],'open');self.assertEqual(by['RELEASE']['state']['slide'],self.p['clear_stroke'])
+        from cad.assemblies.kinematics import capture_stroke
+        self.assertEqual(by['CAPTURE_BOUNDARY']['state']['slide'],capture_stroke(self.p));self.assertTrue(by['APPROACH_OPEN']['ball_present']);controller.state='APPROACH';self.assertEqual(by['CAPTURE_BOUNDARY']['state']['slide'],controller.outputs()['slide_target_mm']);self.assertEqual(controller.outputs()['clamp_target'],'open')
 if __name__=='__main__':unittest.main()
+

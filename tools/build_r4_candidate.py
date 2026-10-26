@@ -12,6 +12,7 @@ from tools.input_manifest import snapshot_inputs,require_unchanged
 from tools.validate_release import run_stage,validate_release,validate_review_bundle
 from tools.release_contract import REQUIRED_STAGES
 from tools.doctor import probe
+from tools.r4_rfq import write_first_article_rfq
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--review-draft',action='store_true',help='Keep BLOCKED nominal geometry visible; does not produce release proof');args=parser.parse_args()
@@ -58,11 +59,8 @@ def main():
         stage('r4_viewer','tools/check_r4_viewer.py','reports/r4_viewer_validation.json')
         stage('r4_documents','tools/build_r4_manual.py','reports/r4_document_validation.json')
         index=json.loads((O/'parts_index.json').read_text(encoding='utf-8'))
-        with (O/'first_article_RFQ.csv').open('w',encoding='utf-8-sig',newline='') as stream:
-            writer=csv.writer(stream);writer.writerow(['family','revision','STEP','material_candidate','datums_and_holes','drawing_review','supplier','quantity','quote_CNY','lead_days','first_article_released'])
-            for item in index:
-                if 'R4' in item.get('family',''):
-                    writer.writerow([item['family'],'R4',item['step'],item.get('material','OPEN'),json.dumps(item.get('holes',[]),ensure_ascii=False),'OPEN','','','','',False])
+        first_article=json.loads((R/'data/r4_first_article.json').read_text(encoding='utf-8'))
+        write_first_article_rfq(O/'first_article_RFQ.csv',index,first_article)
         with (O/'physical_measurements_BLANK.csv').open('w',encoding='utf-8-sig',newline='') as stream:
             csv.writer(stream).writerow(['record_id','sample_id','hardware_revision','pose','instrument','operator','date','quantity','value','unit','raw_evidence_path','sha256','review_status'])
         links=[('BM1_R4_review_book.pdf','中文 R4 图册'),('step/BM1_R4_fixture_assembly.step','总装 STEP'),('BM1_R4_fixture.blend','BLEND'),('BM1_R4_fixture.glb','GLB'),('BM1_R4_connections_explode.mp4','分解动画'),('viewer.html','本地三维查看器'),('first_article_RFQ.csv','首件询价范围'),('../../reports/r4_readiness.md','实际检查与开放项')]

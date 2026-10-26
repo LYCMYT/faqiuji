@@ -14,6 +14,28 @@ CORRECTIONS = {
 
 
 class PartRoleContractTests(unittest.TestCase):
+    def test_r4_rfq_includes_declared_retained_candidates_and_actual_revisions(self):
+        from tools.r4_rfq import first_article_rfq_rows
+        declared=json.loads((ROOT/'data/r4_first_article.json').read_text(encoding='utf-8'));families=[v['family'] for v in declared['items']]+['PRT-0607-B-R4']
+        index=[dict(family=f,step='step/parts/'+f+'.step',source_revision='descriptive inherited source',quantity_in_assembly=99,material='candidate',holes=[]) for f in families];rows=first_article_rfq_rows(index,declared);by={v['family']:v for v in rows}
+        self.assertEqual(set(families),set(by));self.assertEqual('R3',by['PRT-0603-R3-R29-L']['revision']);self.assertEqual('R3',by['PRT-0602-R3-BASE']['revision']);self.assertEqual('R4',by['PRT-0701-R4-A']['revision'])
+        for row in rows:
+            for field in ['supplier','quantity','quote_CNY','lead_days']:self.assertIsNone(row[field])
+            self.assertFalse(row['supplier_confirmed']);self.assertFalse(row['first_article_released']);self.assertFalse(row['manufacturing_release'])
+        from tools.r4_rfq import write_first_article_rfq
+        with tempfile.TemporaryDirectory() as td:
+            path=Path(td)/'RFQ.csv';write_first_article_rfq(path,index,declared)
+            with path.open(encoding='utf-8-sig',newline='') as stream:exported=list(csv.DictReader(stream))
+        self.assertEqual({v['family'] for v in exported},set(families))
+        for row in exported:
+            for field in ['supplier','quantity','quote_CNY','lead_days']:self.assertEqual(row[field],'')
+            for field in ['supplier_confirmed','first_article_released','manufacturing_release']:self.assertEqual(row[field],'False')
+    def test_r4_rfq_fails_if_declared_candidate_missing(self):
+        from tools.r4_rfq import first_article_rfq_rows
+        with self.assertRaises(ValueError):first_article_rfq_rows([],{'items':[{'family':'PRT-0602-R3-BASE'}]})
+    def test_native_r4_hardware_default_provenance_is_not_r3_retained(self):
+        from tools.r4_rfq import native_source_revision
+        self.assertEqual(native_source_revision({'family':'PRT-0603-R4-CAP-M3-SCREW'}),'R4 self-designed candidate');self.assertEqual(native_source_revision({'family':'PRT-0602-R3-BASE'}),'R3 retained');self.assertEqual(native_source_revision({'family':'PRT-0701-R4-A','source_revision':'R3 cradle + explicit R4 land'}),'R3 cradle + explicit R4 land')
     def test_d01_routes_match_actual_functions(self):
         routes = json.loads((ROOT / 'data/r2_process_routes.json').read_text(encoding='utf-8'))['routes']
         for part_id, (required, forbidden) in CORRECTIONS.items():

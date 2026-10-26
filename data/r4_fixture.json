@@ -64,7 +64,7 @@
     "ball_sequence": {
       "seat_contact_tolerance_mm": 1e-05,
       "closed_jaw_nominal_gap_mm": 0.3,
-      "assumption": "Nominal visual references only; not measured clamp preload or grasp performance. Release is independent instantaneous pose; post-release ball absent."
+      "assumption": "Nominal visual references only, not measured clamp preload/grasp. Clamp opens at current control clear_stroke; ball is prescribed supported through open approach to ideal capture_stroke boundary. After assumed handoff the reference is absent; actual capture/free trajectory remain NOT_RUN."
     }
   },
   "real_ball_samples": [],
