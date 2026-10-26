@@ -25,10 +25,11 @@ def validate_numeric_rows(rows, *, allow_missing=False):
 def validate_components(rows: list[dict], expected_instances: set[str], evidence_index: dict) -> list[dict]:
     ids=validate_numeric_rows(rows)
     if not expected_instances or ids!=set(expected_instances):raise ValueError('Instance coverage mismatch')
-    if not evidence_index.get('hardware_revision') or not isinstance(evidence_index.get('pose'),dict):raise ValueError('Expected hardware revision and pose required')
+    revision=evidence_index.get('hardware_revision');pose=evidence_index.get('pose')
+    if not isinstance(revision,str) or not revision.strip() or not isinstance(pose,dict) or not {'height','yaw','pitch'}.issubset(pose) or not all(finite_number(v) for v in pose.values()):raise ValueError('Expected nonempty hardware revision and finite pose required')
     for row in rows:
         source=row.get('source')
-        if not isinstance(source,str) or source not in evidence_index.get('records',{}):raise ValueError('Missing source record')
+        if not isinstance(source,str) or not source.strip() or source not in evidence_index.get('records',{}):raise ValueError('Missing source record')
         entry=evidence_index['records'][source]
         for key in ('hardware_revision','pose'):
             if row.get(key)!=evidence_index[key] or entry.get(key)!=evidence_index[key]:raise ValueError('Evidence '+key+' mismatch')
@@ -36,5 +37,5 @@ def validate_components(rows: list[dict], expected_instances: set[str], evidence
         path=Path(evidence_index.get('root','.'))/entry.get('path','')
         if not path.is_file():raise ValueError('Evidence file not available')
         raw=path.read_bytes()
-        if entry.get('bytes')!=len(raw) or entry.get('sha256')!=hashlib.sha256(raw).hexdigest():raise ValueError('Evidence file fingerprint mismatch')
+        if not raw or type(entry.get('bytes')) is not int or entry['bytes']!=len(raw) or entry.get('sha256')!=hashlib.sha256(raw).hexdigest():raise ValueError('Evidence file empty or fingerprint mismatch')
     return rows

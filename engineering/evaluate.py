@@ -5,6 +5,13 @@ import numpy as np
 from engineering.evidence_schema import finite_number,validate_numeric_rows,validate_components
 
 def evaluate(rows,supports,gravity=9.80665,*,expected_instances=None,evidence_index=None,allow_partial=False):
+    try:
+        with np.errstate(over='raise',invalid='raise',divide='raise'):
+            return _evaluate(rows,supports,gravity,expected_instances=expected_instances,evidence_index=evidence_index,allow_partial=allow_partial)
+    except (OverflowError,FloatingPointError,np.linalg.LinAlgError) as exc:
+        raise ValueError('Numerically unsupported mass/support input') from exc
+
+def _evaluate(rows,supports,gravity,*,expected_instances,evidence_index,allow_partial):
     if not finite_number(gravity) or gravity<=0:raise ValueError('gravity must be finite positive')
     if not 3<=len(supports)<=12:raise ValueError('Verified enumeration supports 3..12 supports only')
     for s in supports:
@@ -35,6 +42,7 @@ def evaluate(rows,supports,gravity=9.80665,*,expected_instances=None,evidence_in
             active=list(active);M=B[active].T@(K[active,None]*B[active]);condition=np.linalg.cond(M)
             if not np.isfinite(condition) or condition>1e12:continue
             displacement=np.linalg.solve(M,load);deflections=B@displacement
+            if not np.all(np.isfinite(displacement)) or not np.all(np.isfinite(deflections)):raise ValueError('Nonfinite support solution')
             forces=np.zeros(len(supports));forces[active]=K[active]*deflections[active]
             inactive=[i for i in range(len(supports)) if i not in active]
             if np.min(forces)<-1e-8 or any(deflections[i]>1e-8 for i in inactive):continue
@@ -42,6 +50,7 @@ def evaluate(rows,supports,gravity=9.80665,*,expected_instances=None,evidence_in
             residual=B.T@forces-load
             spring=forces-K*np.maximum(deflections,0)
             complementarity=float(np.max(np.abs(spring)))
+            if not np.all(np.isfinite(forces)) or not np.all(np.isfinite(residual)) or not math.isfinite(complementarity):raise ValueError('Nonfinite support residual')
             if np.max(np.abs(residual))>1e-7*max(1.,W) or complementarity>1e-7:continue
             result.update(support_reactions_N=forces.tolist(),support_reactions_status='RIGID_BASE_LINEAR_SPRING_ASSUMPTION',support_solution_valid=True,active_indices=active,all_support_deflections_mm=deflections.tolist(),condition_number=float(condition),complementarity_residual=complementarity,equilibrium_residual_N_Nmm=(A.T@forces-[W,W*com[0],W*com[1]]).tolist())
             return result
