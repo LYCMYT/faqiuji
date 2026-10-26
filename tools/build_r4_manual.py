@@ -24,8 +24,9 @@ def main():
     geo=read('reports/r4_geometry_validation.json');exports=read('reports/r4_export_validation.json')
     require_report(exports,ctx.for_stage('r4_exports'),['expected_step_set','step_roundtrip'],R)
     # Readiness remains separate from document creation; a book can describe OPEN mechanisms.
-    for key in ('run_id','input_sha256','code_sha256'):
+    for key in ('run_id','input_sha256','code_sha256','tool_versions'):
         if geo.get(key)!=getattr(ctx,key):raise RuntimeError('Stale geometry evidence '+key)
+    if geo.get('status') not in ('PASS','BLOCKED') or geo.get('scope')!='full' or geo.get('stage')!='r4_geometry' or 'sampled_motion' not in geo.get('completed_checks',[]):raise RuntimeError('Full geometry diagnostic NOT_RUN')
     font=Path(os.environ.get('BM1_CHINESE_FONT','C:/Windows/Fonts/msyh.ttc'))
     if not font.is_file():raise RuntimeError('Chinese font unavailable')
     pdfmetrics.registerFont(TTFont('BM1CN',str(font),subfontIndex=0))

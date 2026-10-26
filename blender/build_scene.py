@@ -6,6 +6,9 @@ import ast,operator
 from pathlib import Path
 from mathutils import Vector,Matrix
 R=Path(__file__).resolve().parents[1]
+import sys;sys.path.insert(0,str(R))
+from tools.build_context import verify_content_context
+verify_content_context(R,json.loads((R/'output/generated_metadata/cache_provenance.json').read_text(encoding='utf-8')))
 import sys; sys.path.insert(0,str(R))
 from tools.input_manifest import generated_path, metadata_path
 sys.path.insert(0,str(R))

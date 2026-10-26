@@ -7,6 +7,15 @@ if sys.flags.optimize:raise RuntimeError('Optimized validation unsupported')
 context_path=os.environ.get('BM1_BUILD_CONTEXT')
 if not context_path:raise RuntimeError('Run through R4 build context')
 ctx=json.loads(Path(context_path).read_text(encoding='utf-8'))
+sys.path.insert(0,str(R))
+from tools.build_context import verify_content_context
+verify_content_context(R,ctx)
+export_report=json.loads((R/'reports/r4_export_validation.json').read_text(encoding='utf-8'))
+for key in ['run_id','input_sha256','code_sha256','tool_versions']:
+    if export_report.get(key)!=ctx.get(key):raise RuntimeError('Stale native export: '+key)
+if export_report.get('status')!='PASS' or export_report.get('scope')!='full' or export_report.get('stage')!='r4_exports':raise RuntimeError('Native export checks missing')
+verify_content_context(R,export_report)
+if ctx['tool_versions']['blender']['sha256']!=hashlib.sha256(Path(bpy.app.binary_path).read_bytes()).hexdigest():raise RuntimeError('Blender executable differs from context')
 report_path=R/'reports/r4_blender_validation.json'
 report_path.write_text(json.dumps({**ctx,'stage':'r4_blender','status':'RUNNING'}),encoding='utf-8')
 bpy.ops.wm.read_factory_settings(use_empty=True);sc=bpy.context.scene;sc.name='R4装配与连接件分解';sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=1

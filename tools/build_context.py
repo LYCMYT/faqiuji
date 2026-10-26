@@ -115,6 +115,17 @@ def active_context(root, stage, scope='full'):
     return BuildContext.create(root, stage, scope)
 
 
+def verify_content_context(root, report):
+    """Source verification usable inside Blender's separate Python runtime."""
+    root=Path(root);paths=classify_paths(root)
+    expected={'input_sha256':fingerprint_inputs(root,paths['authoritative']+paths['evidence_index']),
+              'code_sha256':fingerprint_inputs(root,code_paths(root))}
+    for key,value in expected.items():
+        if report.get(key)!=value:raise RuntimeError('Stale source content: '+key)
+    for path,digest in report.get('artifact_hashes',{}).items():
+        if not (root/path).is_file() or file_hash(root/path)!=digest:raise RuntimeError('Missing/changed artifact: '+path)
+
+
 def require_cache(root, cache_report):
     report = json.loads(Path(cache_report).read_text(encoding='utf-8'))
     ctx = BuildContext(**{k: report[k] for k in BuildContext.__dataclass_fields__})
