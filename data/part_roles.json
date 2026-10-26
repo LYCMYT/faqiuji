@@ -1,0 +1,759 @@
+{
+  "schema_version": 1,
+  "source": "data/parts.json",
+  "review_basis": "R4 Task 1 / D01; explicit comparison of all 44 stable part_id, name and function; R1/R2/R3 history preserved",
+  "status": "FUNCTION_ROUTE_REVIEW_FOR_RFQ_ONLY",
+  "manufacturing_release": false,
+  "parts": {
+    "PRT-0101": {
+      "source_name": "主底架",
+      "source_function": "把立柱、配重、电气舱和支撑脚的载荷传递到地面。",
+      "role": "ground_load_frame",
+      "route_category": "fabricated_structure",
+      "reviewed_route": [
+        "铝型材螺栓拼装+6061机加工连接板",
+        "确认节点、连接件与锚固；不按包络直接下料装配"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。确认节点、连接件与锚固；不按包络直接下料装配",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0102": {
+      "source_name": "低位配重板",
+      "source_function": "将质量布置在底盘低处，改善静止训练时的稳定性。",
+      "role": "low_ballast",
+      "route_category": "machined_plate",
+      "reviewed_route": [
+        "钢板切割+定位面机加工",
+        "真实配重质量由稳定性计算与称重决定"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。真实配重质量由稳定性计算与称重决定",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0103": {
+      "source_name": "展开支腿",
+      "source_function": "训练时扩大支撑多边形；搬运时收回。",
+      "role": "deployable_support_leg",
+      "route_category": "fabricated_structure",
+      "reviewed_route": [
+        "铝型材+机加工铰接/锁止座",
+        "支撑承载、锁止与足端连接待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。支撑承载、锁止与足端连接待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0104": {
+      "source_name": "调平脚",
+      "source_function": "训练时落地承载，让搬运轮不作为唯一支撑。",
+      "role": "leveling_ground_support",
+      "route_category": "purchased_support",
+      "reviewed_route": [
+        "采购调平脚",
+        "索取螺纹、静/动载与垫面资料"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。索取螺纹、静/动载与垫面资料",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0105": {
+      "source_name": "搬运轮",
+      "source_function": "停机后配合把手短距离移动。",
+      "role": "transport_wheel",
+      "route_category": "purchased_support",
+      "reviewed_route": [
+        "采购带锁脚轮",
+        "索取安装图、载荷、刹车形式；工作支撑条件另核"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。索取安装图、载荷、刹车形式；工作支撑条件另核",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0201": {
+      "source_name": "外立柱",
+      "source_function": "提供固定导向和立柱弯曲刚度。",
+      "role": "fixed_column",
+      "route_category": "machined_structure",
+      "reviewed_route": [
+        "金属方管+机加工定位孔",
+        "管材批次、壁厚、孔距和直线度待冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。管材批次、壁厚、孔距和直线度待冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0202": {
+      "source_name": "内滑柱",
+      "source_function": "随高度设置移动，支撑固定球筒与转向机构。",
+      "role": "height_sliding_column",
+      "route_category": "machined_structure",
+      "reviewed_route": [
+        "金属滑柱+6061连接件/抽出座",
+        "滑动间隙、销孔与局部承载待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。滑动间隙、销孔与局部承载待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0203": {
+      "source_name": "高度定位销",
+      "source_function": "提供明确的高度档位机械锁止。",
+      "role": "positive_height_lock_pin",
+      "route_category": "purchased_lock",
+      "reviewed_route": [
+        "采购带防脱结构定位销",
+        "实际直径、剪切/承压和锁止确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。实际直径、剪切/承压和锁止确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0204": {
+      "source_name": "导向夹紧座",
+      "source_function": "限制内柱晃动，辅助锁紧并使升降可控。",
+      "role": "height_clearance_clamp",
+      "route_category": "machined_clamp",
+      "reviewed_route": [
+        "6061机加工夹紧组件",
+        "防滑移能力与防误松需实测"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。防滑移能力与防误松需实测",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0301": {
+      "source_name": "偏航固定基座板",
+      "source_function": "连接内柱顶端与偏航回转支承。",
+      "role": "yaw_fixed_base",
+      "route_category": "machined_plate",
+      "reviewed_route": [
+        "6061-T651板料铣削",
+        "回转支承实际孔图后配钻/精加工"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。回转支承实际孔图后配钻/精加工",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0302": {
+      "source_name": "法兰回转支承",
+      "source_function": "支撑整个 U 架和发射头的左右转动。",
+      "role": "yaw_rotary_bearing",
+      "route_category": "purchased_bearing",
+      "reviewed_route": [
+        "采购回转支承",
+        "索取力矩、间隙、质量与安装图"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。索取力矩、间隙、质量与安装图",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0303": {
+      "source_name": "偏航闭环执行器",
+      "source_function": "驱动机头左右瞄准并提供实际位置反馈。",
+      "role": "yaw_position_drive",
+      "route_category": "purchased_position_drive",
+      "reviewed_route": [
+        "采购偏航驱动",
+        "扭矩/速度/减速器与接口待实际负载确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。扭矩/速度/减速器与接口待实际负载确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0401": {
+      "source_name": "U 形俯仰架",
+      "source_function": "将头部载荷传给偏航支承，提供两侧俯仰支点。",
+      "role": "pitch_support_yoke",
+      "route_category": "fabricated_structure",
+      "reviewed_route": [
+        "6061板件机加工后螺栓拼装U架",
+        "轴线同轴、侧板刚度与轴承座接口待核"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。轴线同轴、侧板刚度与轴承座接口待核",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0402": {
+      "source_name": "俯仰短耳轴",
+      "source_function": "形成两侧同轴俯仰支点，中央保留球道。",
+      "role": "pitch_short_trunnion",
+      "route_category": "machined_shaft_fit",
+      "reviewed_route": [
+        "俯仰短耳轴车削及连接配合加工询价",
+        "两侧短耳轴的同轴度、轴承/轴孔配合、轴向固定与连接承载待工程确认；材料及公差未冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。两侧短耳轴的同轴度、轴承/轴孔配合、轴向固定与连接承载待工程确认；材料及公差未冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0403": {
+      "source_name": "俯仰闭环执行器",
+      "source_function": "调整发射方向的仰角，并保持角度。",
+      "role": "pitch_position_hold_drive",
+      "route_category": "purchased_position_drive",
+      "reviewed_route": [
+        "采购俯仰驱动",
+        "实际质量质心、保持与失电行为待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。实际质量质心、保持与失电行为待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0501": {
+      "source_name": "阶梯式机头骨架",
+      "source_function": "为轮轴、滑台、转速传感器和罩壳提供共同的刚性基准。",
+      "role": "stepped_head_structure",
+      "route_category": "fabricated_structure",
+      "reviewed_route": [
+        "6061板件机加工螺栓拼装阶梯骨架",
+        "保留前宽后窄后抬高；轮组载荷后冻结厚度和孔位"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。保留前宽后窄后抬高；轮组载荷后冻结厚度和孔位",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0502": {
+      "source_name": "轮距调节滑座",
+      "source_function": "对称微调两轮间隙，并在调整后可靠固定。",
+      "role": "wheel_gap_adjustment",
+      "route_category": "machined_adjustment",
+      "reviewed_route": [
+        "6061铣削调距座",
+        "22-30mm设计轮缝范围，滑动/紧固接口待冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。22-30mm设计轮缝范围，滑动/紧固接口待冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0503": {
+      "source_name": "主轴轴承单元",
+      "source_function": "承担轮组径向载荷，减少载荷直接施加到电机轴。",
+      "role": "wheel_shaft_bearing",
+      "route_category": "purchased_bearing",
+      "reviewed_route": [
+        "采购轴承座/轴承",
+        "转速、载荷、轴配合和安装图待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。转速、载荷、轴配合和安装图待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0504": {
+      "source_name": "发射轮轮毂",
+      "source_function": "把主轴转矩传给弹性轮缘并提供同心安装基准。",
+      "role": "flywheel_hub",
+      "route_category": "machined_rotating_hub",
+      "reviewed_route": [
+        "金属轮毂车铣加工或原厂配套轮毂",
+        "轴向防松、轴配合、动平衡与最高转速未定"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。轴向防松、轴配合、动平衡与最高转速未定",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0505": {
+      "source_name": "弹性发射轮缘",
+      "source_function": "接触球头侧面，完成摩擦加速。",
+      "role": "elastic_flywheel_rim",
+      "route_category": "purchased_rotating_rim",
+      "reviewed_route": [
+        "采购有可追溯额定数据的弹性轮缘",
+        "材料、硬度、转速上限和固定方法待厂家资料与试验"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。材料、硬度、转速上限和固定方法待厂家资料与试验",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0506": {
+      "source_name": "带转速反馈电机",
+      "source_function": "独立控制两轮转速，并反馈实际转速。",
+      "role": "flywheel_speed_motor",
+      "route_category": "purchased_motor_drive",
+      "reviewed_route": [
+        "采购双轮电机与驱动配套",
+        "扭矩-转速/惯量/停止要求后选型；不采用包络作型号"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。扭矩-转速/惯量/停止要求后选型；不采用包络作型号",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0507": {
+      "source_name": "双轮驱动器",
+      "source_function": "根据本地控制器命令调速并报告故障。",
+      "role": "dual_flywheel_drive_electronics",
+      "route_category": "purchased_drive_electronics",
+      "reviewed_route": [
+        "采购轮组驱动模块",
+        "供电、保护、制动与反馈接口待冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。供电、保护、制动与反馈接口待冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0601": {
+      "source_name": "可拆储球筒",
+      "source_function": "存放球头朝下、羽毛朝上的有序球堆。",
+      "role": "removable_ball_stack_tube",
+      "route_category": "custom_tube",
+      "reviewed_route": [
+        "透明PC管切长与端面精修/定制车削",
+        "按现有OD80/ID76/长540询价；库存、椭圆度和真实容球待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。按现有OD80/ID76/长540询价；库存、椭圆度和真实容球待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0602": {
+      "source_name": "固定筒架与分球盒",
+      "source_function": "让球筒相对升降立柱保持固定，并安装单球分离件。",
+      "role": "fixed_tube_separator_support",
+      "route_category": "fabricated_structure",
+      "reviewed_route": [
+        "6061连接板铣削+方管架拼装",
+        "筒架节点、夹紧、台架锚固与重装定位待冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。筒架节点、夹紧、台架锚固与重装定位待冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0603": {
+      "source_name": "上层留球夹",
+      "source_function": "在释放最下面一只球时 保留上方球堆。",
+      "role": "upper_stack_retaining_jaw",
+      "route_category": "trial_contact_part",
+      "reviewed_route": [
+        "未填充本色POM-C弧面铣削试配毛件",
+        "先做R23/26/29/32左右各一；夹持固定与真实球形待验证"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。先做R23/26/29/32左右各一；夹持固定与真实球形待验证",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0604": {
+      "source_name": "下层托球闸",
+      "source_function": "承托最低一只球，并在上层保留后打开释放。",
+      "role": "lower_ball_support_gate",
+      "route_category": "trial_contact_part",
+      "reviewed_route": [
+        "POM-C闸片试配+金属承托连接件",
+        "接触棱去毛刺；开口/保持力和执行器接口待测"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。接触棱去毛刺；开口/保持力和执行器接口待测",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0605": {
+      "source_name": "分球执行器",
+      "source_function": "分别驱动留球夹和放球闸。",
+      "role": "separator_jaw_gate_drive",
+      "route_category": "purchased_position_drive",
+      "reviewed_route": [
+        "分球执行器先询价，台上先人工低速验证",
+        "实测分球力/行程/停止后选定型号"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。实测分球力/行程/停止后选定型号",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0606": {
+      "source_name": "可升降外导球套",
+      "source_function": "落球时引导球进入托架；转头前收回，让整只球脱离固定结构。",
+      "role": "retractable_ball_guide_sleeve",
+      "route_category": "custom_tube",
+      "reviewed_route": [
+        "透明PC导套定制车削/管料精修",
+        "按现有OD86/ID82/长150询价；管壁变形、同心和摩擦待测"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。按现有OD86/ID82/长150询价；管壁变形、同心和摩擦待测",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0607": {
+      "source_name": "导套升降执行器",
+      "source_function": "将导球套提升到允许托架前移的位置。",
+      "role": "guide_sleeve_lift_drive",
+      "route_category": "purchased_position_drive",
+      "reviewed_route": [
+        "采购导套执行器",
+        "115mm设计行程，实际负载/反馈/安装图待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。115mm设计行程，实际负载/反馈/安装图待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0701": {
+      "source_name": "移动接球托架",
+      "source_function": "接住单球并保持球头基准，随滑台前移。",
+      "role": "moving_ball_cradle",
+      "route_category": "trial_contact_assembly",
+      "reviewed_route": [
+        "6061支架+POM-C可换接球夹块",
+        "真实开夹动作与无损保持力；固定和执行接口待核"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。真实开夹动作与无损保持力；固定和执行接口待核",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0702": {
+      "source_name": "低位定位夹",
+      "source_function": "定位低位球头，在离开轮组前按顺序释放。",
+      "role": "low_ball_locating_clamp",
+      "route_category": "trial_clamp",
+      "reviewed_route": [
+        "低位定位夹夹片/夹指试配加工询价",
+        "球头低位接触、软垫、夹持力、开合行程及0704连接待验证；释放早于飞轮牵引；材料未冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。球头低位接触、软垫、夹持力、开合行程及0704连接待验证；释放早于飞轮牵引；材料未冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0703": {
+      "source_name": "三位置直线模组",
+      "source_function": "以一个运动轴完成装载、脱筒等待与最终喂入。",
+      "role": "three_position_feed_axis",
+      "route_category": "linear_motion_module",
+      "reviewed_route": [
+        "采购直线导轨或滑台",
+        "185mm设计总行程；实际孔型、负载力矩与精度待确认"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。185mm设计总行程；实际孔型、负载力矩与精度待确认",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0704": {
+      "source_name": "托球夹释放执行器",
+      "source_function": "在转向时保持球头，在喂入窗口可靠释放。",
+      "role": "ball_clamp_hold_release_drive",
+      "route_category": "purchased_clamp_release_drive",
+      "reviewed_route": [
+        "采购托球夹夹持释放驱动及随动线缆",
+        "驱动0702开合，随0701移动；释放反馈、失电状态、捕获前互锁、负载/行程/速度及线缆接口待验证；型号与额定参数未定"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。驱动0702开合，随0701移动；释放反馈、失电状态、捕获前互锁、负载/行程/速度及线缆接口待验证；型号与额定参数未定",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0801": {
+      "source_name": "分段发射头防护罩",
+      "source_function": "隔离轮组、传动和夹点，同时给羽毛球保留出口。",
+      "role": "segmented_head_guard",
+      "route_category": "fabricated_guard",
+      "reviewed_route": [
+        "分片薄板切割折弯+可拆紧固",
+        "防护厚度、开口、联锁与承受能力未验证"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。防护厚度、开口、联锁与承受能力未验证",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0802": {
+      "source_name": "透明检查窗",
+      "source_function": "观察供球与低速检修状态，减少反复拆盖。",
+      "role": "inspection_window",
+      "route_category": "custom_guard_window",
+      "reviewed_route": [
+        "PC观察窗切割和边缘精修",
+        "实际厚度、支撑间距及防护试验待冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。实际厚度、支撑间距及防护试验待冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0803": {
+      "source_name": "底部电气舱罩",
+      "source_function": "保护控制与电源模块，并提供散热和维修路径。",
+      "role": "electronics_compartment_cover",
+      "route_category": "fabricated_cover",
+      "reviewed_route": [
+        "薄板切割折弯电气舱罩",
+        "散热、接地、走线和实际电气件接口待核"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。散热、接地、走线和实际电气件接口待核",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0901": {
+      "source_name": "MCU 与输入输出板",
+      "source_function": "管理供球状态机、反馈、限位和指令回执。",
+      "role": "local_control_io",
+      "route_category": "purchased_control_module",
+      "reviewed_route": [
+        "采购控制器/载板",
+        "完成I/O、停止链和电气架构后冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。完成I/O、停止链和电气架构后冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0902": {
+      "source_name": "电源模块",
+      "source_function": "为驱动器、控制器和低压外设提供供电。",
+      "role": "power_supply",
+      "route_category": "purchased_power_supply",
+      "reviewed_route": [
+        "采购电源",
+        "电压/功率/保护由实际驱动与负载确定"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。电压/功率/保护由实际驱动与负载确定",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0903": {
+      "source_name": "配电与联锁箱",
+      "source_function": "承接独立停止链路、供电分配与开盖状态。",
+      "role": "power_distribution_independent_interlock",
+      "route_category": "electrical_function_assembly",
+      "reviewed_route": [
+        "配电与联锁功能模组集成询价",
+        "拆分切断/保护/端子SKU；供电分配、独立停止链、开盖联锁、惯性停转及接地待电气设计与实测；型号/额定值未定，不宣称安全等级"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。拆分切断/保护/端子SKU；供电分配、独立停止链、开盖联锁、惯性停转及接地待电气设计与实测；型号/额定值未定，不宣称安全等级",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0904": {
+      "source_name": "自锁急停按钮",
+      "source_function": "在机器侧提供可触达的物理停止入口。",
+      "role": "physical_latching_emergency_stop",
+      "route_category": "purchased_stop_component",
+      "reviewed_route": [
+        "采购急停按钮及对应停止链组件",
+        "触点、复位、安装图与系统停止性能待验证"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。触点、复位、安装图与系统停止性能待验证",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-0905": {
+      "source_name": "位置与有球传感器",
+      "source_function": "确认运动到位、有球/出球和盖板状态。",
+      "role": "position_ball_guard_sensing_family",
+      "route_category": "purchased_sensor_family",
+      "reviewed_route": [
+        "采购位置/出球传感器",
+        "感应对象、响应、安装图和故障行为待实物试验"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。感应对象、响应、安装图和故障行为待实物试验",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-1001": {
+      "source_name": "对话与训练终端",
+      "source_function": "承担语音、训练设置、状态显示和对话回复。",
+      "role": "dialog_training_terminal",
+      "route_category": "external_terminal",
+      "reviewed_route": [
+        "采购/复用训练终端",
+        "接口及安装不影响机械停止链"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。接口及安装不影响机械停止链",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-1002": {
+      "source_name": "低压有线停发手柄",
+      "source_function": "训练者在场地一侧可立即请求停止供球。",
+      "role": "wired_stop_feed_handset",
+      "route_category": "purchased_control_handset",
+      "reviewed_route": [
+        "采购低压控制手柄",
+        "按钮/线缆/连接器实际接口待冻结"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。按钮/线缆/连接器实际接口待冻结",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    },
+    "PRT-1003": {
+      "source_name": "终端夹持架",
+      "source_function": "供装机调试时放置手机，保证可看、可取。",
+      "role": "terminal_mount",
+      "route_category": "fabricated_mount",
+      "reviewed_route": [
+        "6061夹架+软垫；外观可先FDM试配",
+        "终端真实尺寸、夹紧力和防脱验证"
+      ],
+      "engineering_review_note": "功能/接口逐项核对；路线为候选询价选择，不凭名称推定完整工艺。终端真实尺寸、夹紧力和防脱验证",
+      "material_confirmed": null,
+      "supplier_model": null,
+      "rated_parameters": null
+    }
+  },
+  "allowed_route_categories": {
+    "ground_load_frame": [
+      "fabricated_structure"
+    ],
+    "low_ballast": [
+      "machined_plate"
+    ],
+    "deployable_support_leg": [
+      "fabricated_structure"
+    ],
+    "leveling_ground_support": [
+      "purchased_support"
+    ],
+    "transport_wheel": [
+      "purchased_support"
+    ],
+    "fixed_column": [
+      "machined_structure"
+    ],
+    "height_sliding_column": [
+      "machined_structure"
+    ],
+    "positive_height_lock_pin": [
+      "purchased_lock"
+    ],
+    "height_clearance_clamp": [
+      "machined_clamp"
+    ],
+    "yaw_fixed_base": [
+      "machined_plate"
+    ],
+    "yaw_rotary_bearing": [
+      "purchased_bearing"
+    ],
+    "yaw_position_drive": [
+      "purchased_position_drive"
+    ],
+    "pitch_support_yoke": [
+      "fabricated_structure"
+    ],
+    "pitch_short_trunnion": [
+      "machined_shaft_fit"
+    ],
+    "pitch_position_hold_drive": [
+      "purchased_position_drive"
+    ],
+    "stepped_head_structure": [
+      "fabricated_structure"
+    ],
+    "wheel_gap_adjustment": [
+      "machined_adjustment"
+    ],
+    "wheel_shaft_bearing": [
+      "purchased_bearing"
+    ],
+    "flywheel_hub": [
+      "machined_rotating_hub"
+    ],
+    "elastic_flywheel_rim": [
+      "purchased_rotating_rim"
+    ],
+    "flywheel_speed_motor": [
+      "purchased_motor_drive"
+    ],
+    "dual_flywheel_drive_electronics": [
+      "purchased_drive_electronics"
+    ],
+    "removable_ball_stack_tube": [
+      "custom_tube"
+    ],
+    "fixed_tube_separator_support": [
+      "fabricated_structure"
+    ],
+    "upper_stack_retaining_jaw": [
+      "trial_contact_part"
+    ],
+    "lower_ball_support_gate": [
+      "trial_contact_part"
+    ],
+    "separator_jaw_gate_drive": [
+      "purchased_position_drive"
+    ],
+    "retractable_ball_guide_sleeve": [
+      "custom_tube"
+    ],
+    "guide_sleeve_lift_drive": [
+      "purchased_position_drive"
+    ],
+    "moving_ball_cradle": [
+      "trial_contact_assembly"
+    ],
+    "low_ball_locating_clamp": [
+      "trial_clamp"
+    ],
+    "three_position_feed_axis": [
+      "linear_motion_module"
+    ],
+    "ball_clamp_hold_release_drive": [
+      "purchased_clamp_release_drive"
+    ],
+    "segmented_head_guard": [
+      "fabricated_guard"
+    ],
+    "inspection_window": [
+      "custom_guard_window"
+    ],
+    "electronics_compartment_cover": [
+      "fabricated_cover"
+    ],
+    "local_control_io": [
+      "purchased_control_module"
+    ],
+    "power_supply": [
+      "purchased_power_supply"
+    ],
+    "power_distribution_independent_interlock": [
+      "electrical_function_assembly"
+    ],
+    "physical_latching_emergency_stop": [
+      "purchased_stop_component"
+    ],
+    "position_ball_guard_sensing_family": [
+      "purchased_sensor_family"
+    ],
+    "dialog_training_terminal": [
+      "external_terminal"
+    ],
+    "wired_stop_feed_handset": [
+      "purchased_control_handset"
+    ],
+    "terminal_mount": [
+      "fabricated_mount"
+    ]
+  }
+}

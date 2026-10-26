@@ -12,10 +12,13 @@ from reportlab.lib.pagesizes import A4,landscape
 from reportlab.lib.colors import HexColor
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from tools.part_role_contract import validate_part_roles
 
 def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 def dump(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
-S=read('data/r2_prototype.json');routes=read('data/r2_process_routes.json')['routes'];parts=read('data/parts.json')
+S=read('data/r2_prototype.json');route_document=read('data/r2_process_routes.json');routes=route_document['routes'];parts=read('data/parts.json')
+roles=read('data/part_roles.json')
+validate_part_roles(parts,roles,route_document)
 P={k:v['value'] for k,v in read('data/design.json')['parameters'].items()}
 E=read('data/r1_engineering.json');G=read('data/geometry.json')['instances']
 O=R/'output/prototype_r2';O.mkdir(exist_ok=True)
@@ -46,7 +49,8 @@ csvout('holdout_confirmation_PLAN.csv',['stage','group','sample_ids','radius_mm'
 rfq=[]
 for p in parts:
     route,gate=routes[p['part_id']]
-    rfq.append(dict(part_id=p['part_id'],assembly_id=p['assembly_id'],name=p['name'],main_item_quantity=p['quantity'],route_choice=route,unresolved_gate=gate,status='RFQ_ONLY',supplier=None,material_lot=None,quote_CNY=None,lead_time_days=None,drawing_revision=None,interface_confirmed=False,manufacture_released=False))
+    role=roles['parts'][p['part_id']]
+    rfq.append(dict(part_id=p['part_id'],assembly_id=p['assembly_id'],name=p['name'],main_item_quantity=p['quantity'],role=role['role'],route_category=role['route_category'],route_choice=route,unresolved_gate=gate,status='RFQ_ONLY',supplier=None,material_lot=None,quote_CNY=None,lead_time_days=None,drawing_revision=None,interface_confirmed=False,manufacture_released=False))
 csvout('manufacturing_routes_44_RFQ.csv',list(rfq[0]),rfq)
 csvout('supplier_response_BLANK.csv',['rfq_id','part_id','supplier','model','material_grade','material_lot','drawing_file','drawing_revision','unit_price_CNY','tax_included','lead_time_days','actual_hole_drawing','mass_kg','ratings_file','inspection_report','proposed_changes','review_status'],[])
 dump(O/'evidence_status.json',{k:S[k] for k in ['revision','physical_measurements','supplier_confirmations','orders','prototype_results','manufacturing_release']})
