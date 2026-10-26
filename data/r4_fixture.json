@@ -1,0 +1,766 @@
+{
+  "revision": "R4-01-support-candidate",
+  "source": "data/r3_fixture.json",
+  "local_height_mm": 0,
+  "seat": {
+    "instance_id": "PRT-0701-A",
+    "family": "PRT-0701-R4-A",
+    "x_relative": [
+      -12,
+      5.5
+    ],
+    "y": [
+      -7,
+      7
+    ],
+    "z": [
+      -16,
+      -13
+    ],
+    "manufacture": "Integral machined land retained in original cradle slot; no inserted floating shim"
+  },
+  "alternatives": [
+    {
+      "id": "integral_low_land",
+      "selected": true,
+      "process": "Mill original slot around central 17.5 x 14 mm land",
+      "reason": "No loose fasteners; measurable cork bottom datum; below open fingers and nominal cork. Must check full travel and low-speed loading; nominal model only."
+    },
+    {
+      "id": "retractable_loading_fork",
+      "selected": false,
+      "process": "Machined two-finger fork with independent guided retract",
+      "reason": "Can leave release region clear but adds sixth manual action, holding interlock, guide and cost. Not selected without measured ball envelope and operating forces."
+    },
+    {
+      "id": "shallow_cork_pocket",
+      "selected": false,
+      "process": "Ball-end milled shallow recess",
+      "reason": "Better lateral location possible but fixes unmeasured cork radius and can obstruct release. Cannot select pocket radius from visual nominal alone."
+    }
+  ],
+  "inspection": {
+    "motion_step_mm": 5,
+    "collision_threshold_mm3": 0.01,
+    "perturbation_deg": [
+      -1,
+      -0.5,
+      0.5,
+      1
+    ],
+    "free_translation_mm": 0.1
+  },
+  "real_ball_samples": [],
+  "friction": null,
+  "impact_force_N": null,
+  "manual_force_N": null,
+  "manufacturing_release": false,
+  "manual_guides": {
+    "status": "nominal machined integral candidate; loads/holding OPEN",
+    "upper": {
+      "shaft_x_offsets": [
+        -4,
+        4
+      ],
+      "shaft_radius": 2,
+      "bore_radius": 2.2,
+      "shaft_y": [
+        85,
+        142
+      ],
+      "collar_y": [
+        95,
+        141
+      ],
+      "collar_radius": 3,
+      "collar_thickness": 2,
+      "sleeve_y": [
+        120,
+        140
+      ],
+      "sleeve_size_xz": [
+        30,
+        10
+      ],
+      "z": 383,
+      "web_x": [
+        -211,
+        -205
+      ],
+      "web_y": [
+        125,
+        135
+      ],
+      "web_z": [
+        378,
+        410
+      ],
+      "bridge_x": [
+        -211,
+        -205
+      ],
+      "bridge_y": [
+        65,
+        135
+      ],
+      "bridge_z": [
+        406,
+        410
+      ],
+      "split_z": 383,
+      "cap_fastener_x_offsets": [
+        -11,
+        11
+      ],
+      "cap_fastener_y": [
+        124,
+        136
+      ],
+      "cap_hole_radius": 1.7,
+      "cap_screw_radius": 1.5,
+      "cap_screw_z": [
+        375,
+        388
+      ],
+      "cap_screw_head_radius": 2.75,
+      "cap_screw_head_z": [
+        388,
+        391
+      ],
+      "cap_nut_AF": 5.5,
+      "cap_nut_bore_radius": 1.6,
+      "cap_nut_z": [
+        375,
+        378
+      ],
+      "cap_assembly": "Split bush cap lifted Z after four M3 candidate fasteners removed; body remains frame attached. No hardware grade/preload claim; current tool pose remains separate."
+    },
+    "gate": {
+      "shaft_y_abs": 60,
+      "z": 284,
+      "shaft_radius": 2,
+      "bore_radius": 2.2,
+      "shaft_x": [
+        -432,
+        -320
+      ],
+      "collar_x": [
+        -431,
+        -324
+      ],
+      "collar_radius": 3,
+      "collar_thickness": 2,
+      "sleeve_x": [
+        -430,
+        -410
+      ],
+      "sleeve_size_yz": [
+        12,
+        10
+      ],
+      "ear_x": [
+        -325,
+        -317
+      ],
+      "ear_y": [
+        30,
+        62
+      ],
+      "ear_z": [
+        281,
+        287
+      ],
+      "wall_aperture_y": [
+        -33.5,
+        33.5
+      ],
+      "wall_aperture_z": [
+        280,
+        288
+      ],
+      "rib_x": [
+        -325,
+        -225
+      ],
+      "rib_y_abs": [
+        27.5,
+        32.5
+      ],
+      "rib_z": [
+        281,
+        287
+      ],
+      "reaction_bridge_x": [
+        -420,
+        -310
+      ],
+      "reaction_bridge_y_abs": [
+        54,
+        66
+      ],
+      "reaction_bridge_z": [
+        270,
+        274
+      ],
+      "reaction_sleeve_riser_x": [
+        -420,
+        -410
+      ],
+      "reaction_sleeve_riser_z": [
+        274,
+        279
+      ],
+      "reaction_wall_riser_x": [
+        -316,
+        -310
+      ],
+      "reaction_wall_riser_z": [
+        270,
+        284
+      ],
+      "note": "Initial front ears crossed retained tube side ligaments during gate10..60; replaced by rear ribs inside original66mm slot with outboard manual guides. Thin rib stiffness remains OPEN.",
+      "split_caps": {
+        "split_z": 284,
+        "bolt_x": [
+          -427,
+          -413
+        ],
+        "bolt_y_relative": [
+          -4,
+          4
+        ],
+        "bore_radius": 1.7,
+        "screw_radius": 1.5,
+        "screw_z": [
+          276,
+          289
+        ],
+        "head_radius": 2.75,
+        "head_z": [
+          289,
+          292
+        ],
+        "nut_radius": 3.1,
+        "nut_z": [
+          276,
+          279
+        ],
+        "nut_bore_radius": 1.6,
+        "nut_clearance_pocket_radius": 3.3,
+        "nut_clearance_pocket_z": [
+          275,
+          279
+        ],
+        "assembly": "Remove caps upwards after screw/nut removal, lower shaft and collars into lower bushes, refit cap. Open-ended wrench below bush above bridge; tool envelope must be checked."
+      },
+      "wall_aperture_x": [
+        -317,
+        -309
+      ]
+    },
+    "slide": {
+      "stroke_mm": 185,
+      "moving_flange_x": [
+        -208,
+        -172
+      ],
+      "moving_flange_y_abs": [
+        12,
+        27
+      ],
+      "moving_flange_z": [
+        -25,
+        -23
+      ],
+      "channel_x": [
+        -210,
+        15
+      ],
+      "channel_side_y_abs": [
+        28,
+        30
+      ],
+      "channel_side_z": [
+        -30,
+        -21.8
+      ],
+      "channel_lower_lip_y_abs": [
+        15.2,
+        30
+      ],
+      "channel_lower_lip_z": [
+        -28,
+        -25.2
+      ],
+      "channel_upper_lip_y_abs": [
+        15.2,
+        30
+      ],
+      "channel_upper_lip_z": [
+        -22.8,
+        -21.8
+      ],
+      "stop_x": [
+        [
+          -210,
+          -208
+        ],
+        [
+          13,
+          15
+        ]
+      ],
+      "shoe_relief_x": [
+        -211,
+        16
+      ],
+      "shoe_relief_y_abs": [
+        15.1,
+        30.1
+      ],
+      "shoe_relief_z": [
+        -30,
+        -21.7
+      ],
+      "nominal_running_gap_mm": 0.2,
+      "removable_front_stop": {
+        "screw_axis": "X",
+        "screw_y_abs": [
+          19,
+          26
+        ],
+        "screw_z": -26,
+        "shaft_radius": 1,
+        "bore_radius": 1.1,
+        "shaft_x": [
+          8,
+          15
+        ],
+        "head_radius": 1.9,
+        "head_x": [
+          15,
+          17
+        ],
+        "assembly": "Remove four candidate M2 end-stop screws, withdraw front plates +X, slide carriage flanges in through open end, refit stop plates. Tap/thread length/grade OPEN."
+      }
+    },
+    "guide_sleeve": {
+      "back_web_bounds": [
+        [
+          -295,
+          -18,
+          60
+        ],
+        [
+          -255.2,
+          18,
+          271
+        ]
+      ],
+      "side_wall_x": [
+        -255.2,
+        -239
+      ],
+      "side_wall_y_abs": [
+        12.7,
+        18
+      ],
+      "side_wall_z": [
+        100,
+        270
+      ],
+      "lip_x": [
+        -242.8,
+        -239
+      ],
+      "lip_y_abs": [
+        9,
+        18
+      ],
+      "lip_z": [
+        100,
+        270
+      ],
+      "stop_x": [
+        -255.2,
+        -242.8
+      ],
+      "stop_y_abs": [
+        9,
+        18
+      ],
+      "stop_z": [
+        [
+          110,
+          113
+        ],
+        [
+          258,
+          264
+        ]
+      ],
+      "neck_bounds": [
+        [
+          -243,
+          -8,
+          123
+        ],
+        [
+          -231,
+          8,
+          133
+        ]
+      ],
+      "flange_bounds": [
+        [
+          -239,
+          -13,
+          123
+        ],
+        [
+          -231,
+          13,
+          133
+        ]
+      ],
+      "neck_sleeve_intersection": "Explicit cut against unchanged sleeve native solid; face attachment only",
+      "reaction_interface": "Custom welded/machined way face meets original C bracket at z271; weld procedure/strength unknown",
+      "top_stop_screw": {
+        "axis": "Y",
+        "x": -249,
+        "z": 261,
+        "shaft_radius": 1.5,
+        "bore_radius": 1.7,
+        "shaft_y_abs": [
+          10,
+          18
+        ],
+        "head_radius": 2.75,
+        "head_y_abs": [
+          18,
+          21
+        ]
+      }
+    },
+    "clamp": {
+      "crossbeam_bounds": [
+        [
+          -239,
+          -40,
+          -20
+        ],
+        [
+          -229,
+          40,
+          -12
+        ]
+      ],
+      "crossbeam_cradle_interface": "Exact boolean removal of cradle overlap to retain mating faces",
+      "channel_x": [
+        -238,
+        -222.8
+      ],
+      "channel_y_abs": [
+        24,
+        32
+      ],
+      "channel_z": [
+        -14,
+        -6
+      ],
+      "channel_open_cavity_x": [
+        -235.2,
+        -222
+      ],
+      "channel_open_cavity_y_abs": [
+        23,
+        33
+      ],
+      "channel_open_cavity_z": [
+        -12.2,
+        -7.8
+      ],
+      "slot_x_center": -226,
+      "slot_radius": 2.2,
+      "slot_endpoint_y_abs": [
+        14,
+        28
+      ],
+      "slot_z": [
+        -13,
+        -7
+      ],
+      "slot_box_bounds_x": [
+        -228.2,
+        -223.8
+      ],
+      "travel_pin_x": -226,
+      "travel_pin_y_abs": 28,
+      "travel_pin_radius": 2,
+      "travel_pin_z": [
+        -18,
+        -5
+      ],
+      "pin_collar_radius": 2.6,
+      "pin_collar_z": [
+        [
+          -6,
+          -4
+        ],
+        [
+          -16,
+          -14
+        ]
+      ],
+      "collar_clearance_pocket_radius": 2.8,
+      "collar_clearance_pocket_z": [
+        -17,
+        -14
+      ],
+      "nominal_stroke_mm": 14,
+      "pin_running_radial_clearance_mm": 0.2,
+      "actual_stop_overtravel_mm": 0.2,
+      "pin_assembly": "Stepped candidate requires one removable collar; thread detail/retention OPEN; not single-piece installable",
+      "lower_nut": {
+        "AF": 7,
+        "height": 3.2,
+        "z": [
+          -17.2,
+          -14
+        ],
+        "bore_radius": 2.1,
+        "clearance_pocket_radius": 4.2,
+        "clearance_pocket_z": [
+          -19,
+          -14
+        ],
+        "interface": "Candidate M4x0.7 simplified thread bore; actual grade/preload OPEN"
+      },
+      "arm_rear_extension": {
+        "x": [
+          -235,
+          -229
+        ],
+        "y_abs": [
+          0,
+          36.5
+        ],
+        "z": [
+          -12,
+          -8
+        ]
+      }
+    },
+    "holding": {
+      "mode": "Independent manual positive endpoint pins; withdrawn during working-path checks, installed endpoint fits checked separately",
+      "upper": {
+        "x_offset": -4,
+        "fixed_y_abs": 130,
+        "moving_hole_y_abs": [
+          130,
+          106
+        ],
+        "bore_radius": 1.1,
+        "pin_radius": 1,
+        "shaft_z": [
+          377,
+          394
+        ],
+        "head_z": [
+          394,
+          397
+        ],
+        "head_radius": 2,
+        "boss_xyz_half": [
+          3,
+          3,
+          3
+        ],
+        "boss_z": [
+          388,
+          394
+        ],
+        "park_delta_mm": [
+          0,
+          0,
+          12
+        ],
+        "endpoints_mm": [
+          0,
+          24
+        ]
+      },
+      "gate": {
+        "x": -420,
+        "y": 60,
+        "moving_hole_x": [
+          -420,
+          -335
+        ],
+        "bore_radius": 1.1,
+        "pin_radius": 1,
+        "shaft_z": [
+          278,
+          295
+        ],
+        "head_z": [
+          295,
+          298
+        ],
+        "head_radius": 2,
+        "boss_z": [
+          289,
+          295
+        ],
+        "park_delta_mm": [
+          0,
+          0,
+          12
+        ],
+        "endpoints_mm": [
+          0,
+          85
+        ],
+        "boss_xy_half": 3
+      },
+      "guide": {
+        "x": -249,
+        "fixed_z": [
+          128,
+          243
+        ],
+        "moving_hole_z": 128,
+        "boss_bounds_xy": [
+          [
+            -254,
+            18
+          ],
+          [
+            -244,
+            26
+          ]
+        ],
+        "boss_z_half": 5,
+        "bore_radius": 2.2,
+        "pin_radius": 2,
+        "shaft_y": [
+          -20,
+          26
+        ],
+        "head_y": [
+          26,
+          29
+        ],
+        "head_radius": 3.5,
+        "park_delta_mm": [
+          0,
+          44,
+          0
+        ],
+        "endpoints_mm": [
+          0,
+          115
+        ],
+        "tongue_bore_y_half": 14,
+        "way_bore_y": [
+          -19,
+          27
+        ]
+      },
+      "slide": {
+        "fixed_x": [
+          -205,
+          -20
+        ],
+        "moving_hole_x": -205,
+        "y": 25,
+        "bore_radius": 1.7,
+        "pin_radius": 1.5,
+        "shaft_z": [
+          -28,
+          -21.8
+        ],
+        "head_z": [
+          -31,
+          -28
+        ],
+        "head_radius": 2.5,
+        "park_delta_mm": [
+          0,
+          0,
+          -4.2
+        ],
+        "endpoints_mm": [
+          0,
+          185
+        ]
+      },
+      "clamp": {
+        "x": -232,
+        "fixed_y_abs": 28,
+        "moving_hole_y_abs": [
+          14,
+          28
+        ],
+        "bore_radius": 1.1,
+        "pin_radius": 1,
+        "boss_z": [
+          -6,
+          0
+        ],
+        "boss_xy_half": 3,
+        "shaft_z": [
+          -15,
+          0
+        ],
+        "head_z": [
+          0,
+          3
+        ],
+        "head_radius": 2,
+        "park_delta_mm": [
+          0,
+          0,
+          8
+        ],
+        "endpoints_mm": [
+          0,
+          14
+        ]
+      },
+      "load_holding": "NATIVE_CANDIDATE; positive pins/bores modelled. Pin detents/tethers, grade/shear/bearing strength and force ratings OPEN; operator supports members before withdrawal. No unattended loading permitted."
+    }
+  },
+  "sections": [
+    {
+      "name": "SECTION_SUPPORT_Y0",
+      "axis": 1,
+      "position_mm": 0
+    },
+    {
+      "name": "SECTION_GUIDE_X",
+      "axis": 0,
+      "position_mm": -249
+    }
+  ],
+  "service": {
+    "upper_lift_mm": 6,
+    "upper_work_open_mm": 24,
+    "upper_withdraw_mm": 40,
+    "lift_samples_mm": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "withdraw_samples_mm": [
+      24,
+      28,
+      32,
+      36,
+      40
+    ],
+    "cap_lift_mm": 25,
+    "fastener_withdraw_mm": 25
+  }
+}
