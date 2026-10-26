@@ -12,7 +12,7 @@ def validate_numeric_rows(rows, *, allow_missing=False):
     ids=[]
     for row in rows:
         identifier=row.get('instance_id')
-        if not isinstance(identifier,str) or not identifier:raise ValueError('Invalid instance_id')
+        if not isinstance(identifier,str) or not identifier.strip():raise ValueError('Invalid instance_id')
         if identifier in ids:raise ValueError('Duplicate instance_id: '+identifier)
         ids.append(identifier)
         mass=row.get('mass_kg');xyz=row.get('com_world_mm')
@@ -31,6 +31,8 @@ def validate_components(rows: list[dict], expected_instances: set[str], evidence
         source=row.get('source')
         if not isinstance(source,str) or not source.strip() or source not in evidence_index.get('records',{}):raise ValueError('Missing source record')
         entry=evidence_index['records'][source]
+        for candidate in (row.get('pose'),entry.get('pose')):
+            if not isinstance(candidate,dict) or not {'height','yaw','pitch'}.issubset(candidate) or not all(finite_number(v) for v in candidate.values()):raise ValueError('Invalid row/source pose')
         for key in ('hardware_revision','pose'):
             if row.get(key)!=evidence_index[key] or entry.get(key)!=evidence_index[key]:raise ValueError('Evidence '+key+' mismatch')
         if entry.get('instance_id')!=row['instance_id']:raise ValueError('Evidence instance mismatch')

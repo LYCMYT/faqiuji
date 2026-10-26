@@ -11,6 +11,9 @@ class EvidenceInputs(unittest.TestCase):
             row=dict(instance_id='A',mass_kg=2.,com_world_mm=[0.,0.,1.],source='E1',hardware_revision='TEST',pose={'height':0,'yaw':0,'pitch':0})
             index=dict(root=td,hardware_revision='TEST',pose={'height':0,'yaw':0,'pitch':0},records={'E1':dict(path='record.csv',sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size,instance_id='A',hardware_revision='TEST',pose={'height':0,'yaw':0,'pitch':0})})
             validate_components([row],{'A'},index)
+            with self.assertRaises(ValueError):validate_components([{**row,'pose':{'height':False,'yaw':0,'pitch':0}}],{'A'},index)
+            wrong_index={**index,'records':{'E1':{**index['records']['E1'],'pose':{'height':0,'yaw':False,'pitch':0}}}}
+            with self.assertRaises(ValueError):validate_components([row],{'A'},wrong_index)
             for badrow,badindex in [({**row,'source':''},{**index,'records':{'':index['records']['E1']}}),({**row,'pose':{}},{**index,'pose':{},'records':{'E1':{**index['records']['E1'],'pose':{}}}})]:
                 with self.assertRaises(ValueError):validate_components([badrow],{'A'},badindex)
             for rows,expected in [([row,row],{'A'}),([row],{'A','B'}),([{**row,'mass_kg':True}],{'A'}),([{**row,'com_world_mm':[False,0,1]}],{'A'}),([{**row,'source':None}],{'A'}),([{**row,'pose':{'height':1}}],{'A'}),([{**row,'hardware_revision':'wrong'}],{'A'})]:
