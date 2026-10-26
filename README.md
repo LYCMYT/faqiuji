@@ -10,7 +10,11 @@ R4 基于 c8c52514a80f52c364950852ed2fde2a1d926e62 的独立审查实施。保�
 
 权威 `data/`、原始 `input/` 与 `evidence/` 构建前后必须字节不变；派生结果写 `output/`。旧实例和页面快照是只读兼容输入，新元数据在 `output/generated_metadata/`。供应商图、球样、夹力、轮速、报价、停止与低速试验没有真实记录时继续 OPEN/BLOCKED。首件输入、测量协议见 `data/r4_release_scope.json`、`docs/test_protocol_r4.md`；离线控制与质量证据格式见 `docs/control_contract_r4.md`、`docs/engineering_evidence_r4.md`。
 
+当前查看器：双击 `启动查看器.cmd`，或运行 `python tools/serve_viewer.py --open --revision R4`；入口为 `/output/fixture_r4/viewer.html`。
+
 ---
+
+以下是审查基准提交 c8c52514 的历史 R1–R3 交付说明。历史打包命令、统计和“最新”称谓仅适用于当时版本；当前命令和状态以上方 R4 入口及当前报告为准。
 
 # BM1 羽毛球发球机 · V0.2 / R3
 
