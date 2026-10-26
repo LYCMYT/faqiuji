@@ -66,7 +66,16 @@ def retention_acceptance(rows,s,p,axis,state,check_stops=True,placed_override=No
 def service_removal_checks(rows,s,p,state):
     """Ordered component withdrawal and proposed tool envelopes, all native context retained."""
     from tools.check_collisions import bbox,overlaps
-    cfg=s['service']['candidate_tools'];limit=s['inspection']['collision_threshold_mm3'];parts={a['instance_id']:a for a in rows};shapes={a['instance_id']:sh for a,sh in posed(rows,state)};removed=set();failed_parts=set();paths=[];tools=[]
+    cfg=s['service']['candidate_tools'];limit=s['inspection']['collision_threshold_mm3'];parts={a['instance_id']:a for a in rows};shapes={a['instance_id']:sh for a,sh in posed(rows,state)};removed=set();failed_parts=set();blocked_dependencies={};paths=[];tools=[];unlock_setup=[]
+    from cad.export_all import locate
+    from cad.assemblies.kinematics import matrix
+    for a in rows:
+        if 'installed_shape' not in a:continue
+        value=state.get(a['lock_axis'],0);eligible=any(abs(value-v)<=s['inspection']['retention']['nominal_tolerance_mm'] for v in a['lock_endpoints_mm'])
+        if eligible:
+            shapes[a['instance_id']]=locate(a['installed_shape'],a['parent'],state)
+            transform=matrix(a['parent'],state);delta=[sum(transform[i,j]*a['park_delta_mm'][j] for j in range(3)) for i in range(3)]
+            unlock_setup.append(dict(instance=a['instance_id'],axis=a['lock_axis'],endpoint_mm=value,state=dict(state),delta_mm=delta,start_geometry='installed_shape transformed by actual parent/state'))
     def hits(shape,exclude):
         result=[]
         for id,other in shapes.items():
@@ -80,12 +89,13 @@ def service_removal_checks(rows,s,p,state):
         for id in ids:
             if id in removed:continue
             if id in failed_parts:
-                paths.append(dict(instance=id,phase=phase,delta_mm=delta,samples=0,intersections=[],status='FAIL',blocked_by_prior_step=True));continue
+                paths.append(dict(instance=id,phase=phase,delta_mm=delta,samples=0,intersections=[],status='FAIL',blocked_by_prior_step=True,blocked_by_dependency=blocked_dependencies.get(id)));continue
             length=math.sqrt(sum(v*v for v in delta));count=max(1,math.ceil(length/cfg['withdraw_step_mm']));hh=[]
             for n in range(count+1):
                 moved=shapes[id].translate(tuple(v*n/count for v in delta))
                 for h in hits(moved,{id}):hh.append(dict(sample=n,**h))
-            paths.append(dict(instance=id,phase=phase,delta_mm=delta,samples=count+1,intersections=hh,status='PASS' if not hh else 'FAIL'))
+            first=exact_bbox(shapes[id]);last=exact_bbox(moved)
+            paths.append(dict(instance=id,phase=phase,delta_mm=delta,samples=count+1,start_bbox_mm=[first.xmin,first.ymin,first.zmin,first.xmax,first.ymax,first.zmax],end_bbox_mm=[last.xmin,last.ymin,last.zmin,last.xmax,last.ymax,last.zmax],intersections=hh,status='PASS' if not hh else 'FAIL'))
             # A failed removal does not authorize pretending that body disappeared.
             if not hh:
                 if final:removed.add(id)
@@ -102,6 +112,8 @@ def service_removal_checks(rows,s,p,state):
         tools.append(dict(instance=id,tool='proposed_open_wrench' if wrench else 'proposed_'+size+'_driver',intersections=hh,status='PASS' if not hh else 'FAIL'))
         if hh:failed_parts.add(id)
     distance=s['service']['fastener_withdraw_mm'];lift=s['service']['cap_lift_mm']
+    # Empty members are manually supported before each real installed-to-park unlock.
+    for pin in unlock_setup:withdraw([pin['instance']],tuple(pin['delta_mm']),'unlock_installed_to_park',False)
     # Upper: pins, cap screws/nuts, then caps; empty upper at24mm opening.
     ids=[k for k in shapes if k.startswith('PRT-0603-R4-HOLDPIN-')];withdraw(ids,(0,0,distance),'upper_lock_pins')
     ids=[k for k in shapes if k.startswith('PRT-0603-R4-CAP-') and k.endswith('-SCREW')]
@@ -127,9 +139,14 @@ def service_removal_checks(rows,s,p,state):
     # Clamp lower nuts: specified candidate socket from underside, then lift pins.
     withdraw([k for k in shapes if k.startswith('PRT-0702-R4-HOLDPIN-')],(0,0,distance),'clamp_lock_pins')
     for id in [k for k in shapes if k.startswith('PRT-0702-R4-TRAVELNUT-')]:
-        bb=exact_bbox(shapes[id]);start=[(bb.xmin+bb.xmax)/2,(bb.ymin+bb.ymax)/2,bb.zmin];end=[*start[:2],start[2]-cfg['M4_nut_socket_length_mm']];exclude={id,id.replace('TRAVELNUT','TRAVELPIN')};hh=hits(cylinder(cfg['M4_nut_socket_radius_mm'],start,end),exclude);tools.append(dict(instance=id,tool='proposed_M4_lower_nut_socket',intersections=hh,status='PASS' if not hh else 'FAIL'));withdraw([id],(0,0,-s['service']['clamp_nut_initial_drop_mm']),'clamp_lower_nuts_drop',False);withdraw([id],(0,(1 if start[1]>0 else -1)*s['service']['clamp_nut_side_withdraw_mm'],0),'clamp_lower_nuts_side')
-    withdraw([k for k in shapes if k.startswith('PRT-0702-R4-TRAVELPIN-')],(0,0,distance),'clamp_travel_pins')
-    return dict(status='PASS' if all(v['status']=='PASS' for v in paths+tools) else 'FAIL',paths=paths,candidate_tool_channels=tools,actually_removed=sorted(removed),actual_tool_selection='OPEN',human_hand_access='OPEN')
+        bb=exact_bbox(shapes[id]);start=[(bb.xmin+bb.xmax)/2,(bb.ymin+bb.ymax)/2,bb.zmin];end=[*start[:2],start[2]-cfg['M4_nut_socket_length_mm']];exclude={id,id.replace('TRAVELNUT','TRAVELPIN')};hh=hits(cylinder(cfg['M4_nut_socket_radius_mm'],start,end),exclude);tools.append(dict(instance=id,tool='proposed_M4_lower_nut_socket',intersections=hh,status='PASS' if not hh else 'FAIL'))
+        if hh:failed_parts.add(id)
+        withdraw([id],(0,0,-s['service']['clamp_nut_initial_drop_mm']),'clamp_lower_nuts_drop',False);withdraw([id],(0,(1 if start[1]>0 else -1)*s['service']['clamp_nut_side_withdraw_mm'],0),'clamp_lower_nuts_side')
+    for id in [k for k in shapes if k.startswith('PRT-0702-R4-TRAVELPIN-')]:
+        nut=id.replace('TRAVELPIN','TRAVELNUT')
+        if nut not in removed:failed_parts.add(id);blocked_dependencies[id]=nut
+        withdraw([id],(0,0,distance),'clamp_travel_pins')
+    return dict(status='PASS' if all(v['status']=='PASS' for v in paths+tools) else 'FAIL',paths=paths,unlock_setup=unlock_setup,candidate_tool_channels=tools,actually_removed=sorted(removed),actual_tool_selection='OPEN',human_hand_access='OPEN')
 
 def ball_sequence_checks(rows,refs,s,p,open_mm,implementation):
     """Explicit nominal references until release; no attached post-release ball."""

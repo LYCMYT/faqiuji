@@ -1,10 +1,11 @@
 """Regression counterexamples, not load/physical qualification."""
-import unittest,json
+import unittest,json,copy
 from pathlib import Path
 import cadquery as cq
 from cad.assemblies.r4_fixture import model,posed
 from cad.assemblies.kinematics import parameters
 from cad.parts.recipe import build
+from cad.export_all import exact_bbox,locate
 from tools.r4_mechanical_checks import retention_acceptance,ball_sequence_checks,endpoint_pin_acceptance,service_removal_checks
 R=Path(__file__).resolve().parents[1]
 class R4MechanicsTests(unittest.TestCase):
@@ -63,6 +64,23 @@ class R4MechanicsTests(unittest.TestCase):
     def test_nominal_removal_and_proposed_new_tool_channels(self):
         state=dict(height=0,guide=self.p['guide_stroke'],slide=0,clamp=14,upper=self.s['service']['upper_work_open_mm'],gate=0);result=service_removal_checks(self.rows,self.s,self.p,state)
         self.assertEqual(result['status'],'PASS',[(v.get('phase',v.get('tool')),v['instance'],v['intersections']) for v in result['paths']+result['candidate_tool_channels'] if v['status']=='FAIL'])
+        unlocks=[v for v in result['paths'] if v['phase']=='unlock_installed_to_park'];self.assertEqual(len(unlocks),7)
+        for path in unlocks:
+            a=self.by[path['instance']];bb=exact_bbox(locate(a['installed_shape'],a['parent'],state));self.assertEqual(path['start_bbox_mm'],[bb.xmin,bb.ymin,bb.zmin,bb.xmax,bb.ymax,bb.zmax])
+    def test_installed_to_park_obstruction_is_not_skipped(self):
+        pin=self.by['PRT-0603-R4-HOLDPIN-L'];g=self.s['manual_guides']['holding']['upper'];xx=self.p['load_x']+g['x_offset'];yy=g['fixed_y_abs'];z0=g['head_z'][1]+1
+        barrier=cq.Solid.makeCylinder(g['head_radius']+1,2,cq.Vector(xx,yy,z0)).cut(cq.Solid.makeCylinder(g['pin_radius']+.2,4,cq.Vector(xx,yy,z0-1)))
+        # This barrier catches the engaged head during unlocking, while every
+        # later parked-to-removed pose clears its annular opening.
+        for distance in range(0,26,5):self.assertLessEqual(pin['shape'].translate((0,0,distance)).intersect(barrier).Volume(),self.s['inspection']['collision_threshold_mm3'])
+        rows=self.rows+[dict(instance_id='TEST-UNLOCK-BARRIER',shape=barrier,parent='FIXED_HEAD_CARRIER')];state=dict(height=0,guide=self.p['guide_stroke'],slide=0,clamp=14,upper=self.s['service']['upper_work_open_mm'],gate=0);result=service_removal_checks(rows,self.s,self.p,state)
+        failed=[v for v in result['paths'] if v['instance']==pin['instance_id'] and v['phase']=='unlock_installed_to_park'];self.assertEqual(failed[0]['status'],'FAIL');self.assertNotIn(pin['instance_id'],result['actually_removed'])
+    def test_failed_clamp_socket_keeps_nut_and_dependent_pin_installed(self):
+        settings=copy.deepcopy(self.s);settings['service']['candidate_tools']['M4_nut_socket_radius_mm']=20;state=dict(height=0,guide=self.p['guide_stroke'],slide=0,clamp=14,upper=self.s['service']['upper_work_open_mm'],gate=0);result=service_removal_checks(self.rows,settings,self.p,state)
+        for side in ['L','R']:
+            nut='PRT-0702-R4-TRAVELNUT-'+side;pin='PRT-0702-R4-TRAVELPIN-'+side
+            self.assertEqual(next(v for v in result['candidate_tool_channels'] if v['instance']==nut)['status'],'FAIL');self.assertNotIn(nut,result['actually_removed']);self.assertNotIn(pin,result['actually_removed'])
+            blocked=next(v for v in result['paths'] if v['instance']==pin);self.assertEqual(blocked['status'],'FAIL');self.assertEqual(blocked['blocked_by_dependency'],nut)
     def test_ball_sequence_explicitly_releases_ownership(self):
         originals=json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances'];refs=[(a['instance_id'],build(a['shape'],self.p)) for a in originals if a['instance_id'] in ['PRT-REF-CORK','PRT-REF-SKIRT']]
         demo=json.loads((R/'data/implementation.json').read_text(encoding='utf-8'))['demo'];result=ball_sequence_checks(self.rows,refs,self.s,self.p,demo['clamp_open_mm'],demo)
