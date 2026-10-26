@@ -24,7 +24,7 @@ for folder in include:
     for p in (R/folder).rglob('*'):
         if not p.is_file() or any(v in excluded_dirs for v in p.relative_to(R).parts):continue
         if p.suffix in ['.blend1','.brep']:continue
-        if p.suffix=='.log' and p.name not in ['r1_review_red.log','r1_review_green.log'] and ctx.run_id not in p.parts:continue
+        if p.suffix=='.log' and p.name not in ['r1_review_red.log','r1_review_green.log'] and ctx.run_id not in p.parts and 'cold_core' not in p.parts:continue
         if any(q in p.as_posix() for q in ['output/mesh/','output/builds/','output/history/']):continue # rebuild creates caches from data; not needed for viewer
         if p.name in ['feed_preview_131.png','feed_preview_66.png']:continue
         files.append(p)
