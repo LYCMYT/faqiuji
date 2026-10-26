@@ -35,7 +35,7 @@
         "tolerance_and_strength": "OPEN",
         "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
       },
-      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; upper cap removal then6mm lift and24->40mm withdrawal checked separately. New M3/M2 tool access and withdrawal routes NOT_RUN.",
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
       "feedback": null,
       "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
       "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
@@ -73,7 +73,7 @@
         "tolerance_and_strength": "OPEN",
         "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
       },
-      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; upper cap removal then6mm lift and24->40mm withdrawal checked separately. New M3/M2 tool access and withdrawal routes NOT_RUN.",
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
       "feedback": null,
       "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
       "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
@@ -111,7 +111,7 @@
         "tolerance_and_strength": "OPEN",
         "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
       },
-      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; upper cap removal then6mm lift and24->40mm withdrawal checked separately. New M3/M2 tool access and withdrawal routes NOT_RUN.",
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
       "feedback": null,
       "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
       "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
@@ -149,7 +149,7 @@
         "tolerance_and_strength": "OPEN",
         "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
       },
-      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; upper cap removal then6mm lift and24->40mm withdrawal checked separately. New M3/M2 tool access and withdrawal routes NOT_RUN.",
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
       "feedback": null,
       "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
       "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
@@ -188,7 +188,7 @@
         "tolerance_and_strength": "OPEN",
         "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
       },
-      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; upper cap removal then6mm lift and24->40mm withdrawal checked separately. New M3/M2 tool access and withdrawal routes NOT_RUN.",
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
       "feedback": null,
       "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
       "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
@@ -199,8 +199,8 @@
   "open_review_questions": [
     {
       "id": "MECH-01",
-      "question": "Upper split cap/M3 hardware and endpoint pins are modeled; validate cap/fastener withdrawal routes and actual tool/hand access before assembly",
-      "required": "Native removal/tool envelope checks and low-speed assembly trial"
+      "question": "Upper split caps/M3 hardware/endpoint pins: nominal removal and candidate tool envelopes checked; confirm actual selected tools, drive features and human handling with supported low-speed assembly",
+      "required": "Actual hardware/tool selection and low-speed supported assembly trial; no unfinished nominal withdrawal task remains"
     },
     {
       "id": "MECH-02",
@@ -209,7 +209,7 @@
     },
     {
       "id": "MECH-03",
-      "question": "Clamp stepped pin separate M4 lowernut, small endpoint lock-pin holes/arm edge distance and fastening preload",
+      "question": "Clamp stepped pin/M4 nut and endpoint lock holes: nominal access checked using20mm candidate socket and10mm drop then side withdrawal; confirm small-pin/arm bearing strength, edge distance and preload",
       "required": "Custom pin detailed manufacturing drawing and proof force"
     },
     {

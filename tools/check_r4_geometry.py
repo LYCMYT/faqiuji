@@ -9,14 +9,15 @@ from cad.parts.recipe import build
 from cad.export_all import exact_bbox
 from tools.check_collisions import bbox,overlaps
 from tools.build_context import active_context,atomic_json
+from tools.r4_mechanical_checks import retention_acceptance,service_removal_checks,ball_sequence_checks,endpoint_pin_acceptance
 
 def run():
     mode='static' if '--static' in sys.argv else 'full';ctx=active_context(R,'r4_geometry',mode)
     out=R/'reports'/('r4_geometry_static.json' if mode=='static' else 'r4_geometry_validation.json')
     atomic_json(out,ctx.report('RUNNING'))
     rows,variants,s,b=model();p=parameters();open_mm=motion_limits()['clamp'][1];base=dict(height=s['local_height_mm'],guide=0,slide=0,clamp=open_mm,upper=0,gate=0)
-    limit=s['inspection']['collision_threshold_mm3'];hits=[];states=[];exact=0
-    def check(state,label):
+    limit=s['inspection']['collision_threshold_mm3'];hits=[];states=[];exact=0;retention_samples=[]
+    def check(state,label,axis=None):
         nonlocal exact
         bodies=posed(rows,state);bb=[bbox(sh) for _,sh in bodies];states.append(dict(name=label,state=state))
         for i,(a,sh) in enumerate(bodies):
@@ -24,6 +25,7 @@ def run():
                 if overlaps(bb[i],bb[j]):
                     exact+=1;v=sh.intersect(other).Volume()
                     if v>limit:hits.append(dict(state=label,pair=[a['instance_id'],c['instance_id']],volume_mm3=v))
+        if axis:retention_samples.append(retention_acceptance(rows,s,p,axis,state,False,{a['instance_id']:sh for a,sh in bodies}))
         return bodies
     bodies=check(base,'OPEN_LOAD')
     refs=[a for a in json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances'] if a.get('reference') and a['instance_id'] in ['PRT-REF-CORK','PRT-REF-SKIRT']]
@@ -66,8 +68,12 @@ def run():
         lim=motion_limits();paths=[('upper',{},0,lim['upper'][1]),('gate',{},0,lim['gate'][1]),('clamp',{},open_mm,0),('guide',{'clamp':0},0,lim['guide'][1]),('slide',{'clamp':0,'guide':lim['guide'][1]},0,p['clear_stroke']),('clamp',{'guide':lim['guide'][1],'slide':p['clear_stroke']},0,open_mm),('slide',{'guide':lim['guide'][1],'clamp':open_mm},p['clear_stroke'],lim['slide'][1]),('slide',{'guide':lim['guide'][1],'clamp':open_mm},lim['slide'][1],0)]
         for n,(key,over,start,end) in enumerate(paths):
             count=math.ceil(abs(end-start)/s['inspection']['motion_step_mm'])
-            for j in range(count+1):check({**base,**over,key:start+(end-start)*j/count},f'PATH{n}:{key}={start+(end-start)*j/count:g}')
+            for j in range(count+1):check({**base,**over,key:start+(end-start)*j/count},f'PATH{n}:{key}={start+(end-start)*j/count:g}',key)
             print('checked',n,key,flush=True)
+    stop_acceptance=[retention_acceptance(rows,s,p,key,base) for key in ['upper','gate','guide','slide','clamp']]
+    service_removal=service_removal_checks(rows,s,p,{**base,'upper':s['service']['upper_work_open_mm'],'guide':p['guide_stroke']})
+    impl=json.loads((R/'data/implementation.json').read_text(encoding='utf-8'))['demo']
+    ball_sequence=ball_sequence_checks(rows,refs,s,p,open_mm,impl)
     native=all(a['shape'].isValid() and len(a['shape'].Solids())==1 for a in rows+variants)
     interfaces=json.loads((R/'data/r4_mechanical_interfaces.json').read_text(encoding='utf-8'));indexed={a['instance_id']:sh for a,sh in bodies}
     connections=[]
@@ -78,7 +84,7 @@ def run():
             if a['axis_id']=='slide':st['guide']=p['guide_stroke']
             placed={q['instance_id']:sh for q,sh in posed(rows,st)};moving=placed[a['moving_instance']];fixed=placed[a['fixed_instance']]
             endpoints.append(dict(value_mm=value,distance_mm=moving.distance(fixed),overlap_mm3=moving.intersect(fixed).Volume()))
-        connections.append(dict(axis_id=a['axis_id'],endpoints=endpoints,status='NATIVE_GEOMETRY_INSPECTED_LOAD_HOLDING_OPEN',reason=a['guide_pair']['description'],reaction_path=a['reaction_path']))
+        connections.append(dict(axis_id=a['axis_id'],endpoints=endpoints,status=next(v['status'] for v in stop_acceptance if v['axis']==a['axis_id']),retention_and_stop_acceptance=next(v for v in stop_acceptance if v['axis']==a['axis_id']),reason=a['guide_pair']['description'],reaction_path=a['reaction_path']))
     locks=[]
     for a in rows:
         if 'installed_shape' not in a:continue
@@ -91,9 +97,11 @@ def run():
                 if overlaps(bbox(pin),bbox(sh)):
                     v=pin.intersect(sh).Volume()
                     if v>limit:hh.append(dict(instance=c['instance_id'],volume_mm3=v))
-            locks.append(dict(pin=a['instance_id'],axis=a['lock_axis'],endpoint_mm=end,installed_intersections=hh,park_delta_mm=a['park_delta_mm'],holding_strength='OPEN',detent_and_tether='OPEN'))
+            pin_acceptance=endpoint_pin_acceptance(a,end,{c['instance_id']:sh for c,sh in posed(rows,st)},s,p)
+            locks.append(dict(status='PASS' if not hh and pin_acceptance['status']=='PASS' else 'FAIL',engagement_acceptance=pin_acceptance,pin=a['instance_id'],axis=a['lock_axis'],endpoint_mm=end,installed_intersections=hh,park_delta_mm=a['park_delta_mm'],holding_strength='OPEN',detent_and_tether='OPEN'))
     reaction_pairs=[('PRT-0602-C__L410','PRT-0602-A__L'),('PRT-0602-C__R410','PRT-0602-A__R'),('PRT-0602-G','PRT-0602-A__L'),('PRT-0602-G','PRT-0602-A__R'),('PRT-0607-A','PRT-0607-C'),('PRT-0607-C','PRT-0602-G'),('PRT-0701-C','PRT-0701-A'),('PRT-0703-C','PRT-0701-A'),('PRT-0703-A','PRT-0703-R3-SHOE-1-1'),('PRT-0703-R3-SHOE-1-1','PRT-0703-R3-CAP-1-UP'),('PRT-0703-R3-CAP-1-UP','PRT-0703-R3-TUBE-1'),('PRT-0703-R3-TUBE-1','PRT-0703-R3-CAP-1-LOW'),('PRT-0703-R3-CAP-1-LOW','PRT-0602-R3-BASE')]
     reaction_contacts=[dict(pair=[a,c],distance_mm=indexed[a].distance(indexed[c]),overlap_mm3=indexed[a].intersect(indexed[c]).Volume(),connection_rating='OPEN; nominal mating contact only, not weld/fastener load approval') for a,c in reaction_pairs]
+    for contact in reaction_contacts:contact['status']='PASS' if contact['distance_mm']<=s['inspection']['retention']['nominal_tolerance_mm'] and contact['overlap_mm3']<=limit else 'FAIL'
     # Real R3 threaded-stack engagement check retained; does not close actuator guides.
     rods={a['instance_id']:a for a in rows};engagement=[]
     for a in rows:
@@ -101,7 +109,7 @@ def run():
             z0,z1=rods[a['rod_id']]['rod_z'];n0,n1=a['engagement_z'];engagement.append(dict(instance=a['instance_id'],engaged=z0<n0<n1<z1))
     # Explicit maintenance sequence: empty/support upper members, withdraw cap
     # fasteners, lift both split caps, lift the upper assembly 6mm, withdraw40mm.
-    removed=[a['instance_id'] for a in rows if a['instance_id'].startswith(('PRT-0603-R4-CAP-','PRT-0603-R4-BUSHCAP-','PRT-0603-R4-HOLDPIN-'))]
+    removed=[a['instance_id'] for a in rows if a['instance_id'].startswith(('PRT-0603-R4-CAP-','PRT-0603-R4-BUSHCAP-','PRT-0603-R4-HOLDPIN-')) and a['instance_id'] in service_removal['actually_removed']]
     service_hits=[];service=[]
     for lift,opening in [(v,s['service']['upper_work_open_mm']) for v in s['service']['lift_samples_mm']]+[(s['service']['upper_lift_mm'],v) for v in s['service']['withdraw_samples_mm']]:
         ss=[]
@@ -125,8 +133,19 @@ def run():
                 if overlaps(bbox(tool),bbox(other)):
                     v=tool.intersect(other).Volume()
                     if v>limit:tool_hits.append(dict(tool_for=a['instance_id'],obstruction=c['instance_id'],volume_mm3=v))
-    completed=['native_solids','support_projection','free_motion_probe','connections','tool_channels']+(['sampled_motion'] if mode=='full' else [])
-    report=ctx.report('BLOCKED',completed,reference_geometry={'type':'nominal visual cork/skirt','axis_mm':[p['load_x'],0],'cork_bottom_z_mm':p['cork_z_min'],'real_samples':[]},expected_contacts=contacts,support_projection={'status':'PASS_NOMINAL' if any(a['axis_inside_contact'] for a in contacts) else 'FAIL','claim':'Vertical gravity projection only; friction/impact/lateral capture not proven'},free_motion_probe={'rotations':perturb,'translations':translations,'lateral_retention':'Not claimed from planar support; inspect free lateral probe results'},clearances={'all_context_pairs_checked':True,'threshold_mm3':limit,'intersections':hits,'exact_pair_checks':exact},assumptions=['R3 local height=0, no wheel solids in fixture; no full-machine wheel clearance claim','No ball attached to animation parent during perturbation','Five native captive guide candidates examined; holding, cap assembly, weld/fastener and strength remain OPEN','Specified M4 tool envelopes tested after explicit empty-supported upper cap removal +6mm lift +40mm withdrawal; cap/fastener withdrawal path and new M3/M2 tooling NOT_RUN'],all_native_single_solids=native,states=states,connections=connections,manual_endpoint_locks=locks,reaction_path_contacts=reaction_contacts,rod_engagement=engagement,service_sequence={'removed_parts':removed,'upper_lift_mm':s['service']['upper_lift_mm'],'upper_withdraw_mm':s['service']['upper_withdraw_mm'],'intersections':service_hits,'cap_and_fastener_withdrawal':'NOT_RUN'},tool_channels=tool_count,tool_intersections=tool_hits,tool_status='FAIL' if tool_hits else 'PASS_SPECIFIED_ENVELOPES',motion_scope='All fixture context-context pairs at each explicitly sampled endpoint-inclusive path; not continuous or arbitrary simultaneous motion',continuous_motion='NOT_RUN',physical_testing_performed=False,manufacturing_release=False)
+    completed=['native_solids','support_projection','free_motion_probe','connections','tool_channels','retention_and_stops','positive_pin_engagement','nominal_ball_sequence','ordered_service_removal','candidate_tool_envelopes']+(['sampled_motion'] if mode=='full' else [])
+    digital_failures=[]
+    if hits:digital_failures.append('working_path_collision')
+    if not native:digital_failures.append('native_solids')
+    if not any(v['axis_inside_contact'] for v in contacts):digital_failures.append('support_projection')
+    if not all(v['status']=='PASS' for v in reaction_contacts):digital_failures.append('reaction_path_mating_contacts')
+    if not all(v['engaged'] for v in engagement):digital_failures.append('rod_nut_engagement')
+    if not all(v['status']=='PASS' for v in retention_samples+stop_acceptance):digital_failures.append('retention_or_stops')
+    if not all(v['status']=='PASS' for v in locks):digital_failures.append('positive_pin_engagement')
+    if service_removal['status']!='PASS':digital_failures.append('service_removal_or_candidate_tool_obstruction')
+    if ball_sequence['status']!='PASS':digital_failures.append('nominal_ball_sequence')
+    if service_hits or tool_hits:digital_failures.append('upper_service_or_M4_tool_obstruction')
+    report=ctx.report('BLOCKED',completed,digital_status='FAIL' if digital_failures else 'PASS',digital_failures=digital_failures,physical_blockers=['real ball envelope/friction/impact and grasp performance unmeasured','load/grade/preload/weld/detent/tether/table stiffness unvalidated','actual selected tools and human handling unvalidated'],retention_samples=retention_samples,stop_acceptance=stop_acceptance,service_removal=service_removal,ball_sequence=ball_sequence,reference_geometry={'type':'nominal visual cork/skirt','axis_mm':[p['load_x'],0],'cork_bottom_z_mm':p['cork_z_min'],'real_samples':[]},expected_contacts=contacts,support_projection={'status':'PASS_NOMINAL' if any(a['axis_inside_contact'] for a in contacts) else 'FAIL','claim':'Vertical gravity projection only; friction/impact/lateral capture not proven'},free_motion_probe={'rotations':perturb,'translations':translations,'lateral_retention':'Not claimed from planar support; inspect free lateral probe results'},clearances={'all_context_pairs_checked':True,'threshold_mm3':limit,'intersections':hits,'exact_pair_checks':exact},assumptions=['R3 local height=0, no wheel solids in fixture; no full-machine wheel clearance claim','No ball attached to animation parent during perturbation','Five native captive guide candidates examined; holding, cap assembly, weld/fastener and strength remain OPEN','Upper M4 service, ordered cap/fastener removal and declared candidate M3/M2 tool envelopes checked separately; actual tools/human handling remain OPEN'],all_native_single_solids=native,states=states,connections=connections,manual_endpoint_locks=locks,reaction_path_contacts=reaction_contacts,rod_engagement=engagement,service_sequence={'removed_parts':removed,'upper_lift_mm':s['service']['upper_lift_mm'],'upper_withdraw_mm':s['service']['upper_withdraw_mm'],'intersections':service_hits,'cap_and_fastener_withdrawal':service_removal['status']},original_M4_tool_channels=tool_count,tool_channels=tool_count+len(service_removal['candidate_tool_channels']),tool_intersections=tool_hits+[dict(tool_for=v['instance'],**h) for v in service_removal['candidate_tool_channels'] for h in v['intersections']],tool_status='FAIL' if tool_hits or any(v['status']=='FAIL' for v in service_removal['candidate_tool_channels']) else 'PASS_SPECIFIED_ENVELOPES',motion_scope='All fixture context-context pairs at each explicitly sampled endpoint-inclusive path; not continuous or arbitrary simultaneous motion',continuous_motion='NOT_RUN',physical_testing_performed=False,manufacturing_release=False)
     atomic_json(out,report);print('BLOCKED',len(hits),'collisions;',len(states),'states;',exact,'pairs; support',report['support_projection']['status']);return False
 if __name__=='__main__':raise SystemExit(0 if run() else 1)
 

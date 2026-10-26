@@ -137,7 +137,7 @@ def model():
     for cx in g['moving_hole_x']:gate['shape']=gate['shape'].cut(cylinder(g['bore_radius'],[cx,yy,g['shaft_z'][0]-1],[cx,yy,g['head_z'][1]+1]))
     cap['shape']=cap['shape'].fuse(block([xx-g['boss_xy_half'],yy-g['boss_xy_half'],g['boss_z'][0]],[xx+g['boss_xy_half'],yy+g['boss_xy_half'],g['boss_z'][1]]));bore=cylinder(g['bore_radius'],[xx,yy,g['shaft_z'][0]-1],[xx,yy,g['head_z'][1]+1]);cap['shape']=cap['shape'].cut(bore);body['shape']=body['shape'].cut(bore)
     pin=axial_pin(g['pin_radius'],g['head_radius'],[xx,yy,0],g['shaft_z'],g['head_z'],2);lockpin('PRT-0604-R4-HOLDPIN',pin,tuple(g['park_delta_mm']),'gate',g['endpoints_mm'])
-    g=s['manual_guides']['holding']['guide'];way=row('PRT-0607-A');tongue=row('PRT-0607-B');tongue['shape']=tongue['shape'].cut(cylinder(g['bore_radius'],[g['x'],-g['tongue_bore_y_half'],g['moving_hole_z']],[g['x'],g['tongue_bore_y_half'],g['moving_hole_z']]))
+    g=s['manual_guides']['holding']['guide'];way=row('PRT-0607-A');tongue=row('PRT-0607-B');revise(tongue,tongue['shape'].cut(cylinder(g['bore_radius'],[g['x'],-g['tongue_bore_y_half'],g['moving_hole_z']],[g['x'],g['tongue_bore_y_half'],g['moving_hole_z']])),'R4 positive manual endpoint lock bore through guide tongue; stable R3 source instance retained')
     for zz,end in zip(g['fixed_z'],g['endpoints_mm']):
         way['shape']=way['shape'].fuse(block([*g['boss_bounds_xy'][0],zz-g['boss_z_half']],[*g['boss_bounds_xy'][1],zz+g['boss_z_half']])).cut(cylinder(g['bore_radius'],[g['x'],g['way_bore_y'][0],zz],[g['x'],g['way_bore_y'][1],zz]))
         pin=axial_pin(g['pin_radius'],g['head_radius'],[g['x'],0,zz],g['shaft_y'],g['head_y'],1);lockpin('PRT-0607-R4-HOLDPIN-'+str(end),pin,tuple(g['park_delta_mm']),'guide',[end])

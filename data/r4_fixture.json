@@ -48,7 +48,24 @@
       0.5,
       1
     ],
-    "free_translation_mm": 0.1
+    "free_translation_mm": 0.1,
+    "retention": {
+      "probe_radius_mm": 1,
+      "shell_inner_margin_mm": 0.1,
+      "shell_outer_margin_mm": 0.8,
+      "minimum_material_fraction": 0.6,
+      "minimum_channel_fraction": 0.7,
+      "overtravel_probe_mm": 0.5,
+      "nominal_tolerance_mm": 1e-05,
+      "fixture_probe_box_mm": 0.3,
+      "lock_shell_inner_margin_mm": 0.1,
+      "lock_shell_outer_margin_mm": 0.3
+    },
+    "ball_sequence": {
+      "seat_contact_tolerance_mm": 1e-05,
+      "closed_jaw_nominal_gap_mm": 0.3,
+      "assumption": "Nominal visual references only; not measured clamp preload or grasp performance. Release is independent instantaneous pose; post-release ball absent."
+    }
   },
   "real_ball_samples": [],
   "friction": null,
@@ -203,8 +220,8 @@
         274
       ],
       "reaction_sleeve_riser_x": [
-        -420,
-        -410
+        -422,
+        -418
       ],
       "reaction_sleeve_riser_z": [
         274,
@@ -251,7 +268,7 @@
           275,
           279
         ],
-        "assembly": "Remove caps upwards after screw/nut removal, lower shaft and collars into lower bushes, refit cap. Open-ended wrench below bush above bridge; tool envelope must be checked."
+        "assembly": "Remove caps upwards after screw/nut removal; lower shafts/collars into split bushes; refit caps. Nominal removal and proposed driver/open-wrench channels checked; actual tool/hardware grade/preload and assembly trial OPEN."
       },
       "wall_aperture_x": [
         -317,
@@ -520,7 +537,7 @@
       "nominal_stroke_mm": 14,
       "pin_running_radial_clearance_mm": 0.2,
       "actual_stop_overtravel_mm": 0.2,
-      "pin_assembly": "Stepped candidate requires one removable collar; thread detail/retention OPEN; not single-piece installable",
+      "pin_assembly": "Separate candidate M4 lower nut modeled and nominal removal checked (10mm down then side withdrawal); simplified thread teeth omitted. Actual grade/preload and pin detent/retention strength OPEN.",
       "lower_nut": {
         "AF": 7,
         "height": 3.2,
@@ -529,9 +546,9 @@
           -14
         ],
         "bore_radius": 2.1,
-        "clearance_pocket_radius": 4.2,
+        "clearance_pocket_radius": 6,
         "clearance_pocket_z": [
-          -19,
+          -21,
           -14
         ],
         "interface": "Candidate M4x0.7 simplified thread bore; actual grade/preload OPEN"
@@ -761,6 +778,21 @@
       40
     ],
     "cap_lift_mm": 25,
-    "fastener_withdraw_mm": 25
+    "fastener_withdraw_mm": 25,
+    "candidate_tools": {
+      "M3_driver_radius_mm": 2,
+      "M3_driver_length_mm": 25,
+      "M2_driver_radius_mm": 1.5,
+      "M2_driver_length_mm": 25,
+      "M3_open_wrench_width_mm": 8,
+      "M3_open_wrench_thickness_mm": 2,
+      "M3_open_wrench_reach_mm": 25,
+      "M4_nut_socket_radius_mm": 5.5,
+      "M4_nut_socket_length_mm": 20,
+      "withdraw_step_mm": 5,
+      "status": "Proposed nominal access envelopes; actual tool selection, drive features and strength OPEN"
+    },
+    "clamp_nut_initial_drop_mm": 10,
+    "clamp_nut_side_withdraw_mm": 25
   }
 }
