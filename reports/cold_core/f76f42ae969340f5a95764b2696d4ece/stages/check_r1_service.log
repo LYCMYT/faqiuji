@@ -1,0 +1,2 @@
+PIN_WITHDRAW {'id': 'PIN_WITHDRAW', 'samples': 29, 'travel_mm': 55, 'step_mm': 2, 'collisions': [], 'geometric_path_passed': True}
+CASSETTE_EXTRACT {'id': 'CASSETTE_EXTRACT', 'samples': 176, 'travel_mm': 350, 'step_mm': 2, 'collisions': [], 'geometric_path_passed': True}

@@ -76,6 +76,10 @@ def main():
         text+=f"实际运行：{tests['tests_run']} 项单元测试，失败 {tests['failures']}、错误 {tests['errors']}；8 类故意失败注入通过。R4 几何状态 {geo['status']}；逐件 STEP、BLEND/GLB、中文 PDF（{pdf['pages']} 页）、动画完整解码、本地查看器交互分别经过本次检查。详情为 reports/builds/{ctx.run_id}/ 的日志和来源报告。\n\n"
         if blocked:text+='机械门禁 BLOCKED：当前包仅供评审，完整发布门禁未通过。连接、保持和工具操作的具体失败/开放项逐条见 r4_geometry_validation.json；不得把导出和图页通过理解为机械通过。\n\n'+json.dumps({'connections':geo.get('connections'),'tool_status':geo.get('tool_status'),'tool_intersections':geo.get('tool_intersections'),'assumptions':geo.get('assumptions')},ensure_ascii=False,indent=2)+'\n\n'
         text+='数字通过只限报告中的离散状态、名义接触和工具包络；不是连续扫掠、刚度、预紧、公差叠加或实物性能证明。\n\n'
+        cold_path=R/'reports/r4_cold_core_validation.json'
+        if cold_path.is_file():
+            cold=json.loads(cold_path.read_text(encoding='utf-8'))
+            text+=f"无历史 output/reports 的隔离重建：{cold['status']}，源提交 {cold['source_commit']}，{cold['stages']} 个核心阶段；范围为 R1–R3 核心工程。R4 当前实体与展示由本次构建单独检查。详见 reports/r4_cold_core_validation.json。\n\n"
         text+='未运行：真实供应商接口核验、球样测量、夹力/轮速/停止距离、报价、加工、低速硬件循环、高速发射、落点标定及安全等级验证。人工签核 NOT_RUN，不能由自动渲染继承。保留的 R1–R3 历史动画/图册没有在本次 R4 构建中全部重渲染，不作为本次 R4 检查证明。\n\n'
         text+='首件和低速试验需要：\n\n'
         text+='\n'.join('- '+item['id']+' ['+item['status']+']：'+item['required'] for item in scope['open_inputs'])

@@ -1,0 +1,75 @@
+[
+  {
+    "id": "SERVICE_TUBE",
+    "targets": [
+      "PRT-0601"
+    ],
+    "removed_parts": [
+      "PRT-0603",
+      "PRT-0604",
+      "PRT-0605",
+      "PRT-0606",
+      "PRT-0607"
+    ],
+    "removed_instances": [
+      "PRT-0602-E__410",
+      "PRT-0602-E__600",
+      "PRT-0602-G",
+      "PRT-0905__SEN-01",
+      "PRT-0905__SEN-12",
+      "PRT-0905__SEN-12_HOLD"
+    ],
+    "delta": [
+      -240,
+      0,
+      0
+    ],
+    "prerequisite": "先卸分球动作模块与导套/导轨，再卸后压带和后板；这不是已验证的快速补球操作。同时解除随模块的上位/分球反馈传感头。",
+    "checks": 51,
+    "max_step_mm": 4.8,
+    "collisions": [],
+    "geometric_path_passed": true
+  },
+  {
+    "id": "SERVICE_WHEEL",
+    "targets": [
+      "PRT-0504",
+      "PRT-0505"
+    ],
+    "removed_parts": [
+      "PRT-0801",
+      "PRT-0802"
+    ],
+    "removed_instances": [],
+    "delta": [
+      0,
+      0,
+      130
+    ],
+    "prerequisite": "停机并确认停转，拆开上罩，解除轴向锁紧后上提轮组。",
+    "checks": 51,
+    "max_step_mm": 2.6,
+    "collisions": [],
+    "geometric_path_passed": true
+  },
+  {
+    "id": "SERVICE_ELECTRICAL",
+    "targets": [
+      "PRT-0902"
+    ],
+    "removed_parts": [],
+    "removed_instances": [
+      "PRT-0803-B"
+    ],
+    "delta": [
+      -500,
+      0,
+      0
+    ],
+    "prerequisite": "先隔离电源、解除接线、拆后门，再移出电源候选包络。",
+    "checks": 51,
+    "max_step_mm": 10.0,
+    "collisions": [],
+    "geometric_path_passed": true
+  }
+]

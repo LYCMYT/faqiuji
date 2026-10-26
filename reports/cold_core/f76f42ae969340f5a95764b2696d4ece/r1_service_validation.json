@@ -1,0 +1,32 @@
+{
+  "geometry_sha256": "3d64eeeb7a9afcd39bd8dd5efa93ff9217380aff15bec40f2b8bafffe95c0390",
+  "cases": [
+    {
+      "id": "PIN_WITHDRAW",
+      "samples": 29,
+      "travel_mm": 55,
+      "step_mm": 2,
+      "collisions": [],
+      "geometric_path_passed": true
+    },
+    {
+      "id": "CASSETTE_EXTRACT",
+      "samples": 176,
+      "travel_mm": 350,
+      "step_mm": 2,
+      "collisions": [],
+      "geometric_path_passed": true
+    }
+  ],
+  "prerequisites": [
+    "电源隔离且轮组确认停转",
+    "轴高降至1400并锁定",
+    "供球器为空；落球与导套收妥",
+    "供球组件由独立托车承重",
+    "插接线束断开",
+    "两只横销沿外侧退出55mm",
+    "整套供球器沿-X抽出350mm"
+  ],
+  "all_paths_passed": true,
+  "tool_operation_and_load_rating_verified": false
+}
