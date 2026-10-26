@@ -48,8 +48,12 @@ class FeedCycle:
         if (boundary is None or not math.isfinite(boundary) or not 0<=boundary<=parameters()['carriage_total_stroke']) and (self.state!='IDLE' or s['start']):
             self.trip('geometry_cannot_capture');return self.outputs()
         if self.state=='PAUSED':return self.outputs()
-        self.clock+=dt
-        self.elapsed+=dt
+        next_clock=self.clock+dt
+        next_elapsed=self.elapsed+dt
+        if not math.isfinite(next_clock) or not math.isfinite(next_elapsed):
+            self.trip('simulation_clock_overflow');return self.outputs()
+        self.clock=next_clock
+        self.elapsed=next_elapsed
         if self.elapsed>self.spec['simulation_state_timeout_s'] and self.state not in ['IDLE','DONE']:
             self.trip('state_timeout');return self.outputs()
         old=self.state

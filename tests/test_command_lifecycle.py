@@ -78,3 +78,67 @@ class CommandLifecycle(unittest.TestCase):
             c.restart()
             self.assertEqual(c.state,'IDLE')
             self.assertEqual(c.step({**baseline(),'start':True},.1)['state'],'GUIDE_DOWN')
+
+    def test_completed_command_waits_for_later_physical_arrival_without_ack(self):
+        for state,field,target_state in [('HOME','head_home','LOAD'),('LOAD','slide_home','DONE')]:
+            with self.subTest(state=state):
+                c=FeedCycle();c.state=state;s=baseline();s[field]=False
+                c.step(s,.1);cmd=c.outputs()['command']
+                ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=cmd['target'],in_tolerance=True,sample_id=1)
+                c.step(s,.1,ack=ack)
+                self.assertEqual(c.step(s,.1,ack={**ack,'completed_id':cmd['command_id'],'sample_id':2})['state'],state)
+                self.assertTrue(c.commands.complete)
+                self.assertEqual(c.step(s,.1)['state'],state)
+                self.assertTrue(c.commands.complete)
+                self.assertEqual(c.step(s,.1,ack={**ack,'sample_id':3})['state'],state)
+                self.assertTrue(c.commands.complete)
+                s[field]=True
+                self.assertEqual(c.step(s,.1)['state'],target_state)
+                self.assertFalse(c.commands.complete)
+
+    def test_completed_evidence_does_not_survive_lifecycle_abandonment(self):
+        c=FeedCycle();c.state='HOME';s=baseline();s['head_home']=False
+        c.step(s,.1);cmd=c.outputs()['command']
+        ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=0.,in_tolerance=True,sample_id=1)
+        c.step(s,.1,ack=ack)
+        c.step(s,.1,ack={**ack,'completed_id':cmd['command_id'],'sample_id':2})
+        self.assertTrue(c.commands.complete)
+        c.pause();self.assertFalse(c.commands.complete)
+        c.reset();c.restart();self.assertFalse(c.commands.complete)
+
+    def test_huge_actual_position_is_rejected_without_overflow(self):
+        c=FeedCycle();c.state='HOME';s=baseline();c.step(s,.1)
+        cmd=c.outputs()['command']
+        ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=0.,in_tolerance=True,sample_id=1)
+        c.step(s,.1,ack=ack)
+        self.assertEqual(c.step(s,.1,ack={**ack,'completed_id':cmd['command_id'],'actual_position':10**1000,'sample_id':2})['state'],'HOME')
+        self.assertFalse(c.commands.complete)
+
+    def test_malformed_first_ack_cannot_seed_acceptance_or_consume_sample(self):
+        from control.commands import Command,CommandLifecycle
+        bad_changes=[dict(actual_position=10**1000),dict(actual_position=True),dict(actual_position=float('inf')),dict(in_tolerance=1),dict(in_tolerance=None),dict(completed_id=1),dict(sample_id=True)]
+        for changes in bad_changes:
+            with self.subTest(changes=changes):
+                life=CommandLifecycle();life.issue(Command('cmd','cycle','head',0.,0.))
+                ack=dict(cycle_id='cycle',accepted_id='cmd',completed_id=None,actual_position=0.,in_tolerance=True,sample_id=1)
+                self.assertFalse(life.observe({**ack,**changes}))
+                self.assertFalse(life.accepted);self.assertEqual(life.last_sample,-1)
+                self.assertFalse(life.observe({**ack,'completed_id':'cmd','sample_id':2}))
+                self.assertTrue(life.accepted)
+                self.assertFalse(life.observe({**ack,'sample_id':3}))
+                self.assertTrue(life.observe({**ack,'completed_id':'cmd','sample_id':4}))
+        for missing in ack:
+            with self.subTest(missing=missing):
+                life=CommandLifecycle();life.issue(Command('cmd','cycle','head',0.,0.))
+                invalid=dict(ack);del invalid[missing]
+                self.assertFalse(life.observe(invalid));self.assertFalse(life.accepted)
+                self.assertEqual(life.last_sample,-1)
+
+    def test_finite_intervals_cannot_overflow_command_clock(self):
+        import math
+        c=FeedCycle();s=baseline()
+        self.assertEqual(c.step(s,1e308)['state'],'IDLE')
+        out=c.step(s,1e308)
+        self.assertEqual(out['state'],'FAULT')
+        self.assertEqual(out['fault'],'simulation_clock_overflow')
+        self.assertIsNone(out['command']);self.assertTrue(math.isfinite(c.clock))

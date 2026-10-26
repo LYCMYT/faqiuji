@@ -20,3 +20,7 @@ Stopped output includes actuator-specific requested safe intent, never a claim o
 | Future wheel group | Controlled deceleration | BLOCKED: drive/brake/coast behavior unknown |
 
 These are coordinated engineering requirements for a future hardware adapter. They are not emitted to GPIO or a drive. enable_motion=False and enable_wheels=False only disable simulated active targets. All per-actuator stopped intents remain BLOCKED until mechanics and hardware tests establish a usable stopping procedure.
+
+Validated completion is retained for the active immutable command until a new command/cycle or lifecycle abandonment. It can combine with a later physical-arrival sample without another acknowledgement; subsequent noncompletion status cannot erase it. Oversized numeric actual_position values that overflow finite-number conversion are rejected without raising.
+
+All six acknowledgement fields, including cycle_id, are required before acceptance state or the sample cursor can change: cycle_id/accepted_id must match the active command, completed_id is null or a string, sample_id is an integer (not boolean), actual_position is finite numeric (not boolean), and in_tolerance is a literal boolean. Invalid acknowledgements cannot seed acceptance. Completion evidence already latched remains unaffected by rejected/missing later status. Accumulated simulated clock/state time must remain finite; overflow latches FAULT before issuing a command and retains the prior finite clock.
