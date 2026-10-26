@@ -4,14 +4,14 @@ R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
 
 class RevisionContracts(unittest.TestCase):
     def safe(self):
-        return dict(cover_closed=True,estop_ok=True,cassette_locked=True,exit=False,capture_detected=False,guide_up=True,guide_down=False,clamp_open=True,clamp_closed=False,wheels_ready=True,upper_held=True,ball_present=True)
+        return dict(start=False,head_home=True,slide_home=True,slide_clear=False,aim_reached=False,gate_closed=True,gate_open=False,cover_closed=True,estop_ok=True,cassette_locked=True,exit=False,capture_detected=False,guide_up=True,guide_down=False,clamp_open=True,clamp_closed=False,wheels_ready=True,upper_held=True,ball_present=True)
     def test_upper_retained_until_gate_closed(self):
         from control.feed_cycle import FeedCycle
         c=FeedCycle();c.state='GATE_CLOSE'
         r=c.step({**self.safe(),'guide_up':False,'guide_down':True,'gate_closed':False,'gate_open':True},.1)
         self.assertEqual(r['upper_target'],'hold')
         c=FeedCycle();c.state='DROP'
-        self.assertEqual(c.step({**self.safe(),'upper_held':False,'gate_open':True},.1)['state'],'FAULT')
+        self.assertEqual(c.step({**self.safe(),'upper_held':False,'gate_open':True,'gate_closed':False,'guide_up':False,'guide_down':True},.1)['state'],'FAULT')
     def test_missing_exit_is_not_a_falling_edge(self):
         from control.feed_cycle import FeedCycle
         c=FeedCycle();c.state='WAIT_EXIT';c.step({**self.safe(),'exit':True},.1)
@@ -34,7 +34,7 @@ class RevisionContracts(unittest.TestCase):
                 c=FeedCycle();c.state=state
                 self.assertEqual(c.step({**self.safe(),'wheels_ready':value},.1)['state'],'FAULT')
         c=FeedCycle();c.state='CLEAR'
-        self.assertEqual(c.step({**self.safe(),'ball_present':False,'clamp_closed':True,'clamp_open':False},.1)['state'],'FAULT')
+        self.assertEqual(c.step({**self.safe(),'ball_present':False,'clamp_closed':True,'clamp_open':False},.1)['fault'],'held_ball_feedback_lost')
     def test_nonphysical_supports_rejected(self):
         from engineering.evaluate import evaluate
         rows=[dict(instance_id='x',mass_kg=40,com_world_mm=[0,0,1000],evidence_status='measured_or_supplier_verified')]
@@ -83,8 +83,8 @@ class RevisionContracts(unittest.TestCase):
     def test_capture_stuck_high_is_rejected(self):
         from control.feed_cycle import FeedCycle
         c=FeedCycle()
-        r=c.step(dict(cover_closed=True,estop_ok=True,cassette_locked=True,capture_detected=True),.1)
-        self.assertEqual(r['state'],'FAULT')
+        r=c.step({**self.safe(),'capture_detected':True},.1)
+        self.assertEqual(r['fault'],'capture_sensor_high_before_approach')
     def test_evidence_gate_and_symmetric_support(self):
         from engineering.evaluate import evaluate
         supports=[dict(x_mm=x,y_mm=y,vertical_stiffness_N_mm=100) for x in [-400,400] for y in [-400,400]]

@@ -5,6 +5,7 @@ debounce, wiring categories, stopping time and watchdog integration are NOT cert
 """
 from pathlib import Path
 import json,math
+from control.contracts import ObservationError,validate_interval,validate_observation,check_invariants
 from cad.assemblies.kinematics import capture_stroke,parameters
 R=Path(__file__).resolve().parents[1]
 
@@ -16,15 +17,16 @@ class FeedCycle:
     def trip(self,reason):self.state='FAULT';self.fault=reason
     def step(self,s,dt):
         if self.state=='FAULT':return self.outputs()
-        if not math.isfinite(dt) or dt<=0:self.trip('invalid_sample_interval');return self.outputs()
-        if not all(s.get(k) is True for k in ['cover_closed','estop_ok','cassette_locked']):self.trip('protective_chain_not_confirmed');return self.outputs()
-        if type(s.get('exit')) is not bool:self.trip('exit_feedback_missing_or_invalid');return self.outputs()
-        if self.state in ['IDLE','RELEASE','APPROACH'] and type(s.get('capture_detected')) is not bool:self.trip('capture_feedback_missing_or_invalid');return self.outputs()
-        if capture_stroke() is None and (self.state!='IDLE' or s.get('start')):self.trip('geometry_cannot_capture');return self.outputs()
-        for a,b in [('guide_up','guide_down'),('gate_open','gate_closed'),('clamp_open','clamp_closed')]:
-            if s.get(a) and s.get(b):self.trip('contradictory_'+a);return self.outputs()
-        if self.state=='IDLE' and s.get('exit'):self.trip('exit_sensor_high_before_cycle');return self.outputs()
-        if self.state in ['IDLE','RELEASE'] and s.get('capture_detected'):self.trip('capture_sensor_high_before_approach');return self.outputs()
+        try:
+            dt=validate_interval(dt)
+            s=validate_observation(s,self.state)
+        except ObservationError as error:
+            self.trip(str(error));return self.outputs()
+        fault=check_invariants(self.state,s)
+        if fault:self.trip(fault);return self.outputs()
+        boundary=capture_stroke()
+        if (boundary is None or not math.isfinite(boundary) or not 0<=boundary<=parameters()['carriage_total_stroke']) and (self.state!='IDLE' or s['start']):
+            self.trip('geometry_cannot_capture');return self.outputs()
         self.elapsed+=dt
         if self.elapsed>self.spec['simulation_state_timeout_s'] and self.state not in ['IDLE','DONE']:
             self.trip('state_timeout');return self.outputs()
@@ -51,16 +53,6 @@ class FeedCycle:
             'HOME':('LOAD',arrived),
             'LOAD':('DONE',arrived),
         }
-        if self.state in ['CLEAR','AIM','RELEASE','APPROACH','WAIT_EXIT','RETREAT','HOME','LOAD'] and s.get('guide_up') is not True:
-            self.trip('guide_up_lost');return self.outputs()
-        if self.state in ['APPROACH','WAIT_EXIT','RETREAT'] and s.get('clamp_open') is not True:
-            self.trip('release_feedback_lost');return self.outputs()
-        if self.state in ['RELEASE','APPROACH','WAIT_EXIT'] and s.get('wheels_ready') is not True:
-            self.trip('wheel_ready_feedback_lost');return self.outputs()
-        if self.state in ['GUIDE_UP','CLEAR','AIM'] and (s.get('clamp_closed') is not True or s.get('ball_present') is not True):
-            self.trip('held_ball_feedback_lost');return self.outputs()
-        if self.state in ['DROP','GATE_CLOSE'] and s.get('upper_held') is not True:
-            self.trip('upper_retention_feedback_lost');return self.outputs()
         if self.state=='WAIT_EXIT':
             if s.get('exit') and not self.last_exit:self.exit_seen=True
             if self.exit_seen and self.last_exit and s['exit'] is False:self.state='RETREAT'
@@ -85,6 +77,6 @@ class FeedCycle:
             enable_wheels=enabled and self.state in ['AIM','RELEASE','APPROACH','WAIT_EXIT'],
             slide_target_mm=targets.get(self.state) if enabled else None,
             guide_target_mm=(0 if guide_down else p['guide_stroke']) if enabled else None,
-            clamp_target='closed' if clamp_closed else 'open',gate_target='open' if self.state=='DROP' else 'closed',
-            upper_target='hold' if self.state in ['RETAIN','DROP','GATE_CLOSE'] else 'open',hardware_connected=False,
+            clamp_target=('closed' if clamp_closed else 'open') if enabled else None,gate_target=('open' if self.state=='DROP' else 'closed') if enabled else None,
+            upper_target=('hold' if self.state in ['RETAIN','DROP','GATE_CLOSE'] else 'open') if enabled else None,hardware_connected=False,
             notice='离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测')
