@@ -21,11 +21,18 @@ class Contract(unittest.TestCase):
         q=point([-190,0,650],'FIXED_HEAD_CARRIER',dict(height=1800,pitch=60,yaw=45))
         np.testing.assert_allclose(q,[-190,0,2450])
     def test_main_step_complete(self):
-        import cadquery as cq,json
+        import cadquery as cq,json,tempfile
+        from cad.parts.recipe import build
+        from cad.assemblies.kinematics import parameters
         r=Path(__file__).resolve().parents[1]
-        rec=json.loads((r/'data/instances.json').read_text(encoding='utf-8'))
-        expected=sum(x['solid_count'] for x in rec if x['part_id']=='PRT-0702')
-        s=cq.importers.importStep(str(r/'output/step/parts/PRT-0702.step')).val()
-        self.assertEqual(len(s.Solids()),expected)
+        recipes=json.loads((r/'data/geometry.json').read_text(encoding='utf-8'))['instances']
+        shapes=[build(item['shape'],parameters()) for item in recipes if item['part_id']=='PRT-0702']
+        self.assertTrue(shapes,'Current gripper family must not be empty')
+        self.assertTrue({'PRT-0702__L','PRT-0702__R'}.issubset({item['instance_id'] for item in recipes if item['part_id']=='PRT-0702'}))
+        with tempfile.TemporaryDirectory() as td:
+            path=Path(td)/'PRT-0702.step';cq.exporters.export(cq.Compound.makeCompound(shapes),str(path))
+            result=cq.importers.importStep(str(path)).val()
+            self.assertEqual(len(result.Solids()),sum(len(s.Solids()) for s in shapes))
+            self.assertAlmostEqual(result.Volume(),sum(s.Volume() for s in shapes),places=5)
 
 if __name__=='__main__': unittest.main()

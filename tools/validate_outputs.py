@@ -11,6 +11,13 @@ from cad.assemblies.kinematics import parameters
 
 def run():
     start=time.time();files=[];fail=[]
+    source=json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances']
+    physical=[x for x in source if not x.get('reference')]
+    expected={'output/step/BM1_V0_assembly.step','output/step/BM1_Y0_section.step'}
+    expected|={'output/step/parts/'+x[key]+'.step' for x in physical for key in ['part_id','derived_id']}
+    expected|={'output/step/assemblies/'+x['assembly_id']+'.step' for x in physical}
+    missing=sorted(name for name in expected if not (R/name).is_file())
+    if missing:raise RuntimeError('Missing expected STEP set: '+str(missing))
     for f in sorted((R/'output/step').rglob('*.step')):
         try:
             s=cq.importers.importStep(str(f)).val();solids=s.Solids();ok=s.isValid() and len(solids)>0 and all(t.Volume()>0 for t in solids)
@@ -32,5 +39,6 @@ def run():
         pid=main['part_id'];expected=sum(x['solid_count'] for x in rec if x['part_id']==pid);actual=next(x['solids'] for x in files if x['path'].replace('\\','/')=='output/step/parts/'+pid+'.step')
         counts.append(dict(part_id=pid,expected=expected,actual=actual,passed=actual==expected));assert expected==actual,(pid,expected,actual)
     result['main_item_completeness']=counts
+    if fail:raise RuntimeError('Invalid STEP files: '+str(fail))
     (R/'reports/step_roundtrip.json').write_text(json.dumps(result,indent=2),encoding='utf-8');print('STEP',len(files),'reopened;',len(fail),'failed; parameter rebuild passed')
 if __name__=='__main__':run()

@@ -6,7 +6,7 @@ def classify_paths(root: Path) -> dict[str,list[str]]:
     root=Path(root)
     def files(folder):
         return sorted(p.relative_to(root).as_posix() for p in (root/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
-    return {'authoritative':files('data'),'derived':files('output'),'evidence_index':files('evidence')}
+    return {'authoritative':files('data'),'derived':files('output'),'evidence_index':files('input')+files('evidence')}
 def snapshot_inputs(root):
     c=classify_paths(root)
     return {p:hashlib.sha256((Path(root)/p).read_bytes()).hexdigest() for p in c['authoritative']+c['evidence_index']}

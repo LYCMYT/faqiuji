@@ -3,6 +3,9 @@ import sys,json
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
 import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+import sys; sys.path.insert(0,str(R))
 from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.export_all import locate

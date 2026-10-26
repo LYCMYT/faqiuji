@@ -7,8 +7,12 @@ from tools.input_manifest import generated_path, metadata_path
 from tools.build_context import active_context, tool_versions
 from tools.validate_release import require_report
 ctx=active_context(R,'final_report')
-test_result=require_report(R/'reports/unit_tests.json',ctx,['unit_tests'],R)
+test_result=require_report(R/'reports/unit_tests.json',ctx.for_stage('unit_tests'),['unit_tests'],R)
 def read(f):return json.loads((R/f).read_text(encoding='utf-8'))
+run_dir=R/'reports/builds'/ctx.run_id
+required_stages=['validate_outputs','reopen_check','check_service','check_viewer_isolated','check_pdf','check_parameter_rebuild','check_r1_service','check_r1_contracts','build_r1_engineering_package']
+for stage in required_stages:
+    require_report(run_dir/(stage+'.json'),ctx.for_stage(stage),root=R)
 records=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'));parts=read('data/parts.json');pages=read('reports/page_coverage.json');step=read('reports/step_roundtrip.json');blend=read('reports/blender_roundtrip.json');static=read('reports/collisions_static.json');motion=read('reports/collisions_motion.json');viewer=read('reports/viewer_validation.json');pdf=read('reports/pdf_validation.json');service=read('reports/service_validation.json')
 physical=[i for i in records if not i.get('reference')];geo_hash=hashlib.sha256((R/'data/geometry.json').read_bytes()).hexdigest()
 required=['output/step/BM1_V0_assembly.step','output/blend/BM1_V0_master.blend','output/glb/BM1_V0_assembly.glb','output/BM1_V0_design_book.pdf','output/animation/BM1_feed_sequence.mp4','output/animation/BM1_explode_restore.mp4','viewer/index.html','cad/export_all.py']
@@ -91,7 +95,6 @@ shutil.copyfile(metadata_path(R,'page_index_engineering.json'),generated_path(R,
 generated_path(R,'document_validation.json').write_text(json.dumps(pdf,ensure_ascii=False,indent=2),encoding='utf-8')
 design=read('data/design.json');design['phase']='native_parametric_concept_engineering';design['notice']='本次已生成原生参数实体与模型图册；仍为concept，非加工冻结、非采购确认、非样机验证。'
 generated_path(R,'design.json').write_text(json.dumps(design,ensure_ascii=False,indent=2),encoding='utf-8')
-readme=R/'README_DELIVERY.md';readme.write_text(readme.read_text(encoding='utf-8').replace('180个可独立查看',str(len(physical))+'个可独立查看'),encoding='utf-8')
 print('REPORT GENERATED',len(physical),'physical instances,',pages['pdf_pages'],'PDF pages; production acceptance FALSE')
 from r1_report_text import write_r1_report
 result['unit_tests']=test_result

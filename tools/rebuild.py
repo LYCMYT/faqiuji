@@ -7,16 +7,24 @@ from tools.validate_release import run_stage
 from tools.input_manifest import snapshot_inputs,require_unchanged
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--scope',choices=['core','full'],default='full');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--scope',choices=['core','full'],default='full');ap.add_argument('--legacy',action='store_true');ap.add_argument('--review-draft',action='store_true');args=ap.parse_args()
+    if not args.legacy:
+        from tools.build_r4_candidate import main as r4_main
+        sys.argv=[sys.argv[0]]+(['--review-draft'] if args.review_draft else [])
+        return r4_main()
     if sys.flags.optimize:raise RuntimeError('Optimized Python unsupported')
+    for name in ['release_proof.json','validation.json','r3_delivery_validation.json']:
+        atomic_json(R/'reports'/name,{'status':'NOT_RUN','reason':'New build started; prior result invalidated'})
     before=snapshot_inputs(R);ctx=BuildContext.create(R,scope=args.scope)
     atomic_json(R/'reports/builds'/ctx.run_id/'context.json',ctx.to_dict())
     print('BUILD',ctx.run_id,args.scope,flush=True)
     count=0
     def py(script,*extra,reports=(),files=(),checks=()):
         nonlocal count
+        declared={'tools/validate_outputs.py':['reports/step_roundtrip.json'],'tools/check_pdf.py':['reports/pdf_validation.json'],'tools/check_parameter_rebuild.py':['reports/parameter_full_rebuild.json'],'tools/build_r1_engineering_package.py':['reports/r1_bench_validation.json'],'tools/check_viewer_isolated.py':['reports/viewer_validation.json'],'tools/check_r2_prototype.py':['reports/r2_delivery_validation.json'],'tools/build_r3_package.py':['reports/r3_export_validation.json'],'tools/finish_r3_delivery.py':['reports/r3_delivery_validation.json'],'tools/check_r3_viewer.py':['reports/r3_viewer_validation.json']}
+        reports=reports or declared.get(script,())
         count+=1
-        stage=f'{count:02d}_'+Path(script).stem+('_'+str(extra[0]) if extra else '')
+        stage=Path(script).stem+('_'+str(extra[0]) if extra else '')
         print(stage,flush=True)
         return run_stage([sys.executable,str(R/script),*extra],ctx.for_stage(stage),R,expected_reports=reports,expected_files=files,completed_checks=checks)
     blender=os.environ.get('BM1_BLENDER_EXE') or shutil.which('blender')
@@ -25,7 +33,7 @@ def main():
     def bl(script,reports=(),files=()):
         nonlocal count
         if not blender:raise RuntimeError('Set BM1_BLENDER_EXE; Blender is NOT_RUN')
-        count+=1;stage=f'{count:02d}_'+Path(script).stem
+        count+=1;stage=Path(script).stem
         print(stage,flush=True)
         return run_stage([blender,'--background','--python-exit-code','1','--python',str(R/script)],ctx.for_stage(stage),R,expected_reports=reports,expected_files=files,completed_checks=['script_completed'])
     try:

@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from tools.build_context import BuildContext
-from tools.validate_release import require_report, run_stage, validate_release
+from tools.validate_release import require_report, run_stage, validate_release, validate_stage_result
 
 
 class ReleaseGates(unittest.TestCase):
@@ -25,5 +25,18 @@ class ReleaseGates(unittest.TestCase):
             with self.assertRaises(RuntimeError): validate_release(root,ctx,{},['missing.step'])
             (root/'data/design.json').write_text('{"gap":30}')
             with self.assertRaises(RuntimeError): require_report(ctx.report('PASS'),ctx,root=root)
+
+    def test_legacy_service_adapter_and_malformed_reports(self):
+        with tempfile.TemporaryDirectory() as td:
+            ctx=BuildContext.create(Path(td),'check_service')
+            validate_stage_result('reports/service_validation.json',[{'geometric_path_passed':True,'collisions':[]}],ctx)
+            for value in ({},[],[{'geometric_path_passed':True}],[{'geometric_path_passed':'true','collisions':[]}]):
+                with self.assertRaises(RuntimeError):validate_stage_result('reports/service_validation.json',value,ctx)
+            for value in ({},{'status':'RUNNING'},{'errors':[],'unresolved_pairs':0}):
+                with self.assertRaises(RuntimeError):validate_stage_result('reports/collisions_motion.json',value,ctx)
+            report=ctx.report('PASS',['motion']);report['run_id']='old'
+            with self.assertRaises(RuntimeError):validate_stage_result('reports/r3_geometry_validation.json',report,ctx)
+            report=ctx.report('PASS',['motion']);report['stage']='wrong'
+            with self.assertRaises(RuntimeError):require_report(report,ctx)
 
 if __name__=='__main__': unittest.main()

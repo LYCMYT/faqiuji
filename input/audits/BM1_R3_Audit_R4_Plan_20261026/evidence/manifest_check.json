@@ -1,0 +1,13 @@
+{
+  "commit": "c8c52514a80f52c364950852ed2fde2a1d926e62",
+  "manifest_checked": 1806,
+  "mismatches": [],
+  "tracked_not_in_manifest": [
+    ".gitattributes",
+    ".gitignore",
+    "README.md",
+    "delivery_manifest.json",
+    "docs/releases/v0.2-r3.md"
+  ],
+  "manifest_not_tracked": []
+}

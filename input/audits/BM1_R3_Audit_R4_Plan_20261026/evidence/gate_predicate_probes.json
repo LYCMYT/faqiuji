@@ -1,0 +1,9 @@
+{
+  "probe_kind": "execute unmodified AST assertion expressions, not full end-to-end generation",
+  "static_only_status_PASS_states_1_accepted_by_build_r3_package": true,
+  "static_only_and_false_blender_reopen_flags_accepted_by_finish_gate": true,
+  "assert_source_lines": [
+    "tools/build_r3_package.py:13",
+    "tools/finish_r3_delivery.py:47"
+  ]
+}

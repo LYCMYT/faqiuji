@@ -11,6 +11,9 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
 import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+import sys; sys.path.insert(0,str(R))
 from tools.input_manifest import generated_path, metadata_path
 from cad.assemblies.kinematics import matrix,capture_stroke
 OUT=R/'output';DRAW=OUT/'drawings';PAGES=DRAW/'pages';PAGES.mkdir(parents=True,exist_ok=True)

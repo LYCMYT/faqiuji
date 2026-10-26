@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/LYCMYT/faqiuji",
+  "branch": "main",
+  "commit": "c8c52514a80f52c364950852ed2fde2a1d926e62",
+  "tag": "v0.2-r3",
+  "audit_date_local": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "scope": "read-only source and artifact review; selected independent reruns; no physical tests",
+  "source_modified": false,
+  "runtime": {
+    "python": "3.12",
+    "cadquery": "2.7.0",
+    "occt": "7.8.1.1.post1",
+    "blender_available": false,
+    "chrome_available": false
+  },
+  "repo_claimed_runtime": {
+    "python": "3.12.10",
+    "cadquery": "2.8.0",
+    "occt": "7.9.3.1",
+    "blender": "4.5.9 LTS"
+  },
+  "full_locked_environment_rebuild_performed": false,
+  "final_remote_head_recheck": {
+    "checked_utc": "2026-10-26T14:35:53Z",
+    "branch": "main",
+    "commit": "c8c52514a80f52c364950852ed2fde2a1d926e62",
+    "unchanged": true
+  }
+}

@@ -1,6 +1,7 @@
 import csv
 import json
 import unittest
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,8 +22,12 @@ class PartRoleContractTests(unittest.TestCase):
                 self.assertNotIn(forbidden, ' '.join(routes[part_id]))
 
     def test_d01_errors_do_not_propagate_to_generated_rfq(self):
-        with (ROOT / 'output/prototype_r2/manufacturing_routes_44_RFQ.csv').open(encoding='utf-8-sig', newline='') as stream:
-            rows = list(csv.DictReader(stream))
+        from tools.part_role_contract import write_rfq
+        read=lambda name:json.loads((ROOT/'data'/name).read_text(encoding='utf-8'))
+        with tempfile.TemporaryDirectory() as td:
+            path=Path(td)/'RFQ.csv'
+            write_rfq(path,read('parts.json'),read('part_roles.json'),read('r2_process_routes.json'))
+            with path.open(encoding='utf-8-sig',newline='') as stream:rows=list(csv.DictReader(stream))
         self.assertEqual(44, len(rows))
         indexed = {row['part_id']: row for row in rows}
         for part_id, (required, forbidden) in CORRECTIONS.items():

@@ -1,0 +1,1706 @@
+{
+  "audit_time_utc": "2026-10-26T14:26:34.889310+00:00",
+  "repository": "/workspace/scratch/ca8ffdc8f527/faqiuji_review",
+  "revision": "c8c52514a80f52c364950852ed2fde2a1d926e62",
+  "hardware_test": false,
+  "repository_mutations_performed": false,
+  "tracked_diff_unchanged": true,
+  "finding_count": 7,
+  "reproduced_count": 7,
+  "findings": [
+    {
+      "id": "C01",
+      "priority": "P1",
+      "title": "Guide-down loss does not prevent opening the drop gate",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/control/feed_cycle.py",
+          "lines": [
+            40,
+            41,
+            54,
+            62,
+            82,
+            88
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "index": 0,
+          "dt_s": 0.1,
+          "change": {
+            "start": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": true,
+            "guide_down": false,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true
+          },
+          "output": {
+            "state": "GUIDE_DOWN",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "open",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 1,
+          "dt_s": 0.1,
+          "change": {
+            "guide_up": false,
+            "guide_down": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": true,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true
+          },
+          "output": {
+            "state": "RETAIN",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 2,
+          "dt_s": 0.1,
+          "change": {
+            "guide_down": false,
+            "upper_held": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": false,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true,
+            "upper_held": true
+          },
+          "output": {
+            "state": "DROP",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "open",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        }
+      ],
+      "reproduced": true,
+      "expected_after_fix": "Required guide-down feedback must remain confirmed during loading/drop; loss must fault before opening the gate."
+    },
+    {
+      "id": "C02",
+      "priority": "P1",
+      "title": "Gate-closed loss after releasing upper retention does not fault",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/control/feed_cycle.py",
+          "lines": [
+            43,
+            44,
+            60,
+            62,
+            89
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "index": 0,
+          "dt_s": 0.1,
+          "change": {
+            "start": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": true,
+            "guide_down": false,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true
+          },
+          "output": {
+            "state": "GUIDE_DOWN",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "open",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 1,
+          "dt_s": 0.1,
+          "change": {
+            "guide_up": false,
+            "guide_down": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": true,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true
+          },
+          "output": {
+            "state": "RETAIN",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 2,
+          "dt_s": 0.1,
+          "change": {
+            "upper_held": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": true,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true,
+            "upper_held": true
+          },
+          "output": {
+            "state": "DROP",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "open",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 3,
+          "dt_s": 0.1,
+          "change": {
+            "gate_open": true,
+            "gate_closed": false,
+            "ball_present": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": true,
+            "gate_closed": false,
+            "gate_open": true,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true,
+            "upper_held": true,
+            "ball_present": true
+          },
+          "output": {
+            "state": "GATE_CLOSE",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 4,
+          "dt_s": 0.1,
+          "change": {
+            "gate_closed": true,
+            "gate_open": false
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": true,
+            "gate_closed": true,
+            "gate_open": false,
+            "clamp_closed": false,
+            "clamp_open": true,
+            "start": true,
+            "upper_held": true,
+            "ball_present": true
+          },
+          "output": {
+            "state": "GRIP",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "closed",
+            "gate_target": "closed",
+            "upper_target": "open",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "index": 5,
+          "dt_s": 0.1,
+          "change": {
+            "clamp_closed": true,
+            "clamp_open": false,
+            "gate_closed": false,
+            "gate_open": true
+          },
+          "input": {
+            "cover_closed": true,
+            "estop_ok": true,
+            "cassette_locked": true,
+            "exit": false,
+            "capture_detected": false,
+            "head_home": true,
+            "slide_home": true,
+            "slide_clear": false,
+            "aim_reached": false,
+            "guide_up": false,
+            "guide_down": true,
+            "gate_closed": false,
+            "gate_open": true,
+            "clamp_closed": true,
+            "clamp_open": false,
+            "start": true,
+            "upper_held": true,
+            "ball_present": true
+          },
+          "output": {
+            "state": "GUIDE_UP",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 115,
+            "clamp_target": "closed",
+            "gate_target": "closed",
+            "upper_target": "open",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        }
+      ],
+      "reproduced": true,
+      "expected_after_fix": "Define and enforce the continuous gate/upper-retention handover invariant; reopening must not continue the normal cycle."
+    },
+    {
+      "id": "C03",
+      "priority": "P1",
+      "title": "String false is accepted as affirmative input",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/control/feed_cycle.py",
+          "lines": [
+            20,
+            21,
+            22,
+            35,
+            39,
+            40,
+            41
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "case": "start_string_false",
+          "trace": [
+            {
+              "index": 0,
+              "dt_s": 0.1,
+              "change": {
+                "start": "false"
+              },
+              "input": {
+                "cover_closed": true,
+                "estop_ok": true,
+                "cassette_locked": true,
+                "exit": false,
+                "capture_detected": false,
+                "head_home": true,
+                "slide_home": true,
+                "slide_clear": false,
+                "aim_reached": false,
+                "guide_up": true,
+                "guide_down": false,
+                "gate_closed": true,
+                "gate_open": false,
+                "clamp_closed": false,
+                "clamp_open": true,
+                "start": "false"
+              },
+              "output": {
+                "state": "GUIDE_DOWN",
+                "fault": null,
+                "enable_motion": true,
+                "enable_wheels": false,
+                "slide_target_mm": null,
+                "guide_target_mm": 0,
+                "clamp_target": "open",
+                "gate_target": "closed",
+                "upper_target": "open",
+                "hardware_connected": false,
+                "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+              }
+            }
+          ],
+          "reproduced": true
+        },
+        {
+          "case": "guide_down_string_false",
+          "trace": [
+            {
+              "index": 0,
+              "dt_s": 0.1,
+              "change": {
+                "start": true
+              },
+              "input": {
+                "cover_closed": true,
+                "estop_ok": true,
+                "cassette_locked": true,
+                "exit": false,
+                "capture_detected": false,
+                "head_home": true,
+                "slide_home": true,
+                "slide_clear": false,
+                "aim_reached": false,
+                "guide_up": true,
+                "guide_down": false,
+                "gate_closed": true,
+                "gate_open": false,
+                "clamp_closed": false,
+                "clamp_open": true,
+                "start": true
+              },
+              "output": {
+                "state": "GUIDE_DOWN",
+                "fault": null,
+                "enable_motion": true,
+                "enable_wheels": false,
+                "slide_target_mm": null,
+                "guide_target_mm": 0,
+                "clamp_target": "open",
+                "gate_target": "closed",
+                "upper_target": "open",
+                "hardware_connected": false,
+                "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+              }
+            },
+            {
+              "index": 1,
+              "dt_s": 0.1,
+              "change": {
+                "guide_up": false,
+                "guide_down": "false"
+              },
+              "input": {
+                "cover_closed": true,
+                "estop_ok": true,
+                "cassette_locked": true,
+                "exit": false,
+                "capture_detected": false,
+                "head_home": true,
+                "slide_home": true,
+                "slide_clear": false,
+                "aim_reached": false,
+                "guide_up": false,
+                "guide_down": "false",
+                "gate_closed": true,
+                "gate_open": false,
+                "clamp_closed": false,
+                "clamp_open": true,
+                "start": true
+              },
+              "output": {
+                "state": "RETAIN",
+                "fault": null,
+                "enable_motion": true,
+                "enable_wheels": false,
+                "slide_target_mm": null,
+                "guide_target_mm": 0,
+                "clamp_target": "open",
+                "gate_target": "closed",
+                "upper_target": "hold",
+                "hardware_connected": false,
+                "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+              }
+            }
+          ],
+          "reproduced": true
+        },
+        {
+          "case": "upper_held_string_false",
+          "trace": [
+            {
+              "index": 0,
+              "dt_s": 0.1,
+              "change": {
+                "start": true
+              },
+              "input": {
+                "cover_closed": true,
+                "estop_ok": true,
+                "cassette_locked": true,
+                "exit": false,
+                "capture_detected": false,
+                "head_home": true,
+                "slide_home": true,
+                "slide_clear": false,
+                "aim_reached": false,
+                "guide_up": true,
+                "guide_down": false,
+                "gate_closed": true,
+                "gate_open": false,
+                "clamp_closed": false,
+                "clamp_open": true,
+                "start": true
+              },
+              "output": {
+                "state": "GUIDE_DOWN",
+                "fault": null,
+                "enable_motion": true,
+                "enable_wheels": false,
+                "slide_target_mm": null,
+                "guide_target_mm": 0,
+                "clamp_target": "open",
+                "gate_target": "closed",
+                "upper_target": "open",
+                "hardware_connected": false,
+                "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+              }
+            },
+            {
+              "index": 1,
+              "dt_s": 0.1,
+              "change": {
+                "guide_up": false,
+                "guide_down": true
+              },
+              "input": {
+                "cover_closed": true,
+                "estop_ok": true,
+                "cassette_locked": true,
+                "exit": false,
+                "capture_detected": false,
+                "head_home": true,
+                "slide_home": true,
+                "slide_clear": false,
+                "aim_reached": false,
+                "guide_up": false,
+                "guide_down": true,
+                "gate_closed": true,
+                "gate_open": false,
+                "clamp_closed": false,
+                "clamp_open": true,
+                "start": true
+              },
+              "output": {
+                "state": "RETAIN",
+                "fault": null,
+                "enable_motion": true,
+                "enable_wheels": false,
+                "slide_target_mm": null,
+                "guide_target_mm": 0,
+                "clamp_target": "open",
+                "gate_target": "closed",
+                "upper_target": "hold",
+                "hardware_connected": false,
+                "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+              }
+            },
+            {
+              "index": 2,
+              "dt_s": 0.1,
+              "change": {
+                "upper_held": "false"
+              },
+              "input": {
+                "cover_closed": true,
+                "estop_ok": true,
+                "cassette_locked": true,
+                "exit": false,
+                "capture_detected": false,
+                "head_home": true,
+                "slide_home": true,
+                "slide_clear": false,
+                "aim_reached": false,
+                "guide_up": false,
+                "guide_down": true,
+                "gate_closed": true,
+                "gate_open": false,
+                "clamp_closed": false,
+                "clamp_open": true,
+                "start": true,
+                "upper_held": "false"
+              },
+              "output": {
+                "state": "DROP",
+                "fault": null,
+                "enable_motion": true,
+                "enable_wheels": false,
+                "slide_target_mm": null,
+                "guide_target_mm": 0,
+                "clamp_target": "open",
+                "gate_target": "open",
+                "upper_target": "hold",
+                "hardware_connected": false,
+                "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+              }
+            }
+          ],
+          "reproduced": true
+        }
+      ],
+      "reproduced": true,
+      "expected_after_fix": "Validate every required digital input as an actual bool before transitions/output decisions."
+    },
+    {
+      "id": "C04",
+      "priority": "P2",
+      "title": "Already-home cycle stalls waiting for a false-to-true home edge",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/control/feed_cycle.py",
+          "lines": [
+            32,
+            35,
+            36,
+            37,
+            50,
+            51,
+            73,
+            75
+          ]
+        }
+      ],
+      "observations": {
+        "assumption": "Zero-angle target/unchanged home pose; head_home remains True throughout. No hardware motion was exercised.",
+        "trace": [
+          {
+            "index": 0,
+            "dt_s": 0.1,
+            "change": {
+              "start": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true
+            },
+            "output": {
+              "state": "GUIDE_DOWN",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": 0,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 1,
+            "dt_s": 0.1,
+            "change": {
+              "guide_up": false,
+              "guide_down": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": false,
+              "guide_down": true,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true
+            },
+            "output": {
+              "state": "RETAIN",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": 0,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "hold",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 2,
+            "dt_s": 0.1,
+            "change": {
+              "upper_held": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": false,
+              "guide_down": true,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true
+            },
+            "output": {
+              "state": "DROP",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": 0,
+              "clamp_target": "open",
+              "gate_target": "open",
+              "upper_target": "hold",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 3,
+            "dt_s": 0.1,
+            "change": {
+              "gate_open": true,
+              "gate_closed": false,
+              "ball_present": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": false,
+              "guide_down": true,
+              "gate_closed": false,
+              "gate_open": true,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true
+            },
+            "output": {
+              "state": "GATE_CLOSE",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": 0,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "hold",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 4,
+            "dt_s": 0.1,
+            "change": {
+              "gate_closed": true,
+              "gate_open": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": false,
+              "guide_down": true,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true
+            },
+            "output": {
+              "state": "GRIP",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": 0,
+              "clamp_target": "closed",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 5,
+            "dt_s": 0.1,
+            "change": {
+              "clamp_closed": true,
+              "clamp_open": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": false,
+              "guide_down": true,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": true,
+              "clamp_open": false,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true
+            },
+            "output": {
+              "state": "GUIDE_UP",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": 115,
+              "clamp_target": "closed",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 6,
+            "dt_s": 0.1,
+            "change": {
+              "guide_up": true,
+              "guide_down": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": true,
+              "slide_clear": false,
+              "aim_reached": false,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": true,
+              "clamp_open": false,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true
+            },
+            "output": {
+              "state": "CLEAR",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "closed",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 7,
+            "dt_s": 0.1,
+            "change": {
+              "slide_clear": true,
+              "slide_home": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": false,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": true,
+              "clamp_open": false,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true
+            },
+            "output": {
+              "state": "AIM",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": true,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "closed",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 8,
+            "dt_s": 0.1,
+            "change": {
+              "aim_reached": true,
+              "wheels_ready": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": true,
+              "clamp_open": false,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "RELEASE",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": true,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 9,
+            "dt_s": 0.1,
+            "change": {
+              "clamp_open": true,
+              "clamp_closed": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": false,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "APPROACH",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": true,
+              "slide_target_mm": 178.85044843951113,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 10,
+            "dt_s": 0.1,
+            "change": {
+              "capture_detected": true,
+              "slide_clear": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": false,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "WAIT_EXIT",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": true,
+              "slide_target_mm": 178.85044843951113,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 11,
+            "dt_s": 0.1,
+            "change": {
+              "exit": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": true,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": false,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "WAIT_EXIT",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": true,
+              "slide_target_mm": 178.85044843951113,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 12,
+            "dt_s": 0.1,
+            "change": {
+              "exit": false
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": false,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "RETREAT",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 13,
+            "dt_s": 0.1,
+            "change": {
+              "slide_clear": true
+            },
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "HOME",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 14,
+            "dt_s": 0.1,
+            "change": {},
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "HOME",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 15,
+            "dt_s": 0.1,
+            "change": {},
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "HOME",
+              "fault": null,
+              "enable_motion": true,
+              "enable_wheels": false,
+              "slide_target_mm": 105,
+              "guide_target_mm": 115,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          },
+          {
+            "index": 16,
+            "dt_s": 10.0,
+            "change": {},
+            "input": {
+              "cover_closed": true,
+              "estop_ok": true,
+              "cassette_locked": true,
+              "exit": false,
+              "capture_detected": true,
+              "head_home": true,
+              "slide_home": false,
+              "slide_clear": true,
+              "aim_reached": true,
+              "guide_up": true,
+              "guide_down": false,
+              "gate_closed": true,
+              "gate_open": false,
+              "clamp_closed": false,
+              "clamp_open": true,
+              "start": true,
+              "upper_held": true,
+              "ball_present": true,
+              "wheels_ready": true
+            },
+            "output": {
+              "state": "FAULT",
+              "fault": "state_timeout",
+              "enable_motion": false,
+              "enable_wheels": false,
+              "slide_target_mm": null,
+              "guide_target_mm": null,
+              "clamp_target": "open",
+              "gate_target": "closed",
+              "upper_target": "open",
+              "hardware_connected": false,
+              "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+            }
+          }
+        ]
+      },
+      "reproduced": true,
+      "expected_after_fix": "Use fresh command completion identity/handshake while allowing a validated already-at-target case; do not require fabricated physical departure."
+    },
+    {
+      "id": "C05",
+      "priority": "P2",
+      "title": "Invalid dt types can bypass the fault path",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/control/feed_cycle.py",
+          "lines": [
+            18,
+            19
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "case": "true_boolean",
+          "initial_state": "RETAIN",
+          "output": {
+            "state": "DROP",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "open",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          },
+          "raised": null
+        },
+        {
+          "case": "string_0.1",
+          "initial_state": "RETAIN",
+          "raised": {
+            "type": "TypeError",
+            "message": "must be real number, not str"
+          },
+          "output_after_exception": {
+            "state": "RETAIN",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "case": "null",
+          "initial_state": "RETAIN",
+          "raised": {
+            "type": "TypeError",
+            "message": "must be real number, not NoneType"
+          },
+          "output_after_exception": {
+            "state": "RETAIN",
+            "fault": null,
+            "enable_motion": true,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": 0,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "hold",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          }
+        },
+        {
+          "case": "nan",
+          "initial_state": "RETAIN",
+          "output": {
+            "state": "FAULT",
+            "fault": "invalid_sample_interval",
+            "enable_motion": false,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": null,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "open",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          },
+          "raised": null
+        },
+        {
+          "case": "zero",
+          "initial_state": "RETAIN",
+          "output": {
+            "state": "FAULT",
+            "fault": "invalid_sample_interval",
+            "enable_motion": false,
+            "enable_wheels": false,
+            "slide_target_mm": null,
+            "guide_target_mm": null,
+            "clamp_target": "open",
+            "gate_target": "closed",
+            "upper_target": "open",
+            "hardware_connected": false,
+            "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+          },
+          "raised": null
+        }
+      ],
+      "reproduced": true,
+      "expected_after_fix": "Reject bool/non-real dt before math.isfinite and latch invalid_sample_interval consistently."
+    },
+    {
+      "id": "C06",
+      "priority": "P2",
+      "title": "permitted accepts nonfinite and out-of-range states",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/cad/assemblies/kinematics.py",
+          "lines": [
+            45,
+            46,
+            47,
+            48,
+            49,
+            51,
+            53,
+            54
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "case": "slide_nan",
+          "input": {
+            "guide": 115,
+            "slide": "NaN",
+            "clamp": 14
+          },
+          "permitted": true
+        },
+        {
+          "case": "guide_nan",
+          "input": {
+            "guide": "NaN",
+            "slide": 105,
+            "clamp": 0
+          },
+          "permitted": true
+        },
+        {
+          "case": "yaw_nan",
+          "input": {
+            "guide": 115,
+            "slide": 105,
+            "yaw": "NaN",
+            "clamp": 0
+          },
+          "permitted": true
+        },
+        {
+          "case": "negative_slide",
+          "input": {
+            "guide": 115,
+            "slide": -100,
+            "clamp": 0
+          },
+          "permitted": true
+        },
+        {
+          "case": "empty_slide_1000mm",
+          "input": {
+            "guide": 115,
+            "slide": 1000,
+            "clamp": 14,
+            "loaded": false
+          },
+          "permitted": true
+        },
+        {
+          "case": "yaw180_pitch80",
+          "input": {
+            "guide": 115,
+            "slide": 105,
+            "yaw": 180,
+            "pitch": 80,
+            "clamp": 0
+          },
+          "permitted": true
+        }
+      ],
+      "reproduced": true,
+      "expected_after_fix": "Validate finite typed coordinates and axis ranges separately from relative-motion interlocks, or provide one complete permission function."
+    },
+    {
+      "id": "C07",
+      "priority": "P2",
+      "title": "Two existing tests are satisfied by earlier unrelated faults",
+      "source_locations": [
+        {
+          "file": "/workspace/scratch/ca8ffdc8f527/faqiuji_review/tests/test_r1.py",
+          "lines": [
+            36,
+            37,
+            83,
+            84,
+            85,
+            86,
+            87
+          ]
+        }
+      ],
+      "observations": {
+        "existing_capture_test": {
+          "state": "FAULT",
+          "fault": "exit_feedback_missing_or_invalid",
+          "enable_motion": false,
+          "enable_wheels": false,
+          "slide_target_mm": null,
+          "guide_target_mm": null,
+          "clamp_target": "open",
+          "gate_target": "closed",
+          "upper_target": "open",
+          "hardware_connected": false,
+          "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+        },
+        "existing_held_ball_test": {
+          "state": "FAULT",
+          "fault": "arrival_feedback_missing_slide_clear",
+          "enable_motion": false,
+          "enable_wheels": false,
+          "slide_target_mm": null,
+          "guide_target_mm": null,
+          "clamp_target": "open",
+          "gate_target": "closed",
+          "upper_target": "open",
+          "hardware_connected": false,
+          "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+        },
+        "isolated_capture_guard": {
+          "state": "FAULT",
+          "fault": "capture_sensor_high_before_approach",
+          "enable_motion": false,
+          "enable_wheels": false,
+          "slide_target_mm": null,
+          "guide_target_mm": null,
+          "clamp_target": "open",
+          "gate_target": "closed",
+          "upper_target": "open",
+          "hardware_connected": false,
+          "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+        },
+        "isolated_held_ball_guard": {
+          "state": "FAULT",
+          "fault": "held_ball_feedback_lost",
+          "enable_motion": false,
+          "enable_wheels": false,
+          "slide_target_mm": null,
+          "guide_target_mm": null,
+          "clamp_target": "open",
+          "gate_target": "closed",
+          "upper_target": "open",
+          "hardware_connected": false,
+          "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+        }
+      },
+      "reproduced": true,
+      "expected_after_fix": "Start from complete valid observations, change one condition, and assert the exact fault cause. The guards themselves work for isolated inputs."
+    }
+  ],
+  "scope_observations": {
+    "notice": "Normal stop/reset/cycle scheduling and timestamp/replay contracts are not implemented. These observations describe current scope, not failed implemented features.",
+    "unsupported_stop_field": {
+      "state": "DROP",
+      "fault": null,
+      "enable_motion": true,
+      "enable_wheels": false,
+      "slide_target_mm": null,
+      "guide_target_mm": 0,
+      "clamp_target": "open",
+      "gate_target": "open",
+      "upper_target": "hold",
+      "hardware_connected": false,
+      "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+    },
+    "reset_does_not_clear_latched_fault": {
+      "state": "FAULT",
+      "fault": "audit_fault",
+      "enable_motion": false,
+      "enable_wheels": false,
+      "slide_target_mm": null,
+      "guide_target_mm": null,
+      "clamp_target": "open",
+      "gate_target": "closed",
+      "upper_target": "open",
+      "hardware_connected": false,
+      "notice": "离线合同测试；捕获位置仅理想接触边界，牵引窗口及停止能力待实测"
+    }
+  },
+  "mass_solver_counterexample_file": "/tmp/bm1_control_audit/mass_solver_counterexample.json",
+  "mass_solver_counterexample_reproduced": true,
+  "existing_tests_log": "/tmp/bm1_control_audit/existing_tests.log",
+  "existing_tests_note": "Raw unittest output is generated separately; this probe does not substitute for that run.",
+  "distribution_note": "Incidental local git-status path listings omitted; tracked-diff evidence and all probe results preserved."
+}

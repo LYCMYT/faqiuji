@@ -65,5 +65,7 @@ story.append(p('配套：acceptance_report.html、validation.json、r1_code_revi
 def footer(c,doc):
     c.setFont('CN',8);c.setFillColor(HexColor('#526677'));c.drawString(36,20,'BM1 / V0.2 R1 / 概念工程与试验准备 · 非制造批准');c.drawRightString(805,20,str(doc.page))
 doc=SimpleDocTemplate(str(O/'BM1_R1_engineering_manual.pdf'),pagesize=landscape(A4),rightMargin=36,leftMargin=36,topMargin=32,bottomMargin=34)
+planned_pages=1+sum(isinstance(item,PageBreak) for item in story)
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
+(R/'reports/r1_manual_expected.json').write_text(json.dumps({'planned_pages':planned_pages}),encoding='utf-8')
 print('R1 MANUAL CREATED')

@@ -1,0 +1,19 @@
+{
+  "geometry_sha256": "3d64eeeb7a9afcd39bd8dd5efa93ff9217380aff15bec40f2b8bafffe95c0390",
+  "reported_geometry_hash_still_matches": true,
+  "source_file_changed": "data/design.json in temporary in-memory input only",
+  "old_wheel_gap": 25,
+  "new_wheel_gap": 30,
+  "old_left_wheel_center_mm": [
+    -8.685034650183042e-15,
+    82.5,
+    1.0554729609597447e-16
+  ],
+  "new_left_wheel_center_mm": [
+    -8.685034650183042e-15,
+    85.00000000000001,
+    1.0554729609597447e-16
+  ],
+  "actual_left_wheel_center_shift_mm": 2.500000000000014,
+  "repo_files_modified": false
+}

@@ -1,5 +1,24 @@
 """Explicit engineering role/route review; never infer process from a display name."""
 
+def rfq_rows(parts, roles, route_document):
+    validate_part_roles(parts, roles, route_document)
+    rows=[]
+    for part in parts:
+        pid=part['part_id'];role=roles['parts'][pid];route,gate=route_document['routes'][pid]
+        rows.append(dict(part_id=pid,assembly_id=part['assembly_id'],name=part['name'],main_item_quantity=part['quantity'],
+            role=role['role'],route_category=role['route_category'],route_choice=route,unresolved_gate=gate,status='RFQ_ONLY',
+            supplier=None,material_lot=None,quote_CNY=None,lead_time_days=None,drawing_revision=None,interface_confirmed=False,manufacture_released=False))
+    return rows
+
+def write_rfq(path,parts,roles,route_document):
+    import csv
+    from pathlib import Path
+    rows=rfq_rows(parts,roles,route_document)
+    Path(path).parent.mkdir(parents=True,exist_ok=True)
+    with Path(path).open('w',encoding='utf-8-sig',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+    return rows
+
 
 def validate_part_roles(parts, roles, route_document):
     indexed = {part['part_id']: part for part in parts}

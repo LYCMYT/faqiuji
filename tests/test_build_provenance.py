@@ -9,7 +9,7 @@ class Provenance(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
             files = ['data/design.json','data/parts.json','data/contact_pairs.json','data/r3_fixture.json',
-                     'cad/assemblies/kinematics.py','cad/parts/recipe.py']
+                     'cad/assemblies/kinematics.py','cad/parts/recipe.py','viewer/index.html','input/original.md']
             for name in files:
                 p=root/name; p.parent.mkdir(parents=True,exist_ok=True); p.write_text('25')
             ctx=BuildContext.create(root)

@@ -2,6 +2,9 @@
 from pathlib import Path
 import sys,json,hashlib
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
 if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
 import sys; sys.path.insert(0,str(R))
 from tools.input_manifest import generated_path, metadata_path

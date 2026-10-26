@@ -23,7 +23,9 @@ class InputImmutability(unittest.TestCase):
             (root / 'data/contact_pairs.json').write_text(json.dumps(contacts), encoding='utf-8')
             (root / 'evidence').mkdir()
             (root / 'evidence/index.json').write_text('{"records":[{"id":"TEST"}]}')
-            before = {str(p.relative_to(root)): p.read_bytes() for folder in ('data', 'evidence') for p in (root / folder).rglob('*') if p.is_file()}
+            (root / 'input').mkdir()
+            (root / 'input/original.txt').write_text('original supplied input')
+            before = {str(p.relative_to(root)): p.read_bytes() for folder in ('data', 'evidence','input') for p in (root / folder).rglob('*') if p.is_file()}
             subprocess.run([sys.executable, str(root / 'tools/enrich_metadata.py')], check=True, capture_output=True)
             self.assertEqual(before, {p: (root / p).read_bytes() for p in before})
 

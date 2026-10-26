@@ -9,6 +9,8 @@ import os
 import platform
 import subprocess
 import uuid
+import shutil
+from functools import lru_cache
 from tools.input_manifest import classify_paths
 
 RULE_VERSION = 'bm1-r4-provenance-v1'
@@ -24,15 +26,39 @@ def fingerprint_inputs(root: Path, relative_paths: list[str]) -> str:
 
 
 def code_paths(root):
-    return sorted(p.relative_to(root).as_posix() for folder in ('cad','control','engineering','tools','blender','tests')
-                  for p in (root/folder).rglob('*.py') if '__pycache__' not in p.parts)
+    extensions={'.py','.html','.js','.css','.json','.md','.txt','.cmd','.yaml','.yml'}
+    paths=[p.relative_to(root).as_posix() for folder in ('cad','control','engineering','tools','blender','tests','viewer','docs','.github')
+                  for p in (root/folder).rglob('*') if p.is_file() and p.suffix in extensions
+                  and '__pycache__' not in p.parts and not (folder=='tools' and 'blender' in p.relative_to(root/'tools').parts)]
+    paths += [p.name for p in root.iterdir() if p.is_file() and p.suffix in {'.md','.txt','.cmd','.toml'}]
+    return sorted(paths)
+
+@lru_cache(maxsize=32)
+def executable_identity(path,size,mtime):
+    # Content hash, not just executable name/version, invalidates replaced runtimes.
+    name=Path(path).name.lower()
+    args=[path,'--version' if 'blender' in name else '-version']
+    if 'chrome' in name and os.name=='nt':args=['powershell','-NoProfile','-Command',"(Get-Item -LiteralPath '"+path.replace("'","''")+"').VersionInfo.ProductVersion"]
+    try:
+        p=subprocess.run(args,capture_output=True,text=True,timeout=20)
+        lines=(p.stdout or p.stderr).splitlines();version=lines[0] if p.returncode==0 and lines else 'NOT_RUN'
+    except (OSError,subprocess.TimeoutExpired):version='NOT_RUN'
+    return {'path':path,'bytes':size,'sha256':file_hash(path),'version':version}
 
 
 def tool_versions():
     result = {'python': platform.python_version(), 'platform': platform.platform()}
-    for package in ('cadquery','cadquery-ocp','numpy','reportlab','pillow'):
+    for package in ('cadquery','cadquery-ocp','numpy','reportlab','pillow','pymupdf','playwright'):
         try: result[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError: result[package] = 'NOT_INSTALLED'
+    for name, variable in [('blender','BM1_BLENDER_EXE'),('ffmpeg','BM1_FFMPEG_EXE'),('ffprobe','BM1_FFPROBE_EXE'),('chrome','BM1_CHROME_EXE')]:
+        selected=os.environ.get(variable) or shutil.which(name)
+        if not selected and name=='chrome':selected='C:/Program Files/Google/Chrome/Application/chrome.exe'
+        path=Path(selected) if selected else None
+        result[name]=executable_identity(str(path.resolve()),path.stat().st_size,path.stat().st_mtime_ns) if path and path.is_file() else {'status':'NOT_AVAILABLE'}
+    result['environment_policy']='Measured candidate environment; no physical or approved-production qualification inferred'
+    font=Path(os.environ.get('BM1_CHINESE_FONT','C:/Windows/Fonts/msyh.ttc'))
+    result['chinese_font']={'path':str(font),'sha256':file_hash(font)} if font.is_file() else {'status':'NOT_AVAILABLE'}
     return result
 
 
