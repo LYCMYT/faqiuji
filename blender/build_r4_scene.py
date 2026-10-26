@@ -18,7 +18,7 @@ verify_content_context(R,export_report)
 if ctx['tool_versions']['blender']['sha256']!=hashlib.sha256(Path(bpy.app.binary_path).read_bytes()).hexdigest():raise RuntimeError('Blender executable differs from context')
 report_path=R/'reports/r4_blender_validation.json'
 report_path.write_text(json.dumps({**ctx,'stage':'r4_blender','status':'RUNNING'}),encoding='utf-8')
-bpy.ops.wm.read_factory_settings(use_empty=True);sc=bpy.context.scene;sc.name='R4瑁呴厤涓庤繛鎺ヤ欢鍒嗚В';sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=1
+bpy.ops.wm.read_factory_settings(use_empty=True);sc=bpy.context.scene;sc.name='R4 Assembly and Connections';sc.unit_settings.system='METRIC';sc.unit_settings.scale_length=1
 sc.render.engine='BLENDER_WORKBENCH';sc.render.resolution_x=P['resolution'][0];sc.render.resolution_y=P['resolution'][1];sc.render.resolution_percentage=100
 sc.display.shading.light='STUDIO';sc.display.shading.color_type='MATERIAL';sc.display.shading.show_shadows=True;sc.display.shading.show_cavity=True;sc.display.shading.cavity_type='BOTH';sc.display.shading.background_type='WORLD';sc.world=bpy.data.worlds.new('R4 world');sc.world.color=(.88,.92,.94)
 sc.render.fps=P['fps'];sc.frame_start=1;sc.frame_end=P['duration_frames'];mats={}

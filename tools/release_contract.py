@@ -21,6 +21,8 @@ REQUIRED_FILES=[
     'output/fixture_r4/viewer.html',
     'output/fixture_r4/index.html',
     'output/fixture_r4/first_article_RFQ.csv',
+    'output/fixture_r4/first_article_features.json',
+    'output/fixture_r4/first_article_inspection_BLANK.csv',
     'docs/test_protocol_r4.md',
     'data/r4_release_scope.json',
     'reports/r4_readiness.md',

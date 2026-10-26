@@ -1,0 +1,12 @@
+{
+  "status": "RFQ_REVIEW_ONLY",
+  "manufacturing_release": false,
+  "tolerance_source": "data/r3_fixture.json:inspection",
+  "tolerance_status": "Inherited project RFQ targets, not supplier capability or measured acceptance",
+  "coordinate_datum": "Local STEP coordinates: bounding-box minimum at (0,0,0); A=bottom Z plane, B=minimum Y side plane, C=minimum X side plane. Confirm usable datum faces with machinist before release.",
+  "items": [
+    {"family": "PRT-0701-R4-A", "scope": "Integral cork support land and cradle only", "features": ["Overall envelope from native STEP", "Land dimensions and H location from data/r4_fixture.json:seat", "Open-cork nominal support area; real cork fit remains OPEN"], "inspection": "Surface plate and height gauge for bottom/support heights; caliper or CMM for land extents; actual ball placement and surface damage inspection after dimensional review", "critical_fit_tolerance": null, "hole_note": "No new attachment hole declared by this revision; existing connection and guide reaction require assembly review"},
+    {"family": "PRT-0603-R3-R29-L", "scope": "Retained R29 left jaw first-article review; R23/R26/R32 remain screening alternatives", "features": ["R29 is inherited nominal display geometry, not measured selection", "Two M4 clearance/counterbore axes and depths from data/r3_fixture.json:jaw", "Contact profile and remaining edge material"], "inspection": "Profile comparator or CMM for contact arc; pin gauges for holes; depth gauge for counterbores; screw seating and matched ball damage check", "critical_fit_tolerance": null, "hole_note": "Z clearance through the jaw; top counterbore depth from jaw.counterbore_depth. Threads are not machined into the POM clearance holes"},
+    {"family": "PRT-0602-R3-BASE", "scope": "Retained fixture base only; actual table and anchors still OPEN", "features": ["Overall plate from native STEP", "Existing through-hole local coordinates from parts_index", "Flatness and table support require agreement"], "inspection": "Surface plate, height gauge/CMM and pin gauges; compare hole coordinates in A/B/C setup; review actual table underside and anchors before drilling", "critical_fit_tolerance": null, "hole_note": "Existing base holes through plate; no supplier table-hole pattern is asserted"}
+  ]
+}

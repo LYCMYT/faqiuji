@@ -1,5 +1,6 @@
 """Small orthographic raster/SVG renderer of native CAD tessellations."""
 from pathlib import Path
+import os
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 
@@ -17,5 +18,5 @@ def render(shapes,path,title):
     svg=['<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900"><rect width="1200" height="900" fill="#f4f7f9"/>']
     for _,p,c in polys:
         d.polygon([tuple(a) for a in p],fill=c);svg.append('<polygon points="'+' '.join(f'{a:.2f},{b:.2f}' for a,b in p)+f'" fill="{c}"/>')
-    font=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',25);d.text((30,25),title,fill='#183a4d',font=font);d.text((30,850),'原生CAD实体投影 / 低速试装候选 / 非制造批准',fill='#183a4d',font=font)
+    font=ImageFont.truetype(os.environ.get('BM1_CHINESE_FONT','C:/Windows/Fonts/msyh.ttc'),25);d.text((30,25),title,fill='#183a4d',font=font);d.text((30,850),'原生CAD实体投影 / 低速试装候选 / 非制造批准',fill='#183a4d',font=font)
     svg.append('</svg>');im.save(Path(path).with_suffix('.png'));Path(path).with_suffix('.svg').write_text(''.join(svg),encoding='utf-8')

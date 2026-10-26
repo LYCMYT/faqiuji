@@ -62,6 +62,12 @@ def main():
         story.append(PageBreak());title('五功能约束 · '+axis['axis_id'])
         table([[key,json.dumps(value,ensure_ascii=False) if isinstance(value,(dict,list)) else str(value)] for key,value in axis.items()])
     index=read('output/fixture_r4/parts_index.json')
+    from tools.r4_first_article_drawings import generate
+    first_articles,first_article_files=generate(R,O,index)
+    for record in first_articles:
+        story.append(PageBreak());title('首件评审图 · '+record['family'])
+        image(O/'drawings'/(record['family']+'_first_article.png'))
+        table([['范围',record['scope']],['基准',record['coordinate_datum']],['检查方法',record['inspection']],['孔方向/深度',record['hole_note']],['关键配合','OPEN；询价公差不是供应商能力或实测合格。'],['数据表','first_article_features.json；first_article_inspection_BLANK.csv']])
     # Newly revised R4 parts get individual pages; legacy part drawings remain in preserved R1–R3 books.
     selected=[p for p in index if 'R4' in p.get('family',p.get('part_id',''))]
     import cadquery as cq
@@ -104,7 +110,8 @@ def main():
             draw.text((n%3*400+8,n//3*310+282),str(start+n+1),fill='black')
         contact.save(review/f'contact_{start//12+1:02d}.png')
     if overflow:raise RuntimeError('PDF text outside page: '+str(overflow))
-    atomic_json(R/'reports/r4_document_validation.json',ctx.report('PASS',['pdf_rendered','pdf_text_bounds'],{output.relative_to(R).as_posix():file_hash(output)},pages=len(doc),individual_r4_pages=len(selected),text_overflow=[],manual_signoff='NOT_RUN'))
+    artifacts=[output,*first_article_files]
+    atomic_json(R/'reports/r4_document_validation.json',ctx.report('PASS',['pdf_rendered','pdf_text_bounds'],{path.relative_to(R).as_posix():file_hash(path) for path in artifacts},pages=len(doc),individual_r4_pages=len(selected),first_article_sheets=len(first_articles),text_overflow=[],manual_signoff='NOT_RUN'))
     print('R4 PDF:',len(doc),'pages;',len(selected),'R4 part pages; automatic render/text check PASS')
 
 if __name__=='__main__':main()
