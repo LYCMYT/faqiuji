@@ -1,7 +1,15 @@
 from pathlib import Path
-import zipfile,json,hashlib,argparse
+import zipfile,json,hashlib,argparse,sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from tools.build_context import BuildContext
+from tools.validate_release import require_report
 R=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--revision',choices=['R1','R2','R3'],default='R3');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--revision',choices=['R1','R2','R3'],default='R3');parser.add_argument('--release-proof',type=Path,required=True);args=parser.parse_args()
+proof=json.loads(args.release_proof.read_text(encoding='utf-8'))
+ctx=BuildContext(**{k:proof[k] for k in BuildContext.__dataclass_fields__})
+if ctx.scope!='full':raise RuntimeError('Cannot publish static/core diagnostics')
+require_report(proof,ctx,['release_gate'],R)
+if not proof.get('artifact_hashes'):raise RuntimeError('Empty release artifact contract')
 include=['cad','blender','control','engineering','data','docs','licenses','viewer','reports','output','input']
 excluded_dirs={'__pycache__','pdf_review','feed','explode','service','frames'}
 files=[]
@@ -24,5 +32,6 @@ dest=R.parent/f'BM1_V02_{args.revision}_Engineering_Delivery.zip'
 with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     for p in files:z.write(p,Path('BM1_V02_Engineering')/p.relative_to(R))
 with zipfile.ZipFile(dest) as z:
-    err=z.testzip();assert err is None,err
+    err=z.testzip()
+    if err is not None:raise RuntimeError('ZIP CRC failure: '+err)
 print('ZIP VERIFIED',dest,len(files),'files',round(dest.stat().st_size/1024/1024,2),'MiB')

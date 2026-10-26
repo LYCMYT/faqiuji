@@ -2,7 +2,9 @@ from pathlib import Path
 import json,subprocess
 from PIL import Image,ImageDraw,ImageFont
 R=Path(__file__).resolve().parents[1];f=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',24);sm=ImageFont.truetype('C:/Windows/Fonts/msyh.ttc',18)
-states=json.loads((R/'data/demo_states.json').read_text(encoding='utf-8'))
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
+states=json.loads(metadata_path(R,'demo_states.json').read_text(encoding='utf-8'))
 for name,out in [('feed','BM1_feed_sequence.mp4'),('explode','BM1_explode_restore.mp4'),('service','BM1_R1_cassette_service.mp4')]:
     files=sorted((R/'output/animation'/name).glob('*.png'));assert files
     if name=='feed':files=files[:98]+[files[97]]*18

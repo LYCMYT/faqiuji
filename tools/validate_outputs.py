@@ -1,6 +1,9 @@
 import json,sys,time,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.export_all import load_model
 from cad.parts.recipe import build
@@ -24,7 +27,7 @@ def run():
     cap0=build(d['PRT-0601-A']['shape'],env);cap1=build(d['PRT-0601-A']['shape'],dict(env,tube_cap_allowance=24));capshift=cap1.BoundingBox().zmax-cap0.BoundingBox().zmax;assert abs(capshift-4)<1e-6
     restored=build(d['PRT-0505__L']['shape'],env);assert abs(restored.Center().y-original.Center().y)<1e-8
     result=dict(step_files_reopened=len(files),step_files=files,failures=fail,all_step_valid=not fail,parameter_rebuild_tests=[dict(parameter='wheel_gap_visual',old=25,new=30,observed_left_center_shift_mm=gap_shift,passed=True),dict(parameter='tube_cap_allowance',old=20,new=24,observed_top_shift_mm=capshift,passed=True)],baseline_restored=True,seconds=time.time()-start)
-    rec=json.loads((R/'data/instances.json').read_text(encoding='utf-8'));counts=[]
+    rec=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'));counts=[]
     for main in json.loads((R/'data/parts.json').read_text(encoding='utf-8')):
         pid=main['part_id'];expected=sum(x['solid_count'] for x in rec if x['part_id']==pid);actual=next(x['solids'] for x in files if x['path'].replace('\\','/')=='output/step/parts/'+pid+'.step')
         counts.append(dict(part_id=pid,expected=expected,actual=actual,passed=actual==expected));assert expected==actual,(pid,expected,actual)

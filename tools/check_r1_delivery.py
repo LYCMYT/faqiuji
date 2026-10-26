@@ -3,6 +3,7 @@ from pathlib import Path
 import json,hashlib,subprocess,sys
 import pymupdf
 R=Path(__file__).resolve().parents[1]
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
 def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 v=read('reports/validation.json');g=hashlib.sha256((R/'data/geometry.json').read_bytes()).hexdigest()
 assert v['revision']=='V0.2-R1'
@@ -37,5 +38,5 @@ viewer=read('reports/viewer_validation.json');assert viewer['loaded'] and viewer
 result=dict(revision='V0.2-R1',geometry_sha256=g,required_artifacts_present=True,pdfs=pdfs,media=media,viewer=viewer,all_native_geometry_and_roundtrips_passed=True,physical_acceptance=False,scope='File integrity and listed discrete digital checks only; physical inputs remain missing.')
 (R/'reports/r1_delivery_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 (R/'reports/media_validation.json').write_text(json.dumps(dict(decode_all_frames_passed=True,files=media),ensure_ascii=False,indent=2),encoding='utf-8')
-(R/'reports/visual_review.json').write_text(json.dumps(dict(revision='V0.2-R1',pdfs=pdfs,model_contacts_reviewed=['001','021','041','061','081','101','121','141'],manual_contacts_reviewed=['01','09','17'],scope='All contact sheets visually reviewed; selected full-size figures checked. Layout review, not engineering approval.',findings='No evident missing illustrations or clipping; all pages also rendered and text bounds checked.'),ensure_ascii=False,indent=2),encoding='utf-8')
+(R/'reports/visual_review.json').write_text(json.dumps(dict(status='NOT_RUN',artifact_hashes={x['file']:x['sha256'] for x in pdfs},scope='Automatic render/text bounds only. Human signoff requires reviewer, timestamp and matching artifact hashes.'),ensure_ascii=False,indent=2),encoding='utf-8')
 print('R1 DELIVERY CHECK PASS: 152+18 PDF pages; 3 complete MP4 decodes; native/roundtrip/motion/service reports current; physical acceptance FALSE.')

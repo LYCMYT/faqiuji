@@ -2,12 +2,18 @@
 from pathlib import Path
 import json,csv,hashlib,html,shutil,subprocess
 R=Path(__file__).resolve().parents[1]
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
+from tools.build_context import active_context, tool_versions
+from tools.validate_release import require_report
+ctx=active_context(R,'final_report')
+test_result=require_report(R/'reports/unit_tests.json',ctx,['unit_tests'],R)
 def read(f):return json.loads((R/f).read_text(encoding='utf-8'))
-records=read('data/instances.json');parts=read('data/parts.json');pages=read('reports/page_coverage.json');step=read('reports/step_roundtrip.json');blend=read('reports/blender_roundtrip.json');static=read('reports/collisions_static.json');motion=read('reports/collisions_motion.json');viewer=read('reports/viewer_validation.json');pdf=read('reports/pdf_validation.json');service=read('reports/service_validation.json')
+records=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'));parts=read('data/parts.json');pages=read('reports/page_coverage.json');step=read('reports/step_roundtrip.json');blend=read('reports/blender_roundtrip.json');static=read('reports/collisions_static.json');motion=read('reports/collisions_motion.json');viewer=read('reports/viewer_validation.json');pdf=read('reports/pdf_validation.json');service=read('reports/service_validation.json')
 physical=[i for i in records if not i.get('reference')];geo_hash=hashlib.sha256((R/'data/geometry.json').read_bytes()).hexdigest()
 required=['output/step/BM1_V0_assembly.step','output/blend/BM1_V0_master.blend','output/glb/BM1_V0_assembly.glb','output/BM1_V0_design_book.pdf','output/animation/BM1_feed_sequence.mp4','output/animation/BM1_explode_restore.mp4','viewer/index.html','cad/export_all.py']
 missing=[p for p in required if not (R/p).exists() or (R/p).stat().st_size==0]
-result=dict(project='BM1',revision='V0.2 concept engineering',units='CAD mm Z-up; Blender m Z-up; GLB m Y-up',geometry_sha256=geo_hash,main_items=len(parts),cad_instances=len(records),physical_instances=len(physical),reference_instances=len(records)-len(physical),all_native_solids_valid=all(i['valid'] and i['volume_mm3']>0 for i in records),step_files_reopened=step['step_files_reopened'],step_pass=step['all_step_valid'],all_main_steps_complete=all(i['passed'] for i in step['main_item_completeness']),blender=blend,static=static,motion=motion,service=service,viewer=viewer,pdf=pdf,page_coverage=dict(main=pages['main_pages'],derived=pages['derived_pages'],pdf_pages=pages['pdf_pages']),parameter_rebuild_tests=step['parameter_rebuild_tests'],reports_match_current_geometry=static.get('geometry_sha256')==motion.get('geometry_sha256')==geo_hash,missing_required_files=missing,engineering_production_acceptance=False,prototype_tests_performed=False,unresolved_ids=[u['id'] for u in read('data/unresolved.json')])
+result=dict(project='BM1',revision='V0.2 concept engineering',units='CAD mm Z-up; Blender m Z-up; GLB m Y-up',geometry_sha256=geo_hash,main_items=len(parts),cad_instances=len(records),physical_instances=len(physical),reference_instances=len(records)-len(physical),all_native_solids_valid=all(i['valid'] and i['volume_mm3']>0 for i in records),step_files_reopened=step['step_files_reopened'],step_pass=step['all_step_valid'],all_main_steps_complete=all(i['passed'] for i in step['main_item_completeness']),blender=blend,static=static,motion=motion,service=service,viewer=viewer,pdf=pdf,page_coverage=dict(main=pages['main_pages'],derived=pages['derived_pages'],pdf_pages=pages['pdf_pages']),parameter_rebuild_tests=step['parameter_rebuild_tests'],reports_match_current_geometry=all(v.get('input_sha256')==ctx.input_sha256 and v.get('code_sha256')==ctx.code_sha256 and v.get('run_id')==ctx.run_id for v in [static,motion]),missing_required_files=missing,engineering_production_acceptance=False,prototype_tests_performed=False,unresolved_ids=[u['id'] for u in read('data/unresolved.json')])
 (R/'reports/validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 result['dimensions']=read('reports/dimension_validation.json')
 result['full_parameter_rebuild']=read('reports/parameter_full_rebuild.json')
@@ -77,15 +83,17 @@ with (R/'output/BOM_derived.csv').open('w',encoding='utf-8-sig',newline='') as f
 dest=R/'output/render/parts';dest.mkdir(exist_ok=True)
 for p in pages['pages']:shutil.copyfile(R/'output/drawings'/(p['code']+'_iso.png'),dest/(p['code']+'.png'))
 # Keep machine-readable environment and deliverable status alongside immutable input manifest.
-(R/'reports/environment.json').write_text(json.dumps(dict(python='3.12.10',cadquery='2.8.0',occt='7.9.3.1',blender='4.5.9 LTS',dependency_lock='requirements-lock.txt'),indent=2))
-(R/'data/deliverable_manifest.json').write_text(json.dumps(dict(main_items=44,physical_instances=len(physical),reference_instances=2,pdf_pages=pages['pdf_pages'],cad_status='native_parametric_concept_generated',manufacturing_approved=False,physical_test_status='not_performed',validation='reports/validation.json'),ensure_ascii=False,indent=2),encoding='utf-8')
+(R/'reports/environment.json').write_text(json.dumps(tool_versions(),indent=2))
+generated_path(R,'deliverable_manifest.json').write_text(json.dumps(dict(main_items=44,physical_instances=len(physical),reference_instances=2,pdf_pages=pages['pdf_pages'],cad_status='native_parametric_concept_generated',manufacturing_approved=False,physical_test_status='not_performed',validation='reports/validation.json'),ensure_ascii=False,indent=2),encoding='utf-8')
 for p in parts:p['page']=next(x['page'] for x in pages['pages'] if x['code']==p['part_id'])
-(R/'data/parts.json').write_text(json.dumps(parts,ensure_ascii=False,indent=2),encoding='utf-8')
-shutil.copyfile(R/'data/page_index_engineering.json',R/'data/page_index.json');shutil.copyfile(R/'output/BOM.csv',R/'data/bom.csv')
-(R/'data/document_validation.json').write_text(json.dumps(pdf,ensure_ascii=False,indent=2),encoding='utf-8')
+generated_path(R,'parts.json').write_text(json.dumps(parts,ensure_ascii=False,indent=2),encoding='utf-8')
+shutil.copyfile(metadata_path(R,'page_index_engineering.json'),generated_path(R,'page_index.json'));shutil.copyfile(R/'output/BOM.csv',generated_path(R,'bom.csv'))
+generated_path(R,'document_validation.json').write_text(json.dumps(pdf,ensure_ascii=False,indent=2),encoding='utf-8')
 design=read('data/design.json');design['phase']='native_parametric_concept_engineering';design['notice']='本次已生成原生参数实体与模型图册；仍为concept，非加工冻结、非采购确认、非样机验证。'
-(R/'data/design.json').write_text(json.dumps(design,ensure_ascii=False,indent=2),encoding='utf-8')
+generated_path(R,'design.json').write_text(json.dumps(design,ensure_ascii=False,indent=2),encoding='utf-8')
 readme=R/'README_DELIVERY.md';readme.write_text(readme.read_text(encoding='utf-8').replace('180个可独立查看',str(len(physical))+'个可独立查看'),encoding='utf-8')
 print('REPORT GENERATED',len(physical),'physical instances,',pages['pdf_pages'],'PDF pages; production acceptance FALSE')
 from r1_report_text import write_r1_report
+result['unit_tests']=test_result
+result.update(ctx.report('PASS' if result['reports_match_current_geometry'] and not missing else 'FAIL',['summary']))
 write_r1_report(result)

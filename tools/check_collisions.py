@@ -5,6 +5,8 @@ do not claim continuous motion or manufacturing tolerance certification.
 import sys,json,itertools,time,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 import numpy as np
 from cad.export_all import locate
@@ -20,7 +22,10 @@ def annotate_capture_states(states,capture):
         state['loaded']=capture is None or state.get('slide',0)<=capture+1e-6
     return states
 def run(mode='static'):
-    items=json.loads((R/'data/instances.json').read_text(encoding='utf-8'))
+    from tools.build_context import active_context, require_cache
+    ctx=active_context(R,'collisions_'+mode,mode)
+    require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+    items=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'))
     model=[(i,cq.Shape.importBrep(str(R/'output/mesh'/(i['instance_id']+'.brep')))) for i in items]
     recipes={i['instance_id']:i['shape'] for i in json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances']}
     allowed=json.loads((R/'data/contact_pairs.json').read_text(encoding='utf-8')) if (R/'data/contact_pairs.json').exists() else []
@@ -88,5 +93,7 @@ def run(mode='static'):
                     else:hits[pair]['max_volume_mm3']=max(vol,hits[pair]['max_volume_mm3']);hits[pair]['samples']+=1
         if si%20==0:print(mode,si,'/',len(states),'pairs',len(hits),'elapsed',round(time.time()-start),flush=True)
     result=dict(mode=mode,geometry_sha256=hashlib.sha256((R/'data/geometry.json').read_bytes()).hexdigest(),states=len(states),pair_evaluations=tests,exact_intersections=len(intersection_cache),errors=errors,linear_step_mm=2,capture_step_mm=.25,angular_step_deg=5,volume_threshold_mm3=.01,tolerance_mm=.001,continuous_proof=False,post_capture_dynamic_validated=False,capture_stroke_mm=capture,empty_travel_states=sum(s.get('loaded') is False for s in states),frozen_marker_retreat_states=sum('reference_frozen_at' in s for s in states),scope='R1: loaded stops at first ideal contact; full 185mm travel checked empty; conservative frozen world marker during retreat; no flight simulation',results=list(hits.values()),unresolved_pairs=sum(x['classification']=='unresolved_hard_intersection' for x in hits.values()),indeterminate_pairs=sum('UNVALIDATED' in x['classification'] for x in hits.values()),seconds=time.time()-start)
+    result.update(ctx.report('FAIL' if errors or result['unresolved_pairs'] or result['indeterminate_pairs'] else 'PASS',[mode+'_collisions']))
     (R/'reports'/f'collisions_{mode}.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8');print('RESULT',mode,result['unresolved_pairs'],'unresolved pairs')
-if __name__=='__main__':run(sys.argv[1] if len(sys.argv)>1 else 'static')
+    return result['status']=='PASS'
+if __name__=='__main__':raise SystemExit(0 if run(sys.argv[1] if len(sys.argv)>1 else 'static') else 1)

@@ -2,12 +2,18 @@
 from pathlib import Path
 import sys,json,math
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
 import cadquery as cq
 from cad.assemblies.r3_fixture import model,posed
 from cad.export_all import exact_bbox
 from tools.check_collisions import bbox,overlaps
 
 def run():
+    from tools.build_context import active_context, atomic_json
+    mode='static' if '--static' in sys.argv else 'full'
+    ctx=active_context(R,'r3_geometry',mode)
+    report_path=R/'reports'/('r3_geometry_static.json' if mode=='static' else 'r3_geometry_validation.json')
+    atomic_json(report_path,ctx.report('RUNNING'))
     rows,variants,s,b=model();limit=s['inspection']['collision_threshold_mm3'];base={**b['state'],'guide':0,'upper':0,'gate':0};tested=0;hits=[]
     def check(state,label,only_moved=None):
         nonlocal tested
@@ -28,7 +34,7 @@ def run():
         paths=[('upper',impl['upper_open_mm'],{'UPPER_L','UPPER_R'},{}),('gate',impl['gate_open_mm'],{'LOWER_GATE'},{}),('guide',design['guide_stroke'],{'GUIDE_SLEEVE'},{}),('slide',slide_end,{'CARRIAGE','CLAMP_L','CLAMP_R'},{'guide':design['guide_stroke']}),('clamp',impl['clamp_open_mm'],{'CLAMP_L','CLAMP_R'},{'guide':design['guide_stroke'],'slide':design['clear_stroke']})]
         states=1
         for key,end,moved,override in paths:
-            for n in range(1,math.ceil(end/s['inspection']['motion_step_mm'])+1):
+            for n in range(0,math.ceil(end/s['inspection']['motion_step_mm'])+1):
                 v=min(n*s['inspection']['motion_step_mm'],end);check({**base,**override,key:v},f'{key}={v}',moved);states+=1
             print('checked',key,flush=True)
         for n in range(math.ceil(s['service']['upper_withdraw_mm']/s['inspection']['motion_step_mm'])+1):
@@ -63,7 +69,10 @@ def run():
                 v=tool.intersect(sh).Volume()
                 if v>limit:tool_hits.append(dict(tool_for=name,obstruction=a['instance_id'],volume_mm3=v))
     report=dict(status='PASS' if not hits and not tool_hits and valid else 'FAIL',instances=len(rows),jaw_variants=len(variants),states=states,exact_pair_intersections=tested,static_intersections=static_hits,motion_intersections=[x for x in hits if x['state']!='STATIC'],all_native_single_solids=valid,rod_nut_checks=engagement,tool_channels=len(tools),tool_intersections=tool_hits,tool_pose=s['service']['tool_pose'],motion_scope='指定各轴路径与40mm上夹检修抽出采样；运动仅检查涉及R3新件/改件的配对，不重复原context-context配对；不是任意轴组合或连续扫掠证明',tool_scope='4处M4头部直杆、4处M4下螺母反扭工具、16处M6上螺母；不包含M6底螺母/台面/支撑作业验证',thread_tooth_modelled=False,structural_strength_verified=False,physical_testing_performed=False)
-    (R/'reports/r3_geometry_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    report.update(ctx.report(report['status'],['native_solids','connections','tool_channels']+(['motion_endpoints'] if mode=='full' else ['static_only'])))
+    report['mode']=mode
+    if mode=='static':report['motion_scope']='NOT_RUN — static diagnostic only'
+    atomic_json(report_path,report)
     print(report['status'],len(hits),'intersections;',states,'states;',tested,'exact pair checks')
     for h in hits[:30]:print(h)
     for h in tool_hits[:20]:print(h)

@@ -6,7 +6,7 @@ from cad.assemblies.kinematics import capture_stroke,permitted,parameters
 from cad.parts.cable import return_loop_points,loop_geometry
 from cad.parts.recipe import number
 spec=json.loads((R/'data/r1_engineering.json').read_text(encoding='utf-8'))
-c=FeedCycle();s=dict(cover_closed=True,estop_ok=True,cassette_locked=True,exit=False,capture_detected=False,head_home=True,slide_home=True,slide_clear=False,aim_reached=False,guide_up=True,guide_down=False,gate_closed=True,gate_open=False,clamp_closed=False,clamp_open=True)
+c=FeedCycle();s=dict(start=False,cover_closed=True,estop_ok=True,cassette_locked=True,exit=False,capture_detected=False,head_home=True,slide_home=True,slide_clear=False,aim_reached=False,guide_up=True,guide_down=False,gate_closed=True,gate_open=False,clamp_closed=False,clamp_open=True)
 steps=[{},dict(start=True),dict(guide_up=False,guide_down=True),dict(upper_held=True),dict(gate_open=True,gate_closed=False,ball_present=True),dict(gate_closed=True,gate_open=False),dict(clamp_closed=True,clamp_open=False),dict(guide_up=True,guide_down=False),dict(slide_clear=True,slide_home=False),dict(aim_reached=True,wheels_ready=True,head_home=False),dict(clamp_open=True,clamp_closed=False),dict(capture_detected=True,slide_clear=False),dict(exit=True),dict(exit=False),dict(slide_clear=True),dict(head_home=True),dict(slide_home=True)]
 trace=[]
 for i,change in enumerate(steps):
@@ -14,7 +14,7 @@ for i,change in enumerate(steps):
 assert c.state=='DONE'
 faults=[]
 for key in ['cover_closed','estop_ok','cassette_locked','guide_up','clamp_open']:
-    f=FeedCycle();f.state='APPROACH';obs=dict(cover_closed=True,estop_ok=True,cassette_locked=True,guide_up=True,clamp_open=True,exit=False,capture_detected=False,wheels_ready=True)
+    f=FeedCycle();f.state='APPROACH';obs=dict(gate_closed=True,cover_closed=True,estop_ok=True,cassette_locked=True,guide_up=True,clamp_open=True,exit=False,capture_detected=False,wheels_ready=True)
     obs[key]=False;out=f.step(obs,.1);assert out['state']=='FAULT' and not out['enable_motion'] and not out['enable_wheels'];faults.append(dict(injected=key,output=out))
 item=next(i for i in json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances'] if i['instance_id']=='PRT-0704-WIRE_A')
 route=item['shape'];assert route==item['dynamic_loop'],'Blender cable recipe differs from CAD'

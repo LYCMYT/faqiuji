@@ -2,6 +2,7 @@
 from pathlib import Path
 import sys,json,csv,math,copy
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
 import cadquery as cq
 from cad.assemblies.r3_fixture import model,posed
 from cad.export_all import exact_bbox
@@ -10,7 +11,10 @@ from PIL import Image,ImageDraw,ImageFont
 O=R/'output/fixture_r3'
 for d in ['step/parts','step/sections','dxf','drawings']:(O/d).mkdir(parents=True,exist_ok=True)
 rows,variants,s,b=model();validation=json.loads((R/'reports/r3_geometry_validation.json').read_text(encoding='utf-8'))
-assert validation['status']=='PASS','Resolve actual interference before publication'
+from tools.build_context import active_context
+from tools.validate_release import require_report
+ctx=active_context(R,'r3_geometry','full')
+require_report(validation,ctx,['motion_endpoints','native_solids','connections','tool_channels'],R)
 def dump(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
 def csvout(name,keys,items):
     with (O/name).open('w',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=keys);w.writeheader();w.writerows(items)
