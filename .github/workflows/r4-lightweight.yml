@@ -15,7 +15,7 @@ jobs:
         shell: bash
         run: |
           set -e
-          for pattern in 'test_control*.py' 'test_command_lifecycle.py' 'test_evidence_inputs.py' 'test_support_solver.py' 'test_build_provenance.py' 'test_release_gates.py' 'test_input_immutability.py' 'test_part_role_contract.py'; do
+          for pattern in 'test_control*.py' 'test_command_lifecycle.py' 'test_evidence_inputs.py' 'test_support_solver.py' 'test_build_provenance.py' 'test_release_gates.py' 'test_input_immutability.py' 'test_part_role_contract.py' 'test_delivery_files.py'; do
             python -m unittest discover -s tests -p "$pattern" -v
           done
       - name: Scope statement

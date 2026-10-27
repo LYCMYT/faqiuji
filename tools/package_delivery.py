@@ -1,7 +1,7 @@
 from pathlib import Path
 import zipfile,json,hashlib,argparse,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from tools.build_context import BuildContext,code_paths
+from tools.build_context import BuildContext
 from tools.validate_release import require_report,validate_release,validate_review_bundle
 R=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser();parser.add_argument('--revision',choices=['R4'],default='R4')
@@ -17,22 +17,8 @@ else:
     validated=validate_release(R,ctx)
 if proof.get('contract_id')!=validated['contract_id'] or proof.get('artifact_hashes')!=validated['artifact_hashes']:raise RuntimeError('Proof does not match fixed contract/current artifacts')
 if not proof.get('artifact_hashes'):raise RuntimeError('Empty artifact contract')
-include=['cad','blender','control','engineering','data','docs','licenses','viewer','reports','output','input','evidence']
-excluded_dirs={'__pycache__','pdf_review','feed','explode','service','frames'}
-files=[]
-for folder in include:
-    for p in (R/folder).rglob('*'):
-        if not p.is_file() or any(v in excluded_dirs for v in p.relative_to(R).parts):continue
-        if p.suffix in ['.blend1','.brep']:continue
-        if p.suffix=='.log' and p.name not in ['r1_review_red.log','r1_review_green.log'] and ctx.run_id not in p.parts and 'cold_core' not in p.parts:continue
-        if any(q in p.as_posix() for q in ['output/mesh/','output/builds/','output/history/']):continue # rebuild creates caches from data; not needed for viewer
-        if p.name in ['feed_preview_131.png','feed_preview_66.png']:continue
-        files.append(p)
-files += [p for p in (R/'tools').glob('*.py') if not p.name.startswith('debug_')]
-files += [p for p in (R/'tests').glob('*.py')]
-files += [R/name for name in code_paths(R)]
-files += [R/'README_DELIVERY.md',R/'requirements-lock.txt',R/'启动查看器.cmd',R/'重建模型.cmd']
-files=sorted(set(files));manifest=[]
+from tools.delivery_files import collect_delivery_files
+files=collect_delivery_files(R,ctx.run_id);manifest=[]
 for p in files:manifest.append(dict(path=p.relative_to(R).as_posix(),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
 (R/'delivery_manifest.json').write_text(json.dumps(dict(files=manifest,excluded='installed runtimes, caches, raw animation frames and PDF review contact sheets; final artifacts retained'),ensure_ascii=False,indent=2),encoding='utf-8')
 files.append(R/'delivery_manifest.json')
