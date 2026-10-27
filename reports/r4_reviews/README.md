@@ -1,0 +1,1 @@
+Review history in chronological task/fix order. Early findings and counts are superseded by later scoped reviews. Current completion still depends on current same-run validation, not these development notes. Human mechanical signoff NOT_RUN.

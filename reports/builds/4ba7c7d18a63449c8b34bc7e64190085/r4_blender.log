@@ -1,0 +1,753 @@
+Info: Saved as "BM1_R4_fixture.blend"
+INFO Draco mesh compression is available, use library at D:\86173\Documents\BM1_V02_Engineering\tools\blender\blender-4.5.9-windows-x64\4.5\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+09:38:21 | INFO: Starting glTF 2.0 export
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-BASE
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-PED-00
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-STRAP-00
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-000-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-000-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-000-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-000-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-000-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-001-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-001-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-001-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-001-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-001-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-PED-01
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-STRAP-01
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-010-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-010-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-010-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-010-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-010-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-011-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-011-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-011-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-011-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-011-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-PED-10
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-STRAP-10
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-100-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-100-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-100-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-100-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-100-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-101-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-101-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-101-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-101-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-101-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-PED-11
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-STRAP-11
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-110-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-110-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-110-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-110-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-110-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-111-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-111-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-111-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-111-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-ARMFAST-111-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-TUBE-0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-CAP-0-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-CAP-0-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-SHOE-0-0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-0-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-0-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-0-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-0-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-0-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-SHOE-0-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-1-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-1-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-1-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-1-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-0-1-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-TUBE-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-CAP-1-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-CAP-1-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-SHOE-1-0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-0-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-0-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-0-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-0-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-0-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-SHOE-1-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-1-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-1-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-1-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-1-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R3-POSTFAST-1-1-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOT-00
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-00-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-00-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-00-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-00-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-00-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOT-01
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-01-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-01-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-01-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-01-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-01-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOT-10
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-10-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-10-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-10-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-10-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-10-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOT-11
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-11-ROD
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-11-WASHER-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-11-NUT-LOW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-11-WASHER-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-FOOTFAST-11-NUT-UP
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-B
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-C
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0701-A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0701-B
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0701-C
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702__L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-A__L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702__R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-A__R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0704
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0704-A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0601
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0601-A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-A__L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-B__L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-C__L410
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-C__L600
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-A__R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-B__R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-C__R410
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-C__R600
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-D__410
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-E__410
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-D__600
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-E__600
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-WALL--1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-R3-WALL-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0602-G
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0605__1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0605-A__1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0605__2
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0605-A__2
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0606
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0606-A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-B
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-C
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0704-WIRE_A
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-CARRIER-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-SCREW-L0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-NUT-L0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-SCREW-L1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-NUT-L1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-CARRIER-R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-SCREW-R0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-NUT-R0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-SCREW-R1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-NUT-R1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-R29-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R3-R29-R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L--11-124-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L--11-124-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L--11-136-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L--11-136-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L-11-124-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L-11-124-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L-11-136-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-L-11-136-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-BUSHCAP-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R--11-124-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R--11-124-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R--11-136-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R--11-136-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R-11-124-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R-11-124-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R-11-136-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-CAP-R-11-136-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-BUSHCAP-R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--427--64-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--427--64-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--427--56-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--427--56-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--413--64-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--413--64-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--413--56-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP--1--413--56-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-BUSHCAP--1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--427-56-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--427-56-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--427-64-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--427-64-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--413-56-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--413-56-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--413-64-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-CAP-1--413-64-NUT
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-BUSHCAP-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-ENDSTOP--1--19-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-ENDSTOP--1--26-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-ENDSTOP--1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-ENDSTOP-1-19-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-ENDSTOP-1-26-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-ENDSTOP-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-R4-UPSTOP--1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-R4-UPSTOP--1-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-R4-UPSTOP-1
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-R4-UPSTOP-1-SCREW
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-R4-TRAVELNUT-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-R4-TRAVELPIN-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-R4-TRAVELNUT-R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-R4-TRAVELPIN-R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-HOLDPIN-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0603-R4-HOLDPIN-R
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0604-R4-HOLDPIN
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-R4-HOLDPIN-0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0607-R4-HOLDPIN-115
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-HOLDPIN-0
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0703-R4-HOLDPIN-185
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-R4-HOLDPIN-L
+09:38:21 | INFO: Primitives created: 1
+09:38:21 | INFO: Extracting primitive: PRT-0702-R4-HOLDPIN-R
+09:38:21 | INFO: Primitives created: 1
+09:38:22 | INFO: Finished glTF 2.0 export in 1.1893134117126465 s
+Blender 4.5.9 LTS (hash 8bf95cbd38d1 built 2026-04-21 01:33:45)
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0001.png'
+Time: 00:02.41 (Saving: 00:00.60)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0005.png'
+Time: 00:00.73 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0009.png'
+Time: 00:00.75 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0013.png'
+Time: 00:00.72 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0017.png'
+Time: 00:00.69 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0021.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0025.png'
+Time: 00:00.70 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0029.png'
+Time: 00:00.68 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0033.png'
+Time: 00:00.67 (Saving: 00:00.14)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0037.png'
+Time: 00:00.67 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0041.png'
+Time: 00:00.66 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0045.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0049.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0053.png'
+Time: 00:00.66 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0057.png'
+Time: 00:00.67 (Saving: 00:00.14)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0061.png'
+Time: 00:00.69 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0065.png'
+Time: 00:00.70 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0069.png'
+Time: 00:00.68 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0073.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0077.png'
+Time: 00:00.69 (Saving: 00:00.17)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0081.png'
+Time: 00:00.69 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0085.png'
+Time: 00:00.69 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0089.png'
+Time: 00:00.68 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0093.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0097.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0101.png'
+Time: 00:00.67 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0105.png'
+Time: 00:00.68 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0109.png'
+Time: 00:00.67 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0113.png'
+Time: 00:00.67 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0117.png'
+Time: 00:00.67 (Saving: 00:00.15)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\frames\0121.png'
+Time: 00:00.67 (Saving: 00:00.14)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\R4_assembly.png'
+Time: 00:00.67 (Saving: 00:00.16)
+
+Saved: 'D:\86173\Documents\faqiuji\output\fixture_r4\R4_exploded.png'
+Time: 00:00.70 (Saving: 00:00.15)
+
+
+09:38:47 | INFO: Data are loaded, start creating Blender stuff
+09:38:47 | INFO: Blender create Mesh node PRT-0602-R3-BASE
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-PED-00
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-STRAP-00
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-000-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-000-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-000-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-000-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-000-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-001-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-001-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-001-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-001-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-001-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-PED-01
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-STRAP-01
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-010-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-010-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-010-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-010-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-010-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-011-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-011-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-011-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-011-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-011-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-PED-10
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-STRAP-10
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-100-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-100-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-100-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-100-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-100-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-101-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-101-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-101-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-101-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-101-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-PED-11
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-STRAP-11
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-110-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-110-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-110-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-110-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-110-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-111-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-111-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-111-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-111-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-ARMFAST-111-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-TUBE-0
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-CAP-0-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-CAP-0-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-SHOE-0-0
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-0-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-0-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-0-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-0-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-0-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-SHOE-0-1
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-1-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-1-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-1-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-1-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-0-1-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-TUBE-1
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-CAP-1-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-CAP-1-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-SHOE-1-0
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-0-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-0-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-0-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-0-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-0-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-SHOE-1-1
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-1-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-1-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-1-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-1-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-R3-POSTFAST-1-1-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOT-00
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-00-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-00-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-00-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-00-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-00-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOT-01
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-01-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-01-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-01-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-01-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-01-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOT-10
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-10-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-10-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-10-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-10-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-10-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOT-11
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-11-ROD
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-11-WASHER-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-11-NUT-LOW
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-11-WASHER-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-FOOTFAST-11-NUT-UP
+09:38:48 | INFO: Blender create Mesh node PRT-0703-A
+09:38:48 | INFO: Blender create Mesh node PRT-0703-B
+09:38:48 | INFO: Blender create Mesh node PRT-0703-C
+09:38:48 | INFO: Blender create Mesh node PRT-0701-A
+09:38:48 | INFO: Blender create Mesh node PRT-0701-B
+09:38:48 | INFO: Blender create Mesh node PRT-0701-C
+09:38:48 | INFO: Blender create Mesh node PRT-0702__L
+09:38:48 | INFO: Blender create Mesh node PRT-0702-A__L
+09:38:48 | INFO: Blender create Mesh node PRT-0702__R
+09:38:48 | INFO: Blender create Mesh node PRT-0702-A__R
+09:38:48 | INFO: Blender create Mesh node PRT-0704
+09:38:48 | INFO: Blender create Mesh node PRT-0704-A
+09:38:48 | INFO: Blender create Mesh node PRT-0601
+09:38:48 | INFO: Blender create Mesh node PRT-0601-A
+09:38:48 | INFO: Blender create Mesh node PRT-0602-A__L
+09:38:48 | INFO: Blender create Mesh node PRT-0602-B__L
+09:38:48 | INFO: Blender create Mesh node PRT-0602-C__L410
+09:38:48 | INFO: Blender create Mesh node PRT-0602-C__L600
+09:38:48 | INFO: Blender create Mesh node PRT-0602-A__R
+09:38:48 | INFO: Blender create Mesh node PRT-0602-B__R
+09:38:48 | INFO: Blender create Mesh node PRT-0602-C__R410
+09:38:48 | INFO: Blender create Mesh node PRT-0602-C__R600
+09:38:48 | INFO: Blender create Mesh node PRT-0602-D__410
+09:38:48 | INFO: Blender create Mesh node PRT-0602-E__410
+09:38:48 | INFO: Blender create Mesh node PRT-0602-D__600
+09:38:48 | INFO: Blender create Mesh node PRT-0602-E__600
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-WALL--1
+09:38:48 | INFO: Blender create Mesh node PRT-0602-R3-WALL-1
+09:38:48 | INFO: Blender create Mesh node PRT-0602-G
+09:38:48 | INFO: Blender create Mesh node PRT-0604
+09:38:48 | INFO: Blender create Mesh node PRT-0605__1
+09:38:48 | INFO: Blender create Mesh node PRT-0605-A__1
+09:38:48 | INFO: Blender create Mesh node PRT-0605__2
+09:38:48 | INFO: Blender create Mesh node PRT-0605-A__2
+09:38:48 | INFO: Blender create Mesh node PRT-0606
+09:38:48 | INFO: Blender create Mesh node PRT-0606-A
+09:38:48 | INFO: Blender create Mesh node PRT-0607-A
+09:38:48 | INFO: Blender create Mesh node PRT-0607-B
+09:38:48 | INFO: Blender create Mesh node PRT-0607-C
+09:38:48 | INFO: Blender create Mesh node PRT-0704-WIRE_A
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-CARRIER-L
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-SCREW-L0
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-NUT-L0
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-SCREW-L1
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-NUT-L1
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-CARRIER-R
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-SCREW-R0
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-NUT-R0
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-SCREW-R1
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-NUT-R1
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-R29-L
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R3-R29-R
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L--11-124-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L--11-124-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L--11-136-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L--11-136-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L-11-124-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L-11-124-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L-11-136-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-L-11-136-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-BUSHCAP-L
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R--11-124-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R--11-124-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R--11-136-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R--11-136-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R-11-124-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R-11-124-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R-11-136-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-CAP-R-11-136-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0603-R4-BUSHCAP-R
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--427--64-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--427--64-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--427--56-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--427--56-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--413--64-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--413--64-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--413--56-SCREW
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-CAP--1--413--56-NUT
+09:38:48 | INFO: Blender create Mesh node PRT-0604-R4-BUSHCAP--1
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--427-56-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--427-56-NUT
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--427-64-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--427-64-NUT
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--413-56-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--413-56-NUT
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--413-64-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-CAP-1--413-64-NUT
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-BUSHCAP-1
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-ENDSTOP--1--19-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-ENDSTOP--1--26-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-ENDSTOP--1
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-ENDSTOP-1-19-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-ENDSTOP-1-26-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-ENDSTOP-1
+09:38:49 | INFO: Blender create Mesh node PRT-0607-R4-UPSTOP--1
+09:38:49 | INFO: Blender create Mesh node PRT-0607-R4-UPSTOP--1-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0607-R4-UPSTOP-1
+09:38:49 | INFO: Blender create Mesh node PRT-0607-R4-UPSTOP-1-SCREW
+09:38:49 | INFO: Blender create Mesh node PRT-0702-R4-TRAVELNUT-L
+09:38:49 | INFO: Blender create Mesh node PRT-0702-R4-TRAVELPIN-L
+09:38:49 | INFO: Blender create Mesh node PRT-0702-R4-TRAVELNUT-R
+09:38:49 | INFO: Blender create Mesh node PRT-0702-R4-TRAVELPIN-R
+09:38:49 | INFO: Blender create Mesh node PRT-0603-R4-HOLDPIN-L
+09:38:49 | INFO: Blender create Mesh node PRT-0603-R4-HOLDPIN-R
+09:38:49 | INFO: Blender create Mesh node PRT-0604-R4-HOLDPIN
+09:38:49 | INFO: Blender create Mesh node PRT-0607-R4-HOLDPIN-0
+09:38:49 | INFO: Blender create Mesh node PRT-0607-R4-HOLDPIN-115
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-HOLDPIN-0
+09:38:49 | INFO: Blender create Mesh node PRT-0703-R4-HOLDPIN-185
+09:38:49 | INFO: Blender create Mesh node PRT-0702-R4-HOLDPIN-L
+09:38:49 | INFO: Blender create Mesh node PRT-0702-R4-HOLDPIN-R
+09:38:49 | INFO: glTF import finished in 1.22s
+R4 BLEND/GLB REOPEN PASS 214
+Read blend: "D:\86173\Documents\faqiuji\output\fixture_r4\BM1_R4_fixture.blend"
+
+Blender quit

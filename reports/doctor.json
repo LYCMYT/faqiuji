@@ -1,0 +1,66 @@
+{
+  "python": "D:\\86173\\Documents\\BM1_V02_Engineering\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cadquery": "2.8.0",
+    "cadquery-ocp": "7.9.3.1.1",
+    "numpy": "2.5.4",
+    "reportlab": "5.1.0",
+    "pillow": "13.0.0",
+    "pymupdf": "2.0",
+    "playwright": "1.64.1",
+    "blender": {
+      "path": "D:\\86173\\Documents\\BM1_V02_Engineering\\tools\\blender\\blender-4.5.9-windows-x64\\blender.exe",
+      "bytes": 96051672,
+      "sha256": "42c096b04d79bd0ff234429f67178881047c1c370d25ad3aef2766f3eeac4024"
+    },
+    "ffmpeg": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+      "bytes": 542208,
+      "sha256": "1ed4d6884c1ed8c88baa20a7275485ae5c172111a2dacfd7f0a5e423a96d4ffa"
+    },
+    "ffprobe": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffprobe.exe",
+      "bytes": 227840,
+      "sha256": "33de71fe9e58e5c194210c4d9a2df3b2656f03b9f6c97fadab787f0d1f21d347"
+    },
+    "chrome": {
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "bytes": 4720792,
+      "sha256": "de999bce6a1c954df71a8f15bf751b336172f55ac1a0325bb0580cbc2121268c"
+    },
+    "environment_policy": "Measured candidate environment; no physical or approved-production qualification inferred"
+  },
+  "tools": {
+    "blender": {
+      "path": "D:/86173/Documents/BM1_V02_Engineering/tools/blender/blender-4.5.9-windows-x64/blender.exe",
+      "status": "AVAILABLE",
+      "version": "Blender 4.5.9 LTS",
+      "sha256": "42c096b04d79bd0ff234429f67178881047c1c370d25ad3aef2766f3eeac4024"
+    },
+    "ffmpeg": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffmpeg.EXE",
+      "status": "AVAILABLE",
+      "version": "ffmpeg version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2000-2026 the FFmpeg developers",
+      "sha256": "1ed4d6884c1ed8c88baa20a7275485ae5c172111a2dacfd7f0a5e423a96d4ffa"
+    },
+    "ffprobe": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffprobe.EXE",
+      "status": "AVAILABLE",
+      "version": "ffprobe version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2007-2026 the FFmpeg developers",
+      "sha256": "33de71fe9e58e5c194210c4d9a2df3b2656f03b9f6c97fadab787f0d1f21d347"
+    },
+    "chrome": {
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "status": "AVAILABLE",
+      "version": "155.0.8059.85",
+      "sha256": "de999bce6a1c954df71a8f15bf751b336172f55ac1a0325bb0580cbc2121268c"
+    }
+  },
+  "chinese_font": {
+    "path": "C:\\Windows\\Fonts\\msyh.ttc",
+    "status": "AVAILABLE",
+    "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+  }
+}

@@ -1,0 +1,9 @@
+checked 0 upper
+checked 1 gate
+checked 2 clamp
+checked 3 guide
+checked 4 slide
+checked 5 clamp
+checked 6 slide
+checked 7 slide
+BLOCKED 0 collisions; 134 states; 43032 pairs; support PASS_NOMINAL
