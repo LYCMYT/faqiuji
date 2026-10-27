@@ -6,15 +6,23 @@ from cad.assemblies.kinematics import capture_stroke,permitted,parameters
 from cad.parts.cable import return_loop_points,loop_geometry
 from cad.parts.recipe import number
 spec=json.loads((R/'data/r1_engineering.json').read_text(encoding='utf-8'))
-c=FeedCycle();s=dict(cover_closed=True,estop_ok=True,cassette_locked=True,exit=False,capture_detected=False,head_home=True,slide_home=True,slide_clear=False,aim_reached=False,guide_up=True,guide_down=False,gate_closed=True,gate_open=False,clamp_closed=False,clamp_open=True)
-steps=[{},dict(start=True),dict(guide_up=False,guide_down=True),dict(upper_held=True),dict(gate_open=True,gate_closed=False,ball_present=True),dict(gate_closed=True,gate_open=False),dict(clamp_closed=True,clamp_open=False),dict(guide_up=True,guide_down=False),dict(slide_clear=True,slide_home=False),dict(aim_reached=True,wheels_ready=True,head_home=False),dict(clamp_open=True,clamp_closed=False),dict(capture_detected=True,slide_clear=False),dict(exit=True),dict(exit=False),dict(slide_clear=True),dict(head_home=True),dict(slide_home=True)]
+c=FeedCycle();c.restart();s=dict(start=False,cover_closed=True,estop_ok=True,cassette_locked=True,exit=False,capture_detected=False,head_home=True,slide_home=True,slide_clear=False,aim_reached=False,guide_up=True,guide_down=False,gate_closed=True,gate_open=False,clamp_closed=False,clamp_open=True)
+steps=[{},dict(start=True),dict(guide_up=False,guide_down=True),dict(upper_held=True),dict(gate_open=True,gate_closed=False,ball_present=True),dict(gate_closed=True,gate_open=False),dict(clamp_closed=True,clamp_open=False),dict(guide_up=True,guide_down=False),dict(slide_clear=True,slide_home=False),dict(aim_reached=True,wheels_ready=True),dict(clamp_open=True,clamp_closed=False),dict(capture_detected=True,slide_clear=False),dict(exit=True),dict(exit=False),dict(slide_clear=True),dict(head_home=True),dict(slide_home=True)]
 trace=[]
 for i,change in enumerate(steps):
-    s.update(change);out=c.step(s,.1);trace.append(dict(sample=i,input=s.copy(),output=out));assert c.state!='FAULT',out
+    s.update(change)
+    cmd=c.outputs()['command']
+    if cmd:
+        ack=dict(cycle_id=cmd['cycle_id'],accepted_id=cmd['command_id'],completed_id=None,actual_position=cmd['target'],in_tolerance=True,sample_id=2*i)
+        accepted=c.step(s,.1,ack=ack);trace.append(dict(sample=str(i)+'-accept',input=s.copy(),ack=ack.copy(),output=accepted))
+        ack.update(completed_id=cmd['command_id'],sample_id=2*i+1)
+        out=c.step(s,.1,ack=ack)
+    else:out=c.step(s,.1)
+    trace.append(dict(sample=i,input=s.copy(),output=out));assert c.state!='FAULT',out
 assert c.state=='DONE'
 faults=[]
 for key in ['cover_closed','estop_ok','cassette_locked','guide_up','clamp_open']:
-    f=FeedCycle();f.state='APPROACH';obs=dict(cover_closed=True,estop_ok=True,cassette_locked=True,guide_up=True,clamp_open=True,exit=False,capture_detected=False,wheels_ready=True)
+    f=FeedCycle();f.state='APPROACH';obs=dict(gate_closed=True,cover_closed=True,estop_ok=True,cassette_locked=True,guide_up=True,clamp_open=True,exit=False,capture_detected=False,wheels_ready=True)
     obs[key]=False;out=f.step(obs,.1);assert out['state']=='FAULT' and not out['enable_motion'] and not out['enable_wheels'];faults.append(dict(injected=key,output=out))
 item=next(i for i in json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances'] if i['instance_id']=='PRT-0704-WIRE_A')
 route=item['shape'];assert route==item['dynamic_loop'],'Blender cable recipe differs from CAD'

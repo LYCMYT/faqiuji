@@ -1,0 +1,1 @@
+﻿test_id,run_id,axis,load_pose,initial_speed,speed_unit,trigger_definition,trigger_timestamp,stop_timestamp,stop_time_s,start_position,stop_position,position_unit,stop_distance,clock_sync_method,measurement_uncertainty,approved_limit_source,raw_evidence,operator,engineer,result

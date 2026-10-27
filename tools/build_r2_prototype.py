@@ -12,10 +12,13 @@ from reportlab.lib.pagesizes import A4,landscape
 from reportlab.lib.colors import HexColor
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from tools.part_role_contract import validate_part_roles,write_rfq
 
 def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 def dump(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
-S=read('data/r2_prototype.json');routes=read('data/r2_process_routes.json')['routes'];parts=read('data/parts.json')
+S=read('data/r2_prototype.json');route_document=read('data/r2_process_routes.json');routes=route_document['routes'];parts=read('data/parts.json')
+roles=read('data/part_roles.json')
+validate_part_roles(parts,roles,route_document)
 P={k:v['value'] for k,v in read('data/design.json')['parameters'].items()}
 E=read('data/r1_engineering.json');G=read('data/geometry.json')['instances']
 O=R/'output/prototype_r2';O.mkdir(exist_ok=True)
@@ -43,11 +46,7 @@ for radius in E['separator']['pad_radius_candidates_mm']:
             trials.append(dict(trial_id=f'R{radius}-{group}-N{count}',stage='NYLON_EXPLORATORY' if group=='M350' else 'FEATHER_SCREEN',radius_mm=radius,group=group,planned_stack_count=count,planned_cycles=S['trial_plan']['nylon_cycles_per_cell'] if group=='M350' else S['trial_plan']['screening_cycles_per_cell'],status='NOT_RUN',actual_sample_ids=None,actual_cycles=None,single_feed_count=None,double_feed_count=None,jam_count=None,damage_count=None,force_trace=None,hardware_revision=None,video=None,result=None))
 csvout('screening_trials_PLAN.csv',list(trials[0]),trials)
 csvout('holdout_confirmation_PLAN.csv',['stage','group','sample_ids','radius_mm','planned_cycles','actual_cycles','status','result'],[dict(stage='AFTER_SELECTION',group='AS30',sample_ids=';'.join(a['sample_id'] for a in samples if a['role']=='封存复核'),radius_mm=None,planned_cycles=S['trial_plan']['holdout_cycles'],actual_cycles=None,status='BLOCKED_UNTIL_SELECTION_AND_FIXTURE_VERIFIED',result=None)])
-rfq=[]
-for p in parts:
-    route,gate=routes[p['part_id']]
-    rfq.append(dict(part_id=p['part_id'],assembly_id=p['assembly_id'],name=p['name'],main_item_quantity=p['quantity'],route_choice=route,unresolved_gate=gate,status='RFQ_ONLY',supplier=None,material_lot=None,quote_CNY=None,lead_time_days=None,drawing_revision=None,interface_confirmed=False,manufacture_released=False))
-csvout('manufacturing_routes_44_RFQ.csv',list(rfq[0]),rfq)
+rfq=write_rfq(O/'manufacturing_routes_44_RFQ.csv',parts,roles,route_document)
 csvout('supplier_response_BLANK.csv',['rfq_id','part_id','supplier','model','material_grade','material_lot','drawing_file','drawing_revision','unit_price_CNY','tax_included','lead_time_days','actual_hole_drawing','mass_kg','ratings_file','inspection_report','proposed_changes','review_status'],[])
 dump(O/'evidence_status.json',{k:S[k] for k in ['revision','physical_measurements','supplier_confirmations','orders','prototype_results','manufacturing_release']})
 

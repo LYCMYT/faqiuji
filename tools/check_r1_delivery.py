@@ -3,12 +3,20 @@ from pathlib import Path
 import json,hashlib,subprocess,sys
 import pymupdf
 R=Path(__file__).resolve().parents[1]
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
 def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
-v=read('reports/validation.json');g=hashlib.sha256((R/'data/geometry.json').read_bytes()).hexdigest()
+sys.path.insert(0,str(R))
+from tools.build_context import active_context
+from tools.validate_release import require_report
+from tools.input_manifest import metadata_path
+ctx=active_context(R,'r1_delivery')
+v=require_report(R/'reports/validation.json',ctx.for_stage('final_report'),['summary'],R)
+records=json.loads(metadata_path(R,'instances.json',allow_legacy=False).read_text(encoding='utf-8'))
+g=hashlib.sha256((R/'data/geometry.json').read_bytes()).hexdigest()
 assert v['revision']=='V0.2-R1'
 assert v['geometry_sha256']==v['static']['geometry_sha256']==v['motion']['geometry_sha256']==g
 assert v['all_native_solids_valid'] and v['step_pass'] and v['all_main_steps_complete']
-assert v['main_items']==44 and v['physical_instances']==187 and v['cad_instances']==189
+assert v['main_items']==44 and v['physical_instances']==sum(not x.get('reference') for x in records) and v['cad_instances']==len(records)
 assert v['static']['unresolved_pairs']==v['motion']['unresolved_pairs']==0
 assert not v['static']['errors'] and not v['motion']['errors']
 assert v['r1_service']['all_paths_passed'] and v['r1_service']['geometry_sha256']==g
@@ -20,7 +28,7 @@ e=read('output/engineering/evidence_register.json');assert not e['physical_measu
 required=['output/engineering/BM1_R1_separator_bench.step','output/engineering/BM1_R1_engineering_manual.pdf','output/engineering/shuttle_measurements_BLANK.csv','output/engineering/supplier_interface_RFQ.csv','output/engineering/prototype_runs_BLANK.csv','output/engineering/control_functional.svg','output/animation/BM1_R1_cassette_service.mp4','control/feed_cycle.py','engineering/evaluate.py']
 for p in required:assert (R/p).is_file() and (R/p).stat().st_size>0,p
 pdfs=[]
-for rel,expected in [('output/BM1_V0_design_book.pdf',152),('output/engineering/BM1_R1_engineering_manual.pdf',18)]:
+for rel,expected in [('output/BM1_V0_design_book.pdf',read('reports/page_coverage.json')['pdf_pages']),('output/engineering/BM1_R1_engineering_manual.pdf',read('reports/r1_manual_expected.json')['planned_pages'])]:
     f=R/rel;d=pymupdf.open(f);assert len(d)==expected;issues=[]
     for n,page in enumerate(d):
         pix=page.get_pixmap(matrix=pymupdf.Matrix(.3,.3));assert pix.width and pix.height
@@ -33,9 +41,9 @@ for f in sorted((R/'output/animation').glob('*.mp4')):
     subprocess.run(['ffmpeg','-v','error','-i',str(f),'-f','null','-'],capture_output=True,check=True)
     media.append(dict(file=f.name,metadata=metadata,all_frames_decoded=True))
 assert len(media)==3
-viewer=read('reports/viewer_validation.json');assert viewer['loaded'] and viewer['meshes']==187 and not viewer['js_errors']
+viewer=read('reports/viewer_validation.json');assert viewer['loaded'] and viewer['meshes']==v['physical_instances'] and not viewer['js_errors']
 result=dict(revision='V0.2-R1',geometry_sha256=g,required_artifacts_present=True,pdfs=pdfs,media=media,viewer=viewer,all_native_geometry_and_roundtrips_passed=True,physical_acceptance=False,scope='File integrity and listed discrete digital checks only; physical inputs remain missing.')
 (R/'reports/r1_delivery_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 (R/'reports/media_validation.json').write_text(json.dumps(dict(decode_all_frames_passed=True,files=media),ensure_ascii=False,indent=2),encoding='utf-8')
-(R/'reports/visual_review.json').write_text(json.dumps(dict(revision='V0.2-R1',pdfs=pdfs,model_contacts_reviewed=['001','021','041','061','081','101','121','141'],manual_contacts_reviewed=['01','09','17'],scope='All contact sheets visually reviewed; selected full-size figures checked. Layout review, not engineering approval.',findings='No evident missing illustrations or clipping; all pages also rendered and text bounds checked.'),ensure_ascii=False,indent=2),encoding='utf-8')
+(R/'reports/visual_review.json').write_text(json.dumps(dict(status='NOT_RUN',artifact_hashes={x['file']:x['sha256'] for x in pdfs},scope='Automatic render/text bounds only. Human signoff requires reviewer, timestamp and matching artifact hashes.'),ensure_ascii=False,indent=2),encoding='utf-8')
 print('R1 DELIVERY CHECK PASS: 152+18 PDF pages; 3 complete MP4 decodes; native/roundtrip/motion/service reports current; physical acceptance FALSE.')

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PREPARATION_ONLY",
+  "base_run_id": "4ba7c7d18a63449c8b34bc7e64190085",
+  "source_copies": 30,
+  "manifest_files": 63,
+  "zip_sha256": "db030ca9aedb2add5de81d9a64ceb22a8caa2d5e680b417bae0c5223955f8754",
+  "zip_crc": true,
+  "independent_unpack_hashes": true,
+  "pdf_pages": 23,
+  "pdf_overflow": [],
+  "additional_jaw_sheets": 7,
+  "part_step_files": 10,
+  "assembly_step_files": 1,
+  "templates": 16,
+  "io_rows": 42,
+  "input_requests": 12,
+  "overwrite_regressions": [
+    ".zip rejected under -O",
+    ".zip.sha256 rejected under -O",
+    "existing output rejected under -O"
+  ],
+  "raw_records_blank": true,
+  "R4_source_unchanged": true,
+  "physical_testing": "NOT_RUN",
+  "manufacturing_release": false,
+  "first_article_release": false,
+  "automatic_operation_release": false
+}

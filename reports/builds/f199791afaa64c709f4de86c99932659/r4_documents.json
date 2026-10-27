@@ -1,0 +1,78 @@
+{
+  "run_id": "f199791afaa64c709f4de86c99932659",
+  "commit_sha": "fdc5bfe649f9956965c9569444f71a0cfdf09212",
+  "input_sha256": "9f27b70c17e373d812b0c6671ea67f0db1d84699076a082c0bf026564397d1b3",
+  "code_sha256": "6d99a633726f4233b9dff700c4fa4978ef7f6aff570c14591a4ea70a34d802dd",
+  "tool_versions": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cadquery": "2.8.0",
+    "cadquery-ocp": "7.9.3.1.1",
+    "numpy": "2.5.4",
+    "reportlab": "5.1.0",
+    "pillow": "13.0.0",
+    "pymupdf": "2.0",
+    "playwright": "1.64.1",
+    "blender": {
+      "path": "D:\\86173\\Documents\\BM1_V02_Engineering\\tools\\blender\\blender-4.5.9-windows-x64\\blender.exe",
+      "bytes": 96051672,
+      "sha256": "42c096b04d79bd0ff234429f67178881047c1c370d25ad3aef2766f3eeac4024",
+      "version": "Blender 4.5.9 LTS"
+    },
+    "ffmpeg": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+      "bytes": 542208,
+      "sha256": "1ed4d6884c1ed8c88baa20a7275485ae5c172111a2dacfd7f0a5e423a96d4ffa",
+      "version": "ffmpeg version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffprobe.exe",
+      "bytes": 227840,
+      "sha256": "33de71fe9e58e5c194210c4d9a2df3b2656f03b9f6c97fadab787f0d1f21d347",
+      "version": "ffprobe version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "chrome": {
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "bytes": 4720792,
+      "sha256": "de999bce6a1c954df71a8f15bf751b336172f55ac1a0325bb0580cbc2121268c",
+      "version": "155.0.8059.85"
+    },
+    "environment_policy": "Measured candidate environment; no physical or approved-production qualification inferred",
+    "chinese_font": {
+      "path": "C:\\Windows\\Fonts\\msyh.ttc",
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+    }
+  },
+  "started_at": "2026-10-26T17:05:54.189316+00:00",
+  "stage": "r4_documents",
+  "scope": "full",
+  "status": "PASS",
+  "completed_checks": [
+    "pdf_rendered",
+    "pdf_text_bounds"
+  ],
+  "artifact_hashes": {
+    "reports/r4_document_validation.json": "99f405033e17570995e42a51065a8bce10f7f79d92253b0958d122eaea038f41",
+    "output/fixture_r4/BM1_R4_review_book.pdf": "43b882c533c2bbed4cf78d6f71416415723466c03a5337ea44715efe311f28f8",
+    "output/fixture_r4/drawings/PRT-0701-R4-A_first_article.png": "d9cc2670e3b78bf5918fa82522b8c8d6b5fc69f4ca247fbb65ab32cbeade15f0",
+    "output/fixture_r4/drawings/PRT-0603-R3-R29-L_first_article.png": "43a36ac0befe51f8343959aae5282f859592a884418ab470e8f076b9cc125a12",
+    "output/fixture_r4/drawings/PRT-0602-R3-BASE_first_article.png": "3144c9aab186a59a02546343d33c949b010226566fc60e006c59e1151787ee6f",
+    "output/fixture_r4/first_article_features.json": "e89cb5e1867390382bf544b984f13504ef96332f3d015f9f68fcb5b5d9b459d2",
+    "output/fixture_r4/first_article_inspection_BLANK.csv": "d050bcc0fc0e9c13f520e175dafd002fbbfdcb2f254f2a1a39cef769fe02a33c",
+    "output/fixture_r4/drawings/ball_state_OPEN_LOAD.png": "59947a53d480556db8e608efb5b32361905f89ae73cddb672f2c1da0361cdaf1",
+    "output/fixture_r4/drawings/ball_state_CLOSED_GRIP.png": "5d5056da8243a14425d8e0cab76c9154b7e42fc3673fa77d02bb7fc1b846d607",
+    "output/fixture_r4/drawings/ball_state_GUIDE_UP.png": "5642127ab5011f0eb1ff02047099194343d8f180644b7e0fc9bf7c2072a33d7e",
+    "output/fixture_r4/drawings/ball_state_CLEAR.png": "d4497a1d0629ac040edbb044e916a1816c08d144ff06674833f2e0b3b7ae9a5d",
+    "output/fixture_r4/drawings/ball_state_RELEASE.png": "f2903f4bc5b39abb58dbdb1c02b115e7511f31cd6f4ef0d2551f0d30644970ff",
+    "output/fixture_r4/drawings/ball_state_APPROACH_OPEN.png": "8fd2c6c9722a1883c43aacddaa4eb579150f52351327e72f600d7fa37de97e90",
+    "output/fixture_r4/drawings/ball_state_CAPTURE_BOUNDARY.png": "3a1045b1a6ad4d7a5320389c2d6a34ac21d9cce3fdc00799741d9827ab2449eb",
+    "output/fixture_r4/drawings/ball_state_EMPTY_FORWARD.png": "a4e8364f5b0a55f8b019e8ddfa9388bfe028d655cab4a239a2e17caeb7ee681a",
+    "output/fixture_r4/drawings/ball_state_EMPTY_RETURN.png": "f9d7d8b96027b942540590aaaea9556f889fe9e21504239a7ca934c67e8e43d4"
+  },
+  "command": [
+    "D:\\86173\\Documents\\BM1_V02_Engineering\\.venv\\Scripts\\python.exe",
+    "D:\\86173\\Documents\\faqiuji\\tools\\build_r4_manual.py"
+  ],
+  "returncode": 0,
+  "log": "reports\\builds\\f199791afaa64c709f4de86c99932659\\r4_documents.log"
+}

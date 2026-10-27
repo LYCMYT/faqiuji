@@ -1,3 +1,21 @@
+# R4 当前工作入口
+
+R4 基于 c8c52514a80f52c364950852ed2fde2a1d926e62 的独立审查实施。保留 R1–R3 历史来源与44主项编号；R4修订台架见 `output/fixture_r4/index.html`，实际状态见 `reports/r4_readiness.md`。已有 R1–R3 报告不自动成为 R4 的通过证明。
+
+完整数字候选构建：`python tools/rebuild.py`。Windows 设置 `BM1_BLENDER_EXE` 为实际 Blender 可执行文件路径；`python tools/doctor.py` 检查当前工具和中文字体。需要时用 `BM1_CHINESE_FONT` 指定字体。核心原环境复核单独运行 `python tools/rebuild.py --legacy --scope core`；它不发布 R4。
+
+若机械服务/保持路径仍 BLOCKED，只有显式 `python tools/rebuild.py --review-draft` 才能继续制作**评审专用**文件；它保持几何 BLOCKED 和完整发布门禁 BLOCKED，不会生成通过的发布证明。该模式也拒绝名义实体无效、接球支撑失效或未解决的全装配体积相交。
+
+通过的完整候选用 `python tools/package_delivery.py --release-proof reports/release_proof.json` 打包。评审专用候选另用 `--review-proof reports/r4_review_bundle.json`，ZIP名称明确包含 `Review_Candidate_BLOCKED`。两种门禁和产物散列分别检查，不能把评审包当作通过包。构建及打包均不授权制造、采购或硬件运行。
+
+权威 `data/`、原始 `input/` 与 `evidence/` 构建前后必须字节不变；派生结果写 `output/`。旧实例和页面快照是只读兼容输入，新元数据在 `output/generated_metadata/`。供应商图、球样、夹力、轮速、报价、停止与低速试验没有真实记录时继续 OPEN/BLOCKED。首件输入、测量协议见 `data/r4_release_scope.json`、`docs/test_protocol_r4.md`；离线控制与质量证据格式见 `docs/control_contract_r4.md`、`docs/engineering_evidence_r4.md`。
+
+当前查看器：双击 `启动查看器.cmd`，或运行 `python tools/serve_viewer.py --open --revision R4`；入口为 `/output/fixture_r4/viewer.html`。
+
+---
+
+以下是审查基准提交 c8c52514 的历史 R1–R3 交付说明。历史打包命令、统计和“最新”称谓仅适用于当时版本；当前命令和状态以上方 R4 入口及当前报告为准。
+
 # BM1 羽毛球发球机 · V0.2 / R3
 
 BM1 羽毛球发球机的参数化数字工程项目：以 `data/` 为唯一几何参数来源，使用 CadQuery 建立原生实体，使用 Blender 制作展示场景和动画，保留 `ASM-xx`、`PRT-xxxx` 编号。

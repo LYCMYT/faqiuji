@@ -6,6 +6,11 @@ import ast,operator
 from pathlib import Path
 from mathutils import Vector,Matrix
 R=Path(__file__).resolve().parents[1]
+import sys;sys.path.insert(0,str(R))
+from tools.build_context import verify_content_context
+verify_content_context(R,json.loads((R/'output/generated_metadata/cache_provenance.json').read_text(encoding='utf-8')))
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 sys.path.insert(0,str(R))
 from cad.parts.cable import return_loop_points
 mesh=json.loads((R/'output/mesh/model.json').read_text(encoding='utf-8'))
@@ -127,7 +132,7 @@ for action in bpy.data.actions:
 sc['demo_notice']=D['notice'];sc['capture_note']='ST09后球体世界坐标冻结，仅表示未知动力学；ST10是收到真实出球确认后才允许的条件复位。'
 sc.camera=core;sc.frame_set(205)
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'output/blend/BM1_V0_master.blend'))
-(R/'data/demo_states.json').write_text(json.dumps([dict(frame=s[0],label=s[1],guide=s[2],slide=s[3],yaw=s[4],pitch=s[5],clamp=s[6],gate=s[7],upper=s[8],fall=s[9]) for s in states],ensure_ascii=False,indent=2),encoding='utf-8')
+generated_path(R,'demo_states.json').write_text(json.dumps([dict(frame=s[0],label=s[1],guide=s[2],slide=s[3],yaw=s[4],pitch=s[5],clamp=s[6],gate=s[7],upper=s[8],fall=s[9]) for s in states],ensure_ascii=False,indent=2),encoding='utf-8')
 
 # Second scene: nested exploded views are independent from assembly/motion.
 bpy.ops.scene.new(type='FULL_COPY');ex=bpy.context.scene;ex.name='BM1 | 展示爆炸复原';ex.frame_end=120;ex.camera=next(o for o in ex.objects if o.type=='CAMERA' and '整体' in o.name)

@@ -1,0 +1,23 @@
+test_height_pitch (test_contract.Contract.test_height_pitch) ... ok
+test_interlocks (test_contract.Contract.test_interlocks) ... ok
+test_kinematic_module_exists (test_contract.Contract.test_kinematic_module_exists) ... ok
+test_main_step_complete (test_contract.Contract.test_main_step_complete) ... ok
+test_capture_requires_fresh_exit_pulse (test_r1.RevisionContracts.test_capture_requires_fresh_exit_pulse) ... ok
+test_capture_stuck_high_is_rejected (test_r1.RevisionContracts.test_capture_stuck_high_is_rejected) ... ok
+test_evidence_gate_and_symmetric_support (test_r1.RevisionContracts.test_evidence_gate_and_symmetric_support) ... ok
+test_fault_is_latched (test_r1.RevisionContracts.test_fault_is_latched) ... ok
+test_feedback_loss_stops_active_cycle (test_r1.RevisionContracts.test_feedback_loss_stops_active_cycle) ... ok
+test_loaded_overrun_and_empty_travel (test_r1.RevisionContracts.test_loaded_overrun_and_empty_travel) ... ok
+test_loop_length_invariant (test_r1.RevisionContracts.test_loop_length_invariant) ... ok
+test_missing_exit_is_not_a_falling_edge (test_r1.RevisionContracts.test_missing_exit_is_not_a_falling_edge) ... ok
+test_nonphysical_supports_rejected (test_r1.RevisionContracts.test_nonphysical_supports_rejected) ... ok
+test_old_position_feedback_cannot_skip_return (test_r1.RevisionContracts.test_old_position_feedback_cannot_skip_return) ... ok
+test_service_dynamic_wire_uses_requested_height (test_r1.RevisionContracts.test_service_dynamic_wire_uses_requested_height) ... ok
+test_timeout_and_stuck_exit_do_not_reset (test_r1.RevisionContracts.test_timeout_and_stuck_exit_do_not_reset) ... ok
+test_uncapturable_geometry_is_explicit (test_r1.RevisionContracts.test_uncapturable_geometry_is_explicit) ... ok
+test_upper_retained_until_gate_closed (test_r1.RevisionContracts.test_upper_retained_until_gate_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 1.557s
+
+OK

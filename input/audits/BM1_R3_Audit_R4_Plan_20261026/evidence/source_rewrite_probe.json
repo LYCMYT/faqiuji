@@ -1,0 +1,13 @@
+{
+  "process_exit_code": 0,
+  "stdout": "Metadata expanded 189 instances",
+  "all_changes_confined_to_temporary_copy": true,
+  "hash_changed": {
+    "contact_pairs.json": true,
+    "materials.json": true
+  },
+  "contact_condition_after": "仅球头侧面；捕获阈值需实测",
+  "material_density_after": null,
+  "material_supplier_model_after": null,
+  "material_status_after": "concept"
+}

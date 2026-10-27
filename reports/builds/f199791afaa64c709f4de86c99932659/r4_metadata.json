@@ -1,0 +1,60 @@
+{
+  "run_id": "f199791afaa64c709f4de86c99932659",
+  "commit_sha": "fdc5bfe649f9956965c9569444f71a0cfdf09212",
+  "input_sha256": "9f27b70c17e373d812b0c6671ea67f0db1d84699076a082c0bf026564397d1b3",
+  "code_sha256": "6d99a633726f4233b9dff700c4fa4978ef7f6aff570c14591a4ea70a34d802dd",
+  "tool_versions": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cadquery": "2.8.0",
+    "cadquery-ocp": "7.9.3.1.1",
+    "numpy": "2.5.4",
+    "reportlab": "5.1.0",
+    "pillow": "13.0.0",
+    "pymupdf": "2.0",
+    "playwright": "1.64.1",
+    "blender": {
+      "path": "D:\\86173\\Documents\\BM1_V02_Engineering\\tools\\blender\\blender-4.5.9-windows-x64\\blender.exe",
+      "bytes": 96051672,
+      "sha256": "42c096b04d79bd0ff234429f67178881047c1c370d25ad3aef2766f3eeac4024",
+      "version": "Blender 4.5.9 LTS"
+    },
+    "ffmpeg": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+      "bytes": 542208,
+      "sha256": "1ed4d6884c1ed8c88baa20a7275485ae5c172111a2dacfd7f0a5e423a96d4ffa",
+      "version": "ffmpeg version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffprobe.exe",
+      "bytes": 227840,
+      "sha256": "33de71fe9e58e5c194210c4d9a2df3b2656f03b9f6c97fadab787f0d1f21d347",
+      "version": "ffprobe version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "chrome": {
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "bytes": 4720792,
+      "sha256": "de999bce6a1c954df71a8f15bf751b336172f55ac1a0325bb0580cbc2121268c",
+      "version": "155.0.8059.85"
+    },
+    "environment_policy": "Measured candidate environment; no physical or approved-production qualification inferred",
+    "chinese_font": {
+      "path": "C:\\Windows\\Fonts\\msyh.ttc",
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+    }
+  },
+  "started_at": "2026-10-26T17:05:54.189316+00:00",
+  "stage": "r4_metadata",
+  "scope": "full",
+  "status": "PASS",
+  "completed_checks": [
+    "scope_summary"
+  ],
+  "artifact_hashes": {
+    "output/fixture_r4/first_article_RFQ.csv": "87200d0e89a0a25145f43db5e3dd9b504134c17792bbbdd9357e9143a9b64be5",
+    "output/fixture_r4/physical_measurements_BLANK.csv": "f95a1dde3edde6ca2ec85bd57ab31883c8894bbdb89d0cf1d704cbea5e761021",
+    "output/fixture_r4/index.html": "66bdffe7f058134cc19b89a8c6544a52849f2b493ce6e6ece833259b3478a9e1",
+    "reports/r4_readiness.md": "d2c8692e9b1942e2e2ddaf4a8efd1d513a6e93334c484cc475b07fc1d775577f"
+  },
+  "manufacturing_release": false
+}

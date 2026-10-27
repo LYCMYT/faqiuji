@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "run_id": "4ba7c7d18a63449c8b34bc7e64190085",
+  "source_commit": "f8939e9df17eb2115a17d98e8b904e4879a6f74e",
+  "archive": "D:\\86173\\Documents\\BM1_V02_R4_Review_Candidate_BLOCKED.zip",
+  "archive_sha256": "0e3dde7285add283bcad32aa7ce282b6a4bbbda703906f05264d6ae0e908aec9",
+  "archive_bytes": 92321867,
+  "manifest_files": 2234,
+  "zip_crc": true,
+  "all_manifest_hashes": true,
+  "unpacked_source_fingerprints": true,
+  "review_proof": "REVIEW_ONLY",
+  "pdf_pages": 69,
+  "viewer_meshes": 214,
+  "part_isolation": true,
+  "restore_all": true,
+  "js_errors": [],
+  "extraction_root": "D:\\86173\\Documents\\BM1_R4_Unpack_FINAL_4ba7c7d1\\BM1_V02_Engineering",
+  "manufacturing_release": false
+}

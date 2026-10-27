@@ -2,6 +2,8 @@
 import json,sys,csv,time,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.parts.recipe import build
 from cad.assemblies.kinematics import parameters,matrix
@@ -31,6 +33,8 @@ def locate(s,parent,state=None):
     m=matrix(parent,state);t=gp_Trsf();t.SetValues(*[float(v) for v in m[:3,:].flatten()]);return s.located(cq.Location(t))
 
 def run():
+    from tools.build_context import active_context, file_hash, atomic_json
+    ctx=active_context(R,'cad_export')
     for d in ['step/parts','step/assemblies','mesh','stl','render','drawings','animation','blend','glb','calibration']:(R/'output'/d).mkdir(parents=True,exist_ok=True)
     model=load_model(); assembly=cq.Assembly(name='BM1_V0_assembly'); groups={}; mains={}; deriv={}; mesh=[]; records=[]
     expl=json.loads((R/'data/exploded.json').read_text(encoding='utf-8')); ev={x['assembly_id']:x['translation_mm'] for x in expl['modules']}
@@ -57,8 +61,11 @@ def run():
     for pid in ['PRT-0603','PRT-0604','PRT-0701','PRT-0702','PRT-1003']:
         cq.exporters.export(cq.Compound.makeCompound(mains[pid]),str(R/'output/stl'/f'{pid}_FIT_ONLY.stl'),tolerance=.1,angularTolerance=.1)
     (R/'output/mesh/model.json').write_text(json.dumps(mesh,ensure_ascii=False),encoding='utf-8')
-    (R/'data/instances.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+    generated_path(R,'instances.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
     (R/'reports/solid_validation.json').write_text(json.dumps(dict(instances=len(records),main_items=len(mains),all_valid=all(x['valid'] for x in records),solids=sum(x['solid_count'] for x in records),native_brep=True,build_seconds=time.time()-t0),indent=2),encoding='utf-8')
+    artifacts={p.relative_to(R).as_posix():file_hash(p) for p in (R/'output/mesh').glob('*') if p.is_file()}
+    ip=generated_path(R,'instances.json');artifacts[ip.relative_to(R).as_posix()]=file_hash(ip)
+    atomic_json(R/'output/generated_metadata/cache_provenance.json',ctx.report('PASS',['native_solids'],artifacts))
     print('Built',len(records),'instances;',len(mains),'main items;',sum(x['solid_count'] for x in records),'solids',flush=True)
 
 if __name__=='__main__':run()

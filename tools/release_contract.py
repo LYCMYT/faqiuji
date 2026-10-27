@@ -1,0 +1,29 @@
+"""Versioned, fixed R4 digital-candidate contract; never manufacturing approval."""
+CONTRACT_ID='BM1-R4-digital-candidate-v1'
+REQUIRED_STAGES={
+    'failure_modes':['blender_nonzero','collision_nonzero','boolean_error_nonzero','corrupt_step_nonzero','stale_rejected','static_rejected','missing_artifact_rejected','malformed_report_rejected'],
+    'unit_tests':['unit_tests'],
+    'r4_geometry':['native_solids','support_projection','sampled_motion','connections','tool_channels'],
+    'r4_exports':['expected_step_set','step_roundtrip'],
+    'r4_blender':['blend_reopened','glb_reopened','ids_preserved','frames_rendered'],
+    'r4_media':['video_fully_decoded'],
+    'r4_documents':['pdf_rendered','pdf_text_bounds'],
+    'r4_viewer':['loaded','isolation','restored'],
+    'r4_metadata':['scope_summary'],
+}
+REQUIRED_FILES=[
+    'output/fixture_r4/parts_index.json',
+    'output/fixture_r4/step/BM1_R4_fixture_assembly.step',
+    'output/fixture_r4/BM1_R4_fixture.blend',
+    'output/fixture_r4/BM1_R4_fixture.glb',
+    'output/fixture_r4/BM1_R4_connections_explode.mp4',
+    'output/fixture_r4/BM1_R4_review_book.pdf',
+    'output/fixture_r4/viewer.html',
+    'output/fixture_r4/index.html',
+    'output/fixture_r4/first_article_RFQ.csv',
+    'output/fixture_r4/first_article_features.json',
+    'output/fixture_r4/first_article_inspection_BLANK.csv',
+    'docs/test_protocol_r4.md',
+    'data/r4_release_scope.json',
+    'reports/r4_readiness.md',
+]

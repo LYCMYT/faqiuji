@@ -1,0 +1,513 @@
+[
+  {
+    "family": "PRT-0603-R3-R23-L",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R23-L.step",
+    "dimensions_mm": [
+      18.000000000004842,
+      40.833989511483,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      -2.419398015263141e-12,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      21.166010488516726,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.0,
+        "y": 23.833989511483274,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.0,
+        "y": 33.833989511483274,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R23-R",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R23-R.step",
+    "dimensions_mm": [
+      18.0,
+      40.83398951148324,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      -62.0,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.0,
+        "y": 17.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.0,
+        "y": 7.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R26-L",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R26-L.step",
+    "dimensions_mm": [
+      18.000000000000608,
+      37.607378164699,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      -3.055333763768431e-13,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      24.392621835300936,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.0,
+        "y": 20.607378164699064,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.0,
+        "y": 30.607378164699064,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R26-R",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R26-R.step",
+    "dimensions_mm": [
+      18.0,
+      37.60737816469906,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      -62.0,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.0,
+        "y": 17.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.0,
+        "y": 7.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R29-R",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R29-R.step",
+    "dimensions_mm": [
+      18.000000000000227,
+      34.43190249582,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      -1.0835776720341528e-13,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -62.0,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.000000000000028,
+        "y": 17.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.000000000000028,
+        "y": 7.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R32-L",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R32-L.step",
+    "dimensions_mm": [
+      18.00000000000441,
+      31.291694934432,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      -2.2026824808563106e-12,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.0,
+      30.708305065568172,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.0,
+        "y": 14.291694934431828,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.0,
+        "y": 24.291694934431828,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R32-R",
+    "revision": "R3",
+    "derived_status": "CANDIDATE_REVIEW_NOT_RELEASED",
+    "source_step": "step/parts/PRT-0603-R3-R32-R.step",
+    "dimensions_mm": [
+      18.00000000000007,
+      31.291694934432,
+      12.0
+    ],
+    "local_STEP_min_mm": [
+      -4.085620730620576e-14,
+      0.0,
+      0.0
+    ],
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -62.0,
+      386.0
+    ],
+    "holes_local_mm": [
+      {
+        "x": 9.000000000000028,
+        "y": 17.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": 9.000000000000028,
+        "y": 7.0,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "jaw_source": {
+      "radii_source": "data/r1_engineering.json:separator.pad_radius_candidates_mm",
+      "assembly_radius": 29,
+      "hole_y_abs": [
+        45,
+        55
+      ],
+      "rear_extension_mm": 4,
+      "carrier_tube_relief_radius": 41,
+      "through_diameter": 4.5,
+      "counterbore_diameter": 7.8,
+      "counterbore_depth": 4.5,
+      "top_z": 398,
+      "carrier_size": [
+        18,
+        54,
+        6
+      ],
+      "carrier_y_abs": 63,
+      "carrier_z": 383,
+      "pin_hole_diameter": 3.2,
+      "pin_y_abs": 82,
+      "screw_underhead_z": 393.5,
+      "side_window_size": [
+        22,
+        12,
+        40
+      ],
+      "side_window_z": 385,
+      "note": "R29为继承展示位，不是实测选定半径；托板销孔为自定义接口，执行器连接仍开放。初版螺钉与球筒相交，现将两孔移到筒外并向后加长POM4mm保证沉孔边距，托板增加R41真实避筒弧面。"
+    },
+    "critical_fit_tolerance": null,
+    "manufacturing_release": false,
+    "first_article_release": false
+  }
+]

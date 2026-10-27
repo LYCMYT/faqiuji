@@ -2,6 +2,11 @@
 from pathlib import Path
 import sys,json,csv,html,copy
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.parts.recipe import build
 from cad.export_all import locate
@@ -13,7 +18,7 @@ def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 def dump(p,obj):p.write_text(json.dumps(obj,ensure_ascii=False,indent=2),encoding='utf-8')
 def csvfile(name,header,rows):
     with (O/name).open('w',encoding='utf-8-sig',newline='') as f:w=csv.writer(f);w.writerow(header);w.writerows(rows)
-parts=read('data/parts.json');items=read('data/instances.json');spec=read('data/r1_engineering.json');service=read('data/r1_service.json');p={k:v['value'] for k,v in read('data/design.json')['parameters'].items()}
+parts=read('data/parts.json');items=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'));spec=read('data/r1_engineering.json');service=read('data/r1_service.json');p={k:v['value'] for k,v in read('data/design.json')['parameters'].items()}
 components=[dict(instance_id=i['instance_id'],mass_kg=None,com_world_mm=None,evidence_status='not_measured',source=None) for i in items if not i.get('reference')]
 mass=dict(pose=dict(height=1800,yaw=45,pitch=60),components=components,supports=[dict(x_mm=x,y_mm=y,vertical_stiffness_N_mm=None) for x in [-p['support_x']/2,p['support_x']/2] for y in [-p['support_y']/2,p['support_y']/2]],notes='必须按指定姿态填写世界坐标质心。此表不把采购件包络体积当真实质量。')
 dump(O/'mass_inputs_BLANK.json',mass);dump(O/'mass_evaluation.json',evaluate(components,mass['supports']))

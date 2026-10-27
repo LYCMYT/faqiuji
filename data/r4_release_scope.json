@@ -1,0 +1,105 @@
+{
+  "revision": "V0.2-R4-candidate",
+  "manufacturing_release": false,
+  "first_article_release": false,
+  "automatic_operation_release": false,
+  "status": "BLOCKED_EXTERNAL_INPUTS",
+  "scope_basis": "R4 digital candidate; R3 local height=0 mm; no high-speed wheel acceptance",
+  "first_article_candidates": [
+    {
+      "part_id": "PRT-0701",
+      "revision": "R4",
+      "scope": "receiver support trial; manual nominal cork placement first",
+      "quantity": null,
+      "material_status": "candidate pending material/batch and machinist review",
+      "release_conditions": [
+        "R4 drawing review",
+        "actual cork/skirt size envelope",
+        "mounting/guide interfaces reviewed",
+        "quote and inspection agreement"
+      ]
+    },
+    {
+      "part_id": "PRT-0603",
+      "revision": "R3/R4",
+      "scope": "R23/R26/R29/R32 interchangeable jaw coupon screening",
+      "quantity": null,
+      "material_status": "POM-C candidate; actual lot unconfirmed",
+      "release_conditions": [
+        "real sample measurements",
+        "review hole/counterbore edge and screw seating",
+        "independent guide/manual fixture assembly review"
+      ]
+    },
+    {
+      "part_id": "PRT-0602",
+      "revision": "R3/R4",
+      "scope": "fixture plate, supports and guide mounting pieces only after interface review",
+      "quantity": null,
+      "material_status": "candidate pending stock and supplier",
+      "release_conditions": [
+        "actual table/backplate/anchor confirmation",
+        "guide and reaction path review",
+        "connection preload strategy"
+      ]
+    }
+  ],
+  "explicitly_excluded": [
+    "complete machine manufacturing",
+    "energized automatic feed",
+    "high-speed wheel/shaft/motor commissioning",
+    "flight/landing accuracy acceptance",
+    "safety certification"
+  ],
+  "physical_measurements": [],
+  "supplier_interfaces": [],
+  "quotes": [],
+  "hardware_trials": [],
+  "open_inputs": [
+    {
+      "id": "R3-O01",
+      "status": "OPEN",
+      "required": "upper guide mounting, travel/retention, manual force measurement; motor adapter only after original supplier drawing"
+    },
+    {
+      "id": "R3-O02",
+      "status": "OPEN",
+      "required": "actual slide model, drawing revision, allowed clamp zone, stroke, block envelope, load and moment limits"
+    },
+    {
+      "id": "R3-O03",
+      "status": "OPEN",
+      "required": "material lots, fastener grade, load/preload analysis, torque method, POM compression and recheck record"
+    },
+    {
+      "id": "R3-O04",
+      "status": "OPEN",
+      "required": "table material/thickness/support spacing, underside access, anchor/backplate assembly and rigidity record"
+    },
+    {
+      "id": "R3-O05",
+      "status": "OPEN",
+      "required": "five-function mechanism review, stops/retention, fixture assembly and operating envelope inspection"
+    },
+    {
+      "id": "BALL-SAMPLES",
+      "status": "BLOCKED",
+      "required": "received batch/speed mark/count, individual ball ID, cork/skirt dimensions, mass, stacking pitch, separation force, damage baseline"
+    },
+    {
+      "id": "ELECTRICAL",
+      "status": "BLOCKED",
+      "required": "actual actuators/drivers, I/O truth table, holding on loss of power, independent stop chain, measured stop travel/time"
+    },
+    {
+      "id": "WHEELS",
+      "status": "BLOCKED",
+      "required": "real wheel/shaft/hub drawings and ratings, verified speed feedback, guarded test fixture; no wheel speed limit inferred"
+    },
+    {
+      "id": "PROCUREMENT",
+      "status": "OPEN",
+      "required": "reviewed drawing revision and material/tolerances, supplier quote, lead time/tax/freight, first article report and rework terms"
+    }
+  ]
+}

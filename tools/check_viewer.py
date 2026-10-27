@@ -1,9 +1,10 @@
+import os
 from pathlib import Path
 import json,os
 from playwright.sync_api import sync_playwright
 R=Path(__file__).resolve().parents[1]
 with sync_playwright() as p:
-    browser=p.chromium.launch(channel='chrome',headless=True,args=['--allow-file-access-from-files','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
+    browser=p.chromium.launch(**({'executable_path':os.environ['BM1_CHROME_EXE']} if os.environ.get('BM1_CHROME_EXE') else {'channel':'chrome'}),headless=True,args=['--allow-file-access-from-files','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
     page=browser.new_page(viewport={'width':1500,'height':1000},device_scale_factor=1)
     errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
     page.goto(os.environ.get('BM1_VIEWER_URL','http://127.0.0.1:8765/viewer/'));page.wait_for_function('window.BM1?.loaded',timeout=60000)

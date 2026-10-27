@@ -1,0 +1,96 @@
+{
+  "run_id": "4ba7c7d18a63449c8b34bc7e64190085",
+  "commit_sha": "f8939e9df17eb2115a17d98e8b904e4879a6f74e",
+  "input_sha256": "9f27b70c17e373d812b0c6671ea67f0db1d84699076a082c0bf026564397d1b3",
+  "code_sha256": "b707320283dd906a50ba53de4b25e6ad440d5a9927de7544dadc55a1f2fc4472",
+  "tool_versions": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cadquery": "2.8.0",
+    "cadquery-ocp": "7.9.3.1.1",
+    "numpy": "2.5.4",
+    "reportlab": "5.1.0",
+    "pillow": "13.0.0",
+    "pymupdf": "2.0",
+    "playwright": "1.64.1",
+    "blender": {
+      "path": "D:\\86173\\Documents\\BM1_V02_Engineering\\tools\\blender\\blender-4.5.9-windows-x64\\blender.exe",
+      "bytes": 96051672,
+      "sha256": "42c096b04d79bd0ff234429f67178881047c1c370d25ad3aef2766f3eeac4024",
+      "version": "Blender 4.5.9 LTS"
+    },
+    "ffmpeg": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+      "bytes": 542208,
+      "sha256": "1ed4d6884c1ed8c88baa20a7275485ae5c172111a2dacfd7f0a5e423a96d4ffa",
+      "version": "ffmpeg version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2000-2026 the FFmpeg developers"
+    },
+    "ffprobe": {
+      "path": "C:\\Users\\86173\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BtbN.FFmpeg.GPL.Shared.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-n8.1.2-34-g9b6c8969e0-win64-gpl-shared-8.1\\bin\\ffprobe.exe",
+      "bytes": 227840,
+      "sha256": "33de71fe9e58e5c194210c4d9a2df3b2656f03b9f6c97fadab787f0d1f21d347",
+      "version": "ffprobe version n8.1.2-34-g9b6c8969e0-20260731 Copyright (c) 2007-2026 the FFmpeg developers"
+    },
+    "chrome": {
+      "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "bytes": 4720792,
+      "sha256": "de999bce6a1c954df71a8f15bf751b336172f55ac1a0325bb0580cbc2121268c",
+      "version": "155.0.8059.85"
+    },
+    "environment_policy": "Measured candidate environment; no physical or approved-production qualification inferred",
+    "chinese_font": {
+      "path": "C:\\Windows\\Fonts\\msyh.ttc",
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+    }
+  },
+  "started_at": "2026-10-27T01:13:05.283901+00:00",
+  "stage": "r4_media",
+  "scope": "full",
+  "status": "PASS",
+  "completed_checks": [
+    "video_fully_decoded"
+  ],
+  "artifact_hashes": {
+    "output/fixture_r4/BM1_R4_connections_explode.mp4": "b690d306179d2e08292858196d317aed3f8edcc1f811393a6ce31df7cfe08579"
+  },
+  "frames": 31,
+  "video_size": [
+    960,
+    848
+  ],
+  "video_fully_decoded": true,
+  "consumed_frame_hashes": {
+    "output/fixture_r4/frames/0001.png": "33e237f7eb800214d446b4877ae5744c2ca63d28fd347c0dcf8e26a0315139ae",
+    "output/fixture_r4/frames/0005.png": "fd85e991145237e609b7bf88b5b1523890006c4e215eb7d18863cb566245d2ca",
+    "output/fixture_r4/frames/0009.png": "95d997bb5a83ac1c451eb370f7c5d65454777f4a90ec3a63faaa007694f2c7d2",
+    "output/fixture_r4/frames/0013.png": "bd54b8c14d981bf0a4cdbacde6f780f83c404b5490ffed712b3f4301f4e410a2",
+    "output/fixture_r4/frames/0017.png": "d4493cc3a5c18eb66407c76933fcfa194a456175ca1673c48229adbfe09d7e94",
+    "output/fixture_r4/frames/0021.png": "eff132a65888edf36331e3aaf658ed46166eeb4a054ad7077da32c0a52a50d24",
+    "output/fixture_r4/frames/0025.png": "21a7747d83f2cf3f788beda18d4a1eb36bf33097a49834a3a3db6dd3083f8f55",
+    "output/fixture_r4/frames/0029.png": "49e744d439230a471dce4e7f2487fc0ebf9bc937ee45a76a0895014d527fd370",
+    "output/fixture_r4/frames/0033.png": "2a1daa105ae318e767491b52aa1c8c3a39ceda01fc9231365a9ec9ba4e905ec3",
+    "output/fixture_r4/frames/0037.png": "7529aa00b8be03f5f99f215e2649f35c62e9efba4634f1d1bb2e5dbdb0b67e3e",
+    "output/fixture_r4/frames/0041.png": "952dfaac6087ea6b6c56c2a006531f49d95652504abdfe5425e50f1343c3e0d2",
+    "output/fixture_r4/frames/0045.png": "f4365bba9965344875ecd1ea1bcec1f779bc0b6b92af9353ecdaefe0e18d753d",
+    "output/fixture_r4/frames/0049.png": "5d44e76fb6cf1f2bcac7df2452ac7c3ecbda7ce15a6bc6600c087fabf25d50cb",
+    "output/fixture_r4/frames/0053.png": "98cc1a57654a593013590127dd89b4d05905e397858c74ba23d80c67ab20e2e8",
+    "output/fixture_r4/frames/0057.png": "4d80b3d0424cb21734aa3515fe18357a483e42f88af631d537463ef446263f76",
+    "output/fixture_r4/frames/0061.png": "24016148eeed6edf1d1ba620eefcf9f1b2613a9ea65cd98b8f2ef9b6dd007e06",
+    "output/fixture_r4/frames/0065.png": "c89bcf61d743f6a49883f0a0308874277cf860f2ed5613288b3ea913f89ef443",
+    "output/fixture_r4/frames/0069.png": "1f7d414bfb75517e7de16152a69dbf02ef64bae9783dfcd098a4b815cadc52f6",
+    "output/fixture_r4/frames/0073.png": "74a0800f88fab223d5cb3a19d27baf60131e48a518ae07805a043b5e34ec7021",
+    "output/fixture_r4/frames/0077.png": "32df822ce40da97274dd452657de0dafd64d53ac8e3546ebb5b8e94a68ae4022",
+    "output/fixture_r4/frames/0081.png": "b4741eb4f04488abcd8a5594b681779067338dced0d2855ee41f5794e8637e4e",
+    "output/fixture_r4/frames/0085.png": "aadb9d8b649049b046be1c81b583a92af745c49c46d0d91f6e79127b758ce3e5",
+    "output/fixture_r4/frames/0089.png": "fa1165503fa70d6455bea58bd06677bccd1b9e4efed00f35d8972042f6165b6a",
+    "output/fixture_r4/frames/0093.png": "b5a71e84403a52ba61e618071a36df4c927d3b619078504d3d0fedc833fb8e64",
+    "output/fixture_r4/frames/0097.png": "3c744723c9065638dc914af14987714c640be6f9cb91a8c6d6a72fe49d13c3cf",
+    "output/fixture_r4/frames/0101.png": "23e1a13f3a5f48355ddb457bc2c074cf4267bbe5ccef22131b57ca671cfccf56",
+    "output/fixture_r4/frames/0105.png": "2b20902f56d84563b486736767045f0ea6e487da78c7368f283adbcb997d6ce6",
+    "output/fixture_r4/frames/0109.png": "c91b240e906fd7e76ac8e7179ce110e81a839386f99ba22fb4c700ba4e3a0b3e",
+    "output/fixture_r4/frames/0113.png": "179eeece53d023767b7ba50b32b9f0e5f2ca96a5681dd62a1ef1343ec252e85b",
+    "output/fixture_r4/frames/0117.png": "f480994f43f6e34cac2e29833c6c08ab3b824e8be9e3677eef973b620332a03d",
+    "output/fixture_r4/frames/0121.png": "c94c82c5f25bc7f0d03bee27c1865b4d7ad411c9a69a9d4d55f868a27544593b"
+  },
+  "physical_motion_proof": false
+}

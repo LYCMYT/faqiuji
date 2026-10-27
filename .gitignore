@@ -9,6 +9,10 @@ output/animation/feed/
 output/animation/explode/
 output/animation/service/
 output/fixture_r3/frames/
+output/fixture_r4/frames/
+output/history/
+output/builds/
+.superpowers/
 *.blend1
 *.brep
 

@@ -2,9 +2,14 @@
 import sys,json
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.export_all import locate
-items=json.loads((R/'data/instances.json').read_text(encoding='utf-8'));out=[];assy=cq.Assembly(name='BM1_Y0_section')
+items=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'));out=[];assy=cq.Assembly(name='BM1_Y0_section')
 half=cq.Workplane().box(2000,1000,3000).translate((0,-500,1500)).val()
 for i in items:
     if i['parent']=='WORLD_STATIC' or i.get('cover') or i['part_id']=='PRT-0202':continue

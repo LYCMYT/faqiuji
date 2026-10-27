@@ -1,0 +1,41 @@
+{
+  "mode": "static",
+  "geometry_sha256": "01da11b2ce57d4faf387ad462062c1a43504a4a87d3bcf3df0fa12f2448e0e38",
+  "states": 3,
+  "pair_evaluations": 3,
+  "exact_intersections": 1,
+  "errors": [],
+  "linear_step_mm": 2,
+  "capture_step_mm": 0.25,
+  "angular_step_deg": 5,
+  "volume_threshold_mm3": 0.01,
+  "tolerance_mm": 0.001,
+  "continuous_proof": false,
+  "post_capture_dynamic_validated": false,
+  "capture_stroke_mm": 178.85044843951113,
+  "empty_travel_states": 0,
+  "frozen_marker_retreat_states": 0,
+  "scope": "R1: loaded stops at first ideal contact; full 185mm travel checked empty; conservative frozen world marker during retreat; no flight simulation",
+  "results": [
+    {
+      "pair": [
+        "PROBE-A",
+        "PROBE-B"
+      ],
+      "max_volume_mm3": 999.9999999999998,
+      "first_state": {
+        "height": 1400,
+        "guide": 115,
+        "slide": 0,
+        "clamp": 0,
+        "capture_geometry_supported": true,
+        "loaded": true
+      },
+      "samples": 3,
+      "classification": "unresolved_hard_intersection"
+    }
+  ],
+  "unresolved_pairs": 1,
+  "indeterminate_pairs": 0,
+  "seconds": 0.014913320541381836
+}

@@ -10,6 +10,11 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.utils import ImageReader
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 from cad.assemblies.kinematics import matrix,capture_stroke
 OUT=R/'output';DRAW=OUT/'drawings';PAGES=DRAW/'pages';PAGES.mkdir(parents=True,exist_ok=True)
 DATA=json.loads((OUT/'mesh/model.json').read_text(encoding='utf-8'))
@@ -187,7 +192,7 @@ y=480
 for u in json.loads((R/'data/unresolved.json').read_text(encoding='utf-8')):
     y=wrapped(u['id']+' '+u['title']+'：'+u['close_condition'],30,y,775,10,16)-12
 done();c.save()
-(R/'data/page_index_engineering.json').write_text(json.dumps(index,ensure_ascii=False,indent=2),encoding='utf-8')
+generated_path(R,'page_index_engineering.json').write_text(json.dumps(index,ensure_ascii=False,indent=2),encoding='utf-8')
 (R/'reports/page_coverage.json').write_text(json.dumps(dict(pdf_pages=page,main_pages=sum(not x['derived'] for x in coverages),derived_pages=sum(x['derived'] for x in coverages),pages=coverages),ensure_ascii=False,indent=2),encoding='utf-8')
 with (OUT/'BOM.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.writer(f);w.writerow(['part_id','name','assembly_id','design_quantity','modeled_instances','status','page','supplier_model'])

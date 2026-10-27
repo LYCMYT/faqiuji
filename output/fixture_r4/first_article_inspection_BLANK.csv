@@ -1,0 +1,10 @@
+﻿family,revision,feature,nominal_source,actual_value,unit,material_lot,instrument,operator,date,raw_evidence,result
+PRT-0701-R4-A,PRT-0701-R4-A,Overall envelope from native STEP,first_article_features.json,,mm,,,,,,OPEN
+PRT-0701-R4-A,PRT-0701-R4-A,Land dimensions and H location from data/r4_fixture.json:seat,first_article_features.json,,mm,,,,,,OPEN
+PRT-0701-R4-A,PRT-0701-R4-A,Open-cork nominal support area; real cork fit remains OPEN,first_article_features.json,,mm,,,,,,OPEN
+PRT-0603-R3-R29-L,PRT-0603-R3-R29-L,"R29 is inherited nominal display geometry, not measured selection",first_article_features.json,,mm,,,,,,OPEN
+PRT-0603-R3-R29-L,PRT-0603-R3-R29-L,Two M4 clearance/counterbore axes and depths from data/r3_fixture.json:jaw,first_article_features.json,,mm,,,,,,OPEN
+PRT-0603-R3-R29-L,PRT-0603-R3-R29-L,Contact profile and remaining edge material,first_article_features.json,,mm,,,,,,OPEN
+PRT-0602-R3-BASE,PRT-0602-R3-BASE,Overall plate from native STEP,first_article_features.json,,mm,,,,,,OPEN
+PRT-0602-R3-BASE,PRT-0602-R3-BASE,Existing through-hole local coordinates from parts_index,first_article_features.json,,mm,,,,,,OPEN
+PRT-0602-R3-BASE,PRT-0602-R3-BASE,Flatness and table support require agreement,first_article_features.json,,mm,,,,,,OPEN

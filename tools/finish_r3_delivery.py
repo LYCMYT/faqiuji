@@ -2,6 +2,7 @@
 from pathlib import Path
 import sys,json,math,subprocess,html,csv,shutil
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
 import cadquery as cq
 import pymupdf as fitz
 from PIL import Image,ImageDraw,ImageFont
@@ -22,6 +23,9 @@ for start in range(0,len(pages),12):
     contact.save(review/f'contact_{start//12+1}.png')
 # Reopen the complete current STEP set, and independently verify closed DXF profiles.
 step=[]
+expected_steps={a['step'] for a in parts}|{'step/BM1_R3_fixture_assembly.step','step/sections/SECTION_POST_Y.step','step/sections/SECTION_JAW_X.step'}
+missing_steps=[x for x in expected_steps if not (O/x).is_file()]
+if missing_steps:raise RuntimeError('Missing expected STEP files: '+str(missing_steps))
 for path in (O/'step').rglob('*.step'):
     sh=cq.importers.importStep(str(path)).val();assert sh.isValid() and sh.Volume()>0;step.append(path.relative_to(O).as_posix())
 dxf=[]
@@ -45,6 +49,10 @@ for a in parts:
     if a['family'] in drawings:body+=f'<h2>{a["family"]}</h2><p><a href="{a["step"]}">STEP</a> · <a href="dxf/{a["family"]}.dxf">顶面DXF</a></p><img src="drawings/{a["family"]}.png">'
 (O/'index.html').write_text('<!doctype html><html lang="zh"><meta charset="utf-8"><title>BM1 R3</title><style>body{max-width:1100px;margin:40px auto;font:16px/1.8 system-ui;color:#183a4d;background:#f4f7f9}img{width:100%}a{color:#087b80}</style>'+body+'</html>',encoding='utf-8')
 bl=json.loads((R/'reports/r3_blender_validation.json').read_text(encoding='utf-8'));geo=json.loads((R/'reports/r3_geometry_validation.json').read_text(encoding='utf-8'));assert bl['meshes']==geo['instances'] and geo['status']=='PASS'
+if not all(bl.get(k) is True for k in ['blend_reopened','glb_reopened','ids_preserved']):raise RuntimeError('Blender/GLB reopen or ID check failed')
+from tools.build_context import active_context
+from tools.validate_release import require_report
+require_report(geo,active_context(R,'r3_geometry'),['motion_endpoints'],R)
 assert not S['manufacturing_release'] and not any(S[k] for k in ['physical_measurements','supplier_interfaces','prototype_results'])
 report=dict(status='PASS',instances=geo['instances'],pdf_pages=len(pdf),pdf_text_overflow=[],step_reopened=len(step),dxf_profiles=dxf,video_fully_decoded=True,video_size=[w,video_h],blend_glb_reopened=True,physical_evidence_empty=True,manufacturing_release=False)
 (R/'reports/r3_delivery_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8');print('R3 FINAL PASS',len(pdf),'PDF pages;',len(step),'STEP;',len(dxf),'DXF; video fully decoded')

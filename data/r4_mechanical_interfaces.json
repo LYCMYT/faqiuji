@@ -1,0 +1,231 @@
+{
+  "revision": "R4-01",
+  "axes": [
+    {
+      "axis_id": "upper",
+      "moving_parents": [
+        "UPPER_L",
+        "UPPER_R"
+      ],
+      "moving_instance": "PRT-0603-R3-CARRIER-L",
+      "fixed_instance": "PRT-0602-C__L410",
+      "guide_pair": {
+        "status": "NATIVE_CANDIDATE",
+        "description": "Paired integral Y shafts in two bored bushes constrain lateral/vertical and rotation; collars bound24mm"
+      },
+      "drive_interface": {
+        "mode": "independent hand displacement of moving member in captive guide",
+        "status": "MANUAL_CANDIDATE",
+        "supplier": null,
+        "force_N": null
+      },
+      "reaction_path": {
+        "status": "NATIVE_CANDIDATE_LOAD_OPEN",
+        "candidate": "carrier -> paired shafts -> bush -> integral bridge -> side410 bracket -> uprights -> base"
+      },
+      "one_sided_stroke_mm": 24,
+      "opening_change_mm": 48,
+      "actuator_stroke_mm": null,
+      "limits": {
+        "nominal_mm": [
+          0,
+          24
+        ],
+        "physical_stops": "NATIVE_COLLARS_OR_CHANNEL_STOPS",
+        "tolerance_and_strength": "OPEN",
+        "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
+      },
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
+      "feedback": null,
+      "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
+      "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
+    },
+    {
+      "axis_id": "gate",
+      "moving_parents": [
+        "LOWER_GATE"
+      ],
+      "moving_instance": "PRT-0604",
+      "fixed_instance": "PRT-0602-G",
+      "guide_pair": {
+        "status": "NATIVE_CANDIDATE",
+        "description": "Paired X shafts at y\u00b160 in wall-supported outboard bushes; collars bound85mm; rear ribs remain inside original tube slot"
+      },
+      "drive_interface": {
+        "mode": "independent hand displacement of moving member in captive guide",
+        "status": "MANUAL_CANDIDATE",
+        "supplier": null,
+        "force_N": null
+      },
+      "reaction_path": {
+        "status": "NATIVE_CANDIDATE_LOAD_OPEN",
+        "candidate": "gate -> rear ribs/ears -> paired shafts -> bushes -> reaction bridge -> rear wall -> frame -> base"
+      },
+      "one_sided_stroke_mm": 85,
+      "opening_change_mm": null,
+      "actuator_stroke_mm": null,
+      "limits": {
+        "nominal_mm": [
+          0,
+          85
+        ],
+        "physical_stops": "NATIVE_COLLARS_OR_CHANNEL_STOPS",
+        "tolerance_and_strength": "OPEN",
+        "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
+      },
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
+      "feedback": null,
+      "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
+      "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
+    },
+    {
+      "axis_id": "guide",
+      "moving_parents": [
+        "GUIDE_SLEEVE"
+      ],
+      "moving_instance": "PRT-0607-B",
+      "fixed_instance": "PRT-0607-A",
+      "guide_pair": {
+        "status": "NATIVE_CANDIDATE",
+        "description": "Rectangular captive Z tongue with front lips, back web and sidewalls; stops113/258 bound115mm"
+      },
+      "drive_interface": {
+        "mode": "independent hand displacement of moving member in captive guide",
+        "status": "MANUAL_CANDIDATE",
+        "supplier": null,
+        "force_N": null
+      },
+      "reaction_path": {
+        "status": "NATIVE_CANDIDATE_LOAD_OPEN",
+        "candidate": "sleeve -> revised neck -> existing tongue -> custom captive way -> bracket at z271 -> rear frame -> base"
+      },
+      "one_sided_stroke_mm": 115,
+      "opening_change_mm": null,
+      "actuator_stroke_mm": null,
+      "limits": {
+        "nominal_mm": [
+          0,
+          115
+        ],
+        "physical_stops": "NATIVE_COLLARS_OR_CHANNEL_STOPS",
+        "tolerance_and_strength": "OPEN",
+        "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
+      },
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
+      "feedback": null,
+      "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
+      "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
+    },
+    {
+      "axis_id": "slide",
+      "moving_parents": [
+        "CARRIAGE"
+      ],
+      "moving_instance": "PRT-0703-C",
+      "fixed_instance": "PRT-0703-A",
+      "guide_pair": {
+        "status": "NATIVE_CANDIDATE",
+        "description": "Paired integral side flanges in captive C-ways; rear/front stops bound185mm"
+      },
+      "drive_interface": {
+        "mode": "independent hand displacement of moving member in captive guide",
+        "status": "MANUAL_CANDIDATE",
+        "supplier": null,
+        "force_N": null
+      },
+      "reaction_path": {
+        "status": "NATIVE_CANDIDATE_LOAD_OPEN",
+        "candidate": "cradle -> carriage -> captive flanges -> rail -> revised shoes/posts -> base"
+      },
+      "one_sided_stroke_mm": 185,
+      "opening_change_mm": null,
+      "actuator_stroke_mm": null,
+      "limits": {
+        "nominal_mm": [
+          0,
+          185
+        ],
+        "physical_stops": "NATIVE_COLLARS_OR_CHANNEL_STOPS",
+        "tolerance_and_strength": "OPEN",
+        "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
+      },
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
+      "feedback": null,
+      "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
+      "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
+    },
+    {
+      "axis_id": "clamp",
+      "moving_parents": [
+        "CLAMP_L",
+        "CLAMP_R"
+      ],
+      "moving_instance": "PRT-0702-A__L",
+      "fixed_instance": "PRT-0701-C",
+      "guide_pair": {
+        "status": "NATIVE_CANDIDATE",
+        "description": "Rear channel back/top/bottom constrain arm; fixed stepped pin in14mm slot constrains forward X and nominal Y travel; running clearance0.2mm"
+      },
+      "drive_interface": {
+        "mode": "independent hand displacement of moving member in captive guide",
+        "status": "MANUAL_CANDIDATE",
+        "supplier": null,
+        "force_N": null
+      },
+      "reaction_path": {
+        "status": "NATIVE_CANDIDATE_LOAD_OPEN",
+        "candidate": "finger -> arm -> slot/pin and channel -> symmetric crossbeam -> cradle -> carriage -> rail -> base"
+      },
+      "one_sided_stroke_mm": 14,
+      "opening_change_mm": 28,
+      "actuator_stroke_mm": null,
+      "limits": {
+        "nominal_mm": [
+          0,
+          14
+        ],
+        "physical_stops": "NATIVE_COLLARS_OR_CHANNEL_STOPS",
+        "tolerance_and_strength": "OPEN",
+        "holding": "R4 manual positive endpoint pin; work-range hard stops separate; see data/r4_fixture.json manual_guides.holding"
+      },
+      "service_state": "Empty, energy isolated and manually supported. Native removable caps/stops/nuts provided; 57 ordered nominal removal path legs and40 proposed new tool channels checked, plus upper6mm lift/24->40mm withdrawal and4 inherited M4 channels. Actual chosen tools, drive features, hand handling and assembly trial OPEN.",
+      "feedback": null,
+      "power_loss_fault_restraint": "Independent positive manual endpoint pin geometry exists; parked during travel, installed endpoint fit checked separately. Grade/shear/bearing, anti-loss detent/tether and measured holding force OPEN. Support member before withdrawing pin.",
+      "source_status": "R4 explicit custom native guide candidate; R3 stable part IDs retained; no vendor hole claims"
+    }
+  ],
+  "physical_validated": false,
+  "manufacturing_release": false,
+  "open_review_questions": [
+    {
+      "id": "MECH-01",
+      "question": "Upper split caps/M3 hardware/endpoint pins: nominal removal and candidate tool envelopes checked; confirm actual selected tools, drive features and human handling with supported low-speed assembly",
+      "required": "Actual hardware/tool selection and low-speed supported assembly trial; no unfinished nominal withdrawal task remains"
+    },
+    {
+      "id": "MECH-02",
+      "question": "Sleeve captive way face/weld attachment to bracket and positive endpoint lock-pin load capacity/detent",
+      "required": "Weld/fastener process, manual clamp design, force/stiffness measurement"
+    },
+    {
+      "id": "MECH-03",
+      "question": "Clamp stepped pin/M4 nut and endpoint lock holes: nominal access checked using20mm candidate socket and10mm drop then side withdrawal; confirm small-pin/arm bearing strength, edge distance and preload",
+      "required": "Custom pin detailed manufacturing drawing and proof force"
+    },
+    {
+      "id": "MECH-04",
+      "question": "Gate rear rib and bridge bending, manual handle access",
+      "required": "Measured drop/gate force and prototype stiffness"
+    },
+    {
+      "id": "MECH-05",
+      "question": "Ball cork/skirt envelope, support land friction and impact settling",
+      "required": "Real sample measurements and low-speed loading video"
+    },
+    {
+      "id": "MECH-06",
+      "question": "Slide185mm captive flange and shoe relief load path, table anchors",
+      "required": "Fixture/table measurements and static load trial"
+    }
+  ]
+}

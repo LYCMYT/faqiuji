@@ -2,12 +2,18 @@
 from pathlib import Path
 import sys,json,hashlib
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.export_all import locate
 from cad.assemblies.posing import pose_shape
 from tools.check_collisions import bbox,overlaps
 spec=json.loads((R/'data/r1_service.json').read_text(encoding='utf-8'))
-rows=json.loads((R/'data/instances.json').read_text(encoding='utf-8'))
+rows=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'))
 model=[(i,cq.Shape.importBrep(str(R/'output/mesh'/(i['instance_id']+'.brep')))) for i in rows if not i.get('reference')]
 recipes={i['instance_id']:i['shape'] for i in json.loads((R/'data/geometry.json').read_text(encoding='utf-8'))['instances']}
 state=spec['service_state'];pins=set(spec['pin_instances']);parts=set(spec['cassette_parts']);ids=set(spec['cassette_instances'])

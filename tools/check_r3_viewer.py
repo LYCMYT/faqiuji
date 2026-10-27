@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import json,threading
 from functools import partial
@@ -10,7 +11,7 @@ class Quiet(Handler):
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(R)));thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
 try:
     with sync_playwright() as p:
-        browser=p.chromium.launch(channel='chrome',headless=True,args=['--use-angle=swiftshader','--enable-unsafe-swiftshader']);page=browser.new_page(viewport={'width':1400,'height':1000});errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+        browser=p.chromium.launch(**({'executable_path':os.environ['BM1_CHROME_EXE']} if os.environ.get('BM1_CHROME_EXE') else {'channel':'chrome'}),headless=True,args=['--use-angle=swiftshader','--enable-unsafe-swiftshader']);page=browser.new_page(viewport={'width':1400,'height':1000});errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
         page.goto(f'http://127.0.0.1:{server.server_port}/output/fixture_r3/viewer.html');page.wait_for_function('window.BM1_R3?.meshes.length>0',timeout=60000)
         count=page.evaluate('BM1_R3.meshes.length');expected=json.loads((R/'output/fixture_r3/mesh.json').read_text(encoding='utf-8'));assert count==len(expected)
         first=page.evaluate('BM1_R3.meshes.find(o=>o.userData.instance_id==="PRT-0602-R3-BASE").name');page.select_option('#part',first);page.click('#isolate');assert page.evaluate('BM1_R3.meshes.filter(o=>o.visible).length')==1

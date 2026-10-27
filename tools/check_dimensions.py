@@ -1,10 +1,16 @@
 import json,sys,math
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+import sys; sys.path.insert(0,str(R))
+from tools.build_context import require_cache
+require_cache(R,R/'output/generated_metadata/cache_provenance.json')
+if sys.flags.optimize: raise RuntimeError('Optimized Python unsupported for assertion-based CAD validation')
+import sys; sys.path.insert(0,str(R))
+from tools.input_manifest import generated_path, metadata_path
 import cadquery as cq
 from cad.assemblies.kinematics import parameters
 from cad.export_all import locate
-p=parameters();rows=json.loads((R/'data/instances.json').read_text(encoding='utf-8'));d={i['instance_id']:i for i in rows}
+p=parameters();rows=json.loads(metadata_path(R,'instances.json').read_text(encoding='utf-8'));d={i['instance_id']:i for i in rows}
 def shape(id):return cq.Shape.importBrep(str(R/'output/mesh'/(id+'.brep')))
 wheel=shape('PRT-0505__L');feather=shape('PRT-REF-SKIRT');cork=shape('PRT-REF-CORK')
 wheel_skirt=min(wheel.distance(feather.translate((q,0,0))) for q in range(0,186,2))

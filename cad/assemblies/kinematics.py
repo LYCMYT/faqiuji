@@ -42,13 +42,41 @@ def capture_stroke(p=None):
     if radius<=half: return None # this geometry cannot capture the cork
     return -math.sqrt(radius*radius-half*half)-p['load_x']
 
-def permitted(s):
-    p=parameters(); guide=s.get('guide',p['guide_stroke']); slide=s.get('slide',0)
-    aimed=abs(s.get('yaw',0))+abs(s.get('pitch',0))>1e-8
-    if guide < p['guide_stroke']-1e-8 and (slide>0 or aimed): return False
-    if aimed and slide < p['clear_stroke']: return False
+def motion_limits(mode='work'):
+    """Concept design bounds; service angles require explicit selection."""
+    if mode not in ('work','service'):raise ValueError('unknown motion mode')
+    p=parameters(); suffix='work' if mode=='work' else 'check'
+    d=json.loads((ROOT/'data/implementation.json').read_text(encoding='utf-8'))['demo']
+    return dict(height=(p['head_height_min'],p['head_height_max']),pitch=(p['pitch_min_'+suffix],p['pitch_max_'+suffix]),yaw=(p['yaw_min_'+suffix],p['yaw_max_'+suffix]),slide=(0,p['carriage_total_stroke']),guide=(0,p['guide_stroke']),clamp=(0,d['clamp_open_mm']),gate=(0,d['gate_open_mm']),upper=(0,d['upper_open_mm']))
+
+
+def validate_motion_state(state: dict, limits: dict) -> list[str]:
+    """Layered data, absolute limits, ideal reachability and relative checks."""
+    from numbers import Real
+    if not isinstance(state,dict):return ['data:state_not_mapping']
+    p=parameters();s=dict(height=p['head_axis_height'],pitch=0,yaw=0,slide=0,guide=p['guide_stroke'],clamp=0,gate=0,upper=0,loaded=True);s.update(state)
+    errors=[]
+    for axis in limits:
+        value=s.get(axis)
+        try:
+            valid=not isinstance(value,bool) and isinstance(value,Real) and math.isfinite(value)
+        except (OverflowError,ValueError,TypeError):
+            valid=False
+        if not valid:errors.append('data:'+axis+'_not_finite_real')
+    if type(s['loaded']) is not bool:errors.append('data:loaded_not_bool')
+    if errors:return errors
+    for axis,(lo,hi) in limits.items():
+        if not lo<=s[axis]<=hi:errors.append('limit:'+axis+'_out_of_range')
     boundary=capture_stroke(p)
-    if s.get('loaded',True) and (boundary is None or slide>boundary+1e-6):return False
-    d=json.loads((ROOT/'data/implementation.json').read_text(encoding='utf-8')) if (ROOT/'data/implementation.json').exists() else {'demo':{'release_complete_x':-25}}
-    if slide+p['load_x']>=d['demo']['release_complete_x'] and s.get('clamp',0)<d['demo'].get('clamp_open_mm',14)-1e-8: return False
-    return True
+    if boundary is None or not math.isfinite(boundary) or not limits['slide'][0]<=boundary<=limits['slide'][1]:errors.append('reachability:capture_outside_slide_range')
+    elif s['loaded'] and s['slide']>boundary+1e-6:errors.append('reachability:loaded_capture_overrun')
+    aimed=abs(s['yaw'])+abs(s['pitch'])>1e-8
+    if s['guide']<p['guide_stroke']-1e-8 and (s['slide']>0 or aimed):errors.append('interlock:guide_not_retracted')
+    if aimed and s['slide']<p['clear_stroke']:errors.append('interlock:head_not_clear')
+    d=json.loads((ROOT/'data/implementation.json').read_text(encoding='utf-8'))['demo']
+    if s['slide']+p['load_x']>=d['release_complete_x'] and s['clamp']<d['clamp_open_mm']-1e-8:errors.append('interlock:clamp_not_released')
+    return errors
+
+
+def permitted(s, mode='work'):
+    return not validate_motion_state(s,motion_limits(mode))
