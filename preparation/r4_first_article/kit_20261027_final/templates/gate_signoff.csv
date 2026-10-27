@@ -1,0 +1,11 @@
+﻿stage,entry_evidence,test_plan_revision,parameter_sheet,acceptance_rule,actual_result,unresolved_ncr,mechanical_reviewer,electrical_reviewer,operator,date,decision
+P0_DFM,,,,,,,,,,,BLOCKED
+P1_ORDER,,,,,,,,,,,BLOCKED
+M0_ASSEMBLY,,,,,,,,,,,BLOCKED
+M1_EMPTY,,,,,,,,,,,BLOCKED
+M2_SINGLE,,,,,,,,,,,BLOCKED
+M3_STACK,,,,,,,,,,,BLOCKED
+E0_ENERGIZE,,,,,,,,,,,BLOCKED
+E1_EMPTY_FAULTS,,,,,,,,,,,BLOCKED
+E2_SINGLE_STACK,,,,,,,,,,,BLOCKED
+V0_FROZEN_CONFIRMATION,,,,,,,,,,,BLOCKED

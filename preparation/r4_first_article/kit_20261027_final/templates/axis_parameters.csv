@@ -1,0 +1,6 @@
+﻿axis,actuator_driver_model,drawing_revision,travel_min,travel_max,position_unit,speed,speed_unit,force_or_current_limit,limit_unit,arrival_tolerance,timeout_s,stop_distance_limit,stop_time_limit_s,holding_strategy,source_evidence,approver,date,status
+upper,,,,,,,,,,,,,,,,,,OPEN
+gate,,,,,,,,,,,,,,,,,,OPEN
+guide,,,,,,,,,,,,,,,,,,OPEN
+slide,,,,,,,,,,,,,,,,,,OPEN
+clamp,,,,,,,,,,,,,,,,,,OPEN

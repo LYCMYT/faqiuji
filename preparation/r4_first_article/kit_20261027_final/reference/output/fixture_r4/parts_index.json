@@ -1,0 +1,2725 @@
+[
+  {
+    "family": "PRT-0602-R3-BASE",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-R3-BASE"
+    ],
+    "material": "6061-T651",
+    "kind": "custom",
+    "step": "step/parts/PRT-0602-R3-BASE.step",
+    "local_origin_H_mm": [
+      -510.0,
+      -160.0,
+      -396.0
+    ],
+    "holes": [
+      {
+        "x": -270,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -270,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -270,
+        "y": 60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -270,
+        "y": 110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": 60,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -70,
+        "y": 110,
+        "diameter": 6.6,
+        "purpose": "筒架压板拉杆"
+      },
+      {
+        "x": -247,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -247,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -3,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -3,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "滑台支柱拉杆"
+      },
+      {
+        "x": -465,
+        "y": -125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": -465,
+        "y": 125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": 145,
+        "y": -125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": 145,
+        "y": 125,
+        "diameter": 6.6,
+        "purpose": "支脚穿杆"
+      },
+      {
+        "x": -480,
+        "y": -60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      },
+      {
+        "x": -480,
+        "y": 60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      },
+      {
+        "x": 160,
+        "y": -60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      },
+      {
+        "x": 160,
+        "y": 60,
+        "diameter": 9,
+        "purpose": "台面锚固预留"
+      }
+    ],
+    "dimensions_mm": [
+      700.0,
+      320.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-PED",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0602-R3-PED-00",
+      "PRT-0602-R3-PED-01",
+      "PRT-0602-R3-PED-10",
+      "PRT-0602-R3-PED-11"
+    ],
+    "material": "6061-T651",
+    "kind": "custom",
+    "step": "step/parts/PRT-0602-R3-PED.step",
+    "local_origin_H_mm": [
+      -285.0,
+      -125.0,
+      -384.0
+    ],
+    "holes": [
+      {
+        "x": -270,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      },
+      {
+        "x": -270,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      }
+    ],
+    "dimensions_mm": [
+      30.0,
+      80.0,
+      22.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-STRAP",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0602-R3-STRAP-00",
+      "PRT-0602-R3-STRAP-01",
+      "PRT-0602-R3-STRAP-10",
+      "PRT-0602-R3-STRAP-11"
+    ],
+    "material": "6061-T651",
+    "kind": "custom",
+    "step": "step/parts/PRT-0602-R3-STRAP.step",
+    "local_origin_H_mm": [
+      -285.0,
+      -125.0,
+      -342.0
+    ],
+    "holes": [
+      {
+        "x": -270,
+        "y": -110,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      },
+      {
+        "x": -270,
+        "y": -60,
+        "diameter": 6.6,
+        "purpose": "M6通孔"
+      }
+    ],
+    "dimensions_mm": [
+      30.0,
+      80.0,
+      8.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-ROD-M6-L90",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0602-R3-ARMFAST-000-ROD",
+      "PRT-0602-R3-ARMFAST-001-ROD",
+      "PRT-0602-R3-ARMFAST-010-ROD",
+      "PRT-0602-R3-ARMFAST-011-ROD",
+      "PRT-0602-R3-ARMFAST-100-ROD",
+      "PRT-0602-R3-ARMFAST-101-ROD",
+      "PRT-0602-R3-ARMFAST-110-ROD",
+      "PRT-0602-R3-ARMFAST-111-ROD"
+    ],
+    "material": "M6全螺纹杆，等级待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0602-R3-ROD-M6-L90.step",
+    "local_origin_H_mm": [
+      -273.0,
+      -113.0,
+      -406.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      6.0,
+      6.0,
+      90.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-WASHER-M6",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 24,
+    "instance_ids": [
+      "PRT-0602-R3-ARMFAST-000-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-000-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-001-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-001-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-010-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-010-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-011-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-011-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-100-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-100-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-101-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-101-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-110-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-110-WASHER-UP",
+      "PRT-0602-R3-ARMFAST-111-WASHER-LOW",
+      "PRT-0602-R3-ARMFAST-111-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-00-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-00-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-01-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-01-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-10-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-10-WASHER-UP",
+      "PRT-0602-R3-FOOTFAST-11-WASHER-LOW",
+      "PRT-0602-R3-FOOTFAST-11-WASHER-UP"
+    ],
+    "material": "金属垫圈，实际材质待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0602-R3-WASHER-M6.step",
+    "local_origin_H_mm": [
+      -276.0,
+      -116.0,
+      -397.6
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      12.0,
+      12.0,
+      1.6000000000000227
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-NUT-M6",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 24,
+    "instance_ids": [
+      "PRT-0602-R3-ARMFAST-000-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-000-NUT-UP",
+      "PRT-0602-R3-ARMFAST-001-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-001-NUT-UP",
+      "PRT-0602-R3-ARMFAST-010-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-010-NUT-UP",
+      "PRT-0602-R3-ARMFAST-011-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-011-NUT-UP",
+      "PRT-0602-R3-ARMFAST-100-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-100-NUT-UP",
+      "PRT-0602-R3-ARMFAST-101-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-101-NUT-UP",
+      "PRT-0602-R3-ARMFAST-110-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-110-NUT-UP",
+      "PRT-0602-R3-ARMFAST-111-NUT-LOW",
+      "PRT-0602-R3-ARMFAST-111-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-00-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-00-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-01-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-01-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-10-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-10-NUT-UP",
+      "PRT-0602-R3-FOOTFAST-11-NUT-LOW",
+      "PRT-0602-R3-FOOTFAST-11-NUT-UP"
+    ],
+    "material": "M6螺母，等级/防松待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0602-R3-NUT-M6.step",
+    "local_origin_H_mm": [
+      -275.7735026918963,
+      -115.0,
+      -402.80000000000007
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      11.547005383792566,
+      10.0,
+      5.199999999999989
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R3-TUBE",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0703-R3-TUBE-0",
+      "PRT-0703-R3-TUBE-1"
+    ],
+    "material": "矩形金属管/自制空心柱，材料批次待确认",
+    "kind": "custom",
+    "step": "step/parts/PRT-0703-R3-TUBE.step",
+    "local_origin_H_mm": [
+      -255.0,
+      -50.0,
+      -374.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      50.0,
+      100.0,
+      324.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R3-CAP-0",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0703-R3-CAP-0-LOW",
+      "PRT-0703-R3-CAP-0-UP"
+    ],
+    "material": "6061-T651",
+    "kind": "custom",
+    "step": "step/parts/PRT-0703-R3-CAP-0.step",
+    "local_origin_H_mm": [
+      -255.0,
+      -50.0,
+      -384.0
+    ],
+    "holes": [
+      {
+        "x": -247,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      },
+      {
+        "x": -247,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      }
+    ],
+    "dimensions_mm": [
+      50.0,
+      100.0,
+      10.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-SHOE-0",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 explicit pocket clears captive slide channel; retained underside side support requires load review",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0703-R3-SHOE-0-0",
+      "PRT-0703-R3-SHOE-1-0"
+    ],
+    "material": "6061-T651",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0703-R4-SHOE-0.step",
+    "local_origin_H_mm": [
+      -259.0,
+      -50.00000000000037,
+      -40.0
+    ],
+    "holes": [
+      {
+        "x": -247,
+        "y": -42,
+        "diameter": 6.6,
+        "counterbore_diameter": 20,
+        "counterbore_depth": 3,
+        "purpose": "侧压爪通孔；上方开边圆形螺母/工具凹台"
+      }
+    ],
+    "dimensions_mm": [
+      24.0,
+      34.50000000000037,
+      17.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R3-ROD-M6-L400",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0703-R3-POSTFAST-0-0-ROD",
+      "PRT-0703-R3-POSTFAST-0-1-ROD",
+      "PRT-0703-R3-POSTFAST-1-0-ROD",
+      "PRT-0703-R3-POSTFAST-1-1-ROD"
+    ],
+    "material": "M6全螺纹杆，等级待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0703-R3-ROD-M6-L400.step",
+    "local_origin_H_mm": [
+      -250.0,
+      -45.0,
+      -406.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      6.0,
+      6.0,
+      400.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R3-WASHER-M6",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0703-R3-POSTFAST-0-0-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-0-0-WASHER-UP",
+      "PRT-0703-R3-POSTFAST-0-1-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-0-1-WASHER-UP",
+      "PRT-0703-R3-POSTFAST-1-0-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-1-0-WASHER-UP",
+      "PRT-0703-R3-POSTFAST-1-1-WASHER-LOW",
+      "PRT-0703-R3-POSTFAST-1-1-WASHER-UP"
+    ],
+    "material": "金属垫圈，实际材质待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0703-R3-WASHER-M6.step",
+    "local_origin_H_mm": [
+      -253.0,
+      -48.0,
+      -397.6
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      12.0,
+      12.0,
+      1.6000000000000227
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R3-NUT-M6",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0703-R3-POSTFAST-0-0-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-0-0-NUT-UP",
+      "PRT-0703-R3-POSTFAST-0-1-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-0-1-NUT-UP",
+      "PRT-0703-R3-POSTFAST-1-0-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-1-0-NUT-UP",
+      "PRT-0703-R3-POSTFAST-1-1-NUT-LOW",
+      "PRT-0703-R3-POSTFAST-1-1-NUT-UP"
+    ],
+    "material": "M6螺母，等级/防松待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0703-R3-NUT-M6.step",
+    "local_origin_H_mm": [
+      -252.77350269189628,
+      -47.0,
+      -402.80000000000007
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      11.547005383792538,
+      10.0,
+      5.199999999999989
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-SHOE-1",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 explicit pocket clears captive slide channel; retained underside side support requires load review",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0703-R3-SHOE-0-1",
+      "PRT-0703-R3-SHOE-1-1"
+    ],
+    "material": "6061-T651",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0703-R4-SHOE-1.step",
+    "local_origin_H_mm": [
+      -259.0,
+      15.5,
+      -40.0
+    ],
+    "holes": [
+      {
+        "x": -247,
+        "y": 42,
+        "diameter": 6.6,
+        "counterbore_diameter": 20,
+        "counterbore_depth": 3,
+        "purpose": "侧压爪通孔；上方开边圆形螺母/工具凹台"
+      }
+    ],
+    "dimensions_mm": [
+      24.0,
+      34.50000000000036,
+      17.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R3-CAP-1",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0703-R3-CAP-1-LOW",
+      "PRT-0703-R3-CAP-1-UP"
+    ],
+    "material": "6061-T651",
+    "kind": "custom",
+    "step": "step/parts/PRT-0703-R3-CAP-1.step",
+    "local_origin_H_mm": [
+      -45.0,
+      -50.0,
+      -384.0
+    ],
+    "holes": [
+      {
+        "x": -3,
+        "y": -42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      },
+      {
+        "x": -3,
+        "y": 42,
+        "diameter": 6.6,
+        "purpose": "M6拉杆通孔"
+      }
+    ],
+    "dimensions_mm": [
+      50.0,
+      100.0,
+      10.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-FOOT",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0602-R3-FOOT-00",
+      "PRT-0602-R3-FOOT-01",
+      "PRT-0602-R3-FOOT-10",
+      "PRT-0602-R3-FOOT-11"
+    ],
+    "material": "6061-T651",
+    "kind": "custom",
+    "step": "step/parts/PRT-0602-R3-FOOT.step",
+    "local_origin_H_mm": [
+      -490.0,
+      -150.0,
+      -426.0
+    ],
+    "holes": [
+      {
+        "x": -465,
+        "y": -125,
+        "diameter": 6.6,
+        "purpose": "M6穿杆；侧窗放入螺母及垫圈"
+      }
+    ],
+    "dimensions_mm": [
+      50.0,
+      50.0,
+      30.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-ROD-M6-L50",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0602-R3-FOOTFAST-00-ROD",
+      "PRT-0602-R3-FOOTFAST-01-ROD",
+      "PRT-0602-R3-FOOTFAST-10-ROD",
+      "PRT-0602-R3-FOOTFAST-11-ROD"
+    ],
+    "material": "M6全螺纹杆，等级待定",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0602-R3-ROD-M6-L50.step",
+    "local_origin_H_mm": [
+      -468.0,
+      -128.0,
+      -424.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      6.0,
+      6.0,
+      50.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-A-R4",
+    "part_id": "PRT-0703",
+    "source_revision": "Integral captive flange ways and 0/185 hard stops",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0703-A-R4.step",
+    "local_origin_H_mm": [
+      -245.0,
+      -30.0,
+      -40.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      260.0,
+      60.0,
+      18.2
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-B",
+    "part_id": "PRT-0703",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-B"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0703-B.step",
+    "local_origin_H_mm": [
+      -245.0,
+      -6.0,
+      -28.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      260.0,
+      12.0,
+      8.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-C-R4",
+    "part_id": "PRT-0703",
+    "source_revision": "Integral paired retaining flanges captured under rail lips",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-C"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0703-C-R4.step",
+    "local_origin_H_mm": [
+      -208.0,
+      -27.0,
+      -28.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      36.0,
+      54.0,
+      10.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0701-R4-A",
+    "part_id": "PRT-0701",
+    "source_revision": "R3 unchanged + integral R4 low land",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0701-A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0701-R4-A.step",
+    "local_origin_H_mm": [
+      -235.0,
+      -16.0,
+      -18.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      60.0,
+      32.0,
+      5.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0701-B",
+    "part_id": "PRT-0701",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0701-B"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0701-B.step",
+    "local_origin_H_mm": [
+      -206.5,
+      -5.0,
+      -13.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      3.0,
+      10.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0701-C-R4",
+    "part_id": "PRT-0701",
+    "source_revision": "Integral symmetric captive clamp channels and nominal travel pin seats; collar retention requires prototype",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0701-C"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0701-C-R4.step",
+    "local_origin_H_mm": [
+      -239.0,
+      -65.0,
+      -20.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      16.19999999999999,
+      105.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702__L",
+    "part_id": "PRT-0702",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0702__L"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0702__L.step",
+    "local_origin_H_mm": [
+      -219.5,
+      13.25,
+      -16.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      35.0,
+      10.0,
+      8.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702-A__L-R4",
+    "part_id": "PRT-0702",
+    "source_revision": "Explicit manual travel slot; nominal14mm,0.2mm pin radial running clearance",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0702-A__L"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0702-A__L-R4.step",
+    "local_origin_H_mm": [
+      -235.0,
+      0.0,
+      -12.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      15.5,
+      36.5,
+      4.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702__R",
+    "part_id": "PRT-0702",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0702__R"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0702__R.step",
+    "local_origin_H_mm": [
+      -219.5,
+      -23.25,
+      -16.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      35.0,
+      10.0,
+      8.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702-A__R-R4",
+    "part_id": "PRT-0702",
+    "source_revision": "Explicit manual travel slot; nominal14mm,0.2mm pin radial running clearance",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0702-A__R"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0702-A__R-R4.step",
+    "local_origin_H_mm": [
+      -235.0,
+      -36.5,
+      -12.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      15.5,
+      36.5,
+      4.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0704",
+    "part_id": "PRT-0704",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0704"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0704.step",
+    "local_origin_H_mm": [
+      -260.0,
+      -72.5,
+      -50.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      30.0,
+      15.0,
+      30.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0704-A",
+    "part_id": "PRT-0704",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0704-A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0704-A.step",
+    "local_origin_H_mm": [
+      -260.0,
+      -73.0,
+      -20.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      30.0,
+      16.0,
+      4.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0601",
+    "part_id": "PRT-0601",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0601"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0601.step",
+    "local_origin_H_mm": [
+      -230.0,
+      -40.0,
+      110.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      80.0,
+      80.0,
+      540.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0601-A",
+    "part_id": "PRT-0601",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0601-A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0601-A.step",
+    "local_origin_H_mm": [
+      -233.0,
+      -43.0,
+      650.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      86.0,
+      86.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-A__L",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-A__L"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-A__L.step",
+    "local_origin_H_mm": [
+      -320.0,
+      75.0,
+      -350.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      950.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-B__L",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-B__L"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-B__L.step",
+    "local_origin_H_mm": [
+      -310.0,
+      75.0,
+      -362.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      310.0,
+      20.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-C__L410-R4",
+    "part_id": "PRT-0602",
+    "source_revision": "Integral split manual guide lower bush support and reaction bridge; explicit four M3 cap through-holes",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-C__L410"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0602-C__L410-R4.step",
+    "local_origin_H_mm": [
+      -320.0,
+      50.0,
+      377.9999999
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      145.0,
+      90.0000001,
+      38.00000010000002
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-C__L600",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-C__L600"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-C__L600.step",
+    "local_origin_H_mm": [
+      -320.0,
+      50.0,
+      594.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      130.0,
+      40.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-A__R",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-A__R"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-A__R.step",
+    "local_origin_H_mm": [
+      -320.0,
+      -95.0,
+      -350.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      20.0,
+      20.0,
+      950.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-B__R",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-B__R"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-B__R.step",
+    "local_origin_H_mm": [
+      -310.0,
+      -95.0,
+      -362.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      310.0,
+      20.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-C__R410-R4",
+    "part_id": "PRT-0602",
+    "source_revision": "Integral split manual guide lower bush support and reaction bridge; explicit four M3 cap through-holes",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-C__R410"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0602-C__R410-R4.step",
+    "local_origin_H_mm": [
+      -320.0,
+      -140.0000001,
+      377.9999999
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      145.0,
+      90.00000010000001,
+      38.00000010000002
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-C__R600",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-C__R600"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-C__R600.step",
+    "local_origin_H_mm": [
+      -320.0,
+      -90.0,
+      594.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      130.0,
+      40.000000000000014,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-D__410",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-D__410"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-D__410.step",
+    "local_origin_H_mm": [
+      -190.0,
+      -55.0,
+      404.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-E__410",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-E__410"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-E__410.step",
+    "local_origin_H_mm": [
+      -245.0,
+      -55.0,
+      404.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-D__600",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-D__600"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-D__600.step",
+    "local_origin_H_mm": [
+      -190.0,
+      -55.0,
+      594.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-E__600",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-E__600"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0602-E__600.step",
+    "local_origin_H_mm": [
+      -245.0,
+      -55.0,
+      594.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      55.0,
+      110.0,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-WALL--1",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-R3-WALL--1"
+    ],
+    "material": "6061-T651",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0602-R3-WALL--1.step",
+    "local_origin_H_mm": [
+      -310.0,
+      -75.0,
+      280.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      170.0,
+      6.0,
+      170.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-R3-WALL-1",
+    "part_id": "PRT-0602",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-R3-WALL-1"
+    ],
+    "material": "6061-T651",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0602-R3-WALL-1.step",
+    "local_origin_H_mm": [
+      -310.0,
+      69.0,
+      280.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      170.0,
+      6.0,
+      170.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0602-G-R4",
+    "part_id": "PRT-0602",
+    "source_revision": "Integral paired gate bushes; explicit R4 through aperture for gate plate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0602-G"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0602-G-R4.step",
+    "local_origin_H_mm": [
+      -430.0000001,
+      -75.0,
+      270.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      120.00000010000002,
+      150.0,
+      110.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0604-R4",
+    "part_id": "PRT-0604",
+    "source_revision": "Integral gate ears and paired manual shafts; end collar stops at 0/85mm",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0604"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0604-R4.step",
+    "local_origin_H_mm": [
+      -432.0,
+      -63.0,
+      281.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      284.5,
+      126.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0605__1",
+    "part_id": "PRT-0605",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0605__1"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0605__1.step",
+    "local_origin_H_mm": [
+      -291.0,
+      33.0,
+      280.5
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      42.0,
+      22.0,
+      45.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0605-A__1",
+    "part_id": "PRT-0605",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0605-A__1"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0605-A__1.step",
+    "local_origin_H_mm": [
+      -249.0,
+      43.0,
+      300.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      34.0,
+      6.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0605__2",
+    "part_id": "PRT-0605",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0605__2"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0605__2.step",
+    "local_origin_H_mm": [
+      -291.0,
+      33.0,
+      347.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      42.0,
+      22.0,
+      45.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0605-A__2",
+    "part_id": "PRT-0605",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0605-A__2"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0605-A__2.step",
+    "local_origin_H_mm": [
+      -275.0,
+      43.0,
+      389.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      60.0,
+      6.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0606",
+    "part_id": "PRT-0606",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0606"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0606.step",
+    "local_origin_H_mm": [
+      -233.0,
+      -43.0,
+      -5.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      86.0,
+      86.0,
+      150.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0606-A-R4",
+    "part_id": "PRT-0606",
+    "source_revision": "R4 explicit narrow guide neck clears retaining lips; flange retains sleeve attachment face",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0606-A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0606-A-R4.step",
+    "local_origin_H_mm": [
+      -243.0,
+      -13.0,
+      123.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      12.0,
+      26.0,
+      10.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-A-R4",
+    "part_id": "PRT-0607",
+    "source_revision": "Self-designed captive Z way replaces supplier actuator envelope; face weld interface to original bracket at z271 remains load OPEN",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0607-A-R4.step",
+    "local_origin_H_mm": [
+      -295.0,
+      -18.0,
+      60.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      56.0,
+      44.0,
+      211.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-B-R4",
+    "part_id": "PRT-0607",
+    "source_revision": "R4 positive manual endpoint lock bore through guide tongue; stable R3 source instance retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-B"
+    ],
+    "material": "沿用R1候选",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0607-B-R4.step",
+    "local_origin_H_mm": [
+      -255.0,
+      -12.5,
+      113.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      12.0,
+      25.0,
+      30.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-C",
+    "part_id": "PRT-0607",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-C"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0607-C.step",
+    "local_origin_H_mm": [
+      -310.0,
+      -55.0,
+      271.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      60.0,
+      110.0,
+      43.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0704-WIRE_A",
+    "part_id": "PRT-0704",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0704-WIRE_A"
+    ],
+    "material": "沿用R1候选",
+    "kind": "context",
+    "step": "step/parts/PRT-0704-WIRE_A.step",
+    "local_origin_H_mm": [
+      -247.0000001,
+      -132.0000001,
+      -97.0000001
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      147.4778791739097,
+      67.0000001,
+      47.000000199999995
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-CARRIER-L",
+    "part_id": "PRT-0603",
+    "source_revision": "Integral paired manual guide shafts/collars; assembled by split bush cap; prototype friction/holding unknown",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R3-CARRIER-L"
+    ],
+    "material": "6061-T651",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0603-R4-CARRIER-L.step",
+    "local_origin_H_mm": [
+      -199.0,
+      40.0,
+      380.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": 82,
+        "z": 383,
+        "diameter": 3.2,
+        "axis": "X",
+        "purpose": "自定义执行连接销孔；适配件待冻结"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      102.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-SCREW-M4x25",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0603-R3-SCREW-L0",
+      "PRT-0603-R3-SCREW-L1",
+      "PRT-0603-R3-SCREW-R0",
+      "PRT-0603-R3-SCREW-R1"
+    ],
+    "material": "M4x25钢制内六角螺钉，实际等级待确认",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0603-R3-SCREW-M4x25.step",
+    "local_origin_H_mm": [
+      -193.61,
+      41.39,
+      368.5
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      7.220000000000027,
+      7.219999999999999,
+      29.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-NUT-M4",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0603-R3-NUT-L0",
+      "PRT-0603-R3-NUT-L1",
+      "PRT-0603-R3-NUT-R0",
+      "PRT-0603-R3-NUT-R1"
+    ],
+    "material": "M4金属螺母，防松方式待验证",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0603-R3-NUT-M4.step",
+    "local_origin_H_mm": [
+      -194.0414518843274,
+      41.5,
+      376.79999999999995
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      8.082903768654774,
+      7.0,
+      3.1999999999999886
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-CARRIER-R",
+    "part_id": "PRT-0603",
+    "source_revision": "Integral paired manual guide shafts/collars; assembled by split bush cap; prototype friction/holding unknown",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R3-CARRIER-R"
+    ],
+    "material": "6061-T651",
+    "kind": "revised_context",
+    "step": "step/parts/PRT-0603-R4-CARRIER-R.step",
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -142.0,
+      380.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "purpose": "夹块穿透连接"
+      },
+      {
+        "x": -190,
+        "y": -82,
+        "z": 383,
+        "diameter": 3.2,
+        "axis": "X",
+        "purpose": "自定义执行连接销孔；适配件待冻结"
+      }
+    ],
+    "dimensions_mm": [
+      18.00000000000003,
+      102.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R29-L",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R3-R29-L"
+    ],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R29-L.step",
+    "local_origin_H_mm": [
+      -199.0,
+      27.568097504180443,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      34.43190249581956,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R29-R",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R3-R29-R"
+    ],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R29-R.step",
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.00000000000003,
+      34.43190249581957,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-CAP-M3-SCREW",
+    "part_id": "PRT-0603",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0603-R4-CAP-L--11-124-SCREW",
+      "PRT-0603-R4-CAP-L--11-136-SCREW",
+      "PRT-0603-R4-CAP-L-11-124-SCREW",
+      "PRT-0603-R4-CAP-L-11-136-SCREW",
+      "PRT-0603-R4-CAP-R--11-124-SCREW",
+      "PRT-0603-R4-CAP-R--11-136-SCREW",
+      "PRT-0603-R4-CAP-R-11-124-SCREW",
+      "PRT-0603-R4-CAP-R-11-136-SCREW"
+    ],
+    "material": "Custom M3 candidate; grade, thread and preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0603-R4-CAP-M3-SCREW.step",
+    "local_origin_H_mm": [
+      -203.75,
+      121.25,
+      375.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      5.5,
+      5.5,
+      16.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-CAP-M3-NUT",
+    "part_id": "PRT-0603",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0603-R4-CAP-L--11-124-NUT",
+      "PRT-0603-R4-CAP-L--11-136-NUT",
+      "PRT-0603-R4-CAP-L-11-124-NUT",
+      "PRT-0603-R4-CAP-L-11-136-NUT",
+      "PRT-0603-R4-CAP-R--11-124-NUT",
+      "PRT-0603-R4-CAP-R--11-136-NUT",
+      "PRT-0603-R4-CAP-R-11-124-NUT",
+      "PRT-0603-R4-CAP-R-11-136-NUT"
+    ],
+    "material": "Custom M3 candidate; grade, thread and preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0603-R4-CAP-M3-NUT.step",
+    "local_origin_H_mm": [
+      -204.17542648054297,
+      121.25,
+      375.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      6.350852961085906,
+      5.5,
+      3.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-BUSHCAP-L",
+    "part_id": "PRT-0603",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R4-BUSHCAP-L"
+    ],
+    "material": "Custom split guide cap; material/fit OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R4-BUSHCAP-L.step",
+    "local_origin_H_mm": [
+      -205.0,
+      119.9999999,
+      382.9999999
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      30.0,
+      20.000000199999988,
+      11.000000200000045
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-BUSHCAP-R",
+    "part_id": "PRT-0603",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R4-BUSHCAP-R"
+    ],
+    "material": "Custom split guide cap; material/fit OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R4-BUSHCAP-R.step",
+    "local_origin_H_mm": [
+      -205.0,
+      -140.0000001,
+      382.9999999
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      30.0,
+      20.000000199999988,
+      11.000000200000045
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0604-R4-CAP-M3-SCREW",
+    "part_id": "PRT-0604",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0604-R4-CAP--1--427--64-SCREW",
+      "PRT-0604-R4-CAP--1--427--56-SCREW",
+      "PRT-0604-R4-CAP--1--413--64-SCREW",
+      "PRT-0604-R4-CAP--1--413--56-SCREW",
+      "PRT-0604-R4-CAP-1--427-56-SCREW",
+      "PRT-0604-R4-CAP-1--427-64-SCREW",
+      "PRT-0604-R4-CAP-1--413-56-SCREW",
+      "PRT-0604-R4-CAP-1--413-64-SCREW"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0604-R4-CAP-M3-SCREW.step",
+    "local_origin_H_mm": [
+      -429.75,
+      -66.75,
+      276.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      5.5,
+      5.5,
+      16.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0604-R4-CAP-M3-NUT",
+    "part_id": "PRT-0604",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 8,
+    "instance_ids": [
+      "PRT-0604-R4-CAP--1--427--64-NUT",
+      "PRT-0604-R4-CAP--1--427--56-NUT",
+      "PRT-0604-R4-CAP--1--413--64-NUT",
+      "PRT-0604-R4-CAP--1--413--56-NUT",
+      "PRT-0604-R4-CAP-1--427-56-NUT",
+      "PRT-0604-R4-CAP-1--427-64-NUT",
+      "PRT-0604-R4-CAP-1--413-56-NUT",
+      "PRT-0604-R4-CAP-1--413-64-NUT"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0604-R4-CAP-M3-NUT.step",
+    "local_origin_H_mm": [
+      -430.1,
+      -67.1,
+      276.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      6.2000000000000455,
+      6.199999999999996,
+      3.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0604-R4-BUSHCAP--1",
+    "part_id": "PRT-0604",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0604-R4-BUSHCAP--1"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0604-R4-BUSHCAP--1.step",
+    "local_origin_H_mm": [
+      -430.0,
+      -66.0,
+      284.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      20.0,
+      12.0,
+      5.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0604-R4-BUSHCAP-1",
+    "part_id": "PRT-0604",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0604-R4-BUSHCAP-1"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0604-R4-BUSHCAP-1.step",
+    "local_origin_H_mm": [
+      -430.0000001,
+      54.0,
+      283.9999999
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      20.000000200000045,
+      12.0,
+      11.000000200000045
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-ENDSTOP-M2-SCREW",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 4,
+    "instance_ids": [
+      "PRT-0703-R4-ENDSTOP--1--19-SCREW",
+      "PRT-0703-R4-ENDSTOP--1--26-SCREW",
+      "PRT-0703-R4-ENDSTOP-1-19-SCREW",
+      "PRT-0703-R4-ENDSTOP-1-26-SCREW"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0703-R4-ENDSTOP-M2-SCREW.step",
+    "local_origin_H_mm": [
+      8.0,
+      -20.9,
+      -27.9
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      9.0,
+      3.799999999999997,
+      3.799999999999997
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-ENDSTOP--1",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-R4-ENDSTOP--1"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0703-R4-ENDSTOP--1.step",
+    "local_origin_H_mm": [
+      13.0,
+      -30.0,
+      -28.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      2.0,
+      14.8,
+      6.199999999999999
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-ENDSTOP-1",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-R4-ENDSTOP-1"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0703-R4-ENDSTOP-1.step",
+    "local_origin_H_mm": [
+      13.0,
+      15.2,
+      -28.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      2.0,
+      14.8,
+      6.199999999999999
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-R4-UPSTOP--1",
+    "part_id": "PRT-0607",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-R4-UPSTOP--1"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0607-R4-UPSTOP--1.step",
+    "local_origin_H_mm": [
+      -255.2,
+      -18.0,
+      258.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      12.399999999999977,
+      9.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-R4-UPSTOP-M3-SCREW",
+    "part_id": "PRT-0607",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0607-R4-UPSTOP--1-SCREW",
+      "PRT-0607-R4-UPSTOP-1-SCREW"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0607-R4-UPSTOP-M3-SCREW.step",
+    "local_origin_H_mm": [
+      -251.75,
+      -21.0,
+      258.25
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      5.5,
+      11.0,
+      5.5
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-R4-UPSTOP-1",
+    "part_id": "PRT-0607",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-R4-UPSTOP-1"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "custom",
+    "step": "step/parts/PRT-0607-R4-UPSTOP-1.step",
+    "local_origin_H_mm": [
+      -255.2,
+      9.0,
+      258.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      12.399999999999977,
+      9.0,
+      6.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702-R4-TRAVELNUT-M4",
+    "part_id": "PRT-0702",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0702-R4-TRAVELNUT-L",
+      "PRT-0702-R4-TRAVELNUT-R"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0702-R4-TRAVELNUT-M4.step",
+    "local_origin_H_mm": [
+      -230.0414518843274,
+      24.499999999999996,
+      -17.2
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      8.082903768654774,
+      7.0000000000000036,
+      3.1999999999999993
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702-R4-TRAVELPIN",
+    "part_id": "PRT-0702",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 2,
+    "instance_ids": [
+      "PRT-0702-R4-TRAVELPIN-L",
+      "PRT-0702-R4-TRAVELPIN-R"
+    ],
+    "material": "Custom stepped pin with candidate M4 tail; thread teeth/grade OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0702-R4-TRAVELPIN.step",
+    "local_origin_H_mm": [
+      -228.6,
+      25.4,
+      -18.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      5.199999999999989,
+      5.200000000000003,
+      14.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-HOLDPIN-L",
+    "part_id": "PRT-0603",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R4-HOLDPIN-L"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0603-R4-HOLDPIN-L.step",
+    "local_origin_H_mm": [
+      -196.0,
+      128.0,
+      389.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      4.0,
+      4.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R4-HOLDPIN-R",
+    "part_id": "PRT-0603",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0603-R4-HOLDPIN-R"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0603-R4-HOLDPIN-R.step",
+    "local_origin_H_mm": [
+      -196.0,
+      -132.0,
+      389.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      4.0,
+      4.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0604-R4-HOLDPIN",
+    "part_id": "PRT-0604",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0604-R4-HOLDPIN"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0604-R4-HOLDPIN.step",
+    "local_origin_H_mm": [
+      -422.0,
+      58.0,
+      290.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      4.0,
+      4.0,
+      20.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-R4-HOLDPIN-0",
+    "part_id": "PRT-0607",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-R4-HOLDPIN-0"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0607-R4-HOLDPIN-0.step",
+    "local_origin_H_mm": [
+      -252.5,
+      24.0,
+      124.5
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      7.0,
+      49.0,
+      7.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0607-R4-HOLDPIN-115",
+    "part_id": "PRT-0607",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0607-R4-HOLDPIN-115"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0607-R4-HOLDPIN-115.step",
+    "local_origin_H_mm": [
+      -252.5,
+      24.0,
+      239.5
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      7.0,
+      49.0,
+      7.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-HOLDPIN-0",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-R4-HOLDPIN-0"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0703-R4-HOLDPIN-0.step",
+    "local_origin_H_mm": [
+      -207.5,
+      22.5,
+      -35.2
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      5.0,
+      5.0,
+      9.200000000000003
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0703-R4-HOLDPIN-185",
+    "part_id": "PRT-0703",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0703-R4-HOLDPIN-185"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0703-R4-HOLDPIN-185.step",
+    "local_origin_H_mm": [
+      -22.5,
+      22.5,
+      -35.2
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      5.0,
+      5.0,
+      9.200000000000003
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702-R4-HOLDPIN-L",
+    "part_id": "PRT-0702",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0702-R4-HOLDPIN-L"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0702-R4-HOLDPIN-L.step",
+    "local_origin_H_mm": [
+      -234.0,
+      26.0,
+      -7.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      4.0,
+      4.0,
+      18.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0702-R4-HOLDPIN-R",
+    "part_id": "PRT-0702",
+    "source_revision": "R4 self-designed candidate",
+    "quantity_in_assembly": 1,
+    "instance_ids": [
+      "PRT-0702-R4-HOLDPIN-R"
+    ],
+    "material": "Self-designed candidate; material, grade, threads/preload OPEN",
+    "kind": "hardware",
+    "step": "step/parts/PRT-0702-R4-HOLDPIN-R.step",
+    "local_origin_H_mm": [
+      -234.0,
+      -30.0,
+      -7.0
+    ],
+    "holes": [],
+    "dimensions_mm": [
+      4.0,
+      4.0,
+      18.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R23-L",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 0,
+    "instance_ids": [],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R23-L.step",
+    "local_origin_H_mm": [
+      -199.0,
+      21.166010488516726,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      40.833989511483274,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R23-R",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 0,
+    "instance_ids": [],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R23-R.step",
+    "local_origin_H_mm": [
+      -199.0,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      40.833989511483274,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R26-L",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 0,
+    "instance_ids": [],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R26-L.step",
+    "local_origin_H_mm": [
+      -199.0,
+      24.392621835300936,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      37.607378164699064,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R26-R",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 0,
+    "instance_ids": [],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R26-R.step",
+    "local_origin_H_mm": [
+      -199.0,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      37.60737816469907,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R32-L",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 0,
+    "instance_ids": [],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R32-L.step",
+    "local_origin_H_mm": [
+      -199.0,
+      30.708305065568172,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": 45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": 55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.0,
+      31.291694934431828,
+      12.0
+    ],
+    "manufacturing_release": false
+  },
+  {
+    "family": "PRT-0603-R3-R32-R",
+    "part_id": "PRT-0603",
+    "source_revision": "R3 retained",
+    "quantity_in_assembly": 0,
+    "instance_ids": [],
+    "material": "未填充本色POM-C",
+    "kind": "custom",
+    "step": "step/parts/PRT-0603-R3-R32-R.step",
+    "local_origin_H_mm": [
+      -199.00000000000003,
+      -62.0,
+      386.0
+    ],
+    "holes": [
+      {
+        "x": -190,
+        "y": -45,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      },
+      {
+        "x": -190,
+        "y": -55,
+        "diameter": 4.5,
+        "counterbore_diameter": 7.8,
+        "counterbore_depth": 4.5,
+        "purpose": "从Z+沉孔，螺钉头低于顶面"
+      }
+    ],
+    "dimensions_mm": [
+      18.00000000000003,
+      31.29169493443184,
+      12.0
+    ],
+    "manufacturing_release": false
+  }
+]

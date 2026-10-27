@@ -1,0 +1,11 @@
+﻿family,revision,scope,supplier,quantity,unit_price_CNY,material_cost_CNY,setup_cost_CNY,inspection_cost_CNY,tax_CNY,freight_CNY,lead_days,quote_attachment,valid_until,approval
+PRT-0602-R3-BASE,R3,三类首件候选,,,,,,,,,,,,OPEN
+PRT-0603-R3-R23-L,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0603-R3-R23-R,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0603-R3-R26-L,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0603-R3-R26-R,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0603-R3-R29-L,R3,三类首件候选,,,,,,,,,,,,OPEN
+PRT-0603-R3-R29-R,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0603-R3-R32-L,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0603-R3-R32-R,R3,左右/半径筛选候选评审图，未放行,,,,,,,,,,,,OPEN
+PRT-0701-R4-A,R4,三类首件候选,,,,,,,,,,,,OPEN
